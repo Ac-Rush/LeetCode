@@ -45,11 +45,15 @@
   <ItemGroup>
     <Compile Include="Array\3Sum Closest.cs" />
     <Compile Include="Array\3Sum.cs" />
+    <Compile Include="Array\ArrayPairSum.cs" />
     <Compile Include="Array\Find Pivot Index.cs" />
     <Compile Include="Array\Largest Number At Least Twice of Others.cs" />
     <Compile Include="Array\Max Area of Island.cs" />
     <Compile Include="Array\Merge Sorted Array.cs" />
+    <Compile Include="Array\RemoveDuplicates.cs" />
+    <Compile Include="Array\Rotate Array.cs" />
     <Compile Include="Array\Rotate_Image.cs" />
+    <Compile Include="Array\Third Maximum Number.cs" />
     <Compile Include="Array\TwoSum.cs" />
     <Compile Include="BinarySearch\Arranging Coins.cs" />
     <Compile Include="BinarySearch\Find Minimum in Rotated Sorted Array.cs" />
