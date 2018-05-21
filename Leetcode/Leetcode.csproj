@@ -59,6 +59,7 @@
     <Compile Include="BinarySearch\Arranging Coins.cs" />
     <Compile Include="BinarySearch\Find Minimum in Rotated Sorted Array.cs" />
     <Compile Include="BinarySearch\Find Smallest Letter Greater Than Target.cs" />
+    <Compile Include="BinarySearch\FindMedianSortedArraysC.cs" />
     <Compile Include="BinarySearch\findRadius.cs" />
     <Compile Include="BinarySearch\First Bad Version.cs" />
     <Compile Include="BinarySearch\GuessNumberC.cs" />
