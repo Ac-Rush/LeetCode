@@ -62,6 +62,7 @@
     <Compile Include="BinarySearch\FindMedianSortedArraysC.cs" />
     <Compile Include="BinarySearch\findRadius.cs" />
     <Compile Include="BinarySearch\First Bad Version.cs" />
+    <Compile Include="BinarySearch\FourSumCount2.cs" />
     <Compile Include="BinarySearch\GuessNumberC.cs" />
     <Compile Include="BinarySearch\Intersect2C.cs" />
     <Compile Include="BinarySearch\IntersectionC.cs" />

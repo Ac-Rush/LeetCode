@@ -8,6 +8,12 @@ namespace Leetcode.BinarySearch
 {
     class Kth_Smallest_Element_in_a_Sorted_Matrix
     {
+        /// <summary>
+        /// range binary search
+        /// </summary>
+        /// <param name="matrix"></param>
+        /// <param name="k"></param>
+        /// <returns></returns>
         public int KthSmallest(int[,] matrix, int k)
         {
             int lo = matrix[0,0], hi = matrix[matrix.GetLength(0) - 1,matrix.GetLength(1) - 1] + 1;//[lo, hi)
@@ -20,8 +26,8 @@ namespace Leetcode.BinarySearch
                     while (j >= 0 && matrix[i,j] > mid) j--;
                     count += (j + 1);
                 }
-                if (count < k) lo = mid + 1;   //[mid +1 , hi)
-                else hi = mid;                 //[lo, mid)
+                if (count < k) lo = mid + 1;   //[mid +1 , hi]
+                else hi = mid;                 //[lo, mid]
             }
             return lo;
         }
