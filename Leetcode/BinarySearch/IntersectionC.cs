@@ -19,7 +19,7 @@ namespace Leetcode.BinarySearch
                 }
                 numbers[n]++;
             }
-            var ret = new HashSet<int>();
+            var ret = new List<int>();
             foreach (var n in nums2)
             {
                 if (numbers.ContainsKey(n) && numbers[n] > 0)

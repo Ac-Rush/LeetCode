@@ -24,7 +24,7 @@ namespace Leetcode.BinarySearch
                 {
                     return mid;
                 }
-                else if (ret == 1)
+                if (ret == 1)
                 {
                     start = mid + 1;
 
