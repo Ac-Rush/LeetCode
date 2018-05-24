@@ -14,7 +14,7 @@ namespace Leetcode
     {
         static void Main(string[] args)
         {
-            var a = Search_a_2D_Matrix.SearchMatrix(new int[,] { {1,3,5,7} , {10,11,16,20}, {23,30,34,50} }, 13);
+            var a = Find_K_Closest_Elements.FindClosestElements(new int[]{ 1, 2, 3, 3, 6, 6, 7, 7, 9, 9 }, 8, 8);
             Console.WriteLine(a);
         }
     }

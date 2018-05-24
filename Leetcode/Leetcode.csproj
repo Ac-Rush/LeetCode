@@ -57,6 +57,7 @@
     <Compile Include="Array\TwoSum.cs" />
     <Compile Include="BinarySearch\ArrangeCoins.cs" />
     <Compile Include="BinarySearch\Arranging Coins.cs" />
+    <Compile Include="BinarySearch\Find K Closest Elements.cs" />
     <Compile Include="BinarySearch\Find Minimum in Rotated Sorted Array.cs" />
     <Compile Include="BinarySearch\Find Peak Element.cs" />
     <Compile Include="BinarySearch\Find Right Interval.cs" />
