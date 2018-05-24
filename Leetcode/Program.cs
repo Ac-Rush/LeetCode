@@ -14,7 +14,7 @@ namespace Leetcode
     {
         static void Main(string[] args)
         {
-            var a = Find_K_Closest_Elements.FindClosestElements(new int[]{ 1, 2, 3, 3, 6, 6, 7, 7, 9, 9 }, 8, 8);
+            var a = Minimum_Size_Subarray_Sum.MinSubArrayLen(7, new int[]{ 2, 3, 1, 2, 4, 3 });
             Console.WriteLine(a);
         }
     }

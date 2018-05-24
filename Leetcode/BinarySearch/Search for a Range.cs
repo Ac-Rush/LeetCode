@@ -32,6 +32,9 @@ namespace Leetcode.BinarySearch
 
         // returns leftmost (or rightmost) index at which `target` should be
         // inserted in sorted array `nums` via binary search.
+        /*
+         * 定义好了 hi， 让 lo =mid +1 逼近， 最终相交就是要找的位置
+         */
         private int ExtremeInsertionIndex(int[] nums, int target, bool left)
         {
             int lo = 0;

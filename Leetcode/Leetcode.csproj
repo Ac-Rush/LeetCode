@@ -77,6 +77,7 @@
     <Compile Include="BinarySearch\Kth Smallest Element in a Sorted Matrix.cs" />
     <Compile Include="BinarySearch\kth-smallest-number-in-multiplication-table.cs" />
     <Compile Include="BinarySearch\Maximum Length of Repeated Subarray.cs" />
+    <Compile Include="BinarySearch\Minimum Size Subarray Sum.cs" />
     <Compile Include="BinarySearch\MySqrt.cs" />
     <Compile Include="BinarySearch\NextGreatestLetterC.cs" />
     <Compile Include="BinarySearch\Search a 2D Matrix II.cs" />
