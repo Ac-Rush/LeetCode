@@ -56,10 +56,12 @@
     <Compile Include="Array\Third Maximum Number.cs" />
     <Compile Include="Array\TwoSum.cs" />
     <Compile Include="BinarySearch Tree\Minimum Absolute Difference in BST.cs" />
+    <Compile Include="BinarySearch Tree\Minimum Distance Between BST Nodes.cs" />
     <Compile Include="BinarySearch\ArrangeCoins.cs" />
     <Compile Include="BinarySearch\Arranging Coins.cs" />
     <Compile Include="BinarySearch\Divide Two Integers.cs" />
     <Compile Include="BinarySearch\Find K Closest Elements.cs" />
+    <Compile Include="BinarySearch\Find Minimum in Rotated Sorted Array II.cs" />
     <Compile Include="BinarySearch\Find Minimum in Rotated Sorted Array.cs" />
     <Compile Include="BinarySearch\Find Peak Element.cs" />
     <Compile Include="BinarySearch\Find Right Interval.cs" />
@@ -89,6 +91,7 @@
     <Compile Include="BinarySearch\Search in Rotated Sorted Array II.cs" />
     <Compile Include="BinarySearch\Search in Rotated Sorted Array.cs" />
     <Compile Include="BinarySearch\SearchInsertC.cs" />
+    <Compile Include="BinarySearch\Split Array Largest Sum.cs" />
     <Compile Include="BinarySearch\sqrt.cs" />
     <Compile Include="BinarySearch\Swim in Rising Water.cs" />
     <Compile Include="BinarySearch\Two Sum II - Input array is sorted.cs" />
