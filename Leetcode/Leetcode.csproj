@@ -145,6 +145,7 @@
     <Compile Include="Tree\Maximum Binary Tree.cs" />
     <Compile Include="Tree\Minimum Depth of Binary Tree.cs" />
     <Compile Include="Tree\Path Sum II.cs" />
+    <Compile Include="Tree\Path Sum III.cs" />
     <Compile Include="Tree\Path Sum.cs" />
     <Compile Include="Tree\Second Minimum Node In a Binary Tree.cs" />
     <Compile Include="Tree\Subtree of Another Tree.cs" />
