@@ -147,6 +147,7 @@
     <Compile Include="Tree\Path Sum II.cs" />
     <Compile Include="Tree\Path Sum.cs" />
     <Compile Include="Tree\Second Minimum Node In a Binary Tree.cs" />
+    <Compile Include="Tree\Subtree of Another Tree.cs" />
     <Compile Include="Tree\Sum of Left Leaves.cs" />
     <Compile Include="Tree\Symmetric Tree.cs" />
     <Compile Include="Tree\Two Sum IV - Input is a BST.cs" />
