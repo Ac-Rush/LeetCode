@@ -91,6 +91,7 @@
     <Compile Include="BinarySearch\Search in Rotated Sorted Array II.cs" />
     <Compile Include="BinarySearch\Search in Rotated Sorted Array.cs" />
     <Compile Include="BinarySearch\SearchInsertC.cs" />
+    <Compile Include="BinarySearch\Smallest Good Base.cs" />
     <Compile Include="BinarySearch\Split Array Largest Sum.cs" />
     <Compile Include="BinarySearch\sqrt.cs" />
     <Compile Include="BinarySearch\Swim in Rising Water.cs" />
@@ -129,9 +130,12 @@
     <Compile Include="Strings\Implement strStr.cs" />
     <Compile Include="SubarrayWithGivenSum.cs" />
     <Compile Include="Tree\Average of Levels in Binary Tree.cs" />
+    <Compile Include="Tree\Binary Tree Level Order Traversal II.cs" />
     <Compile Include="Tree\Binary Tree Paths.cs" />
     <Compile Include="Tree\BinaryTreeInorderTraversal.cs" />
     <Compile Include="Tree\BinaryTreeTilt.cs" />
+    <Compile Include="Tree\Construct String from Binary Tree.cs" />
+    <Compile Include="Tree\Convert BST to Greater Tree.cs" />
     <Compile Include="Tree\Count Complete Tree Nodes.cs" />
     <Compile Include="Tree\Diameter of Binary Tree.cs" />
     <Compile Include="Tree\Find Bottom Left Tree Value.cs" />
@@ -142,6 +146,9 @@
     <Compile Include="Tree\Minimum Depth of Binary Tree.cs" />
     <Compile Include="Tree\Path Sum II.cs" />
     <Compile Include="Tree\Path Sum.cs" />
+    <Compile Include="Tree\Second Minimum Node In a Binary Tree.cs" />
+    <Compile Include="Tree\Sum of Left Leaves.cs" />
+    <Compile Include="Tree\Two Sum IV - Input is a BST.cs" />
     <Compile Include="Tree\UniqueBinarySearchTrees.cs" />
     <Compile Include="TrimaBinarySearchTree.cs" />
     <Compile Include="UniqueBinarySearchTrees.cs" />
