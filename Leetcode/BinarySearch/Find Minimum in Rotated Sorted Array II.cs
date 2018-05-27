@@ -8,6 +8,11 @@ namespace Leetcode.BinarySearch
 {
     class Find_Minimum_in_Rotated_Sorted_Array_II
     {
+        /// <summary>
+        /// so esay, 一次性解决
+        /// </summary>
+        /// <param name="nums"></param>
+        /// <returns></returns>
         public int FindMin(int[] nums)
         {
             var l = 0;
