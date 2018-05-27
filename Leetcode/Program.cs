@@ -16,9 +16,13 @@ namespace Leetcode
         static void Main(string[] args)
         {
             var tree = new TreeNode(1);
-            tree.right = new TreeNode(5);
-            tree.right.left = new TreeNode(3);
-            var a = Minimum_Absolute_Difference_in_BST.GetMinimumDifference2(tree);
+            tree.right = new TreeNode(2);
+            tree.right.left = new TreeNode(4);
+            tree.right.right = new TreeNode(3);
+            tree.left = new TreeNode(2);
+            tree.left.right = new TreeNode(4);
+            tree.left.left = new TreeNode(3);
+            var a = Symmetric_Tree.IsSymmetric(tree);
             Console.WriteLine(a);
         }
     }
