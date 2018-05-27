@@ -11,27 +11,17 @@ namespace Leetcode.Tree
     {
         public TreeNode LowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q)
         {
-            if (root == null)
-            {
-                return null;
-            }
-            if (p.val > q.val)
-            {
-                var t = p;
-                p = q;
-                q = t;
-            }
-            if (root.val >= p.val && root.val <= q.val)
-            {
-                return root;
-            }
-            if (root.val > q.val)
+            if (root.val > p.val && root.val > q.val)
             {
                 return LowestCommonAncestor(root.left, p, q);
             }
+            else if (root.val < p.val && root.val < q.val)
+            {
+                return LowestCommonAncestor(root.right, p, q);
+            }
             else
             {
-                return LowestCommonAncestor(root.right, p ,q );
+                return root;
             }
         }
 
