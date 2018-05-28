@@ -16,9 +16,6 @@ namespace Leetcode
     {
         static void Main(string[] args)
         {
-<<<<<<< HEAD
-            var a = Subsets_Class.Subsets(new[] {1,2,3});
-=======
             var tree = new TreeNode(5);
             tree.right = new TreeNode(-3);
             tree.right.left = new TreeNode(4);
@@ -26,8 +23,7 @@ namespace Leetcode
             tree.left = new TreeNode(9);
            // tree.left.right = new TreeNode(4);
            // tree.left.left = new TreeNode(3);
-            var a = Binary_Tree_Zigzag_Level_Order_Traversal.ZigzagLevelOrder(tree);
->>>>>>> 952182f9123acf916eea11baa0beebccfdc58e94
+            var a = Construct_Binary_Tree_from_Inorder_and_Postorder_Traversal.BuildTree(new int[] { 9, 3, 15 ,20, 7}, new int[] {  9, 15, 7 ,20 ,3});
             Console.WriteLine(a);
         }
     }
