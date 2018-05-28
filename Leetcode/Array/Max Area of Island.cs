@@ -27,6 +27,7 @@ namespace Leetcode.Array
                     }
                 }
             }
+            return 1;
         }
     }
 }
