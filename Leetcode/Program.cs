@@ -15,14 +15,14 @@ namespace Leetcode
     {
         static void Main(string[] args)
         {
-            var tree = new TreeNode(1);
-            tree.right = new TreeNode(2);
-            tree.right.left = new TreeNode(4);
-            tree.right.right = new TreeNode(3);
+            var tree = new TreeNode(5);
+            tree.right = new TreeNode(-3);
+            //tree.right.left = new TreeNode(4);
+            //tree.right.right = new TreeNode(3);
             tree.left = new TreeNode(2);
-            tree.left.right = new TreeNode(4);
-            tree.left.left = new TreeNode(3);
-            var a = Symmetric_Tree.IsSymmetric(tree);
+           // tree.left.right = new TreeNode(4);
+           // tree.left.left = new TreeNode(3);
+            var a = Most_Frequent_Subtree_Sum.FindFrequentTreeSum(tree);
             Console.WriteLine(a);
         }
     }

@@ -18,6 +18,11 @@ namespace Leetcode.Tree
 
         }
 
+       /// <summary>
+       ///  巧用 -1;
+       /// </summary>
+       /// <param name="root"></param>
+       /// <returns></returns>
         public int Depth(TreeNode root)
         {
             if (root == null)
