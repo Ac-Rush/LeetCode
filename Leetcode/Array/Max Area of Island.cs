@@ -11,6 +11,7 @@ namespace Leetcode.Array
     /// </summary>
     class Max_Area_of_Island
     {
+        /*
         public int MaxAreaOfIsland(int[,] grid)
         {
             var result = new int[grid.GetLength(0), grid.GetLength(1)];
@@ -29,5 +30,6 @@ namespace Leetcode.Array
             }
             return 1;
         }
+        */
     }
 }
