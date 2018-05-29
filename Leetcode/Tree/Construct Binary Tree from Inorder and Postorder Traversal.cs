@@ -35,7 +35,7 @@ namespace Leetcode.Tree
             }
             var leftLength = inIndex - inStart;
             root.left = helper2(posStart , inStart, leftLength, postorder, inorder);
-            root.right = helper2(posStart + leftLength + 1, inIndex + 1, Length - leftLength - 1 , postorder, inorder);
+            root.right = helper2(posStart + leftLength , inIndex + 1, Length - leftLength - 1 , postorder, inorder);
             return root;
         }
     }

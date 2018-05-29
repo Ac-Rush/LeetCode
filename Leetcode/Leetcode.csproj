@@ -49,11 +49,14 @@
     <Compile Include="Array\Find Pivot Index.cs" />
     <Compile Include="Array\Largest Number At Least Twice of Others.cs" />
     <Compile Include="Array\Max Area of Island.cs" />
+    <Compile Include="Array\Max Consecutive Ones.cs" />
     <Compile Include="Array\Merge Sorted Array.cs" />
     <Compile Include="Array\RemoveDuplicates.cs" />
+    <Compile Include="Array\Reshape the Matrix.cs" />
     <Compile Include="Array\Rotate Array.cs" />
     <Compile Include="Array\Rotate_Image.cs" />
     <Compile Include="Array\Third Maximum Number.cs" />
+    <Compile Include="Array\Toeplitz Matrix.cs" />
     <Compile Include="Array\TwoSum.cs" />
     <Compile Include="BinarySearch Tree\Minimum Absolute Difference in BST.cs" />
     <Compile Include="BinarySearch Tree\Minimum Distance Between BST Nodes.cs" />
@@ -159,6 +162,7 @@
     <Compile Include="Tree\Invert Binary Tree.cs" />
     <Compile Include="Tree\Longest Univalue Path.cs" />
     <Compile Include="Tree\Lowest Common Ancestor of a Binary Search Tree.cs" />
+    <Compile Include="Tree\Lowest Common Ancestor of a Binary Tree.cs" />
     <Compile Include="Tree\Maximum Binary Tree.cs" />
     <Compile Include="Tree\Maximum Width of Binary Tree.cs" />
     <Compile Include="Tree\Minimum Depth of Binary Tree.cs" />
@@ -175,6 +179,7 @@
     <Compile Include="Tree\Symmetric Tree.cs" />
     <Compile Include="Tree\Two Sum IV - Input is a BST.cs" />
     <Compile Include="Tree\UniqueBinarySearchTrees.cs" />
+    <Compile Include="Tree\Validate Binary Search Tree.cs" />
     <Compile Include="TrimaBinarySearchTree.cs" />
     <Compile Include="UniqueBinarySearchTrees.cs" />
   </ItemGroup>

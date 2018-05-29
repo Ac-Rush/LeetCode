@@ -9,27 +9,27 @@ namespace Leetcode.Array
     /// <summary>
     /// https://leetcode.com/problems/max-area-of-island/description/
     /// </summary>
-    class Max_Area_of_Island
+    public class Max_Area_of_Island
     {
-        /*
+        
         public int MaxAreaOfIsland(int[,] grid)
         {
-            var result = new int[grid.GetLength(0), grid.GetLength(1)];
+            int max_area = 0;
             for (int i = 0; i < grid.GetLength(0); i++)
-            {
                 for (int j = 0; j < grid.GetLength(1); j++)
-                {
-                    if (grid[i, j] == 1)
-                    {
-                        if (i == 0 && j == 0)
-                        {
-                            result[i, j] = 1;
-                        }
-                    }
-                }
-            }
-            return 1;
+                    if (grid[i,j] == 1) max_area = Math.Max(max_area, AreaOfIsland(grid, i, j));
+            return max_area;
         }
-        */
+
+        public int AreaOfIsland(int[,] grid, int i, int j)
+        {
+            if (i >= 0 && i < grid.GetLength(0) && j >= 0 && j < grid.GetLength(1) && grid[i,j] == 1)
+            {
+                grid[i,j] = 0;
+                return 1 + AreaOfIsland(grid, i + 1, j) + AreaOfIsland(grid, i - 1, j) + AreaOfIsland(grid, i, j - 1) + AreaOfIsland(grid, i, j + 1);
+            }
+            return 0;
+        }
+
     }
 }
