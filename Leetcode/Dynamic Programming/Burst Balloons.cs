@@ -22,9 +22,9 @@ namespace Leetcode.Dynamic_Programming
             }
 
             int [,] store = new int[nums.Length, nums.Length];
-            for (int i = 0; i < nums.Length; i++)
+            for (int i = 1; i < nums.Length; i++)
             {
-                for (int j = 0; j < nums.Length; j++)
+                for (int j = i; j < nums.Length; j++)
                 {
                     store[i, j] = -1;
                 }
@@ -45,7 +45,7 @@ namespace Leetcode.Dynamic_Programming
                 int coin = leftCoin + midCoin + rightCoin;
                 if (coin > store[begin, end]) store[begin, end] = coin;
             }
-            return store[begin,end]
+            return store[begin, end];
         }
     }
 }

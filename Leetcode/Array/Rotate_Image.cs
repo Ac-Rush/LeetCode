@@ -37,15 +37,15 @@ namespace Leetcode.Array
             }
         }
 
-        private static void RotateByLayer(int[,] matrix, int i, int n)
+        private static void RotateByLayer(int[,] matrix, int layer, int n)
         {
-            for (int j = i; j < n - 1 - i; j++)
+            for (int j = layer; j < n - 1 - layer; j++)
             {
-                var tmp = matrix[i, j];
-                matrix[i, j] = matrix[n - 1 - j, i];
-                matrix[n - 1 - j, i] = matrix[n - 1 - i, n - 1 - j];
-                matrix[n - 1 - i, n - 1 - j] = matrix[j, n - 1 - i];
-                matrix[j, n - 1 - i] = tmp;
+                var tmp = matrix[layer, j];
+                matrix[layer, j] = matrix[n - 1 - j, layer];
+                matrix[n - 1 - j, layer] = matrix[n - 1 - layer, n - 1 - j];
+                matrix[n - 1 - layer, n - 1 - j] = matrix[j, n - 1 - layer];
+                matrix[j, n - 1 - layer] = tmp;
             }
         }
     }

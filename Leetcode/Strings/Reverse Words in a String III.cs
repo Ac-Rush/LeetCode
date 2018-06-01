@@ -16,13 +16,12 @@ namespace Leetcode.Strings
             }
             var segments = s.Split(new[] {' '}, StringSplitOptions.RemoveEmptyEntries);
 
-            var result = string.Empty;
             for (int index = 0; index < segments.Length; index++)
             {
                 var segment = segments[index];
                 segments[index] = new string(segment.Reverse().ToArray());
             }
-            return new string( result.Reverse().ToArray());
+            return string.Join(" ", segments);
         }
     }
 }
