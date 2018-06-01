@@ -54,5 +54,50 @@ namespace Leetcode.Tree
             }
             return result;
         }
+
+
+        public IList<int> PreorderTraversal3(TreeNode root)
+        {
+
+            var result = new List<int>();
+            if (root == null)
+            {
+                return result;
+            }
+            Stack<Guide> path = new Stack<Guide>();
+
+            path.Push(new Guide(0, root));
+            while (path.Count > 0)
+            {
+                var current = path.Pop();
+                if (current.Node == null)
+                {
+                    continue;   //defensive coding
+                }
+                if (current.Ope == 1)
+                {
+                    result.Add(current.Node.val);
+                }
+                else
+                {
+                    path.Push(new Guide(0, current.Node.right));
+                    path.Push(new Guide(0, current.Node.left));
+                    path.Push(new Guide(1, current.Node));
+                }
+            }
+            return result;
+        }
+
+        public class Guide
+        {
+            public int Ope; // 0. visit; 1. print
+            public TreeNode Node;
+
+            public Guide(int ope, TreeNode node)
+            {
+                this.Ope = ope;
+                this.Node = node;
+            }
+        }
     }
 }
