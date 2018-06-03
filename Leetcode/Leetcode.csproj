@@ -100,6 +100,9 @@
     <Compile Include="BinaryTreeInorderTraversal.cs" />
     <Compile Include="Dynamic Programming\Arithmetic Slices.cs" />
     <Compile Include="Dynamic Programming\Best Time to Buy and Sell Stock II.cs" />
+    <Compile Include="Dynamic Programming\Best Time to Buy and Sell Stock III.cs" />
+    <Compile Include="Dynamic Programming\Best Time to Buy and Sell Stock IV.cs" />
+    <Compile Include="Dynamic Programming\Best Time to Buy and Sell Stock with Cooldown.cs" />
     <Compile Include="Dynamic Programming\Best Time to Buy and Sell Stock with Transaction Fee.cs" />
     <Compile Include="Dynamic Programming\Best Time to Buy and Sell Stock.cs" />
     <Compile Include="Dynamic Programming\Burst Balloons.cs" />
@@ -107,12 +110,15 @@
     <Compile Include="Dynamic Programming\Counting Bits.cs" />
     <Compile Include="Dynamic Programming\House Robber III.cs" />
     <Compile Include="Dynamic Programming\House Robber.cs" />
+    <Compile Include="Dynamic Programming\Integer Break.cs" />
     <Compile Include="Dynamic Programming\Longest Continuous Increasing Subsequence.cs" />
     <Compile Include="Dynamic Programming\Longest Increasing Subsequence.cs" />
     <Compile Include="Dynamic Programming\Maximum Length of Pair Chain.cs" />
     <Compile Include="Dynamic Programming\Maximum Subarray.cs" />
     <Compile Include="Dynamic Programming\Min Cost Climbing Stairs.cs" />
+    <Compile Include="Dynamic Programming\Minimum ASCII Delete Sum for Two Strings.cs" />
     <Compile Include="Dynamic Programming\Number of Longest Increasing Subsequence.cs" />
+    <Compile Include="Dynamic Programming\Palindromic Substrings.cs" />
     <Compile Include="Dynamic Programming\Range Sum Query - Immutable.cs" />
     <Compile Include="IntersectionofTwoArrays.cs" />
     <Compile Include="NumberComplement.cs" />

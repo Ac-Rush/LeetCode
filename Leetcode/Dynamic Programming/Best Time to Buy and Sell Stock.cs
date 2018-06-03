@@ -11,8 +11,14 @@ namespace Leetcode.Dynamic_Programming
     /// </summary>
     class Best_Time_to_Buy_and_Sell_Stock
     {
+        /// <summary>
+        /// my solution
+        /// </summary>
+        /// <param name="prices"></param>
+        /// <returns></returns>
         public int MaxProfit(int[] prices)
         {
+            
             int minprice = int.MaxValue;
             int maxprofit = 0;
             for (int i = 0; i < prices.Length; i++)
