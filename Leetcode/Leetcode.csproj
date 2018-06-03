@@ -122,6 +122,8 @@
     <Compile Include="Dynamic Programming\Number of Longest Increasing Subsequence.cs" />
     <Compile Include="Dynamic Programming\Palindromic Substrings.cs" />
     <Compile Include="Dynamic Programming\Range Sum Query - Immutable.cs" />
+    <Compile Include="Dynamic Programming\Unique Paths II.cs" />
+    <Compile Include="Dynamic Programming\Unique Paths.cs" />
     <Compile Include="IntersectionofTwoArrays.cs" />
     <Compile Include="NumberComplement.cs" />
     <Compile Include="Program.cs" />
