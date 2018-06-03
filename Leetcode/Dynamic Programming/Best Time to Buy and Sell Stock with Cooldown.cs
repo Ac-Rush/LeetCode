@@ -58,5 +58,26 @@ Taking both cases into account, profit1[i+1] = max(profit1[i]+prices[i+1]-prices
             }
             return Math.Max(profit1, profit2);
         }
+
+
+
+
+
+
+        public int MaxProfit3(int[] prices)
+        {
+            int n = prices.Length;
+            if (n == 0) return 0;
+
+            int buy = -prices[0], sell = 0, pre_buy = 0, pre_sell = 0;
+            for (int i = 1; i < n; ++i)
+            {
+                pre_buy = buy;
+                buy = Math.Max(pre_buy, pre_sell - prices[i]);
+                pre_sell = sell;
+                sell = Math.Max(pre_sell, pre_buy + prices[i]);
+            }
+            return sell;
+        }
     }
 }

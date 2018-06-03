@@ -22,5 +22,48 @@ namespace Leetcode.Dynamic_Programming
 
             return release2; ///Since release1 is initiated as 0, so release2 will always higher than release1.
         }
+
+
+
+        /*
+         * 两次情况下，这个好理解
+         * 
+         * 分析：动态规划法。以第i天为分界线，计算第i天之前进行一次交易的最大收益preProfit[i]，和第i天之后进行一次交易的最大收益postProfit[i]，
+         * 最后遍历一遍，max{preProfit[i] + postProfit[i]} (0≤i≤n-1)就是最大收益。
+         * 第i天之前和第i天之后进行一次的最大收益求法同Best Time to Buy and Sell Stock I。
+         * 
+         * 
+         */
+
+        public int MaxProfit2(int[] prices)
+        {
+            if (prices.Length < 2) return 0;
+
+            int n = prices.Length;
+            int[] preProfit = new int[n];
+            int[] postProfit = new int[n];
+
+            int curMin = prices[0];
+            for (int i = 1; i < n; i++)
+            {
+                curMin = Math.Min(curMin, prices[i]);
+                preProfit[i] = Math.Max(preProfit[i - 1], prices[i] - curMin);
+            }
+
+            int curMax = prices[n - 1];
+            for (int i = n - 2; i >= 0; i--)
+            {
+                curMax = Math.Max(curMax, prices[i]);
+                postProfit[i] = Math.Max(postProfit[i + 1], curMax - prices[i]);
+            }
+
+            int maxProfit = 0;
+            for (int i = 0; i < n; i++)
+            {
+                maxProfit = Math.Max(maxProfit, preProfit[i] + postProfit[i]);
+            }
+
+            return maxProfit;
+        }
     }
 }
