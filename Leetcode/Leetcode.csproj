@@ -98,6 +98,7 @@
     <Compile Include="BinarySearch\Two Sum II - Input array is sorted.cs" />
     <Compile Include="BinarySearch\TwoSumC.cs" />
     <Compile Include="BinaryTreeInorderTraversal.cs" />
+    <Compile Include="Dynamic Programming\2 Keys Keyboard.cs" />
     <Compile Include="Dynamic Programming\Arithmetic Slices.cs" />
     <Compile Include="Dynamic Programming\Best Time to Buy and Sell Stock II.cs" />
     <Compile Include="Dynamic Programming\Best Time to Buy and Sell Stock III.cs" />
