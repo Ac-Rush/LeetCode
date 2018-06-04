@@ -119,11 +119,14 @@
     <Compile Include="Dynamic Programming\Maximum Length of Pair Chain.cs" />
     <Compile Include="Dynamic Programming\Maximum Subarray.cs" />
     <Compile Include="Dynamic Programming\Min Cost Climbing Stairs.cs" />
+    <Compile Include="Dynamic Programming\Count Numbers with Unique Digits.cs" />
     <Compile Include="Dynamic Programming\Minimum ASCII Delete Sum for Two Strings.cs" />
     <Compile Include="Dynamic Programming\Minimum Path Sum.cs" />
     <Compile Include="Dynamic Programming\Number of Longest Increasing Subsequence.cs" />
     <Compile Include="Dynamic Programming\Palindromic Substrings.cs" />
+    <Compile Include="Dynamic Programming\Predict the Winner.cs" />
     <Compile Include="Dynamic Programming\Range Sum Query - Immutable.cs" />
+    <Compile Include="Dynamic Programming\Shopping Offers.cs" />
     <Compile Include="Dynamic Programming\Unique Paths II.cs" />
     <Compile Include="Dynamic Programming\Unique Paths.cs" />
     <Compile Include="IntersectionofTwoArrays.cs" />
