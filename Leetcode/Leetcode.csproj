@@ -108,6 +108,8 @@
     <Compile Include="Dynamic Programming\Burst Balloons.cs" />
     <Compile Include="Dynamic Programming\Climbing Stairs.cs" />
     <Compile Include="Dynamic Programming\Counting Bits.cs" />
+    <Compile Include="Dynamic Programming\Edit Distance.cs" />
+    <Compile Include="Dynamic Programming\House Robber II.cs" />
     <Compile Include="Dynamic Programming\House Robber III.cs" />
     <Compile Include="Dynamic Programming\House Robber.cs" />
     <Compile Include="Dynamic Programming\Integer Break.cs" />
