@@ -8,7 +8,7 @@ using Leetcode.BinarySearch;
 using Leetcode.BinarySearch_Tree;
 using Leetcode.Dynamic_Programming;
 using Leetcode.Tree;
-using Leetcode.DFS_BFS;
+//using Leetcode.DFS_BFS;
 
 namespace Leetcode
 {
@@ -16,6 +16,7 @@ namespace Leetcode
     {
         static void Main(string[] args)
         {
+            Delete_and_Earn.DeleteAndEarn(new[] {3, 4, 2});
             TestArry();
         }
 
@@ -35,8 +36,8 @@ namespace Leetcode
             tree.left = new TreeNode(9);
             // tree.left.right = new TreeNode(4);
             // tree.left.left = new TreeNode(3);
-            var a = Construct_Binary_Tree_from_Inorder_and_Postorder_Traversal.BuildTree(new int[] { 9, 3, 15, 20, 7 }, new int[] { 9, 15, 7, 20, 3 });
-            Console.WriteLine(a);
+     //       var a = Construct_Binary_Tree_from_Inorder_and_Postorder_Traversal.BuildTree(new int[] { 9, 3, 15, 20, 7 }, new int[] { 9, 15, 7, 20, 3 });
+      //      Console.WriteLine(a);
         }
     }
 }
