@@ -26,7 +26,7 @@ namespace Leetcode.DFS_BFS
             {
                 for (int i = index; i < candidates.Length; i++)
                 {
-                    if (candidates[i] <= target)
+                    if (candidates[i] <= target) 
                     {
                         result.Add(candidates[i]);
                         Helper(candidates, i, target - candidates[i], result);
