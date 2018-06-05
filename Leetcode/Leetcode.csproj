@@ -98,6 +98,7 @@
     <Compile Include="BinarySearch\Two Sum II - Input array is sorted.cs" />
     <Compile Include="BinarySearch\TwoSumC.cs" />
     <Compile Include="BinaryTreeInorderTraversal.cs" />
+    <Compile Include="DFS_BFS\Combination Sum.cs" />
     <Compile Include="Dynamic Programming\2 Keys Keyboard.cs" />
     <Compile Include="Dynamic Programming\Arithmetic Slices.cs" />
     <Compile Include="Dynamic Programming\Best Time to Buy and Sell Stock II.cs" />
@@ -153,6 +154,7 @@
     <Compile Include="StringtoInteger.cs" />
     <Compile Include="Strings\Implement strStr.cs" />
     <Compile Include="SubarrayWithGivenSum.cs" />
+    <Compile Include="DFS_BFS\Subsets.cs" />
     <Compile Include="Tree\Add One Row to Tree.cs" />
     <Compile Include="Tree\Average of Levels in Binary Tree.cs" />
     <Compile Include="Tree\Binary Search Tree Iterator.cs" />
