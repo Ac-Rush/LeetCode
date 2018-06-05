@@ -99,6 +99,7 @@
     <Compile Include="BinarySearch\TwoSumC.cs" />
     <Compile Include="BinaryTreeInorderTraversal.cs" />
     <Compile Include="DFS_BFS\Combination Sum II.cs" />
+    <Compile Include="DFS_BFS\Combination Sum III.cs" />
     <Compile Include="DFS_BFS\Combination Sum.cs" />
     <Compile Include="Dynamic Programming\2 Keys Keyboard.cs" />
     <Compile Include="Dynamic Programming\Arithmetic Slices.cs" />
