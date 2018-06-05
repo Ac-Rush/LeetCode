@@ -100,6 +100,7 @@
     <Compile Include="BinaryTreeInorderTraversal.cs" />
     <Compile Include="DFS_BFS\Combination Sum II.cs" />
     <Compile Include="DFS_BFS\Combination Sum III.cs" />
+    <Compile Include="DFS_BFS\Combination Sum IV.cs" />
     <Compile Include="DFS_BFS\Combination Sum.cs" />
     <Compile Include="Dynamic Programming\2 Keys Keyboard.cs" />
     <Compile Include="Dynamic Programming\Arithmetic Slices.cs" />
@@ -111,6 +112,7 @@
     <Compile Include="Dynamic Programming\Best Time to Buy and Sell Stock.cs" />
     <Compile Include="Dynamic Programming\Burst Balloons.cs" />
     <Compile Include="Dynamic Programming\Climbing Stairs.cs" />
+    <Compile Include="Dynamic Programming\Combination Sum IV.cs" />
     <Compile Include="Dynamic Programming\Counting Bits.cs" />
     <Compile Include="Dynamic Programming\Delete and Earn.cs" />
     <Compile Include="Dynamic Programming\Edit Distance.cs" />
