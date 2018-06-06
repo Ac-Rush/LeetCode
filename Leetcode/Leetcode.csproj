@@ -133,6 +133,7 @@
     <Compile Include="Dynamic Programming\Number of Longest Increasing Subsequence.cs" />
     <Compile Include="Dynamic Programming\Palindromic Substrings.cs" />
     <Compile Include="Dynamic Programming\Predict the Winner.cs" />
+    <Compile Include="Dynamic Programming\Push Dominoes.cs" />
     <Compile Include="Dynamic Programming\Range Sum Query - Immutable.cs" />
     <Compile Include="Dynamic Programming\Shopping Offers.cs" />
     <Compile Include="Dynamic Programming\Target Sum.cs" />

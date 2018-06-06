@@ -12,6 +12,11 @@ namespace Leetcode.Tree
     /// </summary>
     public class UniqueBinarySearchTrees
     {
+        /// <summary>
+        /// 卡特兰数
+        /// </summary>
+        /// <param name="n"></param>
+        /// <returns></returns>
         public static int NumTrees(int n)
         {
             int[] G = new int[n + 1];
