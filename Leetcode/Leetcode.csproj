@@ -120,6 +120,7 @@
     <Compile Include="Dynamic Programming\House Robber III.cs" />
     <Compile Include="Dynamic Programming\House Robber.cs" />
     <Compile Include="Dynamic Programming\Integer Break.cs" />
+    <Compile Include="Dynamic Programming\Knight Probability in Chessboard.cs" />
     <Compile Include="Dynamic Programming\Largest Sum of Averages.cs" />
     <Compile Include="Dynamic Programming\Longest Continuous Increasing Subsequence.cs" />
     <Compile Include="Dynamic Programming\Longest Increasing Subsequence.cs" />
@@ -132,6 +133,7 @@
     <Compile Include="Dynamic Programming\Minimum Path Sum.cs" />
     <Compile Include="Dynamic Programming\Number of Longest Increasing Subsequence.cs" />
     <Compile Include="Dynamic Programming\Palindromic Substrings.cs" />
+    <Compile Include="Dynamic Programming\Partition Equal Subset Sum.cs" />
     <Compile Include="Dynamic Programming\Predict the Winner.cs" />
     <Compile Include="Dynamic Programming\Push Dominoes.cs" />
     <Compile Include="Dynamic Programming\Range Sum Query - Immutable.cs" />
