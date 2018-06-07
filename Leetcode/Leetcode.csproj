@@ -121,6 +121,7 @@
     <Compile Include="Dynamic Programming\House Robber.cs" />
     <Compile Include="Dynamic Programming\Integer Break.cs" />
     <Compile Include="Dynamic Programming\Knight Probability in Chessboard.cs" />
+    <Compile Include="Dynamic Programming\Largest Plus Sign.cs" />
     <Compile Include="Dynamic Programming\Largest Sum of Averages.cs" />
     <Compile Include="Dynamic Programming\Longest Continuous Increasing Subsequence.cs" />
     <Compile Include="Dynamic Programming\Longest Increasing Subsequence.cs" />
@@ -132,6 +133,7 @@
     <Compile Include="Dynamic Programming\Minimum ASCII Delete Sum for Two Strings.cs" />
     <Compile Include="Dynamic Programming\Minimum Path Sum.cs" />
     <Compile Include="Dynamic Programming\Number of Longest Increasing Subsequence.cs" />
+    <Compile Include="Dynamic Programming\Ones and Zeroes.cs" />
     <Compile Include="Dynamic Programming\Palindromic Substrings.cs" />
     <Compile Include="Dynamic Programming\Partition Equal Subset Sum.cs" />
     <Compile Include="Dynamic Programming\Predict the Winner.cs" />
@@ -139,6 +141,7 @@
     <Compile Include="Dynamic Programming\Range Sum Query - Immutable.cs" />
     <Compile Include="Dynamic Programming\Shopping Offers.cs" />
     <Compile Include="Dynamic Programming\Target Sum.cs" />
+    <Compile Include="Dynamic Programming\Triangle.cs" />
     <Compile Include="Dynamic Programming\Unique Paths II.cs" />
     <Compile Include="Dynamic Programming\Unique Paths.cs" />
     <Compile Include="IntersectionofTwoArrays.cs" />
