@@ -155,6 +155,7 @@
     <Compile Include="ReverseInteger.cs" />
     <Compile Include="SameTree.cs" />
     <Compile Include="SearchInsertPosition.cs" />
+    <Compile Include="Math\Self Dividing Numbers.cs" />
     <Compile Include="Sort\BubbleSort.cs" />
     <Compile Include="Sort\HeadSort.cs" />
     <Compile Include="Sort\InsertionSort.cs" />
