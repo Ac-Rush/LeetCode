@@ -128,6 +128,7 @@
     <Compile Include="Dynamic Programming\Longest Increasing Subsequence.cs" />
     <Compile Include="Dynamic Programming\Longest Palindromic Subsequence.cs" />
     <Compile Include="Dynamic Programming\Maximum Length of Pair Chain.cs" />
+    <Compile Include="Dynamic Programming\Maximum Product Subarray.cs" />
     <Compile Include="Dynamic Programming\Maximum Subarray.cs" />
     <Compile Include="Dynamic Programming\Min Cost Climbing Stairs.cs" />
     <Compile Include="Dynamic Programming\Count Numbers with Unique Digits.cs" />
