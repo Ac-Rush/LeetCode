@@ -112,6 +112,7 @@
     <Compile Include="Dynamic Programming\Best Time to Buy and Sell Stock.cs" />
     <Compile Include="Dynamic Programming\Burst Balloons.cs" />
     <Compile Include="Dynamic Programming\Climbing Stairs.cs" />
+    <Compile Include="Dynamic Programming\Coin Change.cs" />
     <Compile Include="Dynamic Programming\Combination Sum IV.cs" />
     <Compile Include="Dynamic Programming\Counting Bits.cs" />
     <Compile Include="Dynamic Programming\Decode Ways.cs" />
@@ -135,6 +136,7 @@
     <Compile Include="Dynamic Programming\Count Numbers with Unique Digits.cs" />
     <Compile Include="Dynamic Programming\Minimum ASCII Delete Sum for Two Strings.cs" />
     <Compile Include="Dynamic Programming\Minimum Path Sum.cs" />
+    <Compile Include="Dynamic Programming\Minimum Swaps To Make Sequences Increasing.cs" />
     <Compile Include="Dynamic Programming\Number of Longest Increasing Subsequence.cs" />
     <Compile Include="Dynamic Programming\Ones and Zeroes.cs" />
     <Compile Include="Dynamic Programming\Palindromic Substrings.cs" />
