@@ -124,10 +124,12 @@
     <Compile Include="Dynamic Programming\Integer Break.cs" />
     <Compile Include="Dynamic Programming\Knight Probability in Chessboard.cs" />
     <Compile Include="Dynamic Programming\Largest Plus Sign.cs" />
+    <Compile Include="Array\Largest Rectangle in Histogram.cs" />
     <Compile Include="Dynamic Programming\Largest Sum of Averages.cs" />
     <Compile Include="Dynamic Programming\Longest Continuous Increasing Subsequence.cs" />
     <Compile Include="Dynamic Programming\Longest Increasing Subsequence.cs" />
     <Compile Include="Dynamic Programming\Longest Palindromic Subsequence.cs" />
+    <Compile Include="Dynamic Programming\Maximal Rectangle.cs" />
     <Compile Include="Dynamic Programming\Maximal Square.cs" />
     <Compile Include="Dynamic Programming\Maximum Length of Pair Chain.cs" />
     <Compile Include="Dynamic Programming\Maximum Product Subarray.cs" />
