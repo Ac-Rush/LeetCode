@@ -118,6 +118,7 @@
     <Compile Include="Dynamic Programming\Decode Ways.cs" />
     <Compile Include="Dynamic Programming\Delete and Earn.cs" />
     <Compile Include="Dynamic Programming\Edit Distance.cs" />
+    <Compile Include="Dynamic Programming\Egg Dropping Puzzle.cs" />
     <Compile Include="Dynamic Programming\House Robber II.cs" />
     <Compile Include="Dynamic Programming\House Robber III.cs" />
     <Compile Include="Dynamic Programming\House Robber.cs" />
@@ -140,6 +141,7 @@
     <Compile Include="Dynamic Programming\Minimum Path Sum.cs" />
     <Compile Include="Dynamic Programming\Minimum Swaps To Make Sequences Increasing.cs" />
     <Compile Include="Dynamic Programming\Number of Longest Increasing Subsequence.cs" />
+    <Compile Include="Dynamic Programming\NumMatrix.cs" />
     <Compile Include="Dynamic Programming\Ones and Zeroes.cs" />
     <Compile Include="Dynamic Programming\Palindromic Substrings.cs" />
     <Compile Include="Dynamic Programming\Partition Equal Subset Sum.cs" />
@@ -153,6 +155,9 @@
     <Compile Include="Dynamic Programming\Unique Paths.cs" />
     <Compile Include="Dynamic Programming\Word Break.cs" />
     <Compile Include="IntersectionofTwoArrays.cs" />
+    <Compile Include="LinkList\Linked List Components.cs" />
+    <Compile Include="LinkList\Reverse.cs" />
+    <Compile Include="LinkList\Split Linked List in Parts.cs" />
     <Compile Include="NumberComplement.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

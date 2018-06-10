@@ -7,6 +7,7 @@ using Leetcode.Array;
 using Leetcode.BinarySearch;
 using Leetcode.BinarySearch_Tree;
 using Leetcode.Dynamic_Programming;
+using Leetcode.LinkList;
 using Leetcode.Tree;
 //using Leetcode.DFS_BFS;
 
@@ -16,10 +17,23 @@ namespace Leetcode
     {
         static void Main(string[] args)
         {
-            Delete_and_Earn.DeleteAndEarn(new[] {3, 4, 2});
-            TestArry();
+            //Delete_and_Earn.DeleteAndEarn(new[] {3, 4, 2});
+            //TestArry();
+            TestList();
         }
 
+
+        static void TestList()
+        {
+            var root = new ListNode(1);
+            root.next = new ListNode(2);
+            root.next.next = new ListNode(3);
+            root.next.next.next = new ListNode(4);
+            root.next.next.next.next = new ListNode(5);
+            root.next.next.next.next.next = new ListNode(6);
+            root.next.next.next.next.next.next = new ListNode(7);
+            Split_Linked_List_in_Parts.SplitListToParts(root,3);
+        }
 
         static void TestArry()
         {
