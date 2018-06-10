@@ -25,14 +25,14 @@ namespace Leetcode
 
         static void TestList()
         {
-            var root = new ListNode(1);
+            var root = new ListNode(4);
             root.next = new ListNode(2);
-            root.next.next = new ListNode(3);
-            root.next.next.next = new ListNode(4);
-            root.next.next.next.next = new ListNode(5);
-            root.next.next.next.next.next = new ListNode(6);
-            root.next.next.next.next.next.next = new ListNode(7);
-            Split_Linked_List_in_Parts.SplitListToParts(root,3);
+            root.next.next = new ListNode(1);
+            root.next.next.next = new ListNode(3);
+         //   root.next.next.next.next = new ListNode(5);
+          //  root.next.next.next.next.next = new ListNode(6);
+          //  root.next.next.next.next.next.next = new ListNode(7);
+            Insertion_Sort_List.InsertionSortList(root);
         }
 
         static void TestArry()

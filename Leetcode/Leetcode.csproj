@@ -156,6 +156,7 @@
     <Compile Include="Dynamic Programming\Word Break.cs" />
     <Compile Include="IntersectionofTwoArrays.cs" />
     <Compile Include="LinkList\Convert Sorted List to Binary Search Tree.cs" />
+    <Compile Include="LinkList\Insertion Sort List.cs" />
     <Compile Include="LinkList\Linked List Components.cs" />
     <Compile Include="LinkList\Odd Even Linked List.cs" />
     <Compile Include="LinkList\Reverse.cs" />
