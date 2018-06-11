@@ -154,12 +154,17 @@
     <Compile Include="Dynamic Programming\Unique Paths II.cs" />
     <Compile Include="Dynamic Programming\Unique Paths.cs" />
     <Compile Include="Dynamic Programming\Word Break.cs" />
+    <Compile Include="HashTable\Jewels and Stones.cs" />
+    <Compile Include="HashTable\Keyboard Row.cs" />
+    <Compile Include="HashTable\Subdomain Visit Count.cs" />
     <Compile Include="IntersectionofTwoArrays.cs" />
     <Compile Include="LinkList\Convert Sorted List to Binary Search Tree.cs" />
     <Compile Include="LinkList\Insertion Sort List.cs" />
     <Compile Include="LinkList\Linked List Components.cs" />
     <Compile Include="LinkList\Odd Even Linked List.cs" />
+    <Compile Include="LinkList\Remove Duplicates from Sorted List II.cs" />
     <Compile Include="LinkList\Reverse.cs" />
+    <Compile Include="LinkList\Rotate List.cs" />
     <Compile Include="LinkList\Split Linked List in Parts.cs" />
     <Compile Include="LinkList\Swap Nodes in Pairs.cs" />
     <Compile Include="NumberComplement.cs" />
