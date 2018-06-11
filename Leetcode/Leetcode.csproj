@@ -47,6 +47,7 @@
     <Compile Include="Array\3Sum.cs" />
     <Compile Include="Array\ArrayPairSum.cs" />
     <Compile Include="Array\Find Pivot Index.cs" />
+    <Compile Include="Array\Island Perimeter.cs" />
     <Compile Include="Array\Largest Number At Least Twice of Others.cs" />
     <Compile Include="Array\Max Area of Island.cs" />
     <Compile Include="Array\Merge Sorted Array.cs" />
@@ -154,9 +155,15 @@
     <Compile Include="Dynamic Programming\Unique Paths II.cs" />
     <Compile Include="Dynamic Programming\Unique Paths.cs" />
     <Compile Include="Dynamic Programming\Word Break.cs" />
+    <Compile Include="HashTable\Distribute Candies.cs" />
+    <Compile Include="HashTable\Employee Importance.cs" />
+    <Compile Include="HashTable\Find the Difference.cs" />
+    <Compile Include="HashTable\First Unique Character in a String.cs" />
     <Compile Include="HashTable\Jewels and Stones.cs" />
     <Compile Include="HashTable\Keyboard Row.cs" />
+    <Compile Include="HashTable\Number of Boomerangs.cs" />
     <Compile Include="HashTable\Subdomain Visit Count.cs" />
+    <Compile Include="HashTable\Valid Anagram.cs" />
     <Compile Include="IntersectionofTwoArrays.cs" />
     <Compile Include="LinkList\Convert Sorted List to Binary Search Tree.cs" />
     <Compile Include="LinkList\Insertion Sort List.cs" />

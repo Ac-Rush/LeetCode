@@ -7,6 +7,7 @@ using Leetcode.Array;
 using Leetcode.BinarySearch;
 using Leetcode.BinarySearch_Tree;
 using Leetcode.Dynamic_Programming;
+using Leetcode.HashTable;
 using Leetcode.LinkList;
 using Leetcode.Tree;
 //using Leetcode.DFS_BFS;
@@ -18,8 +19,8 @@ namespace Leetcode
         static void Main(string[] args)
         {
             //Delete_and_Earn.DeleteAndEarn(new[] {3, 4, 2});
-            //TestArry();
-            TestList();
+           TestArry();
+            //TestList();
         }
 
 
@@ -37,6 +38,7 @@ namespace Leetcode
 
         static void TestArry()
         {
+            Island_Perimeter.IslandPerimeter(new int[4, 4] { { 0, 1, 0, 0,  }, { 1, 1, 1 , 0 }, { 0, 1, 0, 0 }, { 1, 1, 0, 0 }});
            // var a = Max_Area_of_Island.MaxAreaOfIsland(new int[4, 5] { { 1,1,0,0,0}, { 1,1,0,0,0}, { 0,0,0,1,1}, { 0, 0, 0, 1, 1 } });
             //    Console.WriteLine(a);
         }
