@@ -56,6 +56,7 @@
     <Compile Include="Array\Rotate_Image.cs" />
     <Compile Include="Array\Third Maximum Number.cs" />
     <Compile Include="Array\TwoSum.cs" />
+    <Compile Include="Strings\Valid Palindrome.cs" />
     <Compile Include="BinarySearch Tree\Minimum Absolute Difference in BST.cs" />
     <Compile Include="BinarySearch Tree\Minimum Distance Between BST Nodes.cs" />
     <Compile Include="BinarySearch\ArrangeCoins.cs" />
@@ -174,6 +175,7 @@
     <Compile Include="HashTable\Number of Boomerangs.cs" />
     <Compile Include="HashTable\Set Mismatch.cs" />
     <Compile Include="HashTable\Subdomain Visit Count.cs" />
+    <Compile Include="HashTable\Substring with Concatenation of All Words Sliding Window.cs" />
     <Compile Include="HashTable\Valid Anagram.cs" />
     <Compile Include="IntersectionofTwoArrays.cs" />
     <Compile Include="LinkList\Convert Sorted List to Binary Search Tree.cs" />

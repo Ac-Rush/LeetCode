@@ -19,10 +19,15 @@ namespace Leetcode
         static void Main(string[] args)
         {
             //Delete_and_Earn.DeleteAndEarn(new[] {3, 4, 2});
-           TestArry();
+            // TestArry();
             //TestList();
+            TestString();
         }
 
+        static void TestString()
+        {
+            Valid_Palindrome.IsPalindrome("race a car");
+        }
 
         static void TestList()
         {
