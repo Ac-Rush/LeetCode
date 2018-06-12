@@ -9,6 +9,7 @@ using Leetcode.BinarySearch_Tree;
 using Leetcode.Dynamic_Programming;
 using Leetcode.HashTable;
 using Leetcode.LinkList;
+using Leetcode.Strings;
 using Leetcode.Tree;
 //using Leetcode.DFS_BFS;
 
@@ -26,7 +27,7 @@ namespace Leetcode
 
         static void TestString()
         {
-            Valid_Palindrome.IsPalindrome("race a car");
+            Valid_Palindrome_II.ValidPalindrome("cbbcc");
         }
 
         static void TestList()

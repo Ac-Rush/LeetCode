@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace Leetcode.Array
@@ -29,6 +30,13 @@ namespace Leetcode.Array
                 end --;
             }
             return true;
+        }
+
+        public static bool IsPalindrome2(string s)
+        {
+            string actual = Regex.Replace(s,"[^A-Za-z0-9]", "").ToLower();
+            string rev = new string(actual.Reverse().ToArray());
+            return actual.Equals(rev);
         }
     }
 }
