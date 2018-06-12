@@ -8,7 +8,7 @@ namespace Leetcode.Strings
 {
     public class Valid_Palindrome_II
     {
-        public bool ValidPalindrome(String s)
+        public static  bool ValidPalindrome(String s)
         {
             int l = -1, r = s.Length;
             while (++l < --r)
@@ -16,7 +16,7 @@ namespace Leetcode.Strings
             return true;
         }
 
-        public bool isPalindromic(String s, int l, int r)
+        public static bool isPalindromic(String s, int l, int r)
         {
             while (++l < --r)
                 if (s[l] != s[r]) return false;

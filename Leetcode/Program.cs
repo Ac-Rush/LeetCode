@@ -9,6 +9,7 @@ using Leetcode.BinarySearch_Tree;
 using Leetcode.Dynamic_Programming;
 using Leetcode.HashTable;
 using Leetcode.LinkList;
+using Leetcode.Number;
 using Leetcode.Strings;
 using Leetcode.Tree;
 //using Leetcode.DFS_BFS;
@@ -22,7 +23,13 @@ namespace Leetcode
             //Delete_and_Earn.DeleteAndEarn(new[] {3, 4, 2});
             // TestArry();
             //TestList();
-            TestString();
+            //TestString();
+            TestNum();
+        }
+
+        static void TestNum()
+        {
+            Valid_Number.IsNumberMy("2e0");
         }
 
         static void TestString()
