@@ -169,6 +169,7 @@
     <Compile Include="HashTable\Longest Palindrome.cs" />
     <Compile Include="HashTable\Longest Word in Dictionary.cs" />
     <Compile Include="HashTable\Minimum Index Sum of Two Lists.cs" />
+    <Compile Include="HashTable\Minimum Window Substring.cs" />
     <Compile Include="HashTable\Number of Boomerangs.cs" />
     <Compile Include="HashTable\Set Mismatch.cs" />
     <Compile Include="HashTable\Subdomain Visit Count.cs" />
