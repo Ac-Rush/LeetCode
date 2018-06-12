@@ -56,8 +56,10 @@
     <Compile Include="Array\Rotate_Image.cs" />
     <Compile Include="Array\Third Maximum Number.cs" />
     <Compile Include="Array\TwoSum.cs" />
+    <Compile Include="Dynamic Programming\Longest Valid Parentheses.cs" />
     <Compile Include="Number\Valid Number.cs" />
     <Compile Include="Number\Valid Palindrome.cs" />
+    <Compile Include="Number\Valid Perfect Square.cs" />
     <Compile Include="Strings\Palindrome Number.cs" />
     <Compile Include="Strings\Valid Palindrome II.cs" />
     <Compile Include="BinarySearch Tree\Minimum Absolute Difference in BST.cs" />
@@ -261,7 +263,9 @@
     <None Include="App.config" />
     <Compile Include="Array\Flipping an Image.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="TwoPointer\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
