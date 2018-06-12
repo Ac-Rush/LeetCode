@@ -167,6 +167,7 @@
     <Compile Include="HashTable\Keyboard Row.cs" />
     <Compile Include="HashTable\Longest Harmonious Subsequence.cs" />
     <Compile Include="HashTable\Longest Palindrome.cs" />
+    <Compile Include="HashTable\Longest Substring Without Repeating Characters.cs" />
     <Compile Include="HashTable\Longest Word in Dictionary.cs" />
     <Compile Include="HashTable\Minimum Index Sum of Two Lists.cs" />
     <Compile Include="HashTable\Minimum Window Substring.cs" />
