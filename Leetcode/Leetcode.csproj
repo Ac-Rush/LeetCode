@@ -49,9 +49,11 @@
     <Compile Include="Array\Can Place Flowers.cs" />
     <Compile Include="Array\Contains Duplicate II.cs" />
     <Compile Include="Array\Degree of an Array.cs" />
+    <Compile Include="Array\Find All Duplicates in an Array.cs" />
     <Compile Include="Array\Find Pivot Index.cs" />
     <Compile Include="Array\Image Smoother.cs" />
     <Compile Include="Array\Island Perimeter.cs" />
+    <Compile Include="Array\K-diff Pairs in an Array.cs" />
     <Compile Include="Array\Largest Number At Least Twice of Others.cs" />
     <Compile Include="Array\Magic Squares In Grid.cs" />
     <Compile Include="Array\Max Area of Island.cs" />
@@ -59,11 +61,13 @@
     <Compile Include="Array\Maximum Product of Three Numbers.cs" />
     <Compile Include="Array\Merge Sorted Array.cs" />
     <Compile Include="Array\Missing Number.cs" />
+    <Compile Include="Array\Non-decreasing Array.cs" />
     <Compile Include="Array\Plus One.cs" />
     <Compile Include="Array\RemoveDuplicates.cs" />
     <Compile Include="Array\Rotate Array.cs" />
     <Compile Include="Array\Rotate_Image.cs" />
     <Compile Include="Array\Shortest Unsorted Continuous Subarray.cs" />
+    <Compile Include="Array\Spiral Matrix II.cs" />
     <Compile Include="Array\Third Maximum Number.cs" />
     <Compile Include="Array\TwoSum.cs" />
     <Compile Include="DFS_BFS\Remove Invalid Parentheses.cs" />

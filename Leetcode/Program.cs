@@ -21,15 +21,15 @@ namespace Leetcode
         static void Main(string[] args)
         {
             //Delete_and_Earn.DeleteAndEarn(new[] {3, 4, 2});
-            // TestArry();
+             TestArry();
             //TestList();
             //TestString();
-            TestNum();
+           // TestNum();
         }
 
         static void TestNum()
         {
-            Valid_Number.IsNumberMy("2e0");
+            //Valid_Number.IsNumberMy("2e0");
         }
 
         static void TestString()
@@ -51,8 +51,9 @@ namespace Leetcode
 
         static void TestArry()
         {
-            Island_Perimeter.IslandPerimeter(new int[4, 4] { { 0, 1, 0, 0,  }, { 1, 1, 1 , 0 }, { 0, 1, 0, 0 }, { 1, 1, 0, 0 }});
-           // var a = Max_Area_of_Island.MaxAreaOfIsland(new int[4, 5] { { 1,1,0,0,0}, { 1,1,0,0,0}, { 0,0,0,1,1}, { 0, 0, 0, 1, 1 } });
+            K_diff_Pairs_in_an_Array.FindPairs(new[] {1, 3, 1, 5, 4}, 0);
+            //   Island_Perimeter.IslandPerimeter(new int[4, 4] { { 0, 1, 0, 0,  }, { 1, 1, 1 , 0 }, { 0, 1, 0, 0 }, { 1, 1, 0, 0 }});
+            // var a = Max_Area_of_Island.MaxAreaOfIsland(new int[4, 5] { { 1,1,0,0,0}, { 1,1,0,0,0}, { 0,0,0,1,1}, { 0, 0, 0, 1, 1 } });
             //    Console.WriteLine(a);
         }
 
