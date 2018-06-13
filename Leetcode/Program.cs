@@ -51,7 +51,8 @@ namespace Leetcode
 
         static void TestArry()
         {
-            K_diff_Pairs_in_an_Array.FindPairs(new[] {1, 3, 1, 5, 4}, 0);
+            Daily_Temperatures.DailyTemperatures(new[] {73, 74, 75, 71, 69, 72, 76, 73});
+            //K_diff_Pairs_in_an_Array.FindPairs(new[] {1, 3, 1, 5, 4}, 0);
             //   Island_Perimeter.IslandPerimeter(new int[4, 4] { { 0, 1, 0, 0,  }, { 1, 1, 1 , 0 }, { 0, 1, 0, 0 }, { 1, 1, 0, 0 }});
             // var a = Max_Area_of_Island.MaxAreaOfIsland(new int[4, 5] { { 1,1,0,0,0}, { 1,1,0,0,0}, { 0,0,0,1,1}, { 0, 0, 0, 1, 1 } });
             //    Console.WriteLine(a);

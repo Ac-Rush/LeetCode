@@ -72,6 +72,9 @@
     <Compile Include="Array\TwoSum.cs" />
     <Compile Include="DFS_BFS\Remove Invalid Parentheses.cs" />
     <Compile Include="Dynamic Programming\Longest Valid Parentheses.cs" />
+    <Compile Include="HashTable\Count Primes.cs" />
+    <Compile Include="HashTable\Daily Temperatures.cs" />
+    <Compile Include="HashTable\Word Pattern.cs" />
     <Compile Include="Number\Valid Number.cs" />
     <Compile Include="Number\Valid Palindrome.cs" />
     <Compile Include="Number\Valid Perfect Square.cs" />
