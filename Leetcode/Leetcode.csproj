@@ -74,6 +74,10 @@
     <Compile Include="Dynamic Programming\Longest Valid Parentheses.cs" />
     <Compile Include="HashTable\Count Primes.cs" />
     <Compile Include="HashTable\Daily Temperatures.cs" />
+    <Compile Include="HashTable\Find Duplicate File in System.cs" />
+    <Compile Include="HashTable\Top K Frequent Elements.cs" />
+    <Compile Include="HashTable\Top K Frequent Words.cs" />
+    <Compile Include="HashTable\Valid Sudoku.cs" />
     <Compile Include="HashTable\Word Pattern.cs" />
     <Compile Include="Number\Valid Number.cs" />
     <Compile Include="Number\Valid Palindrome.cs" />
