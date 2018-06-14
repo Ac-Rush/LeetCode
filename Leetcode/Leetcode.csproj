@@ -61,6 +61,7 @@
     <Compile Include="Array\Maximum Product of Three Numbers.cs" />
     <Compile Include="Array\Merge Sorted Array.cs" />
     <Compile Include="Array\Missing Number.cs" />
+    <Compile Include="Array\My Calendar I.cs" />
     <Compile Include="Array\Non-decreasing Array.cs" />
     <Compile Include="Array\Plus One.cs" />
     <Compile Include="Array\RemoveDuplicates.cs" />
