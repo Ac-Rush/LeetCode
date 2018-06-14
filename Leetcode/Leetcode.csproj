@@ -71,10 +71,13 @@
     <Compile Include="Array\Third Maximum Number.cs" />
     <Compile Include="Array\TwoSum.cs" />
     <Compile Include="DFS_BFS\Remove Invalid Parentheses.cs" />
+    <Compile Include="HashTable\Contiguous Array.cs" />
     <Compile Include="Dynamic Programming\Longest Valid Parentheses.cs" />
     <Compile Include="HashTable\Count Primes.cs" />
     <Compile Include="HashTable\Daily Temperatures.cs" />
     <Compile Include="HashTable\Find Duplicate File in System.cs" />
+    <Compile Include="HashTable\Implement Magic Dictionary.cs" />
+    <Compile Include="HashTable\Max Points on a Line.cs" />
     <Compile Include="HashTable\Top K Frequent Elements.cs" />
     <Compile Include="HashTable\Top K Frequent Words.cs" />
     <Compile Include="HashTable\Valid Sudoku.cs" />
