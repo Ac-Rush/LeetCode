@@ -79,6 +79,7 @@
     <Compile Include="HashTable\Count Primes.cs" />
     <Compile Include="HashTable\Daily Temperatures.cs" />
     <Compile Include="HashTable\Find Duplicate File in System.cs" />
+    <Compile Include="HashTable\Group Anagrams.cs" />
     <Compile Include="HashTable\Implement Magic Dictionary.cs" />
     <Compile Include="HashTable\Insert Delete GetRandom O%281%29.cs" />
     <Compile Include="HashTable\Max Points on a Line.cs" />
@@ -96,7 +97,11 @@
     <Compile Include="Number\Valid Number.cs" />
     <Compile Include="Number\Valid Palindrome.cs" />
     <Compile Include="Number\Valid Perfect Square.cs" />
+    <Compile Include="Strings\Judge Route Circle.cs" />
+    <Compile Include="Strings\Longest Uncommon Subsequence I.cs" />
+    <Compile Include="Strings\Longest Uncommon Subsequence II.cs" />
     <Compile Include="Strings\Palindrome Number.cs" />
+    <Compile Include="Strings\Unique Morse Code Words.cs" />
     <Compile Include="Strings\Valid Palindrome II.cs" />
     <Compile Include="BinarySearch Tree\Minimum Absolute Difference in BST.cs" />
     <Compile Include="BinarySearch Tree\Minimum Distance Between BST Nodes.cs" />
