@@ -9,6 +9,7 @@ using Leetcode.BinarySearch_Tree;
 using Leetcode.DFS_BFS;
 using Leetcode.Dynamic_Programming;
 using Leetcode.HashTable;
+using Leetcode.Helper;
 using Leetcode.LinkList;
 using Leetcode.Number;
 using Leetcode.Strings;
@@ -17,11 +18,15 @@ using Leetcode.Tree;
 
 namespace Leetcode
 {
+    
+
+
     class Program
     {
         static void Main(string[] args)
         {
-            Subarray_Sum_Equals_K.SubarraySum(new[] {1, 1, 1}, 2);
+           
+
             TestMatrix();
             //Delete_and_Earn.DeleteAndEarn(new[] {3, 4, 2});
             //  TestArry();
