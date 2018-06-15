@@ -71,6 +71,7 @@
     <Compile Include="Array\Spiral Matrix II.cs" />
     <Compile Include="Array\Third Maximum Number.cs" />
     <Compile Include="Array\TwoSum.cs" />
+    <Compile Include="DFS_BFS\Longest Increasing Path in a Matrix.cs" />
     <Compile Include="DFS_BFS\Remove Invalid Parentheses.cs" />
     <Compile Include="HashTable\Contiguous Array.cs" />
     <Compile Include="Dynamic Programming\Longest Valid Parentheses.cs" />
@@ -79,6 +80,8 @@
     <Compile Include="HashTable\Find Duplicate File in System.cs" />
     <Compile Include="HashTable\Implement Magic Dictionary.cs" />
     <Compile Include="HashTable\Max Points on a Line.cs" />
+    <Compile Include="HashTable\My Calendar II.cs" />
+    <Compile Include="HashTable\My Calendar III.cs" />
     <Compile Include="HashTable\Top K Frequent Elements.cs" />
     <Compile Include="HashTable\Top K Frequent Words.cs" />
     <Compile Include="HashTable\Valid Sudoku.cs" />

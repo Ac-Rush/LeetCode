@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Leetcode.Array;
 using Leetcode.BinarySearch;
 using Leetcode.BinarySearch_Tree;
+using Leetcode.DFS_BFS;
 using Leetcode.Dynamic_Programming;
 using Leetcode.HashTable;
 using Leetcode.LinkList;
@@ -20,12 +21,17 @@ namespace Leetcode
     {
         static void Main(string[] args)
         {
-           
+            TestMatrix();
             //Delete_and_Earn.DeleteAndEarn(new[] {3, 4, 2});
-            TestArry();
+            //  TestArry();
             //TestList();
             //TestString();
-           // TestNum();
+            // TestNum();
+        }
+
+        static void TestMatrix()
+        {
+            Longest_Increasing_Path_in_a_Matrix.LongestIncreasingPath(new int[,] { {9,9,4} , {6,6,8} , {2,1,1} });
         }
 
         static void TestNum()
