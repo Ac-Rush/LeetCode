@@ -21,6 +21,7 @@ namespace Leetcode
     {
         static void Main(string[] args)
         {
+            Subarray_Sum_Equals_K.SubarraySum(new[] {1, 1, 1}, 2);
             TestMatrix();
             //Delete_and_Earn.DeleteAndEarn(new[] {3, 4, 2});
             //  TestArry();
