@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Leetcode.Array;
 using Leetcode.BinarySearch;
 using Leetcode.BinarySearch_Tree;
+using Leetcode.DFS;
 using Leetcode.DFS_BFS;
 using Leetcode.Dynamic_Programming;
 using Leetcode.HashTable;
@@ -25,14 +26,19 @@ namespace Leetcode
     {
         static void Main(string[] args)
         {
-           
+            TestGraph();
 
-            TestMatrix();
+            //  TestMatrix();
             //Delete_and_Earn.DeleteAndEarn(new[] {3, 4, 2});
             //  TestArry();
             //TestList();
             //TestString();
             // TestNum();
+        }
+
+        static void TestGraph()
+        {
+            Is_Graph_Bipartite.IsBipartite(new int[][] { new int[] {1,3}, new int[] {0,2 }, new int[] { 1, 3 }, new int[] { 0,2 } });
         }
 
         static void TestMatrix()

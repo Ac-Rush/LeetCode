@@ -71,11 +71,17 @@
     <Compile Include="Array\Spiral Matrix II.cs" />
     <Compile Include="Array\Third Maximum Number.cs" />
     <Compile Include="Array\TwoSum.cs" />
+    <Compile Include="Bit\Hamming Distance.cs" />
+    <Compile Include="DFS\Decode String.cs" />
     <Compile Include="DFS\Flood Fill.cs" />
     <Compile Include="DFS\Friend Circles.cs" />
+    <Compile Include="DFS\Increasing Subsequences.cs" />
+    <Compile Include="DFS\Is Graph Bipartite.cs" />
     <Compile Include="DFS\Keys and Rooms.cs" />
     <Compile Include="DFS\Longest Increasing Path in a Matrix.cs" />
+    <Compile Include="DFS\Loud and Rich.cs" />
     <Compile Include="DFS\Minesweeper.cs" />
+    <Compile Include="DFS\Pyramid Transition Matrix.cs" />
     <Compile Include="DFS\Remove Invalid Parentheses.cs" />
     <Compile Include="HashTable\4Sum.cs" />
     <Compile Include="HashTable\Brick Wall.cs" />
