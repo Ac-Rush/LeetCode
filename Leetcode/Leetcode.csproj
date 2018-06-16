@@ -71,17 +71,23 @@
     <Compile Include="Array\Spiral Matrix II.cs" />
     <Compile Include="Array\Third Maximum Number.cs" />
     <Compile Include="Array\TwoSum.cs" />
-    <Compile Include="DFS_BFS\Longest Increasing Path in a Matrix.cs" />
-    <Compile Include="DFS_BFS\Remove Invalid Parentheses.cs" />
+    <Compile Include="DFS\Flood Fill.cs" />
+    <Compile Include="DFS\Friend Circles.cs" />
+    <Compile Include="DFS\Keys and Rooms.cs" />
+    <Compile Include="DFS\Longest Increasing Path in a Matrix.cs" />
+    <Compile Include="DFS\Minesweeper.cs" />
+    <Compile Include="DFS\Remove Invalid Parentheses.cs" />
     <Compile Include="HashTable\4Sum.cs" />
     <Compile Include="HashTable\Brick Wall.cs" />
     <Compile Include="HashTable\Bulls and Cows.cs" />
     <Compile Include="HashTable\Contiguous Array.cs" />
     <Compile Include="Dynamic Programming\Longest Valid Parentheses.cs" />
+    <Compile Include="HashTable\Copy List with Random Pointer.cs" />
     <Compile Include="HashTable\Count Primes.cs" />
     <Compile Include="HashTable\Daily Temperatures.cs" />
     <Compile Include="HashTable\Design Twitter.cs" />
     <Compile Include="HashTable\Find Duplicate File in System.cs" />
+    <Compile Include="HashTable\Fraction to Recurring Decimal.cs" />
     <Compile Include="HashTable\Group Anagrams.cs" />
     <Compile Include="HashTable\H-Index.cs" />
     <Compile Include="HashTable\Implement Magic Dictionary.cs" />
@@ -89,6 +95,7 @@
     <Compile Include="HashTable\Max Points on a Line.cs" />
     <Compile Include="HashTable\My Calendar II.cs" />
     <Compile Include="HashTable\My Calendar III.cs" />
+    <Compile Include="HashTable\Number of Atoms.cs" />
     <Compile Include="HashTable\Rabbits in Forest.cs" />
     <Compile Include="HashTable\Repeated DNA Sequences.cs" />
     <Compile Include="HashTable\Replace Words.cs" />
@@ -152,10 +159,10 @@
     <Compile Include="BinarySearch\Two Sum II - Input array is sorted.cs" />
     <Compile Include="BinarySearch\TwoSumC.cs" />
     <Compile Include="BinaryTreeInorderTraversal.cs" />
-    <Compile Include="DFS_BFS\Combination Sum II.cs" />
-    <Compile Include="DFS_BFS\Combination Sum III.cs" />
-    <Compile Include="DFS_BFS\Combination Sum IV.cs" />
-    <Compile Include="DFS_BFS\Combination Sum.cs" />
+    <Compile Include="DFS\Combination Sum II.cs" />
+    <Compile Include="DFS\Combination Sum III.cs" />
+    <Compile Include="DFS\Combination Sum IV.cs" />
+    <Compile Include="DFS\Combination Sum.cs" />
     <Compile Include="Dynamic Programming\2 Keys Keyboard.cs" />
     <Compile Include="Dynamic Programming\Arithmetic Slices.cs" />
     <Compile Include="Dynamic Programming\Best Time to Buy and Sell Stock II.cs" />
@@ -261,7 +268,7 @@
     <Compile Include="StringtoInteger.cs" />
     <Compile Include="Strings\Implement strStr.cs" />
     <Compile Include="SubarrayWithGivenSum.cs" />
-    <Compile Include="DFS_BFS\Subsets.cs" />
+    <Compile Include="DFS\Subsets.cs" />
     <Compile Include="Tree\Add One Row to Tree.cs" />
     <Compile Include="Tree\Average of Levels in Binary Tree.cs" />
     <Compile Include="Tree\Binary Search Tree Iterator.cs" />
@@ -312,6 +319,7 @@
     <Compile Include="Array\Flipping an Image.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="BFS\" />
     <Folder Include="TwoPointer\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
