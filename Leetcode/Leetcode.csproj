@@ -86,6 +86,7 @@
     <Compile Include="DFS\Number of Islands.cs" />
     <Compile Include="DFS\Pyramid Transition Matrix.cs" />
     <Compile Include="DFS\Remove Invalid Parentheses.cs" />
+    <Compile Include="Dynamic Programming\Student Attendance Record II.cs" />
     <Compile Include="HashTable\4Sum.cs" />
     <Compile Include="HashTable\Brick Wall.cs" />
     <Compile Include="HashTable\Bulls and Cows.cs" />
@@ -119,11 +120,17 @@
     <Compile Include="Number\Valid Number.cs" />
     <Compile Include="Number\Valid Palindrome.cs" />
     <Compile Include="Number\Valid Perfect Square.cs" />
+    <Compile Include="Strings\Count Binary Substrings.cs" />
+    <Compile Include="Strings\Detect Capital.cs" />
     <Compile Include="Strings\Goat Latin.cs" />
     <Compile Include="Strings\Judge Route Circle.cs" />
     <Compile Include="Strings\Longest Uncommon Subsequence I.cs" />
     <Compile Include="Strings\Longest Uncommon Subsequence II.cs" />
+    <Compile Include="Strings\Most Common Word.cs" />
     <Compile Include="Strings\Palindrome Number.cs" />
+    <Compile Include="Strings\Ransom Note.cs" />
+    <Compile Include="Strings\Rotated Digits.cs" />
+    <Compile Include="Strings\Student Attendance Record I.cs" />
     <Compile Include="Strings\Unique Morse Code Words.cs" />
     <Compile Include="Strings\Valid Palindrome II.cs" />
     <Compile Include="BinarySearch Tree\Minimum Absolute Difference in BST.cs" />

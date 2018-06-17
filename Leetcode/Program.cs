@@ -26,6 +26,7 @@ namespace Leetcode
     {
         static void Main(string[] args)
         {
+            Most_Common_Word.MostCommonWord("Bob", new string[0]);
             TestGraph();
 
             //  TestMatrix();
