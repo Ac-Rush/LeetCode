@@ -73,6 +73,7 @@
     <Compile Include="Array\TwoSum.cs" />
     <Compile Include="Bit\Hamming Distance.cs" />
     <Compile Include="DFS\Decode String.cs" />
+    <Compile Include="DFS\Find Eventual Safe States.cs" />
     <Compile Include="DFS\Flood Fill.cs" />
     <Compile Include="DFS\Friend Circles.cs" />
     <Compile Include="DFS\Increasing Subsequences.cs" />
@@ -81,6 +82,8 @@
     <Compile Include="DFS\Longest Increasing Path in a Matrix.cs" />
     <Compile Include="DFS\Loud and Rich.cs" />
     <Compile Include="DFS\Minesweeper.cs" />
+    <Compile Include="DFS\Network Delay Time.cs" />
+    <Compile Include="DFS\Number of Islands.cs" />
     <Compile Include="DFS\Pyramid Transition Matrix.cs" />
     <Compile Include="DFS\Remove Invalid Parentheses.cs" />
     <Compile Include="HashTable\4Sum.cs" />
@@ -116,6 +119,7 @@
     <Compile Include="Number\Valid Number.cs" />
     <Compile Include="Number\Valid Palindrome.cs" />
     <Compile Include="Number\Valid Perfect Square.cs" />
+    <Compile Include="Strings\Goat Latin.cs" />
     <Compile Include="Strings\Judge Route Circle.cs" />
     <Compile Include="Strings\Longest Uncommon Subsequence I.cs" />
     <Compile Include="Strings\Longest Uncommon Subsequence II.cs" />
