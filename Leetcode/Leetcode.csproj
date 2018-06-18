@@ -120,11 +120,13 @@
     <Compile Include="Number\Valid Number.cs" />
     <Compile Include="Number\Valid Palindrome.cs" />
     <Compile Include="Number\Valid Perfect Square.cs" />
+    <Compile Include="Strings\Add Binary.cs" />
     <Compile Include="Strings\Count and Say.cs" />
     <Compile Include="Strings\Count Binary Substrings.cs" />
     <Compile Include="Strings\Detect Capital.cs" />
     <Compile Include="Strings\Goat Latin.cs" />
     <Compile Include="Strings\Judge Route Circle.cs" />
+    <Compile Include="Strings\Length of Last Word.cs" />
     <Compile Include="Strings\Longest Uncommon Subsequence I.cs" />
     <Compile Include="Strings\Longest Uncommon Subsequence II.cs" />
     <Compile Include="Strings\Most Common Word.cs" />
@@ -135,6 +137,7 @@
     <Compile Include="Strings\Reverse String II.cs" />
     <Compile Include="Strings\Reverse Vowels of a String.cs" />
     <Compile Include="Strings\Rotated Digits.cs" />
+    <Compile Include="Strings\String Compression.cs" />
     <Compile Include="Strings\Student Attendance Record I.cs" />
     <Compile Include="Strings\Unique Morse Code Words.cs" />
     <Compile Include="Strings\Valid Palindrome II.cs" />
