@@ -126,6 +126,7 @@
     <Compile Include="Strings\Count Binary Substrings.cs" />
     <Compile Include="Strings\Custom Sort String.cs" />
     <Compile Include="Strings\Detect Capital.cs" />
+    <Compile Include="Strings\Generate Parentheses.cs" />
     <Compile Include="Strings\Goat Latin.cs" />
     <Compile Include="Strings\Judge Route Circle.cs" />
     <Compile Include="Strings\Length of Last Word.cs" />
@@ -141,6 +142,7 @@
     <Compile Include="Strings\Reverse String II.cs" />
     <Compile Include="Strings\Reverse Vowels of a String.cs" />
     <Compile Include="Strings\Rotated Digits.cs" />
+    <Compile Include="Strings\Shortest Distance to a Character.cs" />
     <Compile Include="Strings\String Compression.cs" />
     <Compile Include="Strings\Student Attendance Record I.cs" />
     <Compile Include="Strings\Unique Morse Code Words.cs" />
