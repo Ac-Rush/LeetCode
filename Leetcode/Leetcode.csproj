@@ -133,6 +133,7 @@
     <Compile Include="Strings\Number of Segments in a String.cs" />
     <Compile Include="Strings\Palindrome Number.cs" />
     <Compile Include="Strings\Ransom Note.cs" />
+    <Compile Include="Strings\Repeated String Match.cs" />
     <Compile Include="Strings\Repeated Substring Pattern.cs" />
     <Compile Include="Strings\Reverse String II.cs" />
     <Compile Include="Strings\Reverse Vowels of a String.cs" />
