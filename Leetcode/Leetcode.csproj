@@ -120,6 +120,7 @@
     <Compile Include="Number\Valid Number.cs" />
     <Compile Include="Number\Valid Palindrome.cs" />
     <Compile Include="Number\Valid Perfect Square.cs" />
+    <Compile Include="Strings\Count and Say.cs" />
     <Compile Include="Strings\Count Binary Substrings.cs" />
     <Compile Include="Strings\Detect Capital.cs" />
     <Compile Include="Strings\Goat Latin.cs" />
@@ -127,6 +128,7 @@
     <Compile Include="Strings\Longest Uncommon Subsequence I.cs" />
     <Compile Include="Strings\Longest Uncommon Subsequence II.cs" />
     <Compile Include="Strings\Most Common Word.cs" />
+    <Compile Include="Strings\Number of Segments in a String.cs" />
     <Compile Include="Strings\Palindrome Number.cs" />
     <Compile Include="Strings\Ransom Note.cs" />
     <Compile Include="Strings\Repeated Substring Pattern.cs" />
