@@ -122,6 +122,7 @@
     <Compile Include="Number\Valid Palindrome.cs" />
     <Compile Include="Number\Valid Perfect Square.cs" />
     <Compile Include="Stack\Baseball Game.cs" />
+    <Compile Include="Stack\Min Stack.cs" />
     <Compile Include="Stack\Next Greater Element I.cs" />
     <Compile Include="Strings\Add Binary.cs" />
     <Compile Include="Strings\Ambiguous Coordinates.cs" />
