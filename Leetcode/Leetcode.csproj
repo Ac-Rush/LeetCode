@@ -121,7 +121,9 @@
     <Compile Include="Number\Valid Number.cs" />
     <Compile Include="Number\Valid Palindrome.cs" />
     <Compile Include="Number\Valid Perfect Square.cs" />
+    <Compile Include="Stack\Baseball Game.cs" />
     <Compile Include="Strings\Add Binary.cs" />
+    <Compile Include="Strings\Ambiguous Coordinates.cs" />
     <Compile Include="Strings\Complex Number Multiplication.cs" />
     <Compile Include="Strings\Count and Say.cs" />
     <Compile Include="Strings\Count Binary Substrings.cs" />
@@ -131,6 +133,7 @@
     <Compile Include="Strings\Goat Latin.cs" />
     <Compile Include="Strings\Judge Route Circle.cs" />
     <Compile Include="Strings\Length of Last Word.cs" />
+    <Compile Include="Strings\Letter Combinations of a Phone Number.cs" />
     <Compile Include="Strings\Longest Uncommon Subsequence I.cs" />
     <Compile Include="Strings\Longest Uncommon Subsequence II.cs" />
     <Compile Include="Strings\Masking Personal Information.cs" />
