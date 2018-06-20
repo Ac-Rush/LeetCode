@@ -86,6 +86,7 @@
     <Compile Include="DFS\Number of Islands.cs" />
     <Compile Include="DFS\Pyramid Transition Matrix.cs" />
     <Compile Include="DFS\Remove Invalid Parentheses.cs" />
+    <Compile Include="Dynamic Programming\Delete Operation for Two Strings.cs" />
     <Compile Include="Dynamic Programming\Student Attendance Record II.cs" />
     <Compile Include="HashTable\4Sum.cs" />
     <Compile Include="HashTable\Brick Wall.cs" />
@@ -132,6 +133,8 @@
     <Compile Include="Strings\Length of Last Word.cs" />
     <Compile Include="Strings\Longest Uncommon Subsequence I.cs" />
     <Compile Include="Strings\Longest Uncommon Subsequence II.cs" />
+    <Compile Include="Strings\Masking Personal Information.cs" />
+    <Compile Include="Strings\Minimum Time Difference.cs" />
     <Compile Include="Strings\Most Common Word.cs" />
     <Compile Include="Strings\Number of Segments in a String.cs" />
     <Compile Include="Strings\Optimal Division.cs" />
