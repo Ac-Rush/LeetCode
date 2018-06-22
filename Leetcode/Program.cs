@@ -17,6 +17,7 @@ using Leetcode.Sort;
 using Leetcode.Strings;
 using Leetcode.Tree;
 using Interval = Leetcode.Sort.Interval;
+using Number_of_Atoms = Leetcode.Strings.Number_of_Atoms;
 
 //using Leetcode.DFS_BFS;
 
@@ -29,10 +30,8 @@ namespace Leetcode
     {
         static void Main(string[] args)
         {
-            Merge_Intervals.Merge(new List<Interval>() {new Interval(1,4), new Interval(2,3)});
-
-            Generate_Parentheses.GenerateParenthesisMy(3);
-            TestGraph();
+            TestTree();
+           // TestGraph();
 
             //  TestMatrix();
             //Delete_and_Earn.DeleteAndEarn(new[] {3, 4, 2});
@@ -85,15 +84,17 @@ namespace Leetcode
 
         static void TestTree()
         {
-            var tree = new TreeNode(5);
-            tree.right = new TreeNode(-3);
-            tree.right.left = new TreeNode(4);
-            tree.right.right = new TreeNode(3);
-            tree.left = new TreeNode(9);
+            var tree = new TreeNode(1);
+            tree.right = new TreeNode(5);
+            tree.right.right = new TreeNode(6);
+            tree.left = new TreeNode(2);
+            tree.left.left = new TreeNode(3);
+            tree.left.right = new TreeNode(4);
+            Flatten_Binary_Tree_to_Linked_List.Flatten(tree);
             // tree.left.right = new TreeNode(4);
             // tree.left.left = new TreeNode(3);
-     //       var a = Construct_Binary_Tree_from_Inorder_and_Postorder_Traversal.BuildTree(new int[] { 9, 3, 15, 20, 7 }, new int[] { 9, 15, 7, 20, 3 });
-      //      Console.WriteLine(a);
+            //       var a = Construct_Binary_Tree_from_Inorder_and_Postorder_Traversal.BuildTree(new int[] { 9, 3, 15, 20, 7 }, new int[] { 9, 15, 7, 20, 3 });
+            //      Console.WriteLine(a);
         }
     }
 }
