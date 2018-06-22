@@ -98,6 +98,7 @@
     <Compile Include="HashTable\Count Primes.cs" />
     <Compile Include="HashTable\Daily Temperatures.cs" />
     <Compile Include="HashTable\Design Twitter.cs" />
+    <Compile Include="HashTable\Find Anagram Mappings.cs" />
     <Compile Include="HashTable\Find Duplicate File in System.cs" />
     <Compile Include="HashTable\Fraction to Recurring Decimal.cs" />
     <Compile Include="HashTable\Group Anagrams.cs" />
