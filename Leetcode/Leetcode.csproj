@@ -124,6 +124,7 @@
     <Compile Include="Sort\Merge Intervals.cs" />
     <Compile Include="Sort\Reorganize String.cs" />
     <Compile Include="Sort\Sort Colors.cs" />
+    <Compile Include="Sort\Sort List.cs" />
     <Compile Include="Stack\Baseball Game.cs" />
     <Compile Include="Stack\Min Stack.cs" />
     <Compile Include="Stack\Next Greater Element I.cs" />
@@ -355,6 +356,9 @@
     <Compile Include="Tree\UniqueBinarySearchTrees.cs" />
     <Compile Include="TrimaBinarySearchTree.cs" />
     <Compile Include="UniqueBinarySearchTrees.cs" />
+    <Compile Include="经典代码\MergeSort.cs" />
+    <Compile Include="经典代码\Sort Colors.cs" />
+    <Compile Include="经典代码\Sort List.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
