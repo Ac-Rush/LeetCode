@@ -121,6 +121,9 @@
     <Compile Include="Number\Valid Number.cs" />
     <Compile Include="Number\Valid Palindrome.cs" />
     <Compile Include="Number\Valid Perfect Square.cs" />
+    <Compile Include="Sort\Merge Intervals.cs" />
+    <Compile Include="Sort\Reorganize String.cs" />
+    <Compile Include="Sort\Sort Colors.cs" />
     <Compile Include="Stack\Baseball Game.cs" />
     <Compile Include="Stack\Min Stack.cs" />
     <Compile Include="Stack\Next Greater Element I.cs" />
@@ -359,6 +362,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="BFS\" />
+    <Folder Include="NewFolder1\" />
     <Folder Include="TwoPointer\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

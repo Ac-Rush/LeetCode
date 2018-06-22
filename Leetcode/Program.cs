@@ -13,8 +13,11 @@ using Leetcode.HashTable;
 using Leetcode.Helper;
 using Leetcode.LinkList;
 using Leetcode.Number;
+using Leetcode.Sort;
 using Leetcode.Strings;
 using Leetcode.Tree;
+using Interval = Leetcode.Sort.Interval;
+
 //using Leetcode.DFS_BFS;
 
 namespace Leetcode
@@ -26,6 +29,8 @@ namespace Leetcode
     {
         static void Main(string[] args)
         {
+            Merge_Intervals.Merge(new List<Interval>() {new Interval(1,4), new Interval(2,3)});
+
             Generate_Parentheses.GenerateParenthesisMy(3);
             TestGraph();
 
