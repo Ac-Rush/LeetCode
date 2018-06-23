@@ -360,6 +360,7 @@
     <Compile Include="Tree\Symmetric Tree.cs" />
     <Compile Include="Tree\Two Sum IV - Input is a BST.cs" />
     <Compile Include="Tree\UniqueBinarySearchTrees.cs" />
+    <Compile Include="Trie\Add and Search Word - Data structure design.cs" />
     <Compile Include="TrimaBinarySearchTree.cs" />
     <Compile Include="UniqueBinarySearchTrees.cs" />
     <Compile Include="经典代码\Kth Largest Element in an Array.cs" />

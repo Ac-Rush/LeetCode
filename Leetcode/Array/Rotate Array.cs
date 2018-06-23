@@ -23,7 +23,7 @@ namespace Leetcode.Array
                 var temp = nums[l];
                 nums[l] = nums[r];
                 nums[r] = temp;
-                l++;
+                l++;  // my bug, missed again
                 r--;
             }
         }
