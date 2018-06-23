@@ -328,6 +328,7 @@
     <Compile Include="Tree\Binary Search Tree Iterator.cs" />
     <Compile Include="Tree\Binary Tree Level Order Traversal II.cs" />
     <Compile Include="Tree\Binary Tree Level Order Traversal.cs" />
+    <Compile Include="Tree\Binary Tree Longest Consecutive Sequence.cs" />
     <Compile Include="Tree\Binary Tree Paths.cs" />
     <Compile Include="Tree\Binary Tree Preorder Traversal.cs" />
     <Compile Include="Tree\Binary Tree Pruning.cs" />
