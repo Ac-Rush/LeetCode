@@ -122,8 +122,9 @@
     <Compile Include="HashTable\Valid Sudoku.cs" />
     <Compile Include="HashTable\Word Pattern.cs" />
     <Compile Include="Helper\DuplicateKeyComparer.cs" />
-    <Compile Include="Math\Add Digits.cs" />
+    <Compile Include="Maths\Add Digits.cs" />
     <Compile Include="Matrix\Perfect Rectangle.cs" />
+    <Compile Include="Number\Remove K Digits.cs" />
     <Compile Include="Number\Valid Number.cs" />
     <Compile Include="Number\Valid Palindrome.cs" />
     <Compile Include="Number\Valid Perfect Square.cs" />
@@ -306,7 +307,7 @@
     <Compile Include="ReverseInteger.cs" />
     <Compile Include="SameTree.cs" />
     <Compile Include="SearchInsertPosition.cs" />
-    <Compile Include="Math\Self Dividing Numbers.cs" />
+    <Compile Include="Maths\Self Dividing Numbers.cs" />
     <Compile Include="Sort\BubbleSort.cs" />
     <Compile Include="Sort\HeadSort.cs" />
     <Compile Include="Sort\InsertionSort.cs" />

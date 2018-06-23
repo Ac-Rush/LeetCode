@@ -11,11 +11,7 @@ namespace Leetcode.经典代码
     {
         public ListNode ReverseList(ListNode head)
         {
-            List<string> strings = null;
-            strings.Contains()
-            var result = strings.OrderByDescending(str => str).ThenBy(str => str).ToList();
-            var count = result.Count;
-            var ret= count >= 3 ? result.Take(3).ToList() : result;
+           
             ListNode prev = null;
             while (head != null)
             {

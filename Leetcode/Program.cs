@@ -30,6 +30,7 @@ namespace Leetcode
     {
         static void Main(string[] args)
         {
+            Remove_K_Digits.RemoveKdigitsMy("1432219", 3);
             TestTree();
            // TestGraph();
 

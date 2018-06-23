@@ -1,4 +1,4 @@
-﻿using System;
+﻿
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Leetcode.HashTable
 {
+    using System;
     class Fraction_to_Recurring_Decimal
     {
         public string FractionToDecimal(int numerator, int denominator)

@@ -22,7 +22,7 @@ namespace Leetcode.Array
                 while (j < k)
                 {
                     int sum = nums[i] + nums[j] + nums[k];
-                    int diff = Math.Abs(sum - target);
+                    int diff = System.Math.Abs(sum - target);
 
                     if (diff == 0) return sum;
 

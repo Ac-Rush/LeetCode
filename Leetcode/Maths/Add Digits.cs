@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Leetcode.Math
+namespace Leetcode.MathS
 {
     class Add_Digits
     {
