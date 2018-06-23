@@ -74,6 +74,7 @@
     <Compile Include="BinarySearch Tree\Flatten Binary Tree to Linked List.cs" />
     <Compile Include="Bit\Hamming Distance.cs" />
     <Compile Include="DAC\Kth Largest Element in an Array.cs" />
+    <Compile Include="Design\Design Search Autocomplete System.cs" />
     <Compile Include="DFS\Decode String.cs" />
     <Compile Include="DFS\Find Eventual Safe States.cs" />
     <Compile Include="DFS\Flood Fill.cs" />
@@ -121,6 +122,8 @@
     <Compile Include="HashTable\Valid Sudoku.cs" />
     <Compile Include="HashTable\Word Pattern.cs" />
     <Compile Include="Helper\DuplicateKeyComparer.cs" />
+    <Compile Include="Math\Add Digits.cs" />
+    <Compile Include="Matrix\Perfect Rectangle.cs" />
     <Compile Include="Number\Valid Number.cs" />
     <Compile Include="Number\Valid Palindrome.cs" />
     <Compile Include="Number\Valid Perfect Square.cs" />
@@ -140,6 +143,7 @@
     <Compile Include="Strings\Count Binary Substrings.cs" />
     <Compile Include="Strings\Custom Sort String.cs" />
     <Compile Include="Strings\Detect Capital.cs" />
+    <Compile Include="Strings\Encode String with Shortest Length.cs" />
     <Compile Include="Strings\Generate Parentheses.cs" />
     <Compile Include="Strings\Goat Latin.cs" />
     <Compile Include="Strings\Judge Route Circle.cs" />
@@ -366,6 +370,7 @@
     <Compile Include="经典代码\Kth Largest Element in an Array.cs" />
     <Compile Include="经典代码\MergeSort.cs" />
     <Compile Include="经典代码\Number of Atoms.cs" />
+    <Compile Include="经典代码\Reverse Linked List.cs" />
     <Compile Include="经典代码\Sort Colors.cs" />
     <Compile Include="经典代码\Sort List.cs" />
   </ItemGroup>
