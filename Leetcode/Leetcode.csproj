@@ -132,6 +132,7 @@
     <Compile Include="Maths\Add Digits.cs" />
     <Compile Include="Maths\Smallest Good Base.cs" />
     <Compile Include="Matrix\Perfect Rectangle.cs" />
+    <Compile Include="Number\Next Greater Element III.cs" />
     <Compile Include="Number\Remove K Digits.cs" />
     <Compile Include="Number\Valid Number.cs" />
     <Compile Include="Number\Valid Palindrome.cs" />
@@ -145,6 +146,7 @@
     <Compile Include="Stack\Baseball Game.cs" />
     <Compile Include="Stack\Min Stack.cs" />
     <Compile Include="Stack\Next Greater Element I.cs" />
+    <Compile Include="Stack\Next Greater Element II.cs" />
     <Compile Include="Strings\Add Binary.cs" />
     <Compile Include="Strings\Ambiguous Coordinates.cs" />
     <Compile Include="Strings\Complex Number Multiplication.cs" />
