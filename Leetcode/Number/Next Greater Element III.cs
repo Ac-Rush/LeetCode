@@ -11,7 +11,7 @@ namespace Leetcode.Number
         /// <summary>
         /// 太牛了，
         ///  1. 从最右边找到第一个 降序的   i
-        /// 2. 从上个index，向右找到最后一个比这个大的   j
+        /// 2.  从右向左找到最后一个比这个大的  j
         /// 3. 交换 i,j
         /// 4翻转 i+1后边的书， 升序最小
         /// </summary>
@@ -28,7 +28,7 @@ namespace Leetcode.Number
             if (i < 0)
                 return -1;
             int j = a.Length - 1;
-            while (j >= 0 && a[j] <= a[i]) //2. 从上个index，向右找到最后一个比这个大的  j
+            while (j >= 0 && a[j] <= a[i]) //2. 从右向左找到最后一个比这个大的  j
             {
                 j--;
             }

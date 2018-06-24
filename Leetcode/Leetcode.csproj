@@ -138,6 +138,7 @@
     <Compile Include="Number\Valid Number.cs" />
     <Compile Include="Number\Valid Palindrome.cs" />
     <Compile Include="Number\Valid Perfect Square.cs" />
+    <Compile Include="Permutation\Next Permutation.cs" />
     <Compile Include="Sort\Largest Number.cs" />
     <Compile Include="Sort\Merge Intervals.cs" />
     <Compile Include="Sort\Reorganize String.cs" />
