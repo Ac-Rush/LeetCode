@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -74,6 +75,7 @@
     <Compile Include="Array\Third Maximum Number.cs" />
     <Compile Include="Array\TwoSum.cs" />
     <Compile Include="BinarySearch Tree\Flatten Binary Tree to Linked List.cs" />
+    <Compile Include="BinarySearch\Peak Index in a Mountain Array.cs" />
     <Compile Include="Bit\Hamming Distance.cs" />
     <Compile Include="DAC\Kth Largest Element in an Array.cs" />
     <Compile Include="Design\Design Search Autocomplete System.cs" />
@@ -91,6 +93,7 @@
     <Compile Include="DFS\Number of Islands.cs" />
     <Compile Include="DFS\Pyramid Transition Matrix.cs" />
     <Compile Include="DFS\Remove Invalid Parentheses.cs" />
+    <Compile Include="Dynamic Programming\4 Keys Keyboard.cs" />
     <Compile Include="Dynamic Programming\Delete Operation for Two Strings.cs" />
     <Compile Include="Dynamic Programming\Maximum Average Subarray II.cs" />
     <Compile Include="Dynamic Programming\Student Attendance Record II.cs" />
@@ -127,6 +130,7 @@
     <Compile Include="HashTable\Word Pattern.cs" />
     <Compile Include="Helper\DuplicateKeyComparer.cs" />
     <Compile Include="Maths\Add Digits.cs" />
+    <Compile Include="Maths\Smallest Good Base.cs" />
     <Compile Include="Matrix\Perfect Rectangle.cs" />
     <Compile Include="Number\Remove K Digits.cs" />
     <Compile Include="Number\Valid Number.cs" />
