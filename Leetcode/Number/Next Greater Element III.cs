@@ -36,7 +36,7 @@ namespace Leetcode.Number
             reverse(a, i + 1);  //4翻转 i+1后边的书， 升序最小
             try
             {
-                return int.Parse(new String(a));
+                return int.Parse(new String(a));  // 越界溢出check
             }
             catch (Exception e)
             {

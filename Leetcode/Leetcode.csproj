@@ -79,6 +79,7 @@
     <Compile Include="Bit\Hamming Distance.cs" />
     <Compile Include="DAC\Kth Largest Element in an Array.cs" />
     <Compile Include="Design\Design Search Autocomplete System.cs" />
+    <Compile Include="Design\MovingAverage.cs" />
     <Compile Include="DFS\Decode String.cs" />
     <Compile Include="DFS\Find Eventual Safe States.cs" />
     <Compile Include="DFS\Flood Fill.cs" />
