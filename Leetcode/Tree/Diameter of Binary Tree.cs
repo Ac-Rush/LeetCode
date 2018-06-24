@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Leetcode.Tree
 {
+    /// <summary>
+    /// my solution
+    /// </summary>
     class DiameterOfBinaryTreeSLN
     {
         int max = 0;

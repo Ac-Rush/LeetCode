@@ -51,6 +51,7 @@
     <Compile Include="Array\Degree of an Array.cs" />
     <Compile Include="Array\Find All Duplicates in an Array.cs" />
     <Compile Include="Array\Find Pivot Index.cs" />
+    <Compile Include="Array\Heaters.cs" />
     <Compile Include="Array\Image Smoother.cs" />
     <Compile Include="Array\Island Perimeter.cs" />
     <Compile Include="Array\K-diff Pairs in an Array.cs" />
@@ -58,6 +59,7 @@
     <Compile Include="Array\Magic Squares In Grid.cs" />
     <Compile Include="Array\Max Area of Island.cs" />
     <Compile Include="Array\Maximize Distance to Closest Person.cs" />
+    <Compile Include="Array\Maximum Average Subarray I.cs" />
     <Compile Include="Array\Maximum Product of Three Numbers.cs" />
     <Compile Include="Array\Merge Sorted Array.cs" />
     <Compile Include="Array\Missing Number.cs" />
@@ -90,6 +92,7 @@
     <Compile Include="DFS\Pyramid Transition Matrix.cs" />
     <Compile Include="DFS\Remove Invalid Parentheses.cs" />
     <Compile Include="Dynamic Programming\Delete Operation for Two Strings.cs" />
+    <Compile Include="Dynamic Programming\Maximum Average Subarray II.cs" />
     <Compile Include="Dynamic Programming\Student Attendance Record II.cs" />
     <Compile Include="HashTable\4Sum.cs" />
     <Compile Include="HashTable\Brick Wall.cs" />
@@ -107,6 +110,7 @@
     <Compile Include="HashTable\H-Index.cs" />
     <Compile Include="HashTable\Implement Magic Dictionary.cs" />
     <Compile Include="HashTable\Insert Delete GetRandom O%281%29.cs" />
+    <Compile Include="HashTable\Longest Consecutive Sequence.cs" />
     <Compile Include="HashTable\Max Points on a Line.cs" />
     <Compile Include="HashTable\My Calendar II.cs" />
     <Compile Include="HashTable\My Calendar III.cs" />
@@ -333,6 +337,7 @@
     <Compile Include="Tree\Binary Tree Preorder Traversal.cs" />
     <Compile Include="Tree\Binary Tree Pruning.cs" />
     <Compile Include="Tree\Binary Tree Right Side View.cs" />
+    <Compile Include="Tree\Binary Tree Vertical Order Traversal.cs" />
     <Compile Include="Tree\Binary Tree Zigzag Level Order Traversal.cs" />
     <Compile Include="Tree\BinaryTreeInorderTraversal.cs" />
     <Compile Include="Tree\BinaryTreeTilt.cs" />

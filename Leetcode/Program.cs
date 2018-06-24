@@ -30,6 +30,7 @@ namespace Leetcode
     {
         static void Main(string[] args)
         {
+            Longest_Consecutive_Sequence.LongestConsecutive(new[] {1, 3, 5, 2, 4});
             Remove_K_Digits.RemoveKdigitsMy("1432219", 3);
             TestTree();
            // TestGraph();
