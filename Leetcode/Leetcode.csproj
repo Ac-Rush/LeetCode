@@ -135,6 +135,7 @@
     <Compile Include="Maths\Excel Sheet Column Number.cs" />
     <Compile Include="Maths\Excel Sheet Column Title.cs" />
     <Compile Include="Maths\Factorial Trailing Zeroes.cs" />
+    <Compile Include="Maths\Integer to English Words.cs" />
     <Compile Include="Maths\Largest Triangle Area.cs" />
     <Compile Include="Maths\Minimum Moves to Equal Array Elements.cs" />
     <Compile Include="Maths\Nim Game.cs" />
@@ -142,6 +143,7 @@
     <Compile Include="Maths\Power of Three.cs" />
     <Compile Include="Maths\Power of Two.cs" />
     <Compile Include="Maths\Range Addition II.cs" />
+    <Compile Include="Maths\Rectangle Area.cs" />
     <Compile Include="Maths\Rectangle Overlap.cs" />
     <Compile Include="Maths\Similar RGB Color.cs" />
     <Compile Include="Maths\Smallest Good Base.cs" />
