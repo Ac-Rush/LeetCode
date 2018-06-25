@@ -131,8 +131,14 @@
     <Compile Include="HashTable\Word Pattern.cs" />
     <Compile Include="Helper\DuplicateKeyComparer.cs" />
     <Compile Include="Maths\Add Digits.cs" />
+    <Compile Include="Maths\Excel Sheet Column Number.cs" />
+    <Compile Include="Maths\Largest Triangle Area.cs" />
+    <Compile Include="Maths\Minimum Moves to Equal Array Elements.cs" />
     <Compile Include="Maths\Nim Game.cs" />
+    <Compile Include="Maths\Range Addition II.cs" />
+    <Compile Include="Maths\Similar RGB Color.cs" />
     <Compile Include="Maths\Smallest Good Base.cs" />
+    <Compile Include="Matrix\Max Increase to Keep City Skyline.cs" />
     <Compile Include="Matrix\Perfect Rectangle.cs" />
     <Compile Include="Number\Fizz Buzz.cs" />
     <Compile Include="Number\Next Greater Element III.cs" />
