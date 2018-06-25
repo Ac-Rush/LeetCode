@@ -1,0 +1,16 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Leetcode.Maths
+{
+    class Similar_RGB_Color
+    {
+        public string SimilarRGB(string color)
+        {
+
+        }
+    }
+}
