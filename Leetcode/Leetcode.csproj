@@ -131,8 +131,10 @@
     <Compile Include="HashTable\Word Pattern.cs" />
     <Compile Include="Helper\DuplicateKeyComparer.cs" />
     <Compile Include="Maths\Add Digits.cs" />
+    <Compile Include="Maths\Nim Game.cs" />
     <Compile Include="Maths\Smallest Good Base.cs" />
     <Compile Include="Matrix\Perfect Rectangle.cs" />
+    <Compile Include="Number\Fizz Buzz.cs" />
     <Compile Include="Number\Next Greater Element III.cs" />
     <Compile Include="Number\Remove K Digits.cs" />
     <Compile Include="Number\Valid Number.cs" />
