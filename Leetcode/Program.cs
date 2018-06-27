@@ -10,6 +10,7 @@ using Leetcode.DFS;
 using Leetcode.DFS_BFS;
 using Leetcode.Dynamic_Programming;
 using Leetcode.HashTable;
+using Leetcode.Heap;
 using Leetcode.Helper;
 using Leetcode.LinkList;
 using Leetcode.Number;
@@ -30,12 +31,10 @@ namespace Leetcode
     {
         static void Main(string[] args)
         {
-            Longest_Consecutive_Sequence.LongestConsecutive(new[] {1, 3, 5, 2, 4});
-            Remove_K_Digits.RemoveKdigitsMy("1432219", 3);
-            TestTree();
+           // TestTree();
            // TestGraph();
 
-            //  TestMatrix();
+              TestMatrix();
             //Delete_and_Earn.DeleteAndEarn(new[] {3, 4, 2});
             //  TestArry();
             //TestList();
@@ -51,6 +50,8 @@ namespace Leetcode
 
         static void TestMatrix()
         {
+            var c = new The_Skyline_Problem();
+            c.GetSkyline(new int[,] {{2, 9, 10}, {3, 7, 15}, {5, 12, 12}, {15, 20, 10}, {19, 24, 8}});
             Longest_Increasing_Path_in_a_Matrix.LongestIncreasingPath(new int[,] { {9,9,4} , {6,6,8} , {2,1,1} });
         }
 
@@ -87,13 +88,14 @@ namespace Leetcode
 
         static void TestTree()
         {
-            var tree = new TreeNode(1);
+            var tree = new TreeNode(5);
             tree.right = new TreeNode(5);
-            tree.right.right = new TreeNode(6);
-            tree.left = new TreeNode(2);
-            tree.left.left = new TreeNode(3);
-            tree.left.right = new TreeNode(4);
-            Flatten_Binary_Tree_to_Linked_List.Flatten(tree);
+            tree.right.right = new TreeNode(5);
+            tree.left = new TreeNode(1);
+            tree.left.left = new TreeNode(5);
+            tree.left.right = new TreeNode(5);
+           var c = new Count_Univalue_Subtrees();
+            c.CountUnivalSubtrees(tree);
             // tree.left.right = new TreeNode(4);
             // tree.left.left = new TreeNode(3);
             //       var a = Construct_Binary_Tree_from_Inorder_and_Postorder_Traversal.BuildTree(new int[] { 9, 3, 15, 20, 7 }, new int[] { 9, 15, 7, 20, 3 });

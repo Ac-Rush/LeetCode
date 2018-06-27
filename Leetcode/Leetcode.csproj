@@ -129,6 +129,7 @@
     <Compile Include="HashTable\Top K Frequent Words.cs" />
     <Compile Include="HashTable\Valid Sudoku.cs" />
     <Compile Include="HashTable\Word Pattern.cs" />
+    <Compile Include="Heap\The Skyline Problem.cs" />
     <Compile Include="Helper\DuplicateKeyComparer.cs" />
     <Compile Include="Maths\Add Digits.cs" />
     <Compile Include="Maths\Bulb Switcher.cs" />
@@ -180,6 +181,7 @@
     <Compile Include="Strings\Judge Route Circle.cs" />
     <Compile Include="Strings\Length of Last Word.cs" />
     <Compile Include="Strings\Letter Combinations of a Phone Number.cs" />
+    <Compile Include="Strings\Longest Absolute File Path.cs" />
     <Compile Include="Strings\Longest Uncommon Subsequence I.cs" />
     <Compile Include="Strings\Longest Uncommon Subsequence II.cs" />
     <Compile Include="Strings\Masking Personal Information.cs" />
@@ -359,10 +361,12 @@
     <Compile Include="Tree\Binary Tree Level Order Traversal II.cs" />
     <Compile Include="Tree\Binary Tree Level Order Traversal.cs" />
     <Compile Include="Tree\Binary Tree Longest Consecutive Sequence.cs" />
+    <Compile Include="Tree\Binary Tree Maximum Path Sum.cs" />
     <Compile Include="Tree\Binary Tree Paths.cs" />
     <Compile Include="Tree\Binary Tree Preorder Traversal.cs" />
     <Compile Include="Tree\Binary Tree Pruning.cs" />
     <Compile Include="Tree\Binary Tree Right Side View.cs" />
+    <Compile Include="Tree\Binary Tree Upside Down.cs" />
     <Compile Include="Tree\Binary Tree Vertical Order Traversal.cs" />
     <Compile Include="Tree\Binary Tree Zigzag Level Order Traversal.cs" />
     <Compile Include="Tree\BinaryTreeInorderTraversal.cs" />
@@ -371,6 +375,7 @@
     <Compile Include="Tree\Construct String from Binary Tree.cs" />
     <Compile Include="Tree\Convert BST to Greater Tree.cs" />
     <Compile Include="Tree\Count Complete Tree Nodes.cs" />
+    <Compile Include="Tree\Count Univalue Subtrees.cs" />
     <Compile Include="Tree\Delete Node in a BST.cs" />
     <Compile Include="Tree\Diameter of Binary Tree.cs" />
     <Compile Include="Tree\Find Bottom Left Tree Value.cs" />
@@ -378,6 +383,7 @@
     <Compile Include="Tree\Find Largest Value in Each Tree Row.cs" />
     <Compile Include="Tree\Find Mode in Binary Search Tree.cs" />
     <Compile Include="Tree\House Robber III.cs" />
+    <Compile Include="Tree\Inorder Successor in BST.cs" />
     <Compile Include="Tree\Invert Binary Tree.cs" />
     <Compile Include="Tree\Longest Univalue Path.cs" />
     <Compile Include="Tree\Lowest Common Ancestor of a Binary Search Tree.cs" />
@@ -389,8 +395,11 @@
     <Compile Include="Tree\Path Sum III.cs" />
     <Compile Include="Tree\Path Sum.cs" />
     <Compile Include="Tree\Print Binary Tree.cs" />
+    <Compile Include="Tree\Recover Binary Search Tree.cs" />
     <Compile Include="Tree\Redundant Connection.cs" />
     <Compile Include="Tree\Second Minimum Node In a Binary Tree.cs" />
+    <Compile Include="Tree\Serialize and Deserialize Binary Tree.cs" />
+    <Compile Include="Tree\Serialize and Deserialize BST.cs" />
     <Compile Include="Tree\Subtree of Another Tree.cs" />
     <Compile Include="Tree\Sum of Left Leaves.cs" />
     <Compile Include="Tree\Sum Root to Leaf Numbers.cs" />
@@ -406,6 +415,8 @@
     <Compile Include="经典代码\Reverse Linked List.cs" />
     <Compile Include="经典代码\Sort Colors.cs" />
     <Compile Include="经典代码\Sort List.cs" />
+    <Compile Include="经典代码\The Skyline Problem.cs" />
+    <Compile Include="经典代码\TreeTemplate.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
