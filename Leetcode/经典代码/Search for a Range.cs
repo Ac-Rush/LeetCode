@@ -9,7 +9,7 @@ namespace Leetcode.BinarySearch
     /// <summary>
     /// https://leetcode.com/problems/search-for-a-range/description/
     /// </summary>
-    class Search_for_a_Range
+    class Search_for_a_RangeC
     {
         public int[] SearchRange(int[] nums, int target)
         {
@@ -50,7 +50,7 @@ namespace Leetcode.BinarySearch
                 else
                 {
                     lo = mid + 1;
-                 }
+                }
             }
 
             return lo;
@@ -58,7 +58,7 @@ namespace Leetcode.BinarySearch
     }
 
 
-    class Search_for_a_Range2
+    class Search_for_a_Range2C
     {
         public int[] SearchRange(int[] A, int target)
         {

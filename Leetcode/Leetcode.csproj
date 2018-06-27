@@ -415,6 +415,7 @@
     <Compile Include="经典代码\Number of Atoms.cs" />
     <Compile Include="经典代码\Permute2.cs" />
     <Compile Include="经典代码\Reverse Linked List.cs" />
+    <Compile Include="经典代码\Search for a Range.cs" />
     <Compile Include="经典代码\Sort Colors.cs" />
     <Compile Include="经典代码\Sort List.cs" />
     <Compile Include="经典代码\The Skyline Problem.cs" />
