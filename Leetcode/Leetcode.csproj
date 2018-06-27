@@ -74,6 +74,7 @@
     <Compile Include="Array\Spiral Matrix II.cs" />
     <Compile Include="Array\Third Maximum Number.cs" />
     <Compile Include="Array\TwoSum.cs" />
+    <Compile Include="BackTrack\Regular Expression Matching.cs" />
     <Compile Include="BinarySearch Tree\Flatten Binary Tree to Linked List.cs" />
     <Compile Include="BinarySearch\Peak Index in a Mountain Array.cs" />
     <Compile Include="Bit\Hamming Distance.cs" />
@@ -412,6 +413,7 @@
     <Compile Include="经典代码\Kth Largest Element in an Array.cs" />
     <Compile Include="经典代码\MergeSort.cs" />
     <Compile Include="经典代码\Number of Atoms.cs" />
+    <Compile Include="经典代码\Permute2.cs" />
     <Compile Include="经典代码\Reverse Linked List.cs" />
     <Compile Include="经典代码\Sort Colors.cs" />
     <Compile Include="经典代码\Sort List.cs" />

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Leetcode.Array;
+using Leetcode.BackTrack;
 using Leetcode.BinarySearch;
 using Leetcode.BinarySearch_Tree;
 using Leetcode.DFS;
@@ -31,10 +32,13 @@ namespace Leetcode
     {
         static void Main(string[] args)
         {
+            var c = new Regular_Expression_Matching();
+            c.IsMatch("aab", "c*a*b");
+
            // TestTree();
            // TestGraph();
 
-              TestMatrix();
+            TestMatrix();
             //Delete_and_Earn.DeleteAndEarn(new[] {3, 4, 2});
             //  TestArry();
             //TestList();
