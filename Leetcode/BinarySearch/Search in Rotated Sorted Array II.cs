@@ -44,7 +44,7 @@ namespace Leetcode.BinarySearch
                 }
                 else
                 {
-                    h--;
+                    h--; //如果mid 等high, high--
                 }
             }
             return false;

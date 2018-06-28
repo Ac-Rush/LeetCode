@@ -39,6 +39,7 @@ namespace Leetcode
 
         static void Main(string[] args)
         {
+            Longest_Increasing_Subsequence.LengthOfLIS2(new int[] {10, 9, 2, 5, 3, 7, 101, 18});
             MySqrtC.MySqrt(2147395599);
             var c = new Regular_Expression_Matching();
             c.IsMatch("aab", "c*a*b");

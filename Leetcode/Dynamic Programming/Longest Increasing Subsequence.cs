@@ -21,7 +21,7 @@ namespace Leetcode.Dynamic_Programming
             int res = 0;
             for (int i = 0; i < nums.Length; i++)
             {
-                d[i] = 1;
+                d[i] = 1;  //my bug 这个需要初始化一下
                 for (int j = 0; j < i; j++)
                 {
                     if (nums[j] < nums[i] && d[j] + 1 > d[i])
@@ -37,12 +37,23 @@ namespace Leetcode.Dynamic_Programming
         /// <summary>
         /// Approach #4 Dynamic Programming with Binary Search[Accepted]:
         /// This dp array is meant to store the increasing subsequence formed by including the currently encountered element. 
+        /// 首先考虑一种情况，如果dp[i]==d[j]，但是num[i]<num[j]，那么我们选择那个好呢，显然，选择以num[i]为结尾的序列更优潜力，
+        /// 因为可能存在一个k，使得num[i] < num[k] < num[j]，可以使以num[i]为结尾的序列变长，但却不能使以num[j]为结尾的序列边长。
+        /// 那么我们如果知道长度为i的所有序列中结尾数字最小的那个数，就可以知道能否得到一个更长的序列，设用d[i]表示长度为i的序列结尾的最小数字，那么我们就可以维护这个数组，
+        /// 来求得最长公共子序列的长度。
+        /// 
+        /// 
+        /// 
+        /// follow up 如何得到最长递增序列
+        /// 需要两个数组，
+        /// result数组 来保存这个数之前的前序
         /// </summary>
         /// <param name="nums"></param>
         /// <returns></returns>
-        public int LengthOfLIS2(int[] nums)
+        public static int LengthOfLIS2(int[] nums)
         {
-            int[] dp = new int[nums.Length];
+            // dp[i]的 含义是 长度为i的 递增序列 最小结尾是 dp[i]
+            int[] dp = new int[nums.Length];  //这个结果并不是最终的递增序列结果，只是一个记录而已
             int len = 0;
             foreach (var num in nums)
             {
@@ -52,7 +63,7 @@ namespace Leetcode.Dynamic_Programming
                 {
                     i = -(i + 1);
                 }
-                dp[i] = num;
+                dp[i] = num; //这个还就得放这里
                 if (i == len)
                 {
                     len++;

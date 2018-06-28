@@ -8,6 +8,12 @@ namespace Leetcode.BinarySearch
 {
     class Search_in_Rotated_Sorted_Array
     {
+        /// <summary>
+        /// 画图比划一下就行了
+        /// </summary>
+        /// <param name="nums"></param>
+        /// <param name="target"></param>
+        /// <returns></returns>
         public int Search(int[] nums, int target)
         {
             int l = 0, h = nums.Length - 1;
@@ -16,9 +22,9 @@ namespace Leetcode.BinarySearch
                 var mid = (l + h) / 2;
                 if (nums[mid] == target) return mid;
 
-                if (nums[mid] > nums[h])
+                if (nums[mid] > nums[h])  // 如果中间的 大于high,
                 {
-                    if (target >= nums[l] && target < nums[mid])
+                    if (target >= nums[l] && target < nums[mid]) //
                     {
                         h = mid - 1;
                     }

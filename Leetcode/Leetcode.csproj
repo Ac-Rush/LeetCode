@@ -78,6 +78,7 @@
     <Compile Include="BinarySearch Tree\Closest Binary Search Tree Value II.cs" />
     <Compile Include="BinarySearch Tree\Closest Binary Search Tree Value.cs" />
     <Compile Include="BinarySearch Tree\Flatten Binary Tree to Linked List.cs" />
+    <Compile Include="BinarySearch\find kth largest elemtn of array.cs" />
     <Compile Include="BinarySearch\Median of Two Sorted Arrays.cs" />
     <Compile Include="BinarySearch\Peak Index in a Mountain Array.cs" />
     <Compile Include="Bit\Hamming Distance.cs" />
@@ -415,6 +416,7 @@
     <Compile Include="Trie\Add and Search Word - Data structure design.cs" />
     <Compile Include="TrimaBinarySearchTree.cs" />
     <Compile Include="UniqueBinarySearchTrees.cs" />
+    <Compile Include="经典代码\find kth largest elemtn of array.cs" />
     <Compile Include="经典代码\Kth Largest Element in an Array.cs" />
     <Compile Include="经典代码\Median of Two Sorted Arrays.cs" />
     <Compile Include="经典代码\MergeSort.cs" />
