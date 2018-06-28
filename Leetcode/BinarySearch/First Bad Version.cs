@@ -12,6 +12,12 @@ namespace Leetcode.BinarySearch
         {
             return true;
         }
+       /// <summary>
+       /// my solution
+       /// 
+       /// </summary>
+       /// <param name="n"></param>
+       /// <returns></returns>
         public int FirstBadVersion(int n)
         {
             int left = 1;
@@ -19,7 +25,7 @@ namespace Leetcode.BinarySearch
             while (left < right)
             {
                 int mid = left + (right - left) / 2;
-                if (IsBadVersion(mid))
+                if (IsBadVersion(mid))  // 如果是bad  [left, mid] ，注意边界的定义，right 一定是bad, left是好的， left 和bad重合 就是第一个
                 {
                     right = mid;
                 }
