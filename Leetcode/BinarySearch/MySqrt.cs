@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace Leetcode.BinarySearch
 {
-    class MySqrtC
+    public class MySqrtC
     {
-        public int MySqrt(int x)
+        public static int MySqrt(int x)
         {
             if (x == 0 || x == 1)
             {
                 return x;
             }
             int left = 1, right = x / 2;
-            while (true)
+            while (left <= right) 
             {
                 int mid = left + (right - left) / 2;
                 if (mid > x / mid)
@@ -29,6 +29,7 @@ namespace Leetcode.BinarySearch
                     left = mid + 1;
                 }
             }
+            return 0;
         }
     }
 }

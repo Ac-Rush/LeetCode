@@ -45,4 +45,24 @@ namespace Leetcode.BinarySearch_Tree
             }
         }
     }
+
+
+    class Closest_Binary_Search_Tree_Value2
+    {
+       /// <summary>
+       /// 别人的答案
+       /// 这个很不错
+       /// </summary>
+       /// <param name="root"></param>
+       /// <param name="target"></param>
+       /// <returns></returns>
+        public int ClosestValue(TreeNode root, double target)
+        {
+            int a = root.val;
+            TreeNode kid = target < a ? root.left : root.right;
+            if (kid == null) return a;
+            int b = ClosestValue(kid, target);
+            return Math.Abs(a - target) < Math.Abs(b - target) ? a : b;
+        }
+    }
 }

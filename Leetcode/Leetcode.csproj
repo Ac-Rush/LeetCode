@@ -75,7 +75,10 @@
     <Compile Include="Array\Third Maximum Number.cs" />
     <Compile Include="Array\TwoSum.cs" />
     <Compile Include="BackTrack\Regular Expression Matching.cs" />
+    <Compile Include="BinarySearch Tree\Closest Binary Search Tree Value II.cs" />
+    <Compile Include="BinarySearch Tree\Closest Binary Search Tree Value.cs" />
     <Compile Include="BinarySearch Tree\Flatten Binary Tree to Linked List.cs" />
+    <Compile Include="BinarySearch\Median of Two Sorted Arrays.cs" />
     <Compile Include="BinarySearch\Peak Index in a Mountain Array.cs" />
     <Compile Include="Bit\Hamming Distance.cs" />
     <Compile Include="DAC\Kth Largest Element in an Array.cs" />
@@ -142,6 +145,7 @@
     <Compile Include="Maths\Minimum Moves to Equal Array Elements.cs" />
     <Compile Include="Maths\Nim Game.cs" />
     <Compile Include="Maths\Number of Digit One.cs" />
+    <Compile Include="Maths\Power of Four.cs" />
     <Compile Include="Maths\Power of Three.cs" />
     <Compile Include="Maths\Power of Two.cs" />
     <Compile Include="Maths\Range Addition II.cs" />
@@ -150,6 +154,7 @@
     <Compile Include="Maths\Similar RGB Color.cs" />
     <Compile Include="Maths\Smallest Good Base.cs" />
     <Compile Include="Maths\Strobogrammatic Number.cs" />
+    <Compile Include="Maths\Super Pow.cs" />
     <Compile Include="Matrix\Max Increase to Keep City Skyline.cs" />
     <Compile Include="Matrix\Perfect Rectangle.cs" />
     <Compile Include="Number\Fizz Buzz.cs" />
@@ -411,6 +416,7 @@
     <Compile Include="TrimaBinarySearchTree.cs" />
     <Compile Include="UniqueBinarySearchTrees.cs" />
     <Compile Include="经典代码\Kth Largest Element in an Array.cs" />
+    <Compile Include="经典代码\Median of Two Sorted Arrays.cs" />
     <Compile Include="经典代码\MergeSort.cs" />
     <Compile Include="经典代码\Number of Atoms.cs" />
     <Compile Include="经典代码\Permute2.cs" />

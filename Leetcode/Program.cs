@@ -39,6 +39,7 @@ namespace Leetcode
 
         static void Main(string[] args)
         {
+            MySqrtC.MySqrt(2147395599);
             var c = new Regular_Expression_Matching();
             c.IsMatch("aab", "c*a*b");
 

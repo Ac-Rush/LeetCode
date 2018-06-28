@@ -33,16 +33,21 @@ namespace Leetcode.BinarySearch
             return search(nums, mid + 1, r);
         }
 
+        /// <summary>
+        /// 其实可以从 第一个解 推导出来
+        /// </summary>
+        /// <param name="nums"></param>
+        /// <returns></returns>
         public int findPeakElement3(int[] nums)
         {
             int l = 0, r = nums.Length - 1;
             while (l < r)
             {
                 int mid = (l + r) / 2;
-                if (nums[mid] > nums[mid + 1])
+                if (nums[mid] > nums[mid + 1])  // r是 比右边大的
                     r = mid;
                 else
-                    l = mid + 1;
+                    l = mid + 1;    //l 不比右边打
             }
             return l;
         }
