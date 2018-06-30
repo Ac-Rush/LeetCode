@@ -13,6 +13,7 @@ namespace Leetcode.Dynamic_Programming
     {
         public int MaxSubArray(int[] nums)
         {
+            if (nums == null || nums.Length == 0) return 0;
             var max = nums[0];
             var globalMax = nums[0];
             for (int i = 1; i < nums.Length; i++)

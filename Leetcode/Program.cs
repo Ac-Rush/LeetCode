@@ -11,6 +11,7 @@ using Leetcode.Array;
 using Leetcode.BackTrack;
 using Leetcode.BinarySearch;
 using Leetcode.BinarySearch_Tree;
+using Leetcode.DAC;
 using Leetcode.DFS;
 using Leetcode.DFS_BFS;
 using Leetcode.Dynamic_Programming;
@@ -39,11 +40,18 @@ namespace Leetcode
 
         static void Main(string[] args)
         {
-            Longest_Increasing_Subsequence.LengthOfLIS2(new int[] {10, 9, 2, 5, 3, 7, 101, 18});
-            MySqrtC.MySqrt(2147395599);
-            var c = new Regular_Expression_Matching();
-            c.IsMatch("aab", "c*a*b");
+            var nums = new int[] {1, 2, 1, 3, 2, 5};
+            var diff = 0;
+            foreach (int num in nums)
+            {
+                diff ^= num;
+            }
+        //    diff &= -diff;
+            // Get its last set bit
+            diff = diff - (diff & (diff - 1));
 
+
+            TestLinkedList();
            // TestTree();
            // TestGraph();
 
@@ -54,7 +62,22 @@ namespace Leetcode
             //TestString();
             // TestNum();
         }
-      
+        static void TestLinkedList()
+        {
+            var lists = new ListNode[3];
+            lists[0] = new ListNode(1);
+            lists[0].next = new ListNode(4);
+            lists[0].next.next = new ListNode(5);
+
+            lists[1] = new ListNode(1);
+            lists[1].next = new ListNode(3);
+            lists[1].next.next = new ListNode(4);
+
+            lists[2] = new ListNode(2);
+            lists[2].next = new ListNode(6);
+
+            Merge_k_Sorted_Lists.MergeKLists(lists);
+        }
 
         static void TestGraph()
         {

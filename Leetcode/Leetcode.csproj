@@ -78,6 +78,18 @@
     <Compile Include="BinarySearch Tree\Closest Binary Search Tree Value II.cs" />
     <Compile Include="BinarySearch Tree\Closest Binary Search Tree Value.cs" />
     <Compile Include="BinarySearch Tree\Flatten Binary Tree to Linked List.cs" />
+    <Compile Include="Bit\Maximum XOR of Two Numbers in an Array.cs" />
+    <Compile Include="Bit\Number of 1 Bits.cs" />
+    <Compile Include="Bit\Single Element in a Sorted Array.cs" />
+    <Compile Include="Bit\Single Number III.cs" />
+    <Compile Include="Bit\Sum of Two Integers.cs" />
+    <Compile Include="Design\LRU Cache.cs" />
+    <Compile Include="DFS\Nested List Weight Sum.cs" />
+    <Compile Include="Maths\Poor Pigs.cs" />
+    <Compile Include="DAC\Count of Smaller Numbers After Self.cs" />
+    <Compile Include="DAC\Different Ways to Add Parentheses.cs" />
+    <Compile Include="DAC\Merge k Sorted Lists.cs" />
+    <Compile Include="Dynamic Programming\Dungeon Game.cs" />
     <Compile Include="BinarySearch\find kth largest elemtn of array.cs" />
     <Compile Include="BinarySearch\Median of Two Sorted Arrays.cs" />
     <Compile Include="BinarySearch\Peak Index in a Mountain Array.cs" />
@@ -175,6 +187,7 @@
     <Compile Include="Stack\Min Stack.cs" />
     <Compile Include="Stack\Next Greater Element I.cs" />
     <Compile Include="Stack\Next Greater Element II.cs" />
+    <Compile Include="Stack\Trapping Rain Water.cs" />
     <Compile Include="Strings\Add Binary.cs" />
     <Compile Include="Strings\Ambiguous Coordinates.cs" />
     <Compile Include="Strings\Complex Number Multiplication.cs" />
@@ -418,6 +431,7 @@
     <Compile Include="UniqueBinarySearchTrees.cs" />
     <Compile Include="经典代码\find kth largest elemtn of array.cs" />
     <Compile Include="经典代码\Kth Largest Element in an Array.cs" />
+    <Compile Include="经典代码\LRU Cache.cs" />
     <Compile Include="经典代码\Median of Two Sorted Arrays.cs" />
     <Compile Include="经典代码\MergeSort.cs" />
     <Compile Include="经典代码\Number of Atoms.cs" />
