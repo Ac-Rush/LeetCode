@@ -173,6 +173,7 @@
     <Compile Include="Maths\Smallest Good Base.cs" />
     <Compile Include="Maths\Strobogrammatic Number.cs" />
     <Compile Include="Maths\Super Pow.cs" />
+    <Compile Include="Matrix\Diagonal Traverse.cs" />
     <Compile Include="Matrix\Max Increase to Keep City Skyline.cs" />
     <Compile Include="Matrix\Perfect Rectangle.cs" />
     <Compile Include="Matrix\Spiral Matrix.cs" />
@@ -209,6 +210,7 @@
     <Compile Include="Strings\Length of Last Word.cs" />
     <Compile Include="Strings\Letter Combinations of a Phone Number.cs" />
     <Compile Include="Strings\Longest Absolute File Path.cs" />
+    <Compile Include="Strings\Longest Common Prefix.cs" />
     <Compile Include="Strings\Longest Uncommon Subsequence I.cs" />
     <Compile Include="Strings\Longest Uncommon Subsequence II.cs" />
     <Compile Include="Strings\Masking Personal Information.cs" />

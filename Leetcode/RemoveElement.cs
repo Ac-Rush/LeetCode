@@ -8,6 +8,26 @@ namespace Leetcode
 {
     public class RemoveElement
     {
+        public int RemoveElement3(int[] nums, int val)
+        {
+            int k = 0;
+            for (int i = 0; i < nums.Length; ++i)
+            {
+                if (nums[i] != val)
+                {
+                    nums[k] = nums[i];
+                    k++;
+                }
+            }
+            return k;
+        }
+
+        /// <summary>
+        /// 这个也太二了
+        /// </summary>
+        /// <param name="nums"></param>
+        /// <param name="val"></param>
+        /// <returns></returns>
         public static int RemoveElement2(int[] nums, int val)
         {
             if(nums == null || nums.Length == 0)

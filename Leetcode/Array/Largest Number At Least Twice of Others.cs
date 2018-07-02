@@ -63,5 +63,37 @@ namespace Leetcode.Array
             }
             return maxIndex;
         }
+
+        /// <summary>
+        /// my solution
+        /// </summary>
+        /// <param name="nums"></param>
+        /// <returns></returns>
+        public int DominantIndex3(int[] nums)
+        {
+            if (nums.Length == 0) return -1;
+            if (nums.Length == 1) return 0;
+            var max = nums[0] > nums[1] ? 0 : 1;
+            var secondMax = 1 - max;
+
+            for (int i = 2; i < nums.Length; i++)
+            {
+                if (nums[i] > nums[max])
+                {
+                    secondMax = max;
+                    max = i;
+                }
+                else if (nums[i] > nums[secondMax])
+                {
+                    secondMax = i;
+                }
+            }
+            if (nums[max] - nums[secondMax] - nums[secondMax] >= 0)
+            {
+                return max;
+            }
+            return -1;
+        }
+
     }
 }

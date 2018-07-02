@@ -6,7 +6,38 @@ using System.Threading.Tasks;
 
 namespace Leetcode.BinarySearch
 {
-    public class Minimum_Size_Subarray_Sum
+    public class Minimum_Size_Subarray_Sum_ON
+    {
+        /// <summary>
+        /// my solution
+        /// </summary>
+        /// <param name="s"></param>
+        /// <param name="nums"></param>
+        /// <returns></returns>
+        public static int MinSubArrayLen(int s, int[] a)
+        {
+            if (a == null || a.Length == 0)
+                return 0;
+
+            int i = 0, j = 0, sum = 0, min = int.MaxValue;
+
+            while (j < a.Length)
+            {
+                sum += a[j++];
+
+                while (sum >= s)
+                {
+                    min = Math.Min(min, j - i);
+                    sum -= a[i++];
+                }
+            }
+
+            return min == int.MaxValue ? 0 : min;
+        }
+    }
+
+
+    public class Minimum_Size_Subarray_Sum_N2
     {
         /// <summary>
         /// my solution
@@ -35,7 +66,7 @@ namespace Leetcode.BinarySearch
                     }
                 }
             }
-            return minLens == Int32.MaxValue ?  0:minLens;
+            return minLens == Int32.MaxValue ? 0 : minLens;
         }
     }
 }
