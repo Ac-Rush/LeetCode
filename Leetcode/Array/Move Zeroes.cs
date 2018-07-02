@@ -8,6 +8,11 @@ namespace Leetcode.Array
 {
     public class Move_Zeroes
     {
+       /// <summary>
+       ///  1 two pointer 左移，
+       /// 2 后面的置0
+       /// </summary>
+       /// <param name="nums"></param>
         public void MoveZeroes(int[] nums)
         {
             int lastNonZeroFoundAt = 0;

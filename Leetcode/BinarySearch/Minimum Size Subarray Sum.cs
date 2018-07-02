@@ -10,6 +10,11 @@ namespace Leetcode.BinarySearch
     {
         /// <summary>
         /// my solution
+        /// 
+        /// 双指针的 O（N）解法，
+        /// J一直向右走，
+        /// 如果大于 sum i向右走， 
+        ///  取值区间是 i...j
         /// </summary>
         /// <param name="s"></param>
         /// <param name="nums"></param>

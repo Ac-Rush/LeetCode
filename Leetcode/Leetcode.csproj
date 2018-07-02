@@ -68,6 +68,8 @@
     <Compile Include="Array\Missing Number.cs" />
     <Compile Include="Array\My Calendar I.cs" />
     <Compile Include="Array\Non-decreasing Array.cs" />
+    <Compile Include="Array\Pascal%27s Triangle II.cs" />
+    <Compile Include="Array\Pascal%27s Triangle.cs" />
     <Compile Include="Array\Plus One.cs" />
     <Compile Include="Array\RemoveDuplicates.cs" />
     <Compile Include="Array\Rotate Array.cs" />
@@ -226,6 +228,8 @@
     <Compile Include="Strings\Repeated Substring Pattern.cs" />
     <Compile Include="Strings\Reverse String II.cs" />
     <Compile Include="Strings\Reverse Vowels of a String.cs" />
+    <Compile Include="Strings\Reverse Words in a String II.cs" />
+    <Compile Include="Strings\Reverse Words in a String.cs" />
     <Compile Include="Strings\Rotated Digits.cs" />
     <Compile Include="Strings\Shortest Distance to a Character.cs" />
     <Compile Include="Strings\String Compression.cs" />
