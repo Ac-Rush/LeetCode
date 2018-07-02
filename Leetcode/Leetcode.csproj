@@ -60,6 +60,7 @@
     <Compile Include="Array\Largest Number At Least Twice of Others.cs" />
     <Compile Include="Array\Magic Squares In Grid.cs" />
     <Compile Include="Array\Max Area of Island.cs" />
+    <Compile Include="Array\Max Consecutive Ones.cs" />
     <Compile Include="Array\Maximize Distance to Closest Person.cs" />
     <Compile Include="Array\Maximum Average Subarray I.cs" />
     <Compile Include="Array\Maximum Product of Three Numbers.cs" />
@@ -437,6 +438,7 @@
     <Compile Include="Tree\UniqueBinarySearchTrees.cs" />
     <Compile Include="Trie\Add and Search Word - Data structure design.cs" />
     <Compile Include="TrimaBinarySearchTree.cs" />
+    <Compile Include="TwoPointer\Array Partition I.cs" />
     <Compile Include="UniqueBinarySearchTrees.cs" />
     <Compile Include="经典代码\find kth largest elemtn of array.cs" />
     <Compile Include="经典代码\Kth Largest Element in an Array.cs" />
@@ -458,7 +460,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="BFS\" />
-    <Folder Include="TwoPointer\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
