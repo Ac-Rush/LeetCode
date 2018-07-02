@@ -222,6 +222,7 @@
     <Compile Include="Strings\Masking Personal Information.cs" />
     <Compile Include="Strings\Minimum Time Difference.cs" />
     <Compile Include="Strings\Most Common Word.cs" />
+    <Compile Include="Strings\Next Closest Time.cs" />
     <Compile Include="Strings\Number of Atoms.cs" />
     <Compile Include="Strings\Number of Segments in a String.cs" />
     <Compile Include="Strings\Optimal Division.cs" />
