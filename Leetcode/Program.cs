@@ -19,6 +19,7 @@ using Leetcode.HashTable;
 using Leetcode.Heap;
 using Leetcode.Helper;
 using Leetcode.LinkList;
+using Leetcode.Matrix;
 using Leetcode.Number;
 using Leetcode.Sort;
 using Leetcode.Strings;
@@ -40,16 +41,7 @@ namespace Leetcode
 
         static void Main(string[] args)
         {
-            var nums = new int[] {1, 2, 1, 3, 2, 5};
-            var diff = 0;
-            foreach (int num in nums)
-            {
-                diff ^= num;
-            }
-        //    diff &= -diff;
-            // Get its last set bit
-            diff = diff - (diff & (diff - 1));
-
+            Spiral_Matrix.SpiralOrder(new int[,] {{1, 2, 3}});
 
             TestLinkedList();
            // TestTree();
