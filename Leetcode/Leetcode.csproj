@@ -66,11 +66,13 @@
     <Compile Include="Array\Maximum Product of Three Numbers.cs" />
     <Compile Include="Array\Merge Sorted Array.cs" />
     <Compile Include="Array\Missing Number.cs" />
+    <Compile Include="Array\Move Zeroes.cs" />
     <Compile Include="Array\My Calendar I.cs" />
     <Compile Include="Array\Non-decreasing Array.cs" />
     <Compile Include="Array\Pascal%27s Triangle II.cs" />
     <Compile Include="Array\Pascal%27s Triangle.cs" />
     <Compile Include="Array\Plus One.cs" />
+    <Compile Include="Array\Remove Duplicates from Sorted Array.cs" />
     <Compile Include="Array\RemoveDuplicates.cs" />
     <Compile Include="Array\Rotate Array.cs" />
     <Compile Include="Array\Rotate_Image.cs" />
