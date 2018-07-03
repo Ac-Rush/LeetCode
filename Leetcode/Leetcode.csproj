@@ -465,6 +465,7 @@
     <Compile Include="经典代码\Kth Largest Element in an Array.cs" />
     <Compile Include="经典代码\LRU Cache.cs" />
     <Compile Include="经典代码\Median of Two Sorted Arrays.cs" />
+    <Compile Include="经典代码\Merge Intervals.cs" />
     <Compile Include="经典代码\MergeSort.cs" />
     <Compile Include="经典代码\MinHeap.cs" />
     <Compile Include="经典代码\Number of Atoms.cs" />

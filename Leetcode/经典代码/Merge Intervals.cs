@@ -7,17 +7,11 @@ using System.Threading.Tasks;
 namespace Leetcode.Sort
 {
     using System;
-    public class Interval
-    {
-      public int start;
-      public int end;
-      public Interval() { start = 0; end = 0; }
-     public Interval(int s, int e) { start = s; end = e; }
-  }
+   
     /// <summary>
     ///  这个和 meeting room II 相似
     /// </summary>
-   public class Merge_IntervalsC
+   public class Merge_Intervals
     {
         /// <summary>
         /// my solution
@@ -45,7 +39,7 @@ namespace Leetcode.Sort
 
 
     //扫描线算法
-    public class Merge_Intervals_2C
+    public class Merge_Intervals_2
     {
 
         /*
