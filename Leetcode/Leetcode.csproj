@@ -61,6 +61,7 @@
     <Compile Include="Array\Largest Number At Least Twice of Others.cs" />
     <Compile Include="Array\Magic Squares In Grid.cs" />
     <Compile Include="Array\Max Area of Island.cs" />
+    <Compile Include="Array\Max Consecutive Ones II.cs" />
     <Compile Include="Array\Max Consecutive Ones.cs" />
     <Compile Include="Array\Maximize Distance to Closest Person.cs" />
     <Compile Include="Array\Maximum Average Subarray I.cs" />
@@ -184,6 +185,7 @@
     <Compile Include="Matrix\Perfect Rectangle.cs" />
     <Compile Include="Matrix\Spiral Matrix.cs" />
     <Compile Include="Matrix\Trapping Rain Water II.cs" />
+    <Compile Include="Number\First Missing Positive.cs" />
     <Compile Include="Number\Fizz Buzz.cs" />
     <Compile Include="Number\Next Greater Element III.cs" />
     <Compile Include="Number\Remove K Digits.cs" />
@@ -226,9 +228,12 @@
     <Compile Include="Strings\Next Closest Time.cs" />
     <Compile Include="Strings\Number of Atoms.cs" />
     <Compile Include="Strings\Number of Segments in a String.cs" />
+    <Compile Include="Strings\One Edit Distance.cs" />
     <Compile Include="Strings\Optimal Division.cs" />
     <Compile Include="Strings\Palindrome Number.cs" />
     <Compile Include="Strings\Ransom Note.cs" />
+    <Compile Include="Strings\Read N Characters Given Read4 II - Call multiple times.cs" />
+    <Compile Include="Strings\Read N Characters Given Read4.cs" />
     <Compile Include="Strings\Repeated String Match.cs" />
     <Compile Include="Strings\Repeated Substring Pattern.cs" />
     <Compile Include="Strings\Reverse String II.cs" />
@@ -237,6 +242,7 @@
     <Compile Include="Strings\Reverse Words in a String.cs" />
     <Compile Include="Strings\Rotated Digits.cs" />
     <Compile Include="Strings\Shortest Distance to a Character.cs" />
+    <Compile Include="Strings\Shortest Palindrome.cs" />
     <Compile Include="Strings\String Compression.cs" />
     <Compile Include="Strings\Student Attendance Record I.cs" />
     <Compile Include="Strings\Unique Morse Code Words.cs" />
@@ -451,6 +457,7 @@
     <Compile Include="TwoPointer\Longest Substring with At Most K Distinct Characters.cs" />
     <Compile Include="UniqueBinarySearchTrees.cs" />
     <Compile Include="经典代码\find kth largest elemtn of array.cs" />
+    <Compile Include="经典代码\First Missing Positive.cs" />
     <Compile Include="经典代码\Kth Largest Element in an Array.cs" />
     <Compile Include="经典代码\LRU Cache.cs" />
     <Compile Include="经典代码\Median of Two Sorted Arrays.cs" />

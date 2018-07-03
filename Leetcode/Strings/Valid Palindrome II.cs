@@ -10,6 +10,7 @@ namespace Leetcode.Strings
     {
         public static  bool ValidPalindrome(String s)
         {
+            //贪心算法
             int l = -1, r = s.Length;
             while (++l < --r)
                 if (s[l] != s[r]) return isPalindromic(s, l, r + 1) || isPalindromic(s, l - 1, r);

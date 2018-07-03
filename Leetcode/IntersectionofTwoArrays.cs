@@ -25,5 +25,28 @@ namespace Leetcode
             }
             return ret.ToArray();
         }
+
+        public int[] Intersection2(int[] nums1, int[] nums2)
+        {
+            var set = new HashSet<int>();
+            var set2 = new HashSet<int>();
+            foreach (var n in nums1)
+            {
+                set.Add(n);
+            }
+            foreach (var n in nums2)
+            {
+                set2.Add(n);
+            }
+            var ans = new List<int>();
+            foreach (var key in set)
+            {
+                if (set2.Contains(key))
+                {
+                    ans.Add(key);
+                }
+            }
+            return ans.ToArray();
+        }
     }
 }
