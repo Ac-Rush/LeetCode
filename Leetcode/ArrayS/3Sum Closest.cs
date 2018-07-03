@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Leetcode.Array
+﻿namespace Leetcode.ArrayS
 {
     class _3Sum_Closest
     {
