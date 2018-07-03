@@ -94,6 +94,7 @@
     <Compile Include="Bit\Sum of Two Integers.cs" />
     <Compile Include="Design\LRU Cache.cs" />
     <Compile Include="DFS\Nested List Weight Sum.cs" />
+    <Compile Include="Graph\Evaluate Division.cs" />
     <Compile Include="Greedy\Queue Reconstruction by Height.cs" />
     <Compile Include="HashTable\Palindrome Pairs.cs" />
     <Compile Include="LinkList\Insert into a Cyclic Sorted List.cs" />

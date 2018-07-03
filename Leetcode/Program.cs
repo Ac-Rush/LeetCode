@@ -42,10 +42,10 @@ namespace Leetcode
 
         static void Main(string[] args)
         {
-            Longest_Substring_with_At_Most_K_Distinct_Characters.LengthOfLongestSubstringKDistinct("abaccc", 2);
+           
 
-            TestLinkedList();
-           // TestTree();
+          //  TestLinkedList();
+            TestTree();
            // TestGraph();
 
             TestMatrix();
@@ -118,13 +118,14 @@ namespace Leetcode
         static void TestTree()
         {
             var tree = new TreeNode(5);
-            tree.right = new TreeNode(5);
-            tree.right.right = new TreeNode(5);
-            tree.left = new TreeNode(1);
-            tree.left.left = new TreeNode(5);
-            tree.left.right = new TreeNode(5);
-           var c = new Count_Univalue_Subtrees();
-            c.CountUnivalSubtrees(tree);
+            tree.right = new TreeNode(6);
+            tree.left = new TreeNode(3);
+            tree.left.left = new TreeNode(2);
+            tree.left.right = new TreeNode(4);
+            tree.left.left.left = new TreeNode(1);
+
+            var c = new Inorder_Successor_in_BST();
+            c.InorderSuccessor(tree , new TreeNode(1));
             // tree.left.right = new TreeNode(4);
             // tree.left.left = new TreeNode(3);
             //       var a = Construct_Binary_Tree_from_Inorder_and_Postorder_Traversal.BuildTree(new int[] { 9, 3, 15, 20, 7 }, new int[] { 9, 15, 7, 20, 3 });
