@@ -80,6 +80,19 @@ namespace Leetcode.Sort
                 end = e;
             }
         }
+        /*
+         * 
+         * 
+         * 
+         
+       |_____|  |_________|
+           |_______|   |______|
+
+  
+  start|   |    |      |  
+  end        |     |      |    |
+
+    */
         public int MinMeetingRooms(Interval[] intervals)
         {
             int[] startTimes = new int[intervals.Length];
@@ -95,11 +108,11 @@ namespace Leetcode.Sort
             int rooms = 0;
             int endsItr = 0;
             for (int i = 0; i < startTimes.Length; i++)
-            {
-                if (startTimes[i] < endTimes[endsItr])
+            {  //每次 I移动都相当于开始了一个新的会议。
+                if (startTimes[i] < endTimes[endsItr])  //  如果新的会议的开始时间小于 最早结束的时间， 那么会议室要加一
                     rooms++;
                 else
-                    endsItr++;
+                    endsItr++;   //否则， 就可以吧新的会议安排到这个结束的房间里，并且移动 endIndex.
             }
             return rooms;
         }
