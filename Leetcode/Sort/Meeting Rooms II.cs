@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Leetcode.Sort
 {
+    /// <summary>
+    /// 重要题目
+    /// </summary>
     class Meeting_Rooms_II
     {
         public class Interval
@@ -54,6 +57,51 @@ namespace Leetcode.Sort
                 }
             }
             return minMeetingRooms;
+        }
+    }
+
+
+    class Meeting_Rooms_II_2
+    {
+        public class Interval
+        {
+            public int start;
+            public int end;
+
+            public Interval()
+            {
+                start = 0;
+                end = 0;
+            }
+
+            public Interval(int s, int e)
+            {
+                start = s;
+                end = e;
+            }
+        }
+        public int MinMeetingRooms(Interval[] intervals)
+        {
+            int[] startTimes = new int[intervals.Length];
+            int[] endTimes = new int[intervals.Length];
+            for (int i = 0; i < intervals.Length; i++)
+            {
+                startTimes[i] = intervals[i].start;
+                endTimes[i] = intervals[i].end;
+            }
+            System.Array.Sort(startTimes);
+            System.Array.Sort(endTimes);
+
+            int rooms = 0;
+            int endsItr = 0;
+            for (int i = 0; i < startTimes.Length; i++)
+            {
+                if (startTimes[i] < endTimes[endsItr])
+                    rooms++;
+                else
+                    endsItr++;
+            }
+            return rooms;
         }
     }
 }
