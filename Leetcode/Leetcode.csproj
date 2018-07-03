@@ -215,6 +215,7 @@
     <Compile Include="Strings\Judge Route Circle.cs" />
     <Compile Include="Strings\Length of Last Word.cs" />
     <Compile Include="Strings\Letter Combinations of a Phone Number.cs" />
+    <Compile Include="Strings\License Key Formatting.cs" />
     <Compile Include="Strings\Longest Absolute File Path.cs" />
     <Compile Include="Strings\Longest Common Prefix.cs" />
     <Compile Include="Strings\Longest Uncommon Subsequence I.cs" />
@@ -447,6 +448,7 @@
     <Compile Include="Trie\Add and Search Word - Data structure design.cs" />
     <Compile Include="TrimaBinarySearchTree.cs" />
     <Compile Include="TwoPointer\Array Partition I.cs" />
+    <Compile Include="TwoPointer\Longest Substring with At Most K Distinct Characters.cs" />
     <Compile Include="UniqueBinarySearchTrees.cs" />
     <Compile Include="经典代码\find kth largest elemtn of array.cs" />
     <Compile Include="经典代码\Kth Largest Element in an Array.cs" />

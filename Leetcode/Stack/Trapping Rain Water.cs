@@ -85,7 +85,7 @@ namespace Leetcode.Stack
         }
     }
 
-    class Trapping_Rain_Water_Stack
+    public  class Trapping_Rain_Water_Stack
     {
         /// <summary>
         /// </summary>
