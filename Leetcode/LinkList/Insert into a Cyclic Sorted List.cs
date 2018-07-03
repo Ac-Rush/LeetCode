@@ -35,10 +35,10 @@ namespace Leetcode.LinkList
 
             while (next != null)
             {
-                if (pre.val <= insertVal && next.val >= insertVal //pre.val >= insertVal >= next.val
-                   || next.val >= insertVal && pre.val >= next.val
+                if (pre.val <= insertVal && next.val >= insertVal //pre.val >= insertVal >= next.val    例如2>4   -> 2->3->4
+                   || next.val >= insertVal && pre.val >= next.val      //例如  4->1   4 ->0->1
                    // There is no node.val smaller than the insertVal && pre is the tail
-                   || pre.val <= insertVal && pre.val >= next.val
+                   || pre.val <= insertVal && pre.val >= next.val      //例如  4->1  4->5->1
                   // There is no node.val greater than the insertVal && pre is the tail
                   )
                 {
