@@ -85,6 +85,7 @@ namespace Leetcode.Sort
                     start = interval.start;
                 }
             }
+            result.Add(new Interval(start, end));  //bug 需要处理最后的情况
             return result;
         }
     }
