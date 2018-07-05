@@ -94,6 +94,7 @@
     <Compile Include="Bit\Sum of Two Integers.cs" />
     <Compile Include="Design\LRU Cache.cs" />
     <Compile Include="DFS\Nested List Weight Sum.cs" />
+    <Compile Include="DFS\Strobogrammatic Number II.cs" />
     <Compile Include="DFS\Word Search II.cs" />
     <Compile Include="DFS\Word Search.cs" />
     <Compile Include="Graph\Course Schedule.cs" />
