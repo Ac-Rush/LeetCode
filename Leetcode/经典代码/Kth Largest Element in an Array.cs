@@ -40,6 +40,21 @@ namespace Leetcode.DAC
             
             return i;
         }
+
+        private int Partition2(int[] a, int lo, int hi)
+        {
+            var t = a[lo];
+            while (lo < hi)
+            {
+                while (lo < hi && a[hi] >= t) hi--;  //需要 判断 >=， 否则如果有重复，那就会死循环
+                a[lo] = a[hi];
+                while (lo < hi && a[lo] < t) lo++;
+                a[hi] = a[lo];
+            }
+            a[lo] = t;
+            return lo;
+        }
+
         void swap(int[] a, int i, int j)
         {
             int tmp = a[i];
