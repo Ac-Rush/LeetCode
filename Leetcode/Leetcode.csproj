@@ -94,6 +94,8 @@
     <Compile Include="Bit\Sum of Two Integers.cs" />
     <Compile Include="Design\LRU Cache.cs" />
     <Compile Include="DFS\Nested List Weight Sum.cs" />
+    <Compile Include="DFS\Word Search II.cs" />
+    <Compile Include="DFS\Word Search.cs" />
     <Compile Include="Graph\Course Schedule.cs" />
     <Compile Include="Graph\Evaluate Division.cs" />
     <Compile Include="Graph\Redundant Connection II.cs" />
@@ -191,6 +193,7 @@
     <Compile Include="Matrix\Robot Room Cleaner.cs" />
     <Compile Include="Matrix\Spiral Matrix.cs" />
     <Compile Include="Matrix\Trapping Rain Water II.cs" />
+    <Compile Include="Matrix\Valid Word Square.cs" />
     <Compile Include="Number\First Missing Positive.cs" />
     <Compile Include="Number\Fizz Buzz.cs" />
     <Compile Include="Number\Next Greater Element III.cs" />
@@ -459,7 +462,9 @@
     <Compile Include="Tree\Symmetric Tree.cs" />
     <Compile Include="Tree\Two Sum IV - Input is a BST.cs" />
     <Compile Include="Tree\UniqueBinarySearchTrees.cs" />
+    <Compile Include="Tree\Validate Binary Search Tree.cs" />
     <Compile Include="Trie\Add and Search Word - Data structure design.cs" />
+    <Compile Include="Trie\Word Squares.cs" />
     <Compile Include="TrimaBinarySearchTree.cs" />
     <Compile Include="TwoPointer\Array Partition I.cs" />
     <Compile Include="TwoPointer\Longest Substring with At Most K Distinct Characters.cs" />

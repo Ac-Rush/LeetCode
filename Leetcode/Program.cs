@@ -8,6 +8,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using Leetcode.Array;
+using Leetcode.ArrayS;
 using Leetcode.BackTrack;
 using Leetcode.BinarySearch;
 using Leetcode.BinarySearch_Tree;
@@ -45,7 +46,7 @@ namespace Leetcode
            
 
           //  TestLinkedList();
-            TestTree();
+          //  TestTree();
            // TestGraph();
 
             TestMatrix();
@@ -79,6 +80,7 @@ namespace Leetcode
 
         static void TestMatrix()
         {
+            Word_Search.Exist(new char[,] {{'a'}}, "a");
             var c = new The_Skyline_Problem();
             c.GetSkyline(new int[,] {{2, 9, 10}, {3, 7, 15}, {5, 12, 12}, {15, 20, 10}, {19, 24, 8}});
             Longest_Increasing_Path_in_a_Matrix.LongestIncreasingPath(new int[,] { {9,9,4} , {6,6,8} , {2,1,1} });

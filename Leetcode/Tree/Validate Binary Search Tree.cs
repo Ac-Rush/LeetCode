@@ -24,7 +24,7 @@ namespace Leetcode.Tree
                 return false;
             }
 
-            return InRange(root.left, low, root.val -1 ) && InRange(root.right, root.val + 1, high);
+            return InRange(root.left, low, root.val  ) && InRange(root.right, root.val , high);  //这个不需要 减一加一，要不容易越界 //所以上一步需要等号
         }
     }
 }
