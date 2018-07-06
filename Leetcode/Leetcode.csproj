@@ -55,6 +55,7 @@
     <Compile Include="ArrayS\Game of Life.cs" />
     <Compile Include="ArrayS\Heaters.cs" />
     <Compile Include="ArrayS\Image Smoother.cs" />
+    <Compile Include="ArrayS\Insert Interval.cs" />
     <Compile Include="ArrayS\Island Perimeter.cs" />
     <Compile Include="ArrayS\K Empty Slots.cs" />
     <Compile Include="ArrayS\K-diff Pairs in an Array.cs" />
@@ -88,6 +89,7 @@
     <Compile Include="BinarySearch Tree\Closest Binary Search Tree Value II.cs" />
     <Compile Include="BinarySearch Tree\Closest Binary Search Tree Value.cs" />
     <Compile Include="BinarySearch Tree\Flatten Binary Tree to Linked List.cs" />
+    <Compile Include="BinarySearch Tree\Range Module.cs" />
     <Compile Include="Bit\Maximum XOR of Two Numbers in an Array.cs" />
     <Compile Include="Bit\Number of 1 Bits.cs" />
     <Compile Include="Bit\Single Element in a Sorted Array.cs" />
