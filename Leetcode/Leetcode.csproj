@@ -103,6 +103,7 @@
     <Compile Include="DFS\Word Search II.cs" />
     <Compile Include="DFS\Word Search.cs" />
     <Compile Include="Dynamic Programming\Longest Palindromic Substring.cs" />
+    <Compile Include="Dynamic Programming\Sentence Screen Fitting.cs" />
     <Compile Include="Graph\Course Schedule.cs" />
     <Compile Include="Graph\Evaluate Division.cs" />
     <Compile Include="Graph\Redundant Connection II.cs" />
@@ -221,6 +222,7 @@
     <Compile Include="Sort\Sort List.cs" />
     <Compile Include="Sort\Wiggle Sort II.cs" />
     <Compile Include="Stack\Baseball Game.cs" />
+    <Compile Include="Stack\Evaluate Reverse Polish Notation.cs" />
     <Compile Include="Stack\Min Stack.cs" />
     <Compile Include="Stack\Next Greater Element I.cs" />
     <Compile Include="Stack\Next Greater Element II.cs" />
