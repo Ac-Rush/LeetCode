@@ -98,6 +98,7 @@
     <Compile Include="Design\LRU Cache.cs" />
     <Compile Include="DFS\Android Unlock Patterns.cs" />
     <Compile Include="DFS\Nested List Weight Sum.cs" />
+    <Compile Include="DFS\Pacific Atlantic Water Flow.cs" />
     <Compile Include="DFS\Strobogrammatic Number II.cs" />
     <Compile Include="DFS\Word Search II.cs" />
     <Compile Include="DFS\Word Search.cs" />
