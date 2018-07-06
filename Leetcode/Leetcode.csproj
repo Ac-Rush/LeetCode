@@ -101,6 +101,7 @@
     <Compile Include="DFS\Strobogrammatic Number II.cs" />
     <Compile Include="DFS\Word Search II.cs" />
     <Compile Include="DFS\Word Search.cs" />
+    <Compile Include="Dynamic Programming\Longest Palindromic Substring.cs" />
     <Compile Include="Graph\Course Schedule.cs" />
     <Compile Include="Graph\Evaluate Division.cs" />
     <Compile Include="Graph\Redundant Connection II.cs" />
@@ -476,6 +477,7 @@
     <Compile Include="TrimaBinarySearchTree.cs" />
     <Compile Include="TwoPointer\Array Partition I.cs" />
     <Compile Include="TwoPointer\Longest Substring with At Most K Distinct Characters.cs" />
+    <Compile Include="TwoPointer\Sort Transformed Array.cs" />
     <Compile Include="UniqueBinarySearchTrees.cs" />
     <Compile Include="经典代码\find kth largest elemtn of array.cs" />
     <Compile Include="经典代码\First Missing Positive.cs" />
