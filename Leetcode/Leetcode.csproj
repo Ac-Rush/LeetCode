@@ -105,6 +105,8 @@
     <Compile Include="Graph\Redundant Connection.cs" />
     <Compile Include="Greedy\Queue Reconstruction by Height.cs" />
     <Compile Include="HashTable\Palindrome Pairs.cs" />
+    <Compile Include="Heap\Find K Pairs with Smallest Sums.cs" />
+    <Compile Include="Heap\Find K-th Smallest Pair Distance.cs" />
     <Compile Include="Heap\Smallest Range.cs" />
     <Compile Include="LinkList\Insert into a Cyclic Sorted List.cs" />
     <Compile Include="Maths\Perfect Squares.cs" />
