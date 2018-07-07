@@ -47,6 +47,9 @@ namespace Leetcode.Dynamic_Programming
         /// follow up 如何得到最长递增序列
         /// 需要两个数组，
         /// result数组 来保存这个数之前的前序
+        /// 
+        /// 
+        /// O(NLogN)
         /// </summary>
         /// <param name="nums"></param>
         /// <returns></returns>
@@ -61,7 +64,7 @@ namespace Leetcode.Dynamic_Programming
                 int i = System.Array.BinarySearch(dp, 0, len, num);
                 if (i < 0)
                 {
-                    i = -(i + 1);
+                    i = -(i + 1);  //下一个比它大的值
                 }
                 dp[i] = num; //这个还就得放这里
                 if (i == len)

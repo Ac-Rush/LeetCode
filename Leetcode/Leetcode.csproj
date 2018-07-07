@@ -95,7 +95,11 @@
     <Compile Include="Bit\Single Element in a Sorted Array.cs" />
     <Compile Include="Bit\Single Number III.cs" />
     <Compile Include="Bit\Sum of Two Integers.cs" />
+    <Compile Include="Design\Design Tic-Tac-Toe.cs" />
     <Compile Include="Design\LRU Cache.cs" />
+    <Compile Include="Design\Range Sum Query 2D - Immutable.cs" />
+    <Compile Include="Design\Range Sum Query 2D - Mutable.cs" />
+    <Compile Include="Design\ZigzagIterator.cs" />
     <Compile Include="DFS\Android Unlock Patterns.cs" />
     <Compile Include="DFS\Nested List Weight Sum.cs" />
     <Compile Include="DFS\Pacific Atlantic Water Flow.cs" />
@@ -103,6 +107,7 @@
     <Compile Include="DFS\Word Search II.cs" />
     <Compile Include="DFS\Word Search.cs" />
     <Compile Include="Dynamic Programming\Longest Palindromic Substring.cs" />
+    <Compile Include="Dynamic Programming\Maximum Vacation Days.cs" />
     <Compile Include="Dynamic Programming\Sentence Screen Fitting.cs" />
     <Compile Include="Graph\Course Schedule.cs" />
     <Compile Include="Graph\Evaluate Division.cs" />
@@ -202,6 +207,7 @@
     <Compile Include="Matrix\Max Increase to Keep City Skyline.cs" />
     <Compile Include="Matrix\Perfect Rectangle.cs" />
     <Compile Include="Matrix\Robot Room Cleaner.cs" />
+    <Compile Include="Matrix\Set Matrix Zeroes.cs" />
     <Compile Include="Matrix\Spiral Matrix.cs" />
     <Compile Include="Matrix\Trapping Rain Water II.cs" />
     <Compile Include="Matrix\Valid Word Square.cs" />
