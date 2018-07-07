@@ -10,6 +10,7 @@ namespace Leetcode.Design
     {
         public bool ValidUtf8(int[] data)
         {
+         
             int count = 0;
             foreach (var c in data)
             {
