@@ -99,6 +99,7 @@
     <Compile Include="Design\LRU Cache.cs" />
     <Compile Include="Design\Range Sum Query 2D - Immutable.cs" />
     <Compile Include="Design\Range Sum Query 2D - Mutable.cs" />
+    <Compile Include="Design\UTF-8 Validation.cs" />
     <Compile Include="Design\ZigzagIterator.cs" />
     <Compile Include="DFS\Android Unlock Patterns.cs" />
     <Compile Include="DFS\Nested List Weight Sum.cs" />
