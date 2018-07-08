@@ -44,8 +44,8 @@ namespace Leetcode
         static void Main(string[] args)
         {
 
-            var c = new Cracking_the_Safe();
-            c.CrackSafe(2, 2);
+            var c = new Missing_Ranges();
+            c.FindMissingRanges(new[] {2147483647}, 0, 2147483647);
           //  TestLinkedList();
           //  TestTree();
           // TestGraph();
