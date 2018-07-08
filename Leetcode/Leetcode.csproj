@@ -246,6 +246,7 @@
     <Compile Include="Strings\Count Binary Substrings.cs" />
     <Compile Include="Strings\Custom Sort String.cs" />
     <Compile Include="Strings\Detect Capital.cs" />
+    <Compile Include="Strings\Encode and Decode Strings.cs" />
     <Compile Include="Strings\Encode String with Shortest Length.cs" />
     <Compile Include="Strings\Generate Parentheses.cs" />
     <Compile Include="Strings\Goat Latin.cs" />

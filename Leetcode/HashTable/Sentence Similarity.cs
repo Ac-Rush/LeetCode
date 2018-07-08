@@ -10,9 +10,10 @@ namespace Leetcode.HashTable
     {
         /// <summary>
         /// 这个比较容易，  follow up 是Sentence Similarity II 需要用  并查集
+        /// Sentence_Similarity_II_DSU
         /// https://leetcode.com/problems/sentence-similarity-ii/description/
         /// </summary>
-        /// <param name="words1"></param>
+        /// <param name="words1" ref="Sentence_Similarity_II_DSU.cs"></param>
         /// <param name="words2"></param>
         /// <param name="pairs"></param>
         /// <returns></returns>
