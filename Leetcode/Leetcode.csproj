@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ArrayS\3Sum Closest.cs" />
+    <Compile Include="ArrayS\3Sum Smaller.cs" />
     <Compile Include="ArrayS\3Sum.cs" />
     <Compile Include="ArrayS\ArrayPairSum.cs" />
     <Compile Include="ArrayS\Can Place Flowers.cs" />
