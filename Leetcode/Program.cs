@@ -44,8 +44,8 @@ namespace Leetcode
         static void Main(string[] args)
         {
 
-            var c = new Missing_Ranges();
-            c.FindMissingRanges(new[] {2147483647}, 0, 2147483647);
+            var c = new Minimize_Max_Distance_to_Gas_Station_Heap();
+            c.MinmaxGasDist(new[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 },9);
           //  TestLinkedList();
           //  TestTree();
           // TestGraph();

@@ -91,15 +91,18 @@
     <Compile Include="BinarySearch Tree\Closest Binary Search Tree Value.cs" />
     <Compile Include="BinarySearch Tree\Flatten Binary Tree to Linked List.cs" />
     <Compile Include="BinarySearch Tree\Range Module.cs" />
+    <Compile Include="BinarySearch\Minimize Max Distance to Gas Station.cs" />
     <Compile Include="Bit\Maximum XOR of Two Numbers in an Array.cs" />
     <Compile Include="Bit\Number of 1 Bits.cs" />
     <Compile Include="Bit\Single Element in a Sorted Array.cs" />
     <Compile Include="Bit\Single Number III.cs" />
     <Compile Include="Bit\Sum of Two Integers.cs" />
     <Compile Include="Design\Design Tic-Tac-Toe.cs" />
+    <Compile Include="Design\Guess the Word.cs" />
     <Compile Include="Design\LRU Cache.cs" />
     <Compile Include="Design\Range Sum Query 2D - Immutable.cs" />
     <Compile Include="Design\Range Sum Query 2D - Mutable.cs" />
+    <Compile Include="Design\Unique Word Abbreviation.cs" />
     <Compile Include="Design\UTF-8 Validation.cs" />
     <Compile Include="Design\ZigzagIterator.cs" />
     <Compile Include="DFS\Android Unlock Patterns.cs" />
@@ -233,6 +236,7 @@
     <Compile Include="Sort\Sort Colors.cs" />
     <Compile Include="Sort\Sort List.cs" />
     <Compile Include="Sort\Wiggle Sort II.cs" />
+    <Compile Include="Sort\Wiggle Sort.cs" />
     <Compile Include="Stack\Baseball Game.cs" />
     <Compile Include="Stack\Evaluate Reverse Polish Notation.cs" />
     <Compile Include="Stack\Min Stack.cs" />
@@ -494,6 +498,7 @@
     <Compile Include="TwoPointer\Array Partition I.cs" />
     <Compile Include="TwoPointer\Longest Substring with At Most K Distinct Characters.cs" />
     <Compile Include="TwoPointer\Sort Transformed Array.cs" />
+    <Compile Include="UnionFind\Number of Islands II.cs" />
     <Compile Include="UniqueBinarySearchTrees.cs" />
     <Compile Include="经典代码\find kth largest elemtn of array.cs" />
     <Compile Include="经典代码\First Missing Positive.cs" />
