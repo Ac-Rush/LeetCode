@@ -124,6 +124,7 @@
     <Compile Include="Dynamic Programming\Maximum Vacation Days.cs" />
     <Compile Include="Dynamic Programming\Sentence Screen Fitting.cs" />
     <Compile Include="Dynamic Programming\Word Break II.cs" />
+    <Compile Include="Graph\Clone Graph.cs" />
     <Compile Include="Graph\Course Schedule.cs" />
     <Compile Include="Graph\Evaluate Division.cs" />
     <Compile Include="Graph\Redundant Connection II.cs" />
@@ -141,6 +142,7 @@
     <Compile Include="Heap\Smallest Range.cs" />
     <Compile Include="Heap\Trapping Rain Water II.cs" />
     <Compile Include="LinkList\Insert into a Cyclic Sorted List.cs" />
+    <Compile Include="LinkList\Plus One Linked List.cs" />
     <Compile Include="Maths\Perfect Squares.cs" />
     <Compile Include="Maths\Poor Pigs.cs" />
     <Compile Include="DAC\Count of Smaller Numbers After Self.cs" />
