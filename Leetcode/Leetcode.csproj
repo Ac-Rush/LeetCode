@@ -132,9 +132,12 @@
     <Compile Include="HashTable\Group Shifted Strings.cs" />
     <Compile Include="HashTable\Longest Substring with At Most Two Distinct Characters.cs" />
     <Compile Include="HashTable\Palindrome Pairs.cs" />
+    <Compile Include="HashTable\Palindrome Permutation.cs" />
     <Compile Include="HashTable\Sentence Similarity.cs" />
     <Compile Include="Heap\Find K Pairs with Smallest Sums.cs" />
     <Compile Include="Heap\Find K-th Smallest Pair Distance.cs" />
+    <Compile Include="Heap\Find Median from Data Stream.cs" />
+    <Compile Include="Heap\Sliding Window Maximum.cs" />
     <Compile Include="Heap\Smallest Range.cs" />
     <Compile Include="Heap\Trapping Rain Water II.cs" />
     <Compile Include="LinkList\Insert into a Cyclic Sorted List.cs" />
@@ -259,6 +262,7 @@
     <Compile Include="Stack\Trapping Rain Water.cs" />
     <Compile Include="Strings\Add Binary.cs" />
     <Compile Include="Strings\Ambiguous Coordinates.cs" />
+    <Compile Include="Strings\Backspace String Compare.cs" />
     <Compile Include="Strings\Complex Number Multiplication.cs" />
     <Compile Include="Strings\Count and Say.cs" />
     <Compile Include="Strings\Count Binary Substrings.cs" />
