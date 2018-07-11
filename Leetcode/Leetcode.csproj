@@ -88,6 +88,8 @@
     <Compile Include="ArrayS\TwoSum.cs" />
     <Compile Include="BackTrack\Regular Expression Matching.cs" />
     <Compile Include="BFS\Shortest Distance from All Buildings.cs" />
+    <Compile Include="BFS\Word Ladder II.cs" />
+    <Compile Include="BFS\Word Ladder.cs" />
     <Compile Include="BinarySearch Tree\Closest Binary Search Tree Value II.cs" />
     <Compile Include="BinarySearch Tree\Closest Binary Search Tree Value.cs" />
     <Compile Include="BinarySearch Tree\Flatten Binary Tree to Linked List.cs" />
@@ -99,7 +101,9 @@
     <Compile Include="Bit\Single Number III.cs" />
     <Compile Include="Bit\Sum of Two Integers.cs" />
     <Compile Include="Design\Design Tic-Tac-Toe.cs" />
+    <Compile Include="Design\Flatten Nested List Iterator.cs" />
     <Compile Include="Design\Guess the Word.cs" />
+    <Compile Include="Design\Implement Trie %28Prefix Tree%29.cs" />
     <Compile Include="Design\LRU Cache.cs" />
     <Compile Include="Design\Range Sum Query 2D - Immutable.cs" />
     <Compile Include="Design\Range Sum Query 2D - Mutable.cs" />
@@ -119,6 +123,7 @@
     <Compile Include="Dynamic Programming\Longest Palindromic Substring.cs" />
     <Compile Include="Dynamic Programming\Maximum Vacation Days.cs" />
     <Compile Include="Dynamic Programming\Sentence Screen Fitting.cs" />
+    <Compile Include="Dynamic Programming\Word Break II.cs" />
     <Compile Include="Graph\Course Schedule.cs" />
     <Compile Include="Graph\Evaluate Division.cs" />
     <Compile Include="Graph\Redundant Connection II.cs" />
@@ -231,6 +236,7 @@
     <Compile Include="Number\Valid Number.cs" />
     <Compile Include="Number\Valid Palindrome.cs" />
     <Compile Include="Number\Valid Perfect Square.cs" />
+    <Compile Include="Other\Range Sum Query - Mutable.cs" />
     <Compile Include="Permutation\Next Permutation.cs" />
     <Compile Include="Sort\Largest Number.cs" />
     <Compile Include="Sort\Meeting Rooms II.cs" />
@@ -242,6 +248,8 @@
     <Compile Include="Sort\Wiggle Sort II.cs" />
     <Compile Include="Sort\Wiggle Sort.cs" />
     <Compile Include="Stack\Baseball Game.cs" />
+    <Compile Include="Stack\Basic Calculator II.cs" />
+    <Compile Include="Stack\Basic Calculator III.cs" />
     <Compile Include="Stack\Basic Calculator.cs" />
     <Compile Include="Stack\Evaluate Reverse Polish Notation.cs" />
     <Compile Include="Stack\Min Stack.cs" />
