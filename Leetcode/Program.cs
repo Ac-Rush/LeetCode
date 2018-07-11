@@ -28,6 +28,7 @@ using Leetcode.Tree;
 using Leetcode.TwoPointer;
 using Interval = Leetcode.Sort.Interval;
 using Number_of_Atoms = Leetcode.Strings.Number_of_Atoms;
+using Trapping_Rain_Water_II = Leetcode.Heap.Trapping_Rain_Water_II;
 
 //using Leetcode.DFS_BFS;
 
@@ -44,8 +45,7 @@ namespace Leetcode
         static void Main(string[] args)
         {
 
-            var c = new Minimize_Max_Distance_to_Gas_Station_Heap();
-            c.MinmaxGasDist(new[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 },9);
+          
           //  TestLinkedList();
           //  TestTree();
           // TestGraph();
@@ -82,8 +82,8 @@ namespace Leetcode
         static void TestMatrix()
         {
       //      Word_Search.Exist(new char[,] {{'a'}}, "a");
-            var c = new The_Skyline_Problem();
-            c.GetSkyline(new int[,] {{2, 9, 10}, {3, 7, 15}, {5, 12, 12}, {15, 20, 10}, {19, 24, 8}});
+            var c = new Trapping_Rain_Water_II();
+            c.TrapRainWater(new int[,] {{ 1, 4, 3, 1, 3, 2 }, { 3, 2, 1, 3, 2, 4 }, { 2, 3, 3, 2, 3, 1 } });
             Longest_Increasing_Path_in_a_Matrix.LongestIncreasingPath(new int[,] { {9,9,4} , {6,6,8} , {2,1,1} });
         }
 

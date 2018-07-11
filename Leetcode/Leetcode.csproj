@@ -109,6 +109,7 @@
     <Compile Include="DFS\Android Unlock Patterns.cs" />
     <Compile Include="DFS\Cracking the Safe.cs" />
     <Compile Include="DFS\Nested List Weight Sum.cs" />
+    <Compile Include="DFS\Optimal Account Balancing.cs" />
     <Compile Include="DFS\Pacific Atlantic Water Flow.cs" />
     <Compile Include="DFS\Sentence Similarity II.cs" />
     <Compile Include="DFS\Strobogrammatic Number II.cs" />
@@ -123,11 +124,14 @@
     <Compile Include="Graph\Redundant Connection II.cs" />
     <Compile Include="Graph\Redundant Connection.cs" />
     <Compile Include="Greedy\Queue Reconstruction by Height.cs" />
+    <Compile Include="HashTable\Group Shifted Strings.cs" />
+    <Compile Include="HashTable\Longest Substring with At Most Two Distinct Characters.cs" />
     <Compile Include="HashTable\Palindrome Pairs.cs" />
     <Compile Include="HashTable\Sentence Similarity.cs" />
     <Compile Include="Heap\Find K Pairs with Smallest Sums.cs" />
     <Compile Include="Heap\Find K-th Smallest Pair Distance.cs" />
     <Compile Include="Heap\Smallest Range.cs" />
+    <Compile Include="Heap\Trapping Rain Water II.cs" />
     <Compile Include="LinkList\Insert into a Cyclic Sorted List.cs" />
     <Compile Include="Maths\Perfect Squares.cs" />
     <Compile Include="Maths\Poor Pigs.cs" />
@@ -219,7 +223,6 @@
     <Compile Include="Matrix\Robot Room Cleaner.cs" />
     <Compile Include="Matrix\Set Matrix Zeroes.cs" />
     <Compile Include="Matrix\Spiral Matrix.cs" />
-    <Compile Include="Matrix\Trapping Rain Water II.cs" />
     <Compile Include="Matrix\Valid Word Square.cs" />
     <Compile Include="Number\First Missing Positive.cs" />
     <Compile Include="Number\Fizz Buzz.cs" />
@@ -239,6 +242,7 @@
     <Compile Include="Sort\Wiggle Sort II.cs" />
     <Compile Include="Sort\Wiggle Sort.cs" />
     <Compile Include="Stack\Baseball Game.cs" />
+    <Compile Include="Stack\Basic Calculator.cs" />
     <Compile Include="Stack\Evaluate Reverse Polish Notation.cs" />
     <Compile Include="Stack\Min Stack.cs" />
     <Compile Include="Stack\Next Greater Element I.cs" />

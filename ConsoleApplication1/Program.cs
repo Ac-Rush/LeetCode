@@ -4,13 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Leetcode.Matrix
+namespace ConsoleApplication1
 {
-    internal class Trapping_Rain_Water_II
+    class Program
     {
-        public int TrapRainWater(int[,] heightMap)
+        static void Main(string[] args)
         {
-            return 0;
         }
     }
 }
