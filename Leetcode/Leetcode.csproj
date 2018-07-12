@@ -117,12 +117,14 @@
     <Compile Include="DFS\Pacific Atlantic Water Flow.cs" />
     <Compile Include="DFS\Sentence Similarity II.cs" />
     <Compile Include="DFS\Strobogrammatic Number II.cs" />
+    <Compile Include="DFS\Sum of Distances in Tree.cs" />
     <Compile Include="DFS\Word Search II.cs" />
     <Compile Include="DFS\Word Search.cs" />
     <Compile Include="Dynamic Programming\Bomb Enemy.cs" />
     <Compile Include="Dynamic Programming\Longest Palindromic Substring.cs" />
     <Compile Include="Dynamic Programming\Maximum Vacation Days.cs" />
     <Compile Include="Dynamic Programming\Sentence Screen Fitting.cs" />
+    <Compile Include="Dynamic Programming\Wildcard Matching.cs" />
     <Compile Include="Dynamic Programming\Word Break II.cs" />
     <Compile Include="Graph\Clone Graph.cs" />
     <Compile Include="Graph\Course Schedule.cs" />
