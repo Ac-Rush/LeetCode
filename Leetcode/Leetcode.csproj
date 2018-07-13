@@ -88,6 +88,7 @@
     <Compile Include="ArrayS\TwoSum.cs" />
     <Compile Include="BackTrack\Regular Expression Matching.cs" />
     <Compile Include="BFS\Shortest Distance from All Buildings.cs" />
+    <Compile Include="BFS\The Maze.cs" />
     <Compile Include="BFS\Word Ladder II.cs" />
     <Compile Include="BFS\Word Ladder.cs" />
     <Compile Include="BinarySearch Tree\Closest Binary Search Tree Value II.cs" />
@@ -100,6 +101,8 @@
     <Compile Include="Bit\Single Element in a Sorted Array.cs" />
     <Compile Include="Bit\Single Number III.cs" />
     <Compile Include="Bit\Sum of Two Integers.cs" />
+    <Compile Include="DAC\Score of Parentheses.cs" />
+    <Compile Include="Design\Design Hit Counter.cs" />
     <Compile Include="Design\Design Tic-Tac-Toe.cs" />
     <Compile Include="Design\Flatten Nested List Iterator.cs" />
     <Compile Include="Design\Guess the Word.cs" />
@@ -520,6 +523,7 @@
     <Compile Include="TwoPointer\Array Partition I.cs" />
     <Compile Include="TwoPointer\Longest Substring with At Most K Distinct Characters.cs" />
     <Compile Include="TwoPointer\Sort Transformed Array.cs" />
+    <Compile Include="UnionFind\Bricks Falling When Hit.cs" />
     <Compile Include="UnionFind\Number of Islands II.cs" />
     <Compile Include="UniqueBinarySearchTrees.cs" />
     <Compile Include="经典代码\find kth largest elemtn of array.cs" />
