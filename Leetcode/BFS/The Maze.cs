@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -8,40 +9,98 @@ namespace Leetcode.BFS
 {
     class The_Maze_DFS
     {
-        int[,] dirs = new int[,] { { 0, 1 }, { 0, -1 }, {1,0}, {-1,0} };
         public bool HasPath(int[,] maze, int[] start, int[] destination)
         {
             var visited = new bool[maze.GetLength(0), maze.GetLength(1)];
-            return DFS(maze, start[0], start[1], destination[0], destination[1], visited);
+            return DFS(maze, start, destination, visited);
         }
 
-        private bool DFS(int[,] maze, int sx, int sy, int dx, int dy, bool[,] visited)
+        private bool DFS(int[,] maze, int[] start, int[] destination, bool[,] visited)
         {
-            return false;
-            /*
-            if (visited[sx, sy])
+            if (visited[start[0],start[1]])
                 return false;
-            if (sx == dx && sy == dy)
-            {
+            if (start[0] == destination[0] && start[1] == destination[1])
                 return true;
-            }
-            visited[sx, sy] = true;
-            var hasPath = false;
-            for (int i = 0; i < dirs.GetLength(0); i++)
+            visited[start[0], start[1]] = true;
+            int r = start[1] + 1, l = start[1] - 1, u = start[0] - 1, d = start[0] + 1;
+            while (r < maze.GetLength(1) && maze[start[0],r] == 0) // right
+                r++;
+            if (DFS(maze, new int[] { start[0], r - 1 }, destination, visited))
+                return true;
+            while (l >= 0 && maze[start[0],l] == 0) //left
+                l--;
+            if (DFS(maze, new int[] { start[0], l + 1 }, destination, visited))
+                return true;
+            while (u >= 0 && maze[u,start[1]] == 0) //up
+                u--;
+            if (DFS(maze, new int[] { u + 1, start[1] }, destination, visited))
+                return true;
+            while (d < maze.GetLength(0) && maze[d,start[1]] == 0) //down
+                d++;
+            if (DFS(maze, new int[] { d - 1, start[1] }, destination, visited))
+                return true;
+            return false;
+        }
+    }
+
+    class The_Maze_BFS
+    {
+        public bool HasPath(int[,] maze, int[] start, int[] destination)
+        {
+            var visited = new bool[maze.GetLength(0), maze.GetLength(1)];
+            var dirs = new int[,] { { 0, 1 }, { 0, -1 }, { -1, 0 }, { 1, 0 } };
+            Queue<int[]> queue = new Queue<int[]>();
+            queue.Enqueue(start);
+            visited[start[0],start[1]] = true;
+            while (queue.Any())
             {
-                var xx = sx + dirs[i, 0];
-                var yy = sy + dirs[i, 1];
-                var index = xx*maze.GetLength(1) + yy;
-                if (xx >= 0 && xx < maze.GetLength(0) && yy >= 0 && yy < maze.GetLength(1) && maze[xx, yy] == 0 &&
-                    !visted.Contains(index))
+                int[] s = queue.Dequeue();
+                if (s[0] == destination[0] && s[1] == destination[1])
+                    return true;
+                for (int i = 0 ; i < dirs.GetLength(0) ; i++)
                 {
-                    visted.Add(index);
-                    if (DFS(maze, xx, yy, dx, dy, visted)) return true;
-                    visted.Remove(index);
+                    int x = s[0] + dirs[i,0];
+                    int y = s[1] + dirs[i, 1];
+                    while (x >= 0 && y >= 0 && x < maze.GetLength(0) && y < maze.GetLength(1) && maze[x,y] == 0)
+                    {
+                        x += dirs[i, 0];
+                        y += dirs[i, 1];
+                    }
+                    if (!visited[x - dirs[i, 0],y - dirs[i, 1]])
+                    {
+                        queue.Enqueue(new int[] { x - dirs[i, 0], y - dirs[i, 1] });
+                        visited[x - dirs[i, 0], y - dirs[i, 1]] = true;
+                    }
                 }
             }
             return false;
-            */
+        }
+
+        private bool DFS(int[,] maze, int[] start, int[] destination, bool[,] visited)
+        {
+            if (visited[start[0], start[1]])
+                return false;
+            if (start[0] == destination[0] && start[1] == destination[1])
+                return true;
+            visited[start[0], start[1]] = true;
+            int r = start[1] + 1, l = start[1] - 1, u = start[0] - 1, d = start[0] + 1;
+            while (r < maze.GetLength(1) && maze[start[0], r] == 0) // right
+                r++;
+            if (DFS(maze, new int[] { start[0], r - 1 }, destination, visited))
+                return true;
+            while (l >= 0 && maze[start[0], l] == 0) //left
+                l--;
+            if (DFS(maze, new int[] { start[0], l + 1 }, destination, visited))
+                return true;
+            while (u >= 0 && maze[u, start[1]] == 0) //up
+                u--;
+            if (DFS(maze, new int[] { u + 1, start[1] }, destination, visited))
+                return true;
+            while (d < maze.GetLength(0) && maze[d, start[1]] == 0) //down
+                d++;
+            if (DFS(maze, new int[] { d - 1, start[1] }, destination, visited))
+                return true;
+            return false;
         }
     }
 }

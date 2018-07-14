@@ -57,6 +57,8 @@ sliding_max = 4, 6, 6, 8, 9, 10, 12, 56
     {
         public int[] MaxSlidingWindow(int[] nums, int w)
         {
+            var queue = new Queue<int>();
+            
             var max_left = new int[nums.Length];
             var max_right = new int[nums.Length];
 

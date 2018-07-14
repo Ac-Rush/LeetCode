@@ -62,6 +62,7 @@
     <Compile Include="ArrayS\K-diff Pairs in an Array.cs" />
     <Compile Include="ArrayS\Largest Number At Least Twice of Others.cs" />
     <Compile Include="ArrayS\Magic Squares In Grid.cs" />
+    <Compile Include="ArrayS\Majority Element.cs" />
     <Compile Include="ArrayS\Max Area of Island.cs" />
     <Compile Include="ArrayS\Max Consecutive Ones II.cs" />
     <Compile Include="ArrayS\Max Consecutive Ones.cs" />
@@ -77,6 +78,7 @@
     <Compile Include="ArrayS\Pascal%27s Triangle II.cs" />
     <Compile Include="ArrayS\Pascal%27s Triangle.cs" />
     <Compile Include="ArrayS\Plus One.cs" />
+    <Compile Include="ArrayS\Product of Array Except Self.cs" />
     <Compile Include="ArrayS\Remove Duplicates from Sorted Array.cs" />
     <Compile Include="ArrayS\RemoveDuplicates.cs" />
     <Compile Include="ArrayS\Rotate Array.cs" />
@@ -88,6 +90,7 @@
     <Compile Include="ArrayS\TwoSum.cs" />
     <Compile Include="BackTrack\Regular Expression Matching.cs" />
     <Compile Include="BFS\Shortest Distance from All Buildings.cs" />
+    <Compile Include="BFS\The Maze II.cs" />
     <Compile Include="BFS\The Maze.cs" />
     <Compile Include="BFS\Word Ladder II.cs" />
     <Compile Include="BFS\Word Ladder.cs" />
@@ -99,11 +102,13 @@
     <Compile Include="Bit\Maximum XOR of Two Numbers in an Array.cs" />
     <Compile Include="Bit\Number of 1 Bits.cs" />
     <Compile Include="Bit\Single Element in a Sorted Array.cs" />
+    <Compile Include="Bit\Single Number II.cs" />
     <Compile Include="Bit\Single Number III.cs" />
     <Compile Include="Bit\Sum of Two Integers.cs" />
     <Compile Include="DAC\Score of Parentheses.cs" />
     <Compile Include="Design\Design Hit Counter.cs" />
     <Compile Include="Design\Design Tic-Tac-Toe.cs" />
+    <Compile Include="Design\Flatten 2D Vector.cs" />
     <Compile Include="Design\Flatten Nested List Iterator.cs" />
     <Compile Include="Design\Guess the Word.cs" />
     <Compile Include="Design\Implement Trie %28Prefix Tree%29.cs" />
@@ -113,6 +118,7 @@
     <Compile Include="Design\Unique Word Abbreviation.cs" />
     <Compile Include="Design\UTF-8 Validation.cs" />
     <Compile Include="Design\ZigzagIterator.cs" />
+    <Compile Include="DFS\24 Game.cs" />
     <Compile Include="DFS\Android Unlock Patterns.cs" />
     <Compile Include="DFS\Cracking the Safe.cs" />
     <Compile Include="DFS\Nested List Weight Sum.cs" />
@@ -126,6 +132,9 @@
     <Compile Include="Dynamic Programming\Bomb Enemy.cs" />
     <Compile Include="Dynamic Programming\Longest Palindromic Substring.cs" />
     <Compile Include="Dynamic Programming\Maximum Vacation Days.cs" />
+    <Compile Include="Dynamic Programming\Paint Fence.cs" />
+    <Compile Include="Dynamic Programming\Paint House II.cs" />
+    <Compile Include="Dynamic Programming\Paint House.cs" />
     <Compile Include="Dynamic Programming\Sentence Screen Fitting.cs" />
     <Compile Include="Dynamic Programming\Wildcard Matching.cs" />
     <Compile Include="Dynamic Programming\Word Break II.cs" />
@@ -148,6 +157,7 @@
     <Compile Include="Heap\Trapping Rain Water II.cs" />
     <Compile Include="LinkList\Insert into a Cyclic Sorted List.cs" />
     <Compile Include="LinkList\Plus One Linked List.cs" />
+    <Compile Include="Maths\Largest Palindrome Product.cs" />
     <Compile Include="Maths\Perfect Squares.cs" />
     <Compile Include="Maths\Poor Pigs.cs" />
     <Compile Include="DAC\Count of Smaller Numbers After Self.cs" />
@@ -228,10 +238,12 @@
     <Compile Include="Maths\Range Addition II.cs" />
     <Compile Include="Maths\Rectangle Area.cs" />
     <Compile Include="Maths\Rectangle Overlap.cs" />
+    <Compile Include="Maths\Self Crossing.cs" />
     <Compile Include="Maths\Similar RGB Color.cs" />
     <Compile Include="Maths\Smallest Good Base.cs" />
     <Compile Include="Maths\Strobogrammatic Number.cs" />
     <Compile Include="Maths\Super Pow.cs" />
+    <Compile Include="Matrix\Battleships in a Board.cs" />
     <Compile Include="Matrix\Diagonal Traverse.cs" />
     <Compile Include="Matrix\Max Increase to Keep City Skyline.cs" />
     <Compile Include="Matrix\Perfect Rectangle.cs" />
@@ -248,6 +260,7 @@
     <Compile Include="Number\Valid Perfect Square.cs" />
     <Compile Include="Other\Range Sum Query - Mutable.cs" />
     <Compile Include="Permutation\Next Permutation.cs" />
+    <Compile Include="Queues\Task Scheduler.cs" />
     <Compile Include="Sort\Count of Range Sum.cs" />
     <Compile Include="Sort\Largest Number.cs" />
     <Compile Include="Sort\Meeting Rooms II.cs" />
