@@ -58,6 +58,7 @@
     <Compile Include="ArrayS\Image Smoother.cs" />
     <Compile Include="ArrayS\Insert Interval.cs" />
     <Compile Include="ArrayS\Island Perimeter.cs" />
+    <Compile Include="Greedy\Jump Game.cs" />
     <Compile Include="ArrayS\K Empty Slots.cs" />
     <Compile Include="ArrayS\K-diff Pairs in an Array.cs" />
     <Compile Include="ArrayS\Largest Number At Least Twice of Others.cs" />
@@ -106,6 +107,7 @@
     <Compile Include="BinarySearch\Minimize Max Distance to Gas Station.cs" />
     <Compile Include="Bit\Maximum XOR of Two Numbers in an Array.cs" />
     <Compile Include="Bit\Number of 1 Bits.cs" />
+    <Compile Include="Bit\Reverse Bits.cs" />
     <Compile Include="Bit\Single Element in a Sorted Array.cs" />
     <Compile Include="Bit\Single Number II.cs" />
     <Compile Include="Bit\Single Number III.cs" />
