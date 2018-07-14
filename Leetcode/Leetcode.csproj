@@ -62,6 +62,7 @@
     <Compile Include="ArrayS\K-diff Pairs in an Array.cs" />
     <Compile Include="ArrayS\Largest Number At Least Twice of Others.cs" />
     <Compile Include="ArrayS\Magic Squares In Grid.cs" />
+    <Compile Include="ArrayS\Majority Element II.cs" />
     <Compile Include="ArrayS\Majority Element.cs" />
     <Compile Include="ArrayS\Max Area of Island.cs" />
     <Compile Include="ArrayS\Max Consecutive Ones II.cs" />
@@ -112,6 +113,7 @@
     <Compile Include="Design\Flatten Nested List Iterator.cs" />
     <Compile Include="Design\Guess the Word.cs" />
     <Compile Include="Design\Implement Trie %28Prefix Tree%29.cs" />
+    <Compile Include="Design\Logger Rate Limiter.cs" />
     <Compile Include="Design\LRU Cache.cs" />
     <Compile Include="Design\Range Sum Query 2D - Immutable.cs" />
     <Compile Include="Design\Range Sum Query 2D - Mutable.cs" />
