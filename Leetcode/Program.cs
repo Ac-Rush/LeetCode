@@ -44,8 +44,8 @@ namespace Leetcode
 
         static void Main(string[] args)
         {
-            var c = new Maximal_Rectangle();
-            Maximal_Rectangle.MaximalRectangle(new char[,] { {'1'} });
+            var c = new N_Queens();
+            c.SolveNQueens(9);
 
           //  TestLinkedList();
           //  TestTree();

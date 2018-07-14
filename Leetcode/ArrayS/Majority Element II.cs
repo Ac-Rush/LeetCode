@@ -64,7 +64,7 @@ namespace Leetcode.ArrayS
 
             foreach (int num in nums)
             {
-                else if (num == candidate1) count1++;
+                 if (num == candidate1) count1++;
                 else if (num == candidate2) count2++;
                  if (count1 == 0)
                 {

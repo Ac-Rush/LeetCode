@@ -85,11 +85,15 @@
     <Compile Include="ArrayS\Rotate Array.cs" />
     <Compile Include="ArrayS\Rotate_Image.cs" />
     <Compile Include="ArrayS\Shortest Unsorted Continuous Subarray.cs" />
+    <Compile Include="ArrayS\Shuffle an Array.cs" />
     <Compile Include="ArrayS\Spiral Matrix II.cs" />
     <Compile Include="ArrayS\Summary Ranges.cs" />
     <Compile Include="ArrayS\Third Maximum Number.cs" />
     <Compile Include="ArrayS\TwoSum.cs" />
+    <Compile Include="BackTrack\N-Queens II.cs" />
+    <Compile Include="BackTrack\N-Queens.cs" />
     <Compile Include="BackTrack\Regular Expression Matching.cs" />
+    <Compile Include="BFS\Contains Duplicate III.cs" />
     <Compile Include="BFS\Shortest Distance from All Buildings.cs" />
     <Compile Include="BFS\The Maze II.cs" />
     <Compile Include="BFS\The Maze.cs" />
