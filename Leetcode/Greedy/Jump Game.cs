@@ -129,4 +129,35 @@ namespace Leetcode.ArrayS
         }
 
     }
+
+    class Jump_Game_GreeD2
+    {
+        //贪心
+        // O(n)O(n)
+        /// <summary>
+        /// 从后往前， 更新 lastPos， 如果 从i能够跳到lastPos， lastPos跟新成 i
+        /// </summary>
+        /// <param name="nums"></param>
+        /// <returns></returns>
+
+        public bool CanJump(int[] nums)
+        {
+            if (nums.Length <= 1) return true;
+            int curMax = nums[0]; // to mark the last element in a level
+            int level = 1, i = 1;  //注意初始化
+            while (i <= curMax)
+            {
+                if (curMax >= nums.Length - 1) return true;
+                int furthest = curMax; // to mark the last element in the next level
+                for (; i <= curMax; i++)
+                {
+                    furthest = Math.Max(furthest, nums[i] + i);
+                }
+                level++;
+                curMax = furthest;  //每一步能走多远
+            }
+            return false; // if i < curMax, i can't move forward anymore (the last element in the array can't be reached)
+        }
+
+    }
 }

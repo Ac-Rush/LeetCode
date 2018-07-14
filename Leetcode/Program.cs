@@ -16,6 +16,7 @@ using Leetcode.DAC;
 using Leetcode.DFS;
 using Leetcode.DFS_BFS;
 using Leetcode.Dynamic_Programming;
+using Leetcode.Greedy;
 using Leetcode.HashTable;
 using Leetcode.Heap;
 using Leetcode.Helper;
@@ -111,7 +112,7 @@ namespace Leetcode
 
         static void TestArry()
         {
-            _4Sum.FourSum(new[] {1, 0, -1, 0, -2, 2}, 0);
+            Jump_Game_II_My.Jump(new int[] {2, 1, 1, 10, 1, 1, 1, 1, 1, 1});
             Daily_Temperatures.DailyTemperatures(new[] {73, 74, 75, 71, 69, 72, 76, 73});
             //K_diff_Pairs_in_an_Array.FindPairs(new[] {1, 3, 1, 5, 4}, 0);
             //   Island_Perimeter.IslandPerimeter(new int[4, 4] { { 0, 1, 0, 0,  }, { 1, 1, 1 , 0 }, { 0, 1, 0, 0 }, { 1, 1, 0, 0 }});
