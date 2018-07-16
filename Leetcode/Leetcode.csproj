@@ -165,6 +165,7 @@
     <Compile Include="HashTable\Longest Substring with At Most Two Distinct Characters.cs" />
     <Compile Include="HashTable\Palindrome Pairs.cs" />
     <Compile Include="HashTable\Palindrome Permutation.cs" />
+    <Compile Include="HashTable\Rearrange String k Distance Apart.cs" />
     <Compile Include="HashTable\Sentence Similarity.cs" />
     <Compile Include="Heap\Find K Pairs with Smallest Sums.cs" />
     <Compile Include="Heap\Find K-th Smallest Pair Distance.cs" />
@@ -553,6 +554,7 @@
     <Compile Include="TrimaBinarySearchTree.cs" />
     <Compile Include="TwoPointer\Array Partition I.cs" />
     <Compile Include="TwoPointer\Container With Most Water.cs" />
+    <Compile Include="TwoPointer\Longest Mountain in Array.cs" />
     <Compile Include="TwoPointer\Longest Substring with At Most K Distinct Characters.cs" />
     <Compile Include="TwoPointer\Sort Transformed Array.cs" />
     <Compile Include="UnionFind\Bricks Falling When Hit.cs" />
