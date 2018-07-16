@@ -31,6 +31,7 @@ using Interval = Leetcode.Sort.Interval;
 using Number_of_Atoms = Leetcode.Strings.Number_of_Atoms;
 using Trapping_Rain_Water_II = Leetcode.Heap.Trapping_Rain_Water_II;
 using Leetcode.BFS;
+using Leetcode.Graph;
 
 //using Leetcode.DFS_BFS;
 
@@ -46,8 +47,8 @@ namespace Leetcode
 
         static void Main(string[] args)
         {
-            var c = new Shortest_Path_Visiting_All_Nodes();
-            c.ShortestPathLength(new int[][] { new int[] { 1,2,3}, new int[] { 0}, new int[] { 0 }, new int[] { 0 }, });
+            var c = new Alien_Dictionary();
+            c.AlienOrder(new string[] { "wrt", "wrf", "er", "ett", "rftt" });
             TestArry();
 
           //  TestLinkedList();

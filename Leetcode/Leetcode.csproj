@@ -59,6 +59,7 @@
     <Compile Include="ArrayS\Insert Interval.cs" />
     <Compile Include="ArrayS\Island Perimeter.cs" />
     <Compile Include="BFS\Bus Routes.cs" />
+    <Compile Include="BFS\Shortest Path to Get All Keys.cs" />
     <Compile Include="BFS\Shortest Path Visiting All Nodes.cs" />
     <Compile Include="Design\Implement Queue using Stacks.cs" />
     <Compile Include="DFS\Making A Large Island.cs" />
