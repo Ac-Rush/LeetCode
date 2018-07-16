@@ -47,8 +47,11 @@ namespace Leetcode
 
         static void Main(string[] args)
         {
-            var c = new Alien_Dictionary();
-            c.AlienOrder(new string[] { "wrt", "wrf", "er", "ett", "rftt" });
+            var c = new Minimum_Cost_to_Hire_K_Workers();
+            c.MincostToHireWorkers(new []{ 10,20,5},
+           new int[]  {
+            70,50,30},2
+        );
             TestArry();
 
           //  TestLinkedList();
