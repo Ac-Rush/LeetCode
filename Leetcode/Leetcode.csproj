@@ -58,8 +58,12 @@
     <Compile Include="ArrayS\Image Smoother.cs" />
     <Compile Include="ArrayS\Insert Interval.cs" />
     <Compile Include="ArrayS\Island Perimeter.cs" />
+    <Compile Include="BFS\Bus Routes.cs" />
+    <Compile Include="BFS\Shortest Path Visiting All Nodes.cs" />
     <Compile Include="Design\Implement Queue using Stacks.cs" />
+    <Compile Include="DFS\Making A Large Island.cs" />
     <Compile Include="Dynamic Programming\Cherry Pickup.cs" />
+    <Compile Include="Dynamic Programming\Race Car.cs" />
     <Compile Include="Greedy\Jump Game II.cs" />
     <Compile Include="Greedy\Jump Game.cs" />
     <Compile Include="ArrayS\K Empty Slots.cs" />
