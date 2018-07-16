@@ -4,6 +4,11 @@ namespace Leetcode.ArrayS
 {
     class _3Sum
     {
+        /// <summary>
+        /// 先排序， 去重，选定一个数， 然后 i+1, length-1 之间 twopointer 并且去重
+        /// </summary>
+        /// <param name="nums"></param>
+        /// <returns></returns>
         public static IList<IList<int>> ThreeSum(int[] nums)
         {
             var result = new List<IList<int>>();

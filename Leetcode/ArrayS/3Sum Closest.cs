@@ -2,6 +2,12 @@
 {
     class _3Sum_Closest
     {
+        /// <summary>
+        ///  先排序 选定一个数， 然后 i+1, length-1 之间 twopointer 并保存更新 minDiff
+        /// </summary>
+        /// <param name="nums"></param>
+        /// <param name="target"></param>
+        /// <returns></returns>
         public int ThreeSumClosest(int[] nums, int target)
         {
             var result = 0;

@@ -544,6 +544,7 @@
     <Compile Include="Trie\Word Squares.cs" />
     <Compile Include="TrimaBinarySearchTree.cs" />
     <Compile Include="TwoPointer\Array Partition I.cs" />
+    <Compile Include="TwoPointer\Container With Most Water.cs" />
     <Compile Include="TwoPointer\Longest Substring with At Most K Distinct Characters.cs" />
     <Compile Include="TwoPointer\Sort Transformed Array.cs" />
     <Compile Include="UnionFind\Bricks Falling When Hit.cs" />

@@ -44,7 +44,7 @@ namespace Leetcode.BinarySearch
             while (l < r)
             {
                 int mid = (l + r) / 2;
-                if (nums[mid] > nums[mid + 1])  // r是 比右边大的
+                if (nums[mid] > nums[mid + 1])  // r是 比右边大的  mid和右边的比较（这样不会越界）
                     r = mid;
                 else
                     l = mid + 1;    //l 不比右边打

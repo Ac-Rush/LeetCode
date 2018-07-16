@@ -8,6 +8,13 @@ namespace Leetcode.ArrayS
 {
     class _3Sum_Smaller_TwoPointer
     {
+        /// <summary>
+        /// 先排序 选定一个数， 然后 i+1, length-1 之间 twopointer 并保存更新 Count
+        /// O(N^2)
+        /// </summary>
+        /// <param name="nums"></param>
+        /// <param name="target"></param>
+        /// <returns></returns>
         public int ThreeSumSmaller(int[] nums, int target)
         {
             var count = 0;
@@ -36,6 +43,9 @@ namespace Leetcode.ArrayS
         
     }
 
+    /// <summary>
+    /// 3 Sum Smaller  先排序 选定一个数，然后 i+1, length-1 之间 二分查找， 
+    /// </summary>
     class _3Sum_Smaller_BinarySearch
     {
         public int ThreeSumSmaller(int[] nums, int target)
