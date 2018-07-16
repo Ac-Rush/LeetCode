@@ -57,7 +57,7 @@ namespace Leetcode.Graph
             Dictionary<string, double> e0Nodes = allNodes[e0];
 
             // remove to prevent using this node again
-            allNodes.Remove(e0); //删掉 开始点， 去重
+            allNodes.Remove(e0); //删掉 开始点， 去重 , 配合 第一行的判断 ，才能实现去重
 
             // DFS - search all children
             foreach (string n in e0Nodes.Keys) // 遍历neibor
