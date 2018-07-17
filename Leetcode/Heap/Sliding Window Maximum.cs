@@ -57,7 +57,6 @@ sliding_max = 4, 6, 6, 8, 9, 10, 12, 56
     {
         public int[] MaxSlidingWindow(int[] nums, int w)
         {
-            var queue = new Queue<int>();
             
             var max_left = new int[nums.Length];
             var max_right = new int[nums.Length];
@@ -83,5 +82,26 @@ sliding_max = 4, 6, 6, 8, 9, 10, 12, 56
         }
     }
 
+    class Sliding_Window_Maximum_ON2
+    {
+        public int[] MaxSlidingWindow(int[] nums, int k)
+        {
+            if (nums == null || nums.Length == 0 || k <= 1) return nums;
 
+            int[] result = new int[nums.Length - (k - 1)];
+            LinkedList<int> win = new LinkedList<int>();
+            for (int i = 0; i < nums.Length; i++)
+            {
+                if (win.Count != 0 && win.First.Value < i - (k - 1)) win.RemoveFirst();
+
+                while (win.Count != 0 && nums[win.Last.Value] <= nums[i]) win.RemoveLast();
+
+                win.AddLast(i);
+
+                if (i >= k - 1) result[i - (k - 1)] = nums[win.First.Value];
+            }
+
+            return result;
+        }
+    }
 }

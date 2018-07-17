@@ -10,7 +10,7 @@ namespace Leetcode.ArrayS
     {
         public int FindBlackPixel(char[,] picture, int N)
         {
-
+            return 0;
         }
     }
 }
