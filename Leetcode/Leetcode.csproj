@@ -62,9 +62,11 @@
     <Compile Include="BFS\Shortest Path to Get All Keys.cs" />
     <Compile Include="BFS\Shortest Path Visiting All Nodes.cs" />
     <Compile Include="Design\Implement Queue using Stacks.cs" />
+    <Compile Include="Design\Linked List Random Node.cs" />
     <Compile Include="DFS\Making A Large Island.cs" />
     <Compile Include="Dynamic Programming\Cherry Pickup.cs" />
     <Compile Include="Dynamic Programming\Race Car.cs" />
+    <Compile Include="Dynamic Programming\Ugly Number II.cs" />
     <Compile Include="Graph\Alien Dictionary.cs" />
     <Compile Include="Greedy\Jump Game II.cs" />
     <Compile Include="Greedy\Jump Game.cs" />
@@ -553,6 +555,7 @@
     <Compile Include="Tree\UniqueBinarySearchTrees.cs" />
     <Compile Include="Tree\Validate Binary Search Tree.cs" />
     <Compile Include="Trie\Add and Search Word - Data structure design.cs" />
+    <Compile Include="Trie\Map Sum Pairs.cs" />
     <Compile Include="Trie\Word Squares.cs" />
     <Compile Include="TrimaBinarySearchTree.cs" />
     <Compile Include="TwoPointer\Array Partition I.cs" />
@@ -561,7 +564,10 @@
     <Compile Include="TwoPointer\Longest Substring with At Most K Distinct Characters.cs" />
     <Compile Include="TwoPointer\Sort Transformed Array.cs" />
     <Compile Include="UnionFind\Bricks Falling When Hit.cs" />
+    <Compile Include="UnionFind\Graph Valid Tree.cs" />
+    <Compile Include="UnionFind\Number of Connected Components in an Undirected Graph.cs" />
     <Compile Include="UnionFind\Number of Islands II.cs" />
+    <Compile Include="UnionFind\Surrounded Regions.cs" />
     <Compile Include="UniqueBinarySearchTrees.cs" />
     <Compile Include="经典代码\find kth largest elemtn of array.cs" />
     <Compile Include="经典代码\First Missing Positive.cs" />

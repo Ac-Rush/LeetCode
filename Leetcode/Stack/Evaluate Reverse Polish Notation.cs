@@ -15,7 +15,6 @@ namespace Leetcode.Stack
         {
             if (tokens == null || tokens.Length == 0) return 0;
             var stack = new Stack<int>();
-            stack.Push(int.Parse(tokens[0]));
             foreach (var token in tokens)
             {
                 if (IsOp(token))

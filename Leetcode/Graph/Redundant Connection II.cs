@@ -7,6 +7,23 @@ using System.Threading.Tasks;
 
 namespace Leetcode.Graph
 {
+    /*
+     
+        1) Check whether there is a node having two parents. 
+    If so, store them as candidates A and B, and set the second edge invalid. 
+2) Perform normal union find. 
+    If the tree is now valid 
+           simply return candidate B
+    else if candidates not existing 
+           we find a circle, return current edge; 
+    else 
+           remove candidate A instead of B.
+    */
+    /// <summary>
+    /// 其实用 union find 做就好了
+    /// // step 1, check whether there is a node with two parents
+    ///  // step 2, union find
+    /// </summary>
     class Redundant_Connection_II
     {
        public class OrbitResult
