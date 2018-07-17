@@ -27,6 +27,8 @@ namespace Leetcode.BinarySearch
             else return quickSelect(a, p + 1, hi, k - m);
         }
 
+     
+
         private int Partition(int[] a, int lo, int hi)
         {
             int i = lo, j = hi, pivot = a[hi];
