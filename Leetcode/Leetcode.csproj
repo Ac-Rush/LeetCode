@@ -514,6 +514,7 @@
     <Compile Include="Strings\Reverse String.cs" />
     <Compile Include="Strings\Reverse Words in a String III.cs" />
     <Compile Include="Stack\Valid Parentheses.cs" />
+    <Compile Include="Strings\Valid Word Abbreviation.cs" />
     <Compile Include="StringtoInteger.cs" />
     <Compile Include="Strings\Implement strStr.cs" />
     <Compile Include="SubarrayWithGivenSum.cs" />
