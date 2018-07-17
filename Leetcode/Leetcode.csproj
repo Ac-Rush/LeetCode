@@ -61,6 +61,7 @@
     <Compile Include="ArrayS\Island Perimeter.cs" />
     <Compile Include="ArrayS\Lonely Pixel I.cs" />
     <Compile Include="ArrayS\Lonely Pixel II.cs" />
+    <Compile Include="ArrayS\Max Chunks To Make Sorted II.cs" />
     <Compile Include="ArrayS\Max Chunks To Make Sorted.cs" />
     <Compile Include="BackTrack\Flip Game II.cs" />
     <Compile Include="BackTrack\Generalized Abbreviation.cs" />
