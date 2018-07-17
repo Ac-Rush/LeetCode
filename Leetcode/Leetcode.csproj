@@ -298,6 +298,7 @@
     <Compile Include="Stack\Min Stack.cs" />
     <Compile Include="Stack\Next Greater Element I.cs" />
     <Compile Include="Stack\Next Greater Element II.cs" />
+    <Compile Include="Stack\Reverse polish notation evaluation.cs" />
     <Compile Include="Stack\Trapping Rain Water.cs" />
     <Compile Include="Strings\Add Binary.cs" />
     <Compile Include="Strings\Ambiguous Coordinates.cs" />
@@ -502,6 +503,7 @@
     <Compile Include="Tree\Binary Search Tree Iterator.cs" />
     <Compile Include="Tree\Binary Tree Level Order Traversal II.cs" />
     <Compile Include="Tree\Binary Tree Level Order Traversal.cs" />
+    <Compile Include="Tree\Binary Tree Longest Consecutive Sequence II.cs" />
     <Compile Include="Tree\Binary Tree Longest Consecutive Sequence.cs" />
     <Compile Include="Tree\Binary Tree Maximum Path Sum.cs" />
     <Compile Include="Tree\Binary Tree Paths.cs" />
@@ -536,6 +538,7 @@
     <Compile Include="Tree\Path Sum II.cs" />
     <Compile Include="Tree\Path Sum III.cs" />
     <Compile Include="Tree\Path Sum.cs" />
+    <Compile Include="Tree\polulte right pointers to each node.cs" />
     <Compile Include="Tree\Print Binary Tree.cs" />
     <Compile Include="Tree\Recover Binary Search Tree.cs" />
     <Compile Include="Tree\Redundant Connection.cs" />

@@ -28,9 +28,9 @@ That means whenever whether some interval can be a candidate and it fails first 
             int left = 0, right = k + 1, res = int.MaxValue;
             for (int i = 0; right < days.Length; i++)
             {
-                if (days[i] < days[left] || days[i] <= days[right])
+                if (days[i] < days[left] || days[i] <= days[right]) //sliding windows， 只统计 比windows 左边和右边开花晚的  //如果不符合要求 或是 i== right
                 {
-                    if (i == right) res = Math.Min(res, Math.Max(days[left], days[right]));   //we get a valid subarray
+                    if (i == right) res = Math.Min(res, Math.Max(days[left], days[right]));   //we get a valid subarray 找个最小的天数
                     left = i;   //更新 left, right
                     right = k + 1 + i;
                 }

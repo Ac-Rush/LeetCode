@@ -9,7 +9,13 @@ namespace Leetcode.Dynamic_Programming
     class Student_Attendance_Record_II
     {
 
+        /*
+      Let f[i][j][k] denote the # of valid sequences of length i where:
 
+There can be at most j A's in the entire sequence.
+There can be at most k trailing L's.
+We give the recurrence in the following code, which should be self-explanatory, and the final answer is f[n][1][2].   
+    */
         public int CheckRecord(int n)
         {
             var MOD = 1000000007;
@@ -26,9 +32,9 @@ namespace Leetcode.Dynamic_Programming
                 for (int j = 0; j < 2; j++)
                     for (int k = 0; k < 3; k++)
                     {
-                        int val = f[i - 1,j,2]; // ...P
-                        if (j > 0) val = (val + f[i - 1,j - 1,2]) % MOD; // ...A
-                        if (k > 0) val = (val + f[i - 1,j,k - 1]) % MOD; // ...L
+                        int val = f[i - 1,j,2]; // ...P  以p结尾，的随便加
+                        if (j > 0) val = (val + f[i - 1,j - 1,2]) % MOD; // ...A       //如果 A结尾，那么 j必须 j-1
+                        if (k > 0) val = (val + f[i - 1,j,k - 1]) % MOD; // ...L        //如果以 L开头 那么 
                         f[i,j,k] = val;
                     }
             return f[n,1,2];

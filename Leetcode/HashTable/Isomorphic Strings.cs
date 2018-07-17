@@ -20,8 +20,8 @@ namespace Leetcode.HashTable
             int n = s.Length;
             for (int i = 0; i < n; ++i)
             {
-                if (m1[s[i]] != m2[t[i]]) return false;
-                m1[s[i]] = i + 1;
+                if (m1[s[i]] != m2[t[i]]) return false;  //如果 这个字符的上次出现的位置不一样， 那么返回 false
+                m1[s[i]] = i + 1;  //更新这个字符最后出现的位置  
                 m2[t[i]] = i + 1;
             }
             return true;

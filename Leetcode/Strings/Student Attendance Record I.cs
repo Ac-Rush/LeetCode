@@ -14,24 +14,24 @@ namespace Leetcode.Strings
             var countL = 0;
             foreach (var c in s)
             {
-                if (c == 'A')
+                if (c == 'A') //如果是缺席， 
                 {
-                    if (++countA > 1)
+                    if (++countA > 1)  //如果多余了1个缺席
                     {
-                        return false;
+                        return false;  //返回 false
                     }
                  
                 }
-                if (c == 'L')
+                if (c == 'L')  //如果是 late
                 {
-                    if (++countL > 2)
+                    if (++countL > 2)  //如果连续多余2个
                     {
                         return false;
                     }
                 }
                 else // my bug 没看清题
                 {
-                    countL = 0;
+                    countL = 0;  // late 置0
                 }
             }
             return true;
