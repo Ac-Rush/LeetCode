@@ -315,6 +315,7 @@
     <Compile Include="Strings\Detect Capital.cs" />
     <Compile Include="Strings\Encode and Decode Strings.cs" />
     <Compile Include="Strings\Encode String with Shortest Length.cs" />
+    <Compile Include="Strings\Flip Game.cs" />
     <Compile Include="Strings\Generate Parentheses.cs" />
     <Compile Include="Strings\Goat Latin.cs" />
     <Compile Include="Strings\Judge Route Circle.cs" />
