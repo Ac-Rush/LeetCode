@@ -48,7 +48,7 @@ namespace Leetcode
         static void Main(string[] args)
         {
             var c = new Minimum_Cost_to_Hire_K_Workers();
-            c.MincostToHireWorkers(new []{ 10,20,5},
+            c.MincostToHireWorkers(new []{ 10, 20, 5 },
            new int[]  {
             70,50,30},2
         );
