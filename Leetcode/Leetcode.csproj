@@ -55,11 +55,13 @@
     <Compile Include="ArrayS\Find Pivot Index.cs" />
     <Compile Include="ArrayS\Game of Life.cs" />
     <Compile Include="ArrayS\Heaters.cs" />
+    <Compile Include="ArrayS\Image Overlap.cs" />
     <Compile Include="ArrayS\Image Smoother.cs" />
     <Compile Include="ArrayS\Insert Interval.cs" />
     <Compile Include="ArrayS\Island Perimeter.cs" />
     <Compile Include="BackTrack\Flip Game II.cs" />
     <Compile Include="BackTrack\Generalized Abbreviation.cs" />
+    <Compile Include="BackTrack\Minimum Unique Word Abbreviation.cs" />
     <Compile Include="BFS\Bus Routes.cs" />
     <Compile Include="BFS\K-Similar Strings.cs" />
     <Compile Include="BFS\Shortest Path to Get All Keys.cs" />
@@ -183,6 +185,7 @@
     <Compile Include="Heap\Trapping Rain Water II.cs" />
     <Compile Include="LinkList\Insert into a Cyclic Sorted List.cs" />
     <Compile Include="LinkList\Plus One Linked List.cs" />
+    <Compile Include="Maths\Add Strings.cs" />
     <Compile Include="Maths\Largest Palindrome Product.cs" />
     <Compile Include="Maths\Perfect Squares.cs" />
     <Compile Include="Maths\Poor Pigs.cs" />
@@ -336,6 +339,7 @@
     <Compile Include="Strings\Number of Segments in a String.cs" />
     <Compile Include="Strings\One Edit Distance.cs" />
     <Compile Include="Strings\Optimal Division.cs" />
+    <Compile Include="Strings\Output Contest Matches.cs" />
     <Compile Include="Strings\Palindrome Number.cs" />
     <Compile Include="Strings\Ransom Note.cs" />
     <Compile Include="Strings\Read N Characters Given Read4 II - Call multiple times.cs" />
@@ -566,6 +570,7 @@
     <Compile Include="TrimaBinarySearchTree.cs" />
     <Compile Include="TwoPointer\Array Partition I.cs" />
     <Compile Include="TwoPointer\Container With Most Water.cs" />
+    <Compile Include="TwoPointer\Find Permutation.cs" />
     <Compile Include="TwoPointer\Longest Mountain in Array.cs" />
     <Compile Include="TwoPointer\Longest Substring with At Most K Distinct Characters.cs" />
     <Compile Include="TwoPointer\Sort Transformed Array.cs" />
