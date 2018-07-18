@@ -27,14 +27,14 @@ namespace Leetcode.DFS_BFS
             {
                 for (int i = index; i < candidates.Length; i++)
                 {
-                    if (i > index && candidates[i] == candidates[i - 1])   //去重
+                    if (i > index && candidates[i] == candidates[i - 1])   //去重 去重
                     {
                         continue;
                     }
                     if (candidates[i] <= target)
                     {
                         result.Add(candidates[i]);
-                        Helper(candidates, i + 1, target - candidates[i], result);
+                        Helper(candidates, i + 1, target - candidates[i], result); //不可以重复用 ，i+1
                         result.RemoveAt(result.Count - 1);
                     }
                 }

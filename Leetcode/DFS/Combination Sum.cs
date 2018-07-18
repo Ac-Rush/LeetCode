@@ -29,7 +29,7 @@ namespace Leetcode.DFS_BFS
                     if (candidates[i] <= target) 
                     {
                         result.Add(candidates[i]);
-                        Helper(candidates, i, target - candidates[i], result);
+                        Helper(candidates, i, target - candidates[i], result);  //这里 i 不++ 因为可以重复用
                         result.RemoveAt(result.Count - 1);
                     }
                 }

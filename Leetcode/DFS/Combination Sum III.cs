@@ -13,7 +13,7 @@ namespace Leetcode.DFS_BFS
         {
             var candidates = new[] {1, 2, 3, 4, 5, 6, 7, 8, 9};
             var list = new List<int>();
-            System.Array.Sort(candidates);
+            System.Array.Sort(candidates);  //排序，后面才能去重
             Helper(candidates, 0, n, list, k);
             return lists;
         }
@@ -26,7 +26,7 @@ namespace Leetcode.DFS_BFS
             {
                 lists.Add(new List<int>(result));
             }
-            if (result.Count >= k)
+            if (result.Count >= k)  //剪枝  个数多了
             {
                 return;
             }
