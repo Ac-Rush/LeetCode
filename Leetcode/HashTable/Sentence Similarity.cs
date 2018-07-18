@@ -21,7 +21,7 @@ namespace Leetcode.HashTable
         {
             if (words1.Length != words2.Length) return false;
             var dict = new Dictionary<string, HashSet<string>>();  //bug ，之前是 dictionary<string, string> 可能有1对多
-            for (int i = 0; i < pairs.GetLength(0); i++) //init
+            for (int i = 0; i < pairs.GetLength(0); i++) //init  //query 建立 hash table
             {
                 if (!dict.ContainsKey(pairs[i, 0]))
                 {

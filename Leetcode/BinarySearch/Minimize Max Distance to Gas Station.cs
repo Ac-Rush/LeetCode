@@ -8,6 +8,7 @@ namespace Leetcode.BinarySearch
 {
     class Minimize_Max_Distance_to_Gas_Station_DP
     {
+        // O(K \log N)O(KlogN),
         //Let dp[n][k] be the answer for adding k more gas stations to the first n intervals of stations. 
         //We can develop a recurrence expressing dp[n][k] in terms of dp[x][y] with smaller (x, y).
         public double MinmaxGasDist(int[] stations, int K)

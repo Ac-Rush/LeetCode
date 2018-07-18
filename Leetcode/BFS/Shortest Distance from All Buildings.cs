@@ -36,7 +36,7 @@ optimization: change each land to mark (initially 0, then -1, -2, ...) so it can
             {
                 for (int j = 0; j < n; j++)
                 {
-                    if (grid[i, j] == 1)
+                    if (grid[i, j] == 1) //从 buildings 出发 而不是从 空地出发
                     {
                         Queue<Tuple<int, int>> queue = new Queue<Tuple<int, int>>(); // 求最短距离 用 BFS
                         queue.Enqueue(new Tuple<int, int>(i, j));

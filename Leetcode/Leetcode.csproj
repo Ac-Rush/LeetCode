@@ -319,6 +319,7 @@
     <Compile Include="Stack\Reverse polish notation evaluation.cs" />
     <Compile Include="Stack\Trapping Rain Water.cs" />
     <Compile Include="Strings\Add Binary.cs" />
+    <Compile Include="Strings\Add Bold Tag in String.cs" />
     <Compile Include="Strings\Ambiguous Coordinates.cs" />
     <Compile Include="Strings\Backspace String Compare.cs" />
     <Compile Include="Strings\Complex Number Multiplication.cs" />
