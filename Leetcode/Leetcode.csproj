@@ -52,6 +52,7 @@
     <Compile Include="ArrayS\Contains Duplicate II.cs" />
     <Compile Include="ArrayS\Degree of an Array.cs" />
     <Compile Include="ArrayS\Find All Duplicates in an Array.cs" />
+    <Compile Include="ArrayS\Find All Numbers Disappeared in an Array.cs" />
     <Compile Include="ArrayS\Find Pivot Index.cs" />
     <Compile Include="ArrayS\Game of Life.cs" />
     <Compile Include="ArrayS\Heaters.cs" />
@@ -63,6 +64,7 @@
     <Compile Include="ArrayS\Lonely Pixel II.cs" />
     <Compile Include="ArrayS\Max Chunks To Make Sorted II.cs" />
     <Compile Include="ArrayS\Max Chunks To Make Sorted.cs" />
+    <Compile Include="ArrayS\Sort Array By Parity.cs" />
     <Compile Include="BackTrack\Flip Game II.cs" />
     <Compile Include="BackTrack\Generalized Abbreviation.cs" />
     <Compile Include="BackTrack\Minimum Unique Word Abbreviation.cs" />
