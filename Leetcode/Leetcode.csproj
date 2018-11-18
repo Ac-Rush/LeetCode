@@ -342,6 +342,7 @@
     <Compile Include="Strings\Longest Common Prefix.cs" />
     <Compile Include="Strings\Longest Uncommon Subsequence I.cs" />
     <Compile Include="Strings\Longest Uncommon Subsequence II.cs" />
+    <Compile Include="Strings\Longest Word in Dictionary through Deleting.cs" />
     <Compile Include="Strings\Masking Personal Information.cs" />
     <Compile Include="Strings\Minimum Time Difference.cs" />
     <Compile Include="Strings\Most Common Word.cs" />

@@ -110,6 +110,18 @@ namespace Leetcode.DAC
         }
     }
 
+    /*
+     * 
+     * 
+                    1(0, 1)
+                     \
+                     6(3, 1)
+                     /
+                   2(0, 2)
+                       \
+                        3(0, 1)
+
+    */
 
     class Count_of_Smaller_Numbers_After_Self_BST
     {
@@ -143,12 +155,12 @@ namespace Leetcode.DAC
             }
             else if (node.val == num)
             {
-                node.dup++;
+                node.dup++;//重复了 ++
                 ans[i] = preSum + node.sum;
             }
             else if (node.val > num)
             {
-                node.sum++;
+                node.sum++;//
                 node.left = insert(num, node.left, ans, i, preSum);
             }
             else
