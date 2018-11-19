@@ -54,6 +54,7 @@
     <Compile Include="ArrayS\Find All Duplicates in an Array.cs" />
     <Compile Include="ArrayS\Find All Numbers Disappeared in an Array.cs" />
     <Compile Include="ArrayS\Find Pivot Index.cs" />
+    <Compile Include="ArrayS\Find the Duplicate Number.cs" />
     <Compile Include="ArrayS\Game of Life.cs" />
     <Compile Include="ArrayS\Heaters.cs" />
     <Compile Include="ArrayS\Image Overlap.cs" />
