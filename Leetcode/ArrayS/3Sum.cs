@@ -15,7 +15,7 @@ namespace Leetcode.ArrayS
             System.Array.Sort(nums);
             for (int i = 0; i < nums.Length - 2; i++)
             {
-                if (i == 0 || (i > 0 && nums[i] != nums[i - 1])) // remove duplication
+                if (i == 0 || (i > 0 && nums[i] != nums[i - 1])) // remove duplication  //去重很重要 如何去重 
                 {
                     int lo = i + 1, hi = nums.Length - 1, sum = 0 - nums[i];
                     while (lo < hi)
@@ -23,8 +23,8 @@ namespace Leetcode.ArrayS
                         if (nums[lo] + nums[hi] == sum)
                         {
                             result.Add(new List<int>() { nums[i], nums[lo], nums[hi]});
-                            while (lo < hi && nums[lo] == nums[lo + 1]) lo++; // remove duplication
-                            while (lo < hi && nums[hi] == nums[hi - 1]) hi--; // remove duplication
+                            while (lo < hi && nums[lo] == nums[lo + 1]) lo++; // remove duplication   //去重很重要 如何去重 
+                            while (lo < hi && nums[hi] == nums[hi - 1]) hi--; // remove duplication   //去重很重要 如何去重 
                             lo++; hi--;
                         }
                         else if (nums[lo] + nums[hi] < sum) lo++;

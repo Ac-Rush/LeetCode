@@ -23,11 +23,11 @@ namespace Leetcode.Strings
                 int sum = carry;
                 if (j >= 0) sum += b[j--] - '0';
                 if (i >= 0) sum += a[i--] - '0';
-                sb.Append(sum % 2);
+                sb.Insert(0, sum % 2);
                 carry = sum / 2;
             }
-            if (carry != 0) sb.Append(carry);
-            return new string(sb.ToString().Reverse().ToArray());
+            if (carry != 0) sb.Insert(0, carry);
+            return  sb.ToString();
         }
 
 
