@@ -12,7 +12,7 @@ namespace Leetcode.Stack
             foreach (char c in s)
             {
                 if (c == '(')
-                    stack.Push(')');
+                    stack.Push(')');  //这个 反向放 太棒了 太赞了
                 else if (c == '{')
                     stack.Push('}');
                 else if (c == '[')
