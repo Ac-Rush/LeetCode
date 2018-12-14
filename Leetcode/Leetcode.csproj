@@ -194,6 +194,7 @@
     <Compile Include="Heap\Trapping Rain Water II.cs" />
     <Compile Include="LinkList\Add Two Numbers.cs" />
     <Compile Include="LinkList\Insert into a Cyclic Sorted List.cs" />
+    <Compile Include="LinkList\Merge Two Sorted Lists.cs" />
     <Compile Include="LinkList\Plus One Linked List.cs" />
     <Compile Include="LinkList\Remove Nth Node From End of List.cs" />
     <Compile Include="Maths\Add Strings.cs" />
