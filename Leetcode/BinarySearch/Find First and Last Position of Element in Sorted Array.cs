@@ -35,24 +35,7 @@ namespace Leetcode.BinarySearch
             return ret;
         }
 
-        private int FindFirst(int[] nums, int target)
-        {
-            var l = 0;
-            var h = nums.Length - 1;
-            while (l < h)
-            {
-                var mid = (h - l) / 2;
-                if (nums[mid] < target)
-                {
-                    l = mid + 1;
-                }
-                else
-                {
-                    h = mid;
-                }
-            }
-            return l;
-        }
+        
 
         private static int firstGreaterEqual(int[] A, int target)
         {

@@ -125,11 +125,12 @@ namespace Leetcode.Dynamic_Programming
             foreach (var num in nums)
             {
                 
-                dp[l] = num;
+           /*     dp[l] = num;
                 if (l == len)
                 {
                     len++;
                 }
+                */
             }
             
             return len;

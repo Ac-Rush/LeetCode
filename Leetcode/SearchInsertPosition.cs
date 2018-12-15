@@ -50,5 +50,27 @@ namespace Leetcode
             //     Therefore, we return low as the answer. You can also return high+1 as the result, since low == high+1
             return low;
         }
+
+
+        private static int firstGreaterEqual(int[] A, int target)
+        {
+            int low = 0, high = A.Length;  //这个超赞high = A.Length 而不是 high = A.Length -1, 这是因为 low 不能等high， 所以不会越界， 这样可以找到第一个大的，如果不存在就返回 length.
+            while (low < high)
+            {
+                int mid = low + ((high - low) >> 1);
+                if (A[mid] < target)
+                {
+                    low = mid + 1;
+                }
+                else
+                {
+                    //should not be mid-1 when A[mid]==target.
+                    //could be mid even if A[mid]>target because mid<high.
+                    high = mid;
+                }
+            }
+            return low;
+        }
+
     }
 }
