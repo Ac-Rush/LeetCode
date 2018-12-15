@@ -13,20 +13,20 @@ namespace Leetcode.BinarySearch
         public int KthSmallest(TreeNode root, int k)
         {
             K = k;
-            PreOrder(root);
+            InOrder(root);
             return Kth;
         }
 
-        private void PreOrder(TreeNode root)
+        private void InOrder(TreeNode root)
         {
             if (root != null)
             {
-                PreOrder(root.left);
+                InOrder(root.left);
                 if (--K == 0)
                 {
                     Kth = root.val;
                 }
-                PreOrder(root.right);
+                InOrder(root.right);
             }
         }
     }
