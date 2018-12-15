@@ -124,19 +124,7 @@ namespace Leetcode.Dynamic_Programming
             int len = 0;
             foreach (var num in nums)
             {
-                int l = 0, h = len;
-                while (l < h)
-                {
-                    var mid = l + (h - l) / 2;
-                    if (dp[mid] < num)
-                    {
-                        l = mid + 1;
-                    }
-                    else
-                    {
-                        h = mid;
-                    }
-                }
+                
                 dp[l] = num;
                 if (l == len)
                 {

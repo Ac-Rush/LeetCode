@@ -75,6 +75,7 @@
     <Compile Include="BFS\Shortest Path to Get All Keys.cs" />
     <Compile Include="BFS\Shortest Path Visiting All Nodes.cs" />
     <Compile Include="BFS\Walls and Gates.cs" />
+    <Compile Include="BinarySearch\Find First and Last Position of Element in Sorted Array.cs" />
     <Compile Include="BinarySearch\Sliding Window Median.cs" />
     <Compile Include="Bit\Binary Watch.cs" />
     <Compile Include="Design\Implement Queue using Stacks.cs" />
