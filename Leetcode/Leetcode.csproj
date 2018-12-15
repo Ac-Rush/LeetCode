@@ -75,6 +75,7 @@
     <Compile Include="BFS\Shortest Path to Get All Keys.cs" />
     <Compile Include="BFS\Shortest Path Visiting All Nodes.cs" />
     <Compile Include="BFS\Walls and Gates.cs" />
+    <Compile Include="BinarySearch\Binary Search.cs" />
     <Compile Include="BinarySearch\Find First and Last Position of Element in Sorted Array.cs" />
     <Compile Include="BinarySearch\Sliding Window Median.cs" />
     <Compile Include="Bit\Binary Watch.cs" />
@@ -180,6 +181,7 @@
     <Compile Include="Graph\Redundant Connection II.cs" />
     <Compile Include="Graph\Redundant Connection.cs" />
     <Compile Include="Greedy\Queue Reconstruction by Height.cs" />
+    <Compile Include="HashTable\4Sum II.cs" />
     <Compile Include="HashTable\Group Shifted Strings.cs" />
     <Compile Include="HashTable\Intersection of Two Arrays II.cs" />
     <Compile Include="HashTable\Longest Substring with At Most Two Distinct Characters.cs" />
