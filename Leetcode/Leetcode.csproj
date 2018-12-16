@@ -551,6 +551,7 @@
     <Compile Include="Tree\Balanced Binary Tree.cs" />
     <Compile Include="Tree\Construct String from Binary Tree.cs" />
     <Compile Include="Tree\Convert BST to Greater Tree.cs" />
+    <Compile Include="Tree\Convert Sorted Array to Binary Search Tree.cs" />
     <Compile Include="Tree\Count Complete Tree Nodes.cs" />
     <Compile Include="Tree\Count Univalue Subtrees.cs" />
     <Compile Include="Tree\Delete Node in a BST.cs" />
@@ -589,6 +590,7 @@
     <Compile Include="Tree\Sum of Left Leaves.cs" />
     <Compile Include="Tree\Sum Root to Leaf Numbers.cs" />
     <Compile Include="Tree\Symmetric Tree.cs" />
+    <Compile Include="Tree\Trim a Binary Search Tree.cs" />
     <Compile Include="Tree\Two Sum IV - Input is a BST.cs" />
     <Compile Include="Tree\UniqueBinarySearchTrees.cs" />
     <Compile Include="Tree\Validate Binary Search Tree.cs" />

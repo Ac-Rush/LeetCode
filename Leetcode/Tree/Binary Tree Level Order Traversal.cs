@@ -59,22 +59,14 @@ namespace Leetcode.Tree
                 return result;
             }
             var queue = new Queue<TreeNode>();
-            var currentLine = new List<int>();
             queue.Enqueue(root);
             while (queue.Count > 0)
             {
-                var item = queue.Dequeue();
-                if (item == null)
+                var currentLine = new List<int>();
+                var count = queue.Count;
+                while (count-- > 0)
                 {
-                    result.Add(new List<int>(currentLine));
-                    if (queue.Count > 0)
-                    {
-                        currentLine.Clear();
-                        queue.Enqueue(null);
-                    }
-                }
-                else
-                {
+                    var item = queue.Dequeue();
                     currentLine.Add(item.val);
                     if (item.left != null)
                     {
@@ -85,6 +77,7 @@ namespace Leetcode.Tree
                         queue.Enqueue(item.right);
                     }
                 }
+                result.Add(new List<int>(currentLine));
             }
             return result;
         }

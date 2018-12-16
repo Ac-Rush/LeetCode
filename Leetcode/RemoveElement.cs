@@ -60,24 +60,8 @@ namespace Leetcode
             {
                 return 0;
             }
-            var l = 0; var r = nums.Length - 1;
-            while (l < r)
-            {
-                while (l < r && nums[l] != val) l++;
-                while (l < r && nums[r] == val) r--;
-                if (l != r)
-                {
-                    var temp = nums[l];
-                    nums[l] = nums[r];
-                    nums[r] = temp;
-                    l++; r--;
-                }
-                else
-                {
-                    break;
-                }
-            }
-            return nums[l] != val ? l + 1 : l;
+
+            return nums.Count(n => n != val);
         }
     }
 }
