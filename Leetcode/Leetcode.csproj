@@ -123,7 +123,7 @@
     <Compile Include="BackTrack\N-Queens II.cs" />
     <Compile Include="BackTrack\N-Queens.cs" />
     <Compile Include="BackTrack\Regular Expression Matching.cs" />
-    <Compile Include="BFS\Contains Duplicate III.cs" />
+    <Compile Include="buckets\Contains Duplicate III.cs" />
     <Compile Include="BFS\Shortest Distance from All Buildings.cs" />
     <Compile Include="BFS\The Maze II.cs" />
     <Compile Include="BFS\The Maze.cs" />
