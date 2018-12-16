@@ -566,8 +566,10 @@
     <Compile Include="Tree\Lowest Common Ancestor of a Binary Search Tree.cs" />
     <Compile Include="Tree\Maximum Binary Tree.cs" />
     <Compile Include="Tree\Maximum Width of Binary Tree.cs" />
+    <Compile Include="Tree\Merge Two Binary Trees.cs" />
     <Compile Include="Tree\Minimum Depth of Binary Tree.cs" />
     <Compile Include="Tree\Most Frequent Subtree Sum.cs" />
+    <Compile Include="Tree\N-ary Tree Postorder Traversal.cs" />
     <Compile Include="Tree\Path Sum II.cs" />
     <Compile Include="Tree\Path Sum III.cs" />
     <Compile Include="Tree\Path Sum.cs" />
