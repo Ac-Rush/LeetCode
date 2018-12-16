@@ -22,14 +22,12 @@ namespace Leetcode.Array
             {
                 return 0;
             }
-            var pre = nums[0];
             var start = 1;
             for (int i = 1; i < nums.Length; i++)
             {
-                if (nums[i] != pre)
+                if (nums[i] != nums[i - 1])
                 {
-                    pre = nums[i];
-                    nums[start++] = pre;
+                    nums[start++] = nums[i];
                 }
             }
             return start;
