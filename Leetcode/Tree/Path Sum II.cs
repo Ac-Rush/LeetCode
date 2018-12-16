@@ -27,6 +27,7 @@ namespace Leetcode.Tree
                 if (sum == root.val)
                 {
                     ret.Add(new List<int>(pathes));
+                      //return  my bug这里不能return 否则不能完成 最后一步 的删除
                 }
             }
             Helper(root.left, sum - root.val, pathes);
