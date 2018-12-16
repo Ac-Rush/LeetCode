@@ -182,6 +182,7 @@
     <Compile Include="Graph\Redundant Connection.cs" />
     <Compile Include="Greedy\Queue Reconstruction by Height.cs" />
     <Compile Include="HashTable\4Sum II.cs" />
+    <Compile Include="HashTable\Contains Duplicate.cs" />
     <Compile Include="HashTable\Group Shifted Strings.cs" />
     <Compile Include="HashTable\Intersection of Two Arrays II.cs" />
     <Compile Include="HashTable\Longest Substring with At Most Two Distinct Characters.cs" />

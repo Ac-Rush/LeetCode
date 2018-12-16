@@ -54,14 +54,6 @@ namespace Leetcode
             return nums[l] != val ? l + 1:l ;
         }
 
-        public static int RemoveElement4(int[] nums, int val)
-        {
-            if (nums == null || nums.Length == 0)
-            {
-                return 0;
-            }
-
-            return nums.Count(n => n != val);
-        }
+        
     }
 }
