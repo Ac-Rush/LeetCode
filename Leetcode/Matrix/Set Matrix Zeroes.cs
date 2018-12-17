@@ -18,7 +18,7 @@ namespace Leetcode.Matrix
                 if (matrix[i,0] == 0) col0 = 0;
                 for (int j = 1; j < cols; j++)
                     if (matrix[i,j] == 0)
-                        matrix[i,0] = matrix[0,j] = 0;
+                        matrix[i,0] = matrix[0,j] = 0;  //这个思路号， 只标记哨兵， 第一行 第一列
             }
 
             for (int i = rows - 1; i >= 0; i--)

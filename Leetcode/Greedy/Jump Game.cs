@@ -128,6 +128,20 @@ namespace Leetcode.ArrayS
             return lastPos == 0;
         }
 
+        /// <summary>
+        /// 这个好理解
+        /// </summary>
+        /// <param name="A"></param>
+        /// <param name="n"></param>
+        /// <returns></returns>
+        bool canJump2(int[] A, int n)
+        {
+            int i = 0;
+            for (int reach = 0; i < n && i <= reach; ++i)
+                reach = Math.Max(i + A[i], reach);
+            return i == n;
+        }
+
     }
 
     class Jump_Game_GreeD2
