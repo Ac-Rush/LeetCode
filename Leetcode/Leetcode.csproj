@@ -310,6 +310,8 @@
     <Compile Include="Number\Valid Perfect Square.cs" />
     <Compile Include="Other\Range Sum Query - Mutable.cs" />
     <Compile Include="Permutation\Next Permutation.cs" />
+    <Compile Include="Permutation\Permutations II.cs" />
+    <Compile Include="Permutation\Permutations.cs" />
     <Compile Include="Queues\Task Scheduler.cs" />
     <Compile Include="Sort\Count of Range Sum.cs" />
     <Compile Include="Sort\Largest Number.cs" />
@@ -553,6 +555,8 @@
     <Compile Include="Tree\BinaryTreeInorderTraversal.cs" />
     <Compile Include="Tree\BinaryTreeTilt.cs" />
     <Compile Include="Tree\Balanced Binary Tree.cs" />
+    <Compile Include="Tree\Construct Binary Tree from Inorder and Postorder Traversal.cs" />
+    <Compile Include="Tree\Construct Binary Tree from Preorder and Inorder Traversal.cs" />
     <Compile Include="Tree\Construct String from Binary Tree.cs" />
     <Compile Include="Tree\Convert BST to Greater Tree.cs" />
     <Compile Include="Tree\Convert Sorted Array to Binary Search Tree.cs" />

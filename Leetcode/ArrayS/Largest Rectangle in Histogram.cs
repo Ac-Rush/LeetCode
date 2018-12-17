@@ -36,6 +36,11 @@ namespace Leetcode.Dynamic_Programming
         /// <returns></returns>
         public int LargestRectangleArea2(int[] height)
         {
+            /**
+             * Do push all heights including 0 height.
+i - 1 - s.peek() uses the starting index where height[s.peek() + 1] >= height[tp], 
+            because the index on top of the stack right now is the first index left of tp with height smaller than tp's height.
+             */
             int len = height.Length;
             var s = new Stack<int>();
             int maxArea = 0;
@@ -49,6 +54,9 @@ namespace Leetcode.Dynamic_Programming
                 else
                 {
                     int tp = s.Pop();
+                    // 这个一定要注意 是(s.Count==0 ? i : i - 1 - s.Peek())；
+                    // 长度的计算  不是 i-tp, 因为 tp-1 不一定小于 tp,小于tp的是 stack的上一个
+                    //这个里的 stack保存了一份 到i 递增的序列
                     maxArea = Math.Max(maxArea, height[tp] * (s.Count==0 ? i : i - 1 - s.Peek()));
                     i--;
                 }

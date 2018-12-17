@@ -7,7 +7,8 @@ using System.Threading.Tasks;
 namespace Leetcode.Dynamic_Programming
 {
     class Triangle
-    {
+    { 
+        //还是自底向上 比较直观 方便
         public int MinimumTotal(IList<IList<int>> triangle)
         {
             for (int i = triangle.Count -2; i >=0; i--)

@@ -18,6 +18,7 @@ namespace Leetcode.Dynamic_Programming
             int max = A[0], min = A[0], result = A[0];
             for (int i = 1; i < A.Length; i++)
             {
+                // 这个好， 其实不用 考虑正负， 管它呢
                 int temp = max;
                 max = Math.Max(Math.Max(max * A[i], min * A[i]), A[i]);
                 min = Math.Min(Math.Min(temp * A[i], min * A[i]), A[i]);

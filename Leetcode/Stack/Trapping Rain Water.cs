@@ -67,6 +67,7 @@ namespace Leetcode.Stack
             int left_max = 0, right_max = 0;
             while (left < right)
             {
+                //高的柱子用来挡水， 所以先动低的柱子
                 if (height[left] < height[right]) //如果右边的点高，
                 {
                    //如果左边的点 大于左边最大的，更新左边的点， 

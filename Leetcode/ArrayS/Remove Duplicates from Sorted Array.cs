@@ -6,6 +6,29 @@ using System.Threading.Tasks;
 
 namespace Leetcode.Array
 {
+    class Remove_Duplicates_from_Sorted_Array_0
+    {
+        /// <summary>
+        /// good my solution 
+        /// 
+        /// two pointer 方法
+        /// </summary>
+        /// <param name="nums"></param>
+        /// <returns></returns>
+        public int RemoveDuplicates(int[] nums)
+        {
+            int i = 0;
+            var k = 1;  //这个就是通项， 参考 @Remove_Duplicates_from_Sorted_Array_II
+            foreach (int n in nums)
+                //如果 i 是前K个数，
+                //或者 这个数大于，前面的倒是第K个数
+                //那么就挪动赋值
+                if (i < k || n > nums[i - k])
+                    nums[i++] = n;
+            return i;
+        }
+    }
+
 
     class Remove_Duplicates_from_Sorted_Array
     {
