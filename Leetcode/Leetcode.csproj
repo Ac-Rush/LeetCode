@@ -65,6 +65,7 @@
     <Compile Include="ArrayS\Lonely Pixel II.cs" />
     <Compile Include="ArrayS\Max Chunks To Make Sorted II.cs" />
     <Compile Include="ArrayS\Max Chunks To Make Sorted.cs" />
+    <Compile Include="ArrayS\Remove Duplicates from Sorted Array II.cs" />
     <Compile Include="ArrayS\Sort Array By Parity II.cs" />
     <Compile Include="ArrayS\Sort Array By Parity.cs" />
     <Compile Include="BackTrack\Flip Game II.cs" />
