@@ -28,7 +28,7 @@ namespace Leetcode.Matrix
                 {
                     ans.Add(matrix[top, i]); // 添加第一行
                 }
-                if(left > right || top > bottom) break;
+                if(left > right || top > bottom) break;   //break 很重要，在while里面， 如果改变了 while判断的值  应该再判断下
                 top++; // top就需要下移一位
                 for (int i = top; i <= bottom ; i++)
                 {

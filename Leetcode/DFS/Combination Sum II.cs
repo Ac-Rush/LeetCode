@@ -27,7 +27,7 @@ namespace Leetcode.DFS_BFS
             {
                 for (int i = index; i < candidates.Length; i++)
                 {
-                    if (i > index && candidates[i] == candidates[i - 1])   //去重 去重
+                    if (i > index && candidates[i] == candidates[i - 1])   //去重 去重  // 注意是  i > index   不是大于0
                     {
                         continue;
                     }

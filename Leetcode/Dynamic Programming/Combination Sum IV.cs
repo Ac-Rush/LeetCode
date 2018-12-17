@@ -8,6 +8,12 @@ namespace Leetcode.DFS_BFS
 {
     class Combination_Sum_IV
     {
+        /// <summary>
+        ///  这个不一样， 这个去用 dp来做了
+        /// </summary>
+        /// <param name="nums"></param>
+        /// <param name="target"></param>
+        /// <returns></returns>
 
         public int CombinationSum4(int[] nums, int target)
         {

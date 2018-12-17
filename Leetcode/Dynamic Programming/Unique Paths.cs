@@ -35,4 +35,27 @@ namespace Leetcode.Dynamic_Programming
             return dp[m - 1, n - 1];
         }
     }
+
+    class Unique_Paths2
+    {
+        /// <summary>
+        /// my solution
+        /// </summary>
+        /// <param name="m"></param>
+        /// <param name="n"></param>
+        /// <returns></returns>
+        public int UniquePaths(int m, int n)
+        {
+            var dp = new int[m];
+            dp[0] = 1;
+            for (int i = 0; i < n; i++)
+            {
+                for (int j = 1; j < m; j++)
+                {
+                    dp[j] = dp[j] + dp[j - 1];
+                }
+            }
+            return dp[m - 1];
+        }
+    }
 }

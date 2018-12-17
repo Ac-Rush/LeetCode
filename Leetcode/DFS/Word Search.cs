@@ -26,7 +26,7 @@ namespace Leetcode.ArrayS
             if (index == word.Length )return true;  //先这个判断， 因为如果刚好在边界结尾， 需要这样的判断， 要不然还得特殊处理
             if (r < 0 || c < 0 || r == board.GetLength(0) || c == board.GetLength(1)) return false; //然后再这个判断，
             if (board[r,c] != word[index]) return false;
-            board[r,c] ^= (char)256;   // 这样就可以不用走重
+            board[r,c] ^= (char)256;   // 这样就可以不用走重  // 这里一定要注意
             var hasWord = DFS(board, word, index + 1, r - 1, c)|| 
              DFS(board, word, index + 1, r + 1, c)||
              DFS(board, word, index + 1, r, c - 1)||

@@ -15,7 +15,7 @@ namespace Leetcode.Array
         {
             int n = matrix.GetLength(0);
             int tmp;
-            for (int i = 0; i < Math.Ceiling((double)n / 2); i++)
+            for (int i = 0; i < n / 2; i++)
             {
                 for (int j = i; j < n - 1 - i; j++)
                 {

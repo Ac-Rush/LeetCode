@@ -346,6 +346,7 @@
     <Compile Include="Strings\Goat Latin.cs" />
     <Compile Include="Strings\Judge Route Circle.cs" />
     <Compile Include="Strings\Length of Last Word.cs" />
+    <Compile Include="Strings\Letter Case Permutation.cs" />
     <Compile Include="Strings\Letter Combinations of a Phone Number.cs" />
     <Compile Include="Strings\License Key Formatting.cs" />
     <Compile Include="Strings\Longest Absolute File Path.cs" />
@@ -612,6 +613,7 @@
     <Compile Include="UnionFind\Number of Islands II.cs" />
     <Compile Include="UnionFind\Surrounded Regions.cs" />
     <Compile Include="UniqueBinarySearchTrees.cs" />
+    <Compile Include="经典代码\4Sum.cs" />
     <Compile Include="经典代码\find kth largest elemtn of array.cs" />
     <Compile Include="经典代码\First Missing Positive.cs" />
     <Compile Include="经典代码\Kth Largest Element in an Array.cs" />

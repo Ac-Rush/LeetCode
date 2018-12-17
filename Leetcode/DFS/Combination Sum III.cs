@@ -13,7 +13,7 @@ namespace Leetcode.DFS_BFS
         {
             var candidates = new[] {1, 2, 3, 4, 5, 6, 7, 8, 9};
             var list = new List<int>();
-            System.Array.Sort(candidates);  //排序，后面才能去重
+                //    System.Array.Sort(candidates);  //排序，后面才能去重
             Helper(candidates, 0, n, list, k);
             return lists;
         }
