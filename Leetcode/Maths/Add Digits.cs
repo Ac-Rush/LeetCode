@@ -10,7 +10,7 @@ namespace Leetcode.MathS
     {
         public static int AddDigits(int num)
         {
-            while (num < 10)
+            while (num >= 10)
             {
                 var temp = 0;
                 while (num > 0)

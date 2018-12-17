@@ -81,6 +81,8 @@
     <Compile Include="BinarySearch\Find First and Last Position of Element in Sorted Array.cs" />
     <Compile Include="BinarySearch\Sliding Window Median.cs" />
     <Compile Include="Bit\Binary Watch.cs" />
+    <Compile Include="Bit\Find the Difference.cs" />
+    <Compile Include="Bit\Single Number.cs" />
     <Compile Include="Design\Implement Queue using Stacks.cs" />
     <Compile Include="Design\Linked List Random Node.cs" />
     <Compile Include="DFS\Making A Large Island.cs" />

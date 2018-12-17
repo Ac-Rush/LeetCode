@@ -27,10 +27,10 @@ namespace Leetcode.Bit
         public int SingleNumber(int[] A)
         {
             int ones = 0, twos = 0;
-            for (int i = 0; i < A.Length; i++)
+            foreach (var t in A)
             {
-                ones = (ones ^ A[i]) & ~twos;
-                twos = (twos ^ A[i]) & ~ones;
+                ones = (ones ^ t) & ~twos;
+                twos = (twos ^ t) & ~ones;
             }
             return ones;
         }
