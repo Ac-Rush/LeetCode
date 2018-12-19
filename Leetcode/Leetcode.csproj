@@ -197,6 +197,7 @@
     <Compile Include="HashTable\Uncommon Words from Two Sentences.cs" />
     <Compile Include="HashTable\Unique Email Addresses.cs" />
     <Compile Include="HashTable\Unique Morse Code Words.cs" />
+    <Compile Include="HashTable\Verifying an Alien Dictionary.cs" />
     <Compile Include="Heap\Find K Pairs with Smallest Sums.cs" />
     <Compile Include="Heap\Find K-th Smallest Pair Distance.cs" />
     <Compile Include="Heap\Find Median from Data Stream.cs" />

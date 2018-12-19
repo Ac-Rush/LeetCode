@@ -10,6 +10,7 @@ namespace Leetcode.HashTable
     {
         public int DistributeCandies(int[] candies)
         {
+            //用hashset  嘎嘎
             var dict = new Dictionary<int, int>();
             foreach (var candy in candies)
             {
