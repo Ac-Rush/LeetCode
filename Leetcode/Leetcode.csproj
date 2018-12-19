@@ -194,6 +194,7 @@
     <Compile Include="HashTable\Palindrome Permutation.cs" />
     <Compile Include="HashTable\Rearrange String k Distance Apart.cs" />
     <Compile Include="HashTable\Sentence Similarity.cs" />
+    <Compile Include="HashTable\Uncommon Words from Two Sentences.cs" />
     <Compile Include="HashTable\Unique Email Addresses.cs" />
     <Compile Include="HashTable\Unique Morse Code Words.cs" />
     <Compile Include="Heap\Find K Pairs with Smallest Sums.cs" />

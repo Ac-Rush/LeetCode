@@ -1,6 +1,8 @@
 namespace Leetcode.HashTable
 {
     using System.Collections.Generic;
+    using System.Linq;
+
     public class Uncommon_Words_from_Two_Sentences
     {
          public string[] UncommonFromSentences(string A, string B) {
