@@ -51,4 +51,30 @@ namespace Leetcode.HashTable
             return res;
         }
     }
+
+
+    class Top_K_Frequent_Elements2
+    {
+        /// <summary>
+        /// bucket sort
+        /// </summary>
+        /// <param name="nums"></param>
+        /// <param name="k"></param>
+        /// <returns></returns>
+        public List<int> TopKFrequent(int[] nums, int k)
+        {
+
+            var dict = new Dictionary<int, int>();
+            foreach (var n in nums)
+            {
+                if (!dict.ContainsKey(n))
+                {
+                    dict[n] = 0;
+                }
+                dict[n]++;
+            }
+            return dict.Keys.OrderByDescending(i => dict[i]).Take(k).ToList();
+          
+        }
+    }
 }

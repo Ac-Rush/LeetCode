@@ -315,6 +315,7 @@
     <Compile Include="Number\Valid Palindrome.cs" />
     <Compile Include="Number\Valid Perfect Square.cs" />
     <Compile Include="Other\Range Sum Query - Mutable.cs" />
+    <Compile Include="Permutation\Combinations.cs" />
     <Compile Include="Permutation\Next Permutation.cs" />
     <Compile Include="Permutation\Permutations II.cs" />
     <Compile Include="Permutation\Permutations.cs" />
