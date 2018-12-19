@@ -10,6 +10,7 @@ namespace Leetcode.HashTable
     {
         public int CountPrimes(int n)
         {
+            //完蛋 一个一个排除的 
             bool[] notPrime = new bool[n];
             int count = 0;
             for (int i = 2; i < n; i++)

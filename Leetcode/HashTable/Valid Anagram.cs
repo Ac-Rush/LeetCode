@@ -30,4 +30,26 @@ namespace Leetcode.HashTable
             return true;
         }
     }
+
+    class Valid_Anagram2
+    {
+        public bool IsAnagram(string s, string t)
+        {
+            if (s.Length != t.Length)
+            {
+                return false;
+            }
+            var map = new int[26];
+            foreach (var c in s)
+            {
+                map[c - 'a']++;
+            }
+
+            foreach (var c in t)
+            {
+                if (--map[c - 'a'] < 0) return false;
+            }
+            return true;
+        }
+    }
 }
