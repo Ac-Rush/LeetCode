@@ -207,6 +207,7 @@
     <Compile Include="Heap\Smallest Range.cs" />
     <Compile Include="Heap\Trapping Rain Water II.cs" />
     <Compile Include="LinkList\Add Two Numbers.cs" />
+    <Compile Include="LinkList\Delete Node in a Linked List.cs" />
     <Compile Include="LinkList\Insert into a Cyclic Sorted List.cs" />
     <Compile Include="LinkList\Merge Two Sorted Lists.cs" />
     <Compile Include="LinkList\Plus One Linked List.cs" />
@@ -312,6 +313,7 @@
     <Compile Include="Number\Fizz Buzz.cs" />
     <Compile Include="Number\Next Greater Element III.cs" />
     <Compile Include="Number\Remove K Digits.cs" />
+    <Compile Include="Number\Roman to Integer.cs" />
     <Compile Include="Number\Valid Number.cs" />
     <Compile Include="Number\Valid Palindrome.cs" />
     <Compile Include="Number\Valid Perfect Square.cs" />
