@@ -83,6 +83,7 @@
     <Compile Include="Bit\Binary Watch.cs" />
     <Compile Include="Bit\Find the Difference.cs" />
     <Compile Include="Bit\Single Number.cs" />
+    <Compile Include="Design\Design HashSet.cs" />
     <Compile Include="Design\Implement Queue using Stacks.cs" />
     <Compile Include="Design\Linked List Random Node.cs" />
     <Compile Include="DFS\Making A Large Island.cs" />
@@ -321,6 +322,7 @@
     <Compile Include="Permutation\Permutations II.cs" />
     <Compile Include="Permutation\Permutations.cs" />
     <Compile Include="Queues\Task Scheduler.cs" />
+    <Compile Include="SlidingWindow\Permutation in String.cs" />
     <Compile Include="Sort\Count of Range Sum.cs" />
     <Compile Include="Sort\Largest Number.cs" />
     <Compile Include="Sort\Meeting Rooms II.cs" />
@@ -340,6 +342,7 @@
     <Compile Include="Stack\Next Greater Element I.cs" />
     <Compile Include="Stack\Next Greater Element II.cs" />
     <Compile Include="Stack\Reverse polish notation evaluation.cs" />
+    <Compile Include="Stack\Simplify Path.cs" />
     <Compile Include="Stack\Trapping Rain Water.cs" />
     <Compile Include="Strings\Add Binary.cs" />
     <Compile Include="Strings\Add Bold Tag in String.cs" />

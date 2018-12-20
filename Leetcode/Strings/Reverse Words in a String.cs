@@ -11,18 +11,15 @@ namespace Leetcode.Strings
         public string ReverseWords(string s)
         {
             var sb = new StringBuilder();
-            var wordArr = s.Split(' ');
-
+            string[] wordArr = s.Split(' ', StringSplitOptions.RemoveEmptyEntries);
             for (int i = wordArr.Length - 1; i >= 0; i--)
             {
                 var word = wordArr[i].Trim();
                 sb.Append(word);
-                if (word.Length != 0)
+                if (i != 0)
                     sb.Append(" ");
-
             }
-
-            return sb.ToString().Trim();
+            return sb.ToString();
         }
 
         
