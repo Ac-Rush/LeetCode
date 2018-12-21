@@ -10,7 +10,7 @@ namespace Leetcode.Stack
     class Next_Greater_Element_II
     {
         /// <summary>
-        /// stack  两杯数组的解法
+        /// stack  两倍数组的解法
         /// 这个也得看看
         /// </summary>
         /// <param name="nums"></param>
