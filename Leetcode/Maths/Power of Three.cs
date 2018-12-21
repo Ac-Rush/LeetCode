@@ -12,6 +12,7 @@ namespace Leetcode.Maths
         {
             if (n <= 0) return false; // my bug 没有check 边界
             return (Math.Log10(n) / Math.Log10(3)) % 1 == 0;
+            //  return ( n>0 &&  1162261467%n==0);
         }
 
         public bool isPowerOfThree2(int n)

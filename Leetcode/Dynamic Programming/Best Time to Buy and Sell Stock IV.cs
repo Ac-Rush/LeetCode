@@ -39,7 +39,7 @@ namespace Leetcode.Dynamic_Programming
             int[,] dp = new int[k + 1,n];
             for (int i = 1; i <= k; i++)
             {
-                int localMax = dp[i - 1,0] - prices[0]; // dp[i - 1,0] =0
+                int localMax = - prices[0]; // dp[i - 1,0] =0
                 for (int j = 1; j < n; j++)
                 {
                     dp[i,j] = Math.Max(dp[i,j - 1], prices[j] + localMax);

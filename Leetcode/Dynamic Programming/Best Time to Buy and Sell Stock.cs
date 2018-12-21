@@ -31,4 +31,25 @@ namespace Leetcode.Dynamic_Programming
             return maxprofit;
         }
     }
+
+    class Best_Time_to_Buy_and_Sell_Stock2
+    {
+        /// <summary>
+        /// my solution
+        /// </summary>
+        /// <param name="prices"></param>
+        /// <returns></returns>
+        public int MaxProfit(int[] prices)
+        {
+
+            var min = int.MaxValue;
+            var max = 0;
+            foreach (var p in prices)
+            {
+                min = Math.Min(min, p);
+                max = Math.Max(max, p - min);
+            }
+            return max;
+        }
+    }
 }
