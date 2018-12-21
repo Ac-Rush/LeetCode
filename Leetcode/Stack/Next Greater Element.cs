@@ -14,6 +14,7 @@ namespace Leetcode.Stack
             int[] nge = new int[arr.Length];
 
             // iterate for rest of the elements  
+            //从后向前来
             for (int i = arr.Length - 1; i >= 0; i--)
             {
 
