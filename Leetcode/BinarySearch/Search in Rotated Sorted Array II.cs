@@ -21,7 +21,7 @@ namespace Leetcode.BinarySearch
 
                 if (nums[mid] > nums[h])
                 {
-                    if (target >= nums[l] && target < nums[mid])
+                    if (target >= nums[l] && target < nums[mid])  // 注意target >= nums[l]  这里是等号
                     {
                         h = mid - 1;
                     }
