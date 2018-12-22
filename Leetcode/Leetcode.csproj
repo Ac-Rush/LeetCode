@@ -307,6 +307,7 @@
     <Compile Include="Matrix\Diagonal Traverse.cs" />
     <Compile Include="Matrix\Max Increase to Keep City Skyline.cs" />
     <Compile Include="Matrix\Perfect Rectangle.cs" />
+    <Compile Include="Matrix\Robot Return to Origin.cs" />
     <Compile Include="Matrix\Robot Room Cleaner.cs" />
     <Compile Include="Matrix\Set Matrix Zeroes.cs" />
     <Compile Include="Matrix\Spiral Matrix.cs" />
@@ -356,6 +357,7 @@
     <Compile Include="Strings\Count and Say.cs" />
     <Compile Include="Strings\Count Binary Substrings.cs" />
     <Compile Include="Strings\Custom Sort String.cs" />
+    <Compile Include="Strings\Delete Columns to Make Sorted.cs" />
     <Compile Include="Strings\Detect Capital.cs" />
     <Compile Include="Strings\Encode and Decode Strings.cs" />
     <Compile Include="Strings\Encode String with Shortest Length.cs" />

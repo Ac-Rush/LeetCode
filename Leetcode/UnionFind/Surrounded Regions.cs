@@ -10,25 +10,26 @@ namespace Leetcode.UnionFind
     {
         /// <summary>
         /// DFS 四边 上色问题
+        /// 从四边开始 DFS 上色
         /// </summary>
         /// <param name="board"></param>
         public void Solve(char[,] board)
         {
             bool[,] visited = new bool[board.GetLength(0), board.GetLength(1)];
 
-            for (int i = 0; i <= board.GetLength(1) - 1; i++)
+            for (int i = 0; i <= board.GetLength(1) - 1; i++) //第一行
                 if (board[0, i] == 'O' && !visited[0, i])
                     MarkInvalid(0, i, board, visited);
 
-            for (int i = 0; i <= board.GetLength(1) - 1; i++)
+            for (int i = 0; i <= board.GetLength(1) - 1; i++) // 最后一列
                 if (board[board.GetLength(0) - 1, i] == 'O' && !visited[board.GetLength(0) - 1, i])
                     MarkInvalid(board.GetLength(0) - 1, i, board, visited);
 
-            for (int i = 0; i <= board.GetLength(0) - 1; i++)
+            for (int i = 0; i <= board.GetLength(0) - 1; i++) // 第一列
                 if (board[i, 0] == 'O' && !visited[i, 0])
                     MarkInvalid(i, 0, board, visited);
 
-            for (int i = 0; i <= board.GetLength(0) - 1; i++)
+            for (int i = 0; i <= board.GetLength(0) - 1; i++) // 最后一行
                 if (board[i, board.GetLength(1) - 1] == 'O' && !visited[i, board.GetLength(1) - 1])
                     MarkInvalid(i, board.GetLength(1) - 1, board, visited);
 
