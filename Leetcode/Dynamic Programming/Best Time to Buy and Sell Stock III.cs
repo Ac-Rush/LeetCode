@@ -23,6 +23,28 @@ namespace Leetcode.Dynamic_Programming
             return release2; ///Since release1 is initiated as 0, so release2 will always higher than release1.
         }
 
+        //k次的template， 上面的其实是一步一步推出来的
+        //https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/discuss/135704/Detail-explanation-of-DP-solution
+        public int MaxProfitDpCompact2(int[] prices)
+        {
+            if (prices.Length == 0) return 0;
+            var dp = new int[3];
+            var min = new int[3];
+           for(int i = 0; i < min.Length; i++)
+            {
+                min[i] = prices[0];
+            }
+            for (int i = 1; i < prices.Length; i++)
+            {
+                for (int k = 1; k <= 2; k++)
+                {
+                    min[k] = Math.Min(min[k], prices[i] - dp[k - 1]);
+                    dp[k] = Math.Max(dp[k], prices[i] - min[k]);
+                }
+            }
+
+            return dp[2];
+        }
 
 
         /*
