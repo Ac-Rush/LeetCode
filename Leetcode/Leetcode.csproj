@@ -359,6 +359,7 @@
     <Compile Include="Strings\Custom Sort String.cs" />
     <Compile Include="Strings\Delete Columns to Make Sorted.cs" />
     <Compile Include="Strings\Detect Capital.cs" />
+    <Compile Include="Strings\DI String Match.cs" />
     <Compile Include="Strings\Encode and Decode Strings.cs" />
     <Compile Include="Strings\Encode String with Shortest Length.cs" />
     <Compile Include="Strings\Flip Game.cs" />
@@ -549,6 +550,7 @@
     <Compile Include="Strings\Reverse String.cs" />
     <Compile Include="Strings\Reverse Words in a String III.cs" />
     <Compile Include="Stack\Valid Parentheses.cs" />
+    <Compile Include="Strings\Valid Parenthesis String.cs" />
     <Compile Include="Strings\Valid Word Abbreviation.cs" />
     <Compile Include="StringtoInteger.cs" />
     <Compile Include="Strings\Implement strStr.cs" />
