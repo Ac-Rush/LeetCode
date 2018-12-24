@@ -32,6 +32,7 @@ namespace Leetcode.Design
 
         public int SumRegion(int row1, int col1, int row2, int col2)
         {
+            //求 i,j 的位置
             int iMin = Math.Min(row1, row2);
             int iMax = Math.Max(row1, row2);
 
