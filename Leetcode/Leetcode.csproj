@@ -316,12 +316,14 @@
     <Compile Include="Matrix\Robot Room Cleaner.cs" />
     <Compile Include="Matrix\Set Matrix Zeroes.cs" />
     <Compile Include="Matrix\Spiral Matrix.cs" />
+    <Compile Include="Matrix\Toeplitz Matrix.cs" />
     <Compile Include="Matrix\Valid Word Square.cs" />
     <Compile Include="Number\First Missing Positive.cs" />
     <Compile Include="Number\Fizz Buzz.cs" />
     <Compile Include="Number\Next Greater Element III.cs" />
     <Compile Include="Number\Remove K Digits.cs" />
     <Compile Include="Number\Roman to Integer.cs" />
+    <Compile Include="Number\Ugly Number.cs" />
     <Compile Include="Number\Valid Number.cs" />
     <Compile Include="Number\Valid Palindrome.cs" />
     <Compile Include="Number\Valid Perfect Square.cs" />

@@ -30,7 +30,7 @@ namespace Leetcode.BinarySearch
                 }
                 else
                 {
-                    h--;
+                    h--; // 这个是必须的， 否则死循环
                 }
             }
             return nums[l];

@@ -48,5 +48,34 @@ namespace Leetcode.Strings
 
             return ans;
         }
+
+
+        public static string MostCommonWord2(string paragraph, string[] banned)
+        {
+            paragraph = paragraph + '.';  //my bug
+            var dict = new Dictionary<string, int>();
+            var bannedSet = new HashSet<string>(banned);
+            var segs = paragraph.Split(new char[] { ' ', '.' }, StringSplitOptions.RemoveEmptyEntries);
+            String ans = "";
+            int ansfreq = 0;
+            foreach (var w in segs)
+            {
+                if (!bannedSet.Contains(w))
+                {
+                    if (!dict.ContainsKey(w))
+                    {
+                        dict[w] = 0;
+                    }
+                    dict[w]++;
+                    if (dict[w] > ansfreq)
+                    {
+                        ans = w;
+                        ansfreq = dict[w];
+                    }
+                }
+            }
+
+            return ans;
+        }
     }
 }
