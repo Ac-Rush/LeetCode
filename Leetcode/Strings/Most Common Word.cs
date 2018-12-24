@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace Leetcode.Strings
@@ -52,30 +53,10 @@ namespace Leetcode.Strings
 
         public static string MostCommonWord2(string paragraph, string[] banned)
         {
-            paragraph = paragraph + '.';  //my bug
-            var dict = new Dictionary<string, int>();
-            var bannedSet = new HashSet<string>(banned);
-            var segs = paragraph.Split(new char[] { ' ', '.' }, StringSplitOptions.RemoveEmptyEntries);
-            String ans = "";
-            int ansfreq = 0;
-            foreach (var w in segs)
-            {
-                if (!bannedSet.Contains(w))
-                {
-                    if (!dict.ContainsKey(w))
-                    {
-                        dict[w] = 0;
-                    }
-                    dict[w]++;
-                    if (dict[w] > ansfreq)
-                    {
-                        ans = w;
-                        ansfreq = dict[w];
-                    }
-                }
-            }
-
-            return ans;
+            var p = Regex.Replace(paragraph, "[^a-zA-Z0-9 ]+", " ", RegexOptions.Compiled).ToLower().Split(' ')
+                .Where(c => !string.IsNullOrEmpty(c));
+            return p.Where(x => !banned.ToList().Contains(x)).GroupBy(y => y).OrderByDescending(z => z.Count())
+                .Select(g => new {Id = g.Key}).First().Id;
         }
     }
 }

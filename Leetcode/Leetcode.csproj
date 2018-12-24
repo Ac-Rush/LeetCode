@@ -87,7 +87,9 @@
     <Compile Include="Design\Design HashSet.cs" />
     <Compile Include="Design\Implement Queue using Stacks.cs" />
     <Compile Include="Design\Linked List Random Node.cs" />
+    <Compile Include="DFS\Arithmetic Slices.cs" />
     <Compile Include="DFS\Making A Large Island.cs" />
+    <Compile Include="Dynamic Programming\Arithmetic Slices II - Subsequence.cs" />
     <Compile Include="Dynamic Programming\Cherry Pickup.cs" />
     <Compile Include="Dynamic Programming\Race Car.cs" />
     <Compile Include="Dynamic Programming\Stone Game.cs" />
@@ -188,6 +190,7 @@
     <Compile Include="Graph\Evaluate Division.cs" />
     <Compile Include="Graph\Redundant Connection II.cs" />
     <Compile Include="Graph\Redundant Connection.cs" />
+    <Compile Include="Greedy\Partition Labels.cs" />
     <Compile Include="Greedy\Queue Reconstruction by Height.cs" />
     <Compile Include="HashTable\4Sum II.cs" />
     <Compile Include="HashTable\Contains Duplicate.cs" />
