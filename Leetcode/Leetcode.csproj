@@ -71,6 +71,7 @@
     <Compile Include="BackTrack\Flip Game II.cs" />
     <Compile Include="BackTrack\Generalized Abbreviation.cs" />
     <Compile Include="BackTrack\Minimum Unique Word Abbreviation.cs" />
+    <Compile Include="BackTrack\Palindrome Partitioning.cs" />
     <Compile Include="BFS\01 Matrix.cs" />
     <Compile Include="BFS\Bus Routes.cs" />
     <Compile Include="BFS\K-Similar Strings.cs" />
@@ -553,6 +554,7 @@
     <Compile Include="Stack\Valid Parentheses.cs" />
     <Compile Include="Strings\Valid Parenthesis String.cs" />
     <Compile Include="Strings\Valid Word Abbreviation.cs" />
+    <Compile Include="Strings\Validate IP Address.cs" />
     <Compile Include="StringtoInteger.cs" />
     <Compile Include="Strings\Implement strStr.cs" />
     <Compile Include="SubarrayWithGivenSum.cs" />
