@@ -90,7 +90,9 @@
     <Compile Include="DFS\Making A Large Island.cs" />
     <Compile Include="Dynamic Programming\Cherry Pickup.cs" />
     <Compile Include="Dynamic Programming\Race Car.cs" />
+    <Compile Include="Dynamic Programming\Stone Game.cs" />
     <Compile Include="Dynamic Programming\Ugly Number II.cs" />
+    <Compile Include="Dynamic Programming\Unique Binary Search Trees II.cs" />
     <Compile Include="Graph\Alien Dictionary.cs" />
     <Compile Include="Greedy\Jump Game II.cs" />
     <Compile Include="Greedy\Jump Game.cs" />
