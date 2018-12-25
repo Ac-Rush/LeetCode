@@ -34,6 +34,12 @@ namespace Leetcode.DAC
     //时间复杂度 O(N)Count Cores
     class Score_of_Parentheses_2
     {
+        /// <summary>
+        /// https://blog.csdn.net/qq2667126427/article/details/80793443
+        /// 这个真棒
+        /// </summary>
+        /// <param name="S"></param>
+        /// <returns></returns>
         public int ScoreOfParentheses(string S)
         {
             int ans = 0, bal = 0;

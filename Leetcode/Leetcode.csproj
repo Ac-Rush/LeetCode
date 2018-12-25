@@ -92,6 +92,7 @@
     <Compile Include="Dynamic Programming\Arithmetic Slices II - Subsequence.cs" />
     <Compile Include="Dynamic Programming\Cherry Pickup.cs" />
     <Compile Include="Dynamic Programming\Race Car.cs" />
+    <Compile Include="Dynamic Programming\Scramble String.cs" />
     <Compile Include="Dynamic Programming\Stone Game.cs" />
     <Compile Include="Dynamic Programming\Ugly Number II.cs" />
     <Compile Include="Dynamic Programming\Unique Binary Search Trees II.cs" />
