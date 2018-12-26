@@ -26,4 +26,17 @@ namespace Leetcode.Tree
         }
 
     }
+
+    class Lowest_Common_Ancestor_of_a_Binary_Search_Tree2
+    {
+        public TreeNode LowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q)
+        {
+            if (p.val > q.val) return LowestCommonAncestor(root, q, p);
+            if (root == null) return null;
+            if (p.val <= root.val && q.val >= root.val) return root;
+            if (q.val < root.val) return LowestCommonAncestor(root.left, p, q);
+            return LowestCommonAncestor(root.right, p, q);
+        }
+
+    }
 }
