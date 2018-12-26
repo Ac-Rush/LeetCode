@@ -357,6 +357,7 @@
     <Compile Include="Stack\Basic Calculator III.cs" />
     <Compile Include="Stack\Basic Calculator.cs" />
     <Compile Include="Stack\Evaluate Reverse Polish Notation.cs" />
+    <Compile Include="Stack\Implement Stack using Queues.cs" />
     <Compile Include="Stack\Min Stack.cs" />
     <Compile Include="Stack\Minimum Add to Make Parentheses Valid.cs" />
     <Compile Include="Stack\Next Greater Element I.cs" />
