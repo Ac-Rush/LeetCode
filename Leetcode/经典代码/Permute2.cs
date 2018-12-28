@@ -9,6 +9,7 @@ namespace Leetcode.经典代码
 {
     class PermuteC
     {
+        
         IList<IList<int>> res = new List<IList<int>>();
         public IList<IList<int>> Permute2(int[] nums)
         {
@@ -205,10 +206,6 @@ namespace Leetcode.经典代码
                         tempList.Remove(tempList.Count - 1);
                     }
                 }
-
-                var arr = new char[3];
-                var s = new string(arr, 0, 2);
-                s.ToCharArray();
             }
         }
 
