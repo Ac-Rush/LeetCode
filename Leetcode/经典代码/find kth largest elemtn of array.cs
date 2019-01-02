@@ -37,9 +37,7 @@ namespace Leetcode.BinarySearch
                 if (a[i++] > pivot) swap(a, --i, --j);
             }
             swap(a, i, hi);
-
-            // count the nums that are <= pivot from lo
-
+            
             return i;
         }
         void swap(int[] a, int i, int j)

@@ -59,7 +59,7 @@ namespace Leetcode.Dynamic_Programming
 
 
         /// <summary>
-        ///  O（N）的时间复杂度
+        ///  O（N）的空间复杂度
         /// </summary>
         /// <param name="word1"></param>
         /// <param name="word2"></param>
