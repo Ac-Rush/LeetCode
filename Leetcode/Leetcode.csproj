@@ -61,6 +61,7 @@
     <Compile Include="ArrayS\Image Smoother.cs" />
     <Compile Include="ArrayS\Insert Interval.cs" />
     <Compile Include="ArrayS\Island Perimeter.cs" />
+    <Compile Include="ArrayS\K Closest Points to Origin.cs" />
     <Compile Include="ArrayS\Lonely Pixel I.cs" />
     <Compile Include="ArrayS\Lonely Pixel II.cs" />
     <Compile Include="ArrayS\Max Chunks To Make Sorted II.cs" />
@@ -348,6 +349,7 @@
     <Compile Include="Sort\Largest Number.cs" />
     <Compile Include="Sort\Meeting Rooms II.cs" />
     <Compile Include="Sort\Merge Intervals.cs" />
+    <Compile Include="Sort\Pancake Sorting.cs" />
     <Compile Include="Sort\Reorganize String.cs" />
     <Compile Include="Sort\Meeting Rooms.cs" />
     <Compile Include="Sort\Sort Colors.cs" />
