@@ -352,6 +352,7 @@
     <Compile Include="Sort\Meeting Rooms.cs" />
     <Compile Include="Sort\Sort Colors.cs" />
     <Compile Include="Sort\Sort List.cs" />
+    <Compile Include="Sort\Squares of a Sorted Array.cs" />
     <Compile Include="Sort\Wiggle Sort II.cs" />
     <Compile Include="Sort\Wiggle Sort.cs" />
     <Compile Include="Stack\Baseball Game.cs" />
