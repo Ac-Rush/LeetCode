@@ -24,7 +24,8 @@ namespace Leetcode.Sort
 
         private ListNode FindMiddle(ListNode head)
         {
-            var fast = head.next;  //多走一步
+            //var fast = head.next;  //多走一步，后来证明没有必要
+            var fast = head;
             var slow = head;
             while (fast != null && fast.next != null)
             {
