@@ -11,23 +11,15 @@ namespace Leetcode.Tree
          
         public static bool IsSymmetric(TreeNode root)
         {
-            if (root == null)
-            {
-                return true;
-            }
-            return IsMirror(root.left, root.right);
+            return root == null || IsMirror(root.left, root.right);
         }
 
 
         private static bool IsMirror(TreeNode left, TreeNode right)
         {
-            if (left == null && right == null)
-            {
-                return true;
-            }
             if (left == null || right == null)
             {
-                return false;
+                return left == right;
             }
             if (left.val != right.val)
             {

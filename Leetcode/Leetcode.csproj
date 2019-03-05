@@ -629,6 +629,8 @@
     <Compile Include="Tree\Path Sum III.cs" />
     <Compile Include="Tree\Path Sum.cs" />
     <Compile Include="Tree\polulte right pointers to each node.cs" />
+    <Compile Include="Tree\Populating Next Right Pointers in Each Node II.cs" />
+    <Compile Include="Tree\Populating Next Right Pointers in Each Node.cs" />
     <Compile Include="Tree\Print Binary Tree.cs" />
     <Compile Include="Tree\Recover Binary Search Tree.cs" />
     <Compile Include="Tree\Redundant Connection.cs" />
