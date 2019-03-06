@@ -76,6 +76,7 @@
     <Compile Include="BFS\01 Matrix.cs" />
     <Compile Include="BFS\Bus Routes.cs" />
     <Compile Include="BFS\K-Similar Strings.cs" />
+    <Compile Include="BFS\Open the Lock.cs" />
     <Compile Include="BFS\Shortest Path to Get All Keys.cs" />
     <Compile Include="BFS\Shortest Path Visiting All Nodes.cs" />
     <Compile Include="BFS\Walls and Gates.cs" />
@@ -343,6 +344,7 @@
     <Compile Include="Permutation\Permutation Sequence.cs" />
     <Compile Include="Permutation\Permutations II.cs" />
     <Compile Include="Permutation\Permutations.cs" />
+    <Compile Include="Queues\Design Circular Queue.cs" />
     <Compile Include="Queues\Task Scheduler.cs" />
     <Compile Include="SlidingWindow\Permutation in String.cs" />
     <Compile Include="Sort\Count of Range Sum.cs" />
@@ -662,6 +664,7 @@
     <Compile Include="UnionFind\Number of Islands II.cs" />
     <Compile Include="UnionFind\Surrounded Regions.cs" />
     <Compile Include="UniqueBinarySearchTrees.cs" />
+    <Compile Include="模板\BFS.cs" />
     <Compile Include="经典代码\4Sum.cs" />
     <Compile Include="经典代码\find kth largest elemtn of array.cs" />
     <Compile Include="经典代码\First Missing Positive.cs" />
