@@ -8,15 +8,19 @@ namespace Leetcode.Graph
 {
     class Clone_Graph
     {
-        public class UndirectedGraphNode
+        public class Node
         {
-            public int label;
-            public IList<UndirectedGraphNode> neighbors;
+            public int val;
+            public IList<Node> neighbors;
 
-            public UndirectedGraphNode(int x)
+            public Node()
             {
-                label = x;
-                neighbors = new List<UndirectedGraphNode>();
+            }
+
+            public Node(int _val, IList<Node> _neighbors)
+            {
+                val = _val;
+                neighbors = _neighbors;
             }
         }
         /// <summary>
@@ -24,23 +28,23 @@ namespace Leetcode.Graph
         /// </summary>
         /// <param name="node"></param>
         /// <returns></returns>
-        public UndirectedGraphNode CloneGraph(UndirectedGraphNode node)
+        public Node CloneGraph(Node node)
         {
             if (node == null) return node; //my bug 没有 check null， 不过我是知道的
-            var dict = new Dictionary<UndirectedGraphNode, UndirectedGraphNode>(); //dict 保存mapping
-            var visited = new HashSet<UndirectedGraphNode>(); //visited去重
-            var queue = new Queue<UndirectedGraphNode>() ; //queue 用来BFS
+            var dict = new Dictionary<Node, Node>(); //dict 保存mapping
+          //  var visited = new HashSet<Node>(); //visited去重
+            var queue = new Queue<Node>() ; //queue 用来BFS
             queue.Enqueue(node);
             //先复制点
             while (queue.Any())
             {
                 var u = queue.Dequeue();
-                visited.Add(u);
-                var newU = new UndirectedGraphNode(u.label);
+            //    visited.Add(u); // 用dict 也可以去重
+                var newU = new Node(u.val, new List<Node>());
                 dict[u] = newU;
                 foreach (var neighbor in u.neighbors)
                 {
-                    if (!visited.Contains(neighbor))
+                    if (!dict.ContainsKey(neighbor))
                     {
                         queue.Enqueue(neighbor);
                     }
@@ -56,6 +60,95 @@ namespace Leetcode.Graph
             }
             return dict[node];
 
+        }
+    }
+
+    public class Clone_Graph2
+    {
+        public class Node
+        {
+            public int val;
+            public IList<Node> neighbors;
+
+            public Node()
+            {
+            }
+
+            public Node(int _val, IList<Node> _neighbors)
+            {
+                val = _val;
+                neighbors = _neighbors;
+            }
+        }
+
+        /// <summary>
+        /// 居然不要 visited set
+        /// </summary>
+        private Dictionary<int, Node> map = new Dictionary<int, Node>();
+        public Node CloneGraph(Node node)
+        {
+            return DFS(node);
+        }
+
+        private Node DFS(Node node)
+        {
+            if (node == null) return null;
+
+            if (map.ContainsKey(node.val))
+            {
+                //不需要 visited数组， 是因为这里 不需要递归了  其实这就是visited数组， 填hash就相当于填set
+                return map[node.val];
+            }
+            var clone = new Node(node.val, new List<Node>());
+            map[node.val] = clone;
+            foreach (var neighbor in node.neighbors)
+            {
+                clone.neighbors.Add(DFS(neighbor));
+            }
+            return clone;
+        }
+    }
+
+
+    public class Clone_Graph3
+    {
+        public class Node
+        {
+            public int val;
+            public IList<Node> neighbors;
+
+            public Node()
+            {
+            }
+
+            public Node(int _val, IList<Node> _neighbors)
+            {
+                val = _val;
+                neighbors = _neighbors;
+            }
+        }
+
+        /// <summary>
+        /// 居然不要 visited set
+        /// </summary>
+        private Dictionary<int, Node> map = new Dictionary<int, Node>();
+        //不是 很好理解，但是可以从 Clone_Graph2 推到过来
+        public Node CloneGraph(Node node)
+        {
+            if (node == null) return null;
+
+            if (map.ContainsKey(node.val))
+            {
+                //不需要 visited数组， 是因为这里 不需要递归了  其实这就是visited数组， 填hash就相当于填set
+                return map[node.val];
+            }
+            var clone = new Node(node.val, new List<Node>());
+            map[node.val] = clone;
+            foreach (var neighbor in node.neighbors)
+            {
+                clone.neighbors.Add(CloneGraph(neighbor));
+            }
+            return clone;
         }
     }
 }

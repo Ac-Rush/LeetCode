@@ -665,6 +665,7 @@
     <Compile Include="UnionFind\Surrounded Regions.cs" />
     <Compile Include="UniqueBinarySearchTrees.cs" />
     <Compile Include="模板\BFS.cs" />
+    <Compile Include="模板\DFS.cs" />
     <Compile Include="经典代码\4Sum.cs" />
     <Compile Include="经典代码\find kth largest elemtn of array.cs" />
     <Compile Include="经典代码\First Missing Positive.cs" />
