@@ -60,5 +60,35 @@ namespace Leetcode.HashTable
             }
             return ans;
         }
+
+
+        /// <summary>
+        ///  我自己的答案，一遍过，
+        /// Stack 就可以用于找 右边第一大的或是小的
+        /// </summary>
+        /// <param name="T"></param>
+        /// <returns></returns>
+        public int[] dailyTemperaturesMY(int[] T)
+        {
+            var n = T.Length;
+            var ans = new int[n];
+            var s = new Stack<int>(); // [index] //存的是 index而不是值，
+            for (int i = 0; i < n;)
+            {
+                if (s.Count == 0 || T[i] <= T[s.Peek()])
+                {
+                    // 如果 stack 空 或是， 当前温度更低， 入栈， 
+                    s.Push(i++);  //并且 处理下一个数
+                }
+                else
+                {
+                    //反之，就可以得到 比栈顶元素 温度高的第一个元素， 
+                    var lower = s.Pop();
+                    ans[lower] = i - lower; // 保存结果， 
+                    //特别注意，这边不用i++，不用这里写loop， 借助外面的 loop就能代替这里的 loop
+                }
+            }
+            return ans;
+        }
     }
 }
