@@ -40,7 +40,7 @@ namespace Leetcode.Tree
             stack.Push(root);
             while (stack.Count > 0)
             {
-                var node = stack.Pop();
+                var node = stack.Pop(); // 这个非递归是最好想的
                 result.Add(node.val);
                 
                 if (node.right != null)

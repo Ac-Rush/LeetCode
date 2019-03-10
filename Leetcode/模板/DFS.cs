@@ -30,5 +30,34 @@ namespace Leetcode.模板
         */
             return false;
          }
-    }
+
+        /// <summary>
+        /// 模板2  非递归， 用stack iteration
+        /// </summary>
+        /// <param name="root"></param>
+        /// <param name="target"></param>
+        /// <returns></returns>
+        bool DFS2(int root, int target)
+        {
+            /*
+            Set<Node> visited;
+            Stack<Node> stack;
+            add root to stack;
+            while (s is not empty)
+            {
+                Node cur = the top element in stack;
+                remove the cur from the stack;
+                return true if cur is target;
+                for (Node next : the neighbors of cur)
+                {
+                    if (next is not in visited) {
+                        add next to visited;
+                        add next to stack;
+                    }
+                }
+            }
+            */
+            return false;
+        }
+}
 }

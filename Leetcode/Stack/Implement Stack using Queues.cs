@@ -19,9 +19,9 @@ namespace Leetcode.Stack
         }
 
         // Removes the element on top of the stack.
-        public void Pop()
+        public int Pop()
         {
-            qStack.Dequeue();
+            return qStack.Dequeue();
         }
 
         // Get the top element.
@@ -33,7 +33,7 @@ namespace Leetcode.Stack
         // Return whether the stack is empty.
         public bool Empty()
         {
-            return qStack.Count == 0 ? true : false;
+            return qStack.Count == 0;
         }
     }
 }
