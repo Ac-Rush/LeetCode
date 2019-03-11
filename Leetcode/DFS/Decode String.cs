@@ -78,7 +78,7 @@ namespace Leetcode.DFS
                         n = n * 10 + s[i++] - '0';
 
                     i++; // '['
-                    string t = DecodeString(s,ref i);
+                    string t = DecodeString(s, ref i);
                     i++; // ']'
 
                     while (n-- > 0)

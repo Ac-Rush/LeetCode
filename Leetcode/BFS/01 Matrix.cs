@@ -53,4 +53,51 @@ namespace Leetcode.BFS
             return matrix;
         }
     }
+
+
+    class _01_Matrix_DFS
+    {
+        /// <summary>
+        /// 从0 开始 泛洪遍历
+        /// </summary>
+        /// <param name="matrix"></param>
+        /// <returns></returns>
+        public int[,] UpdateMatrix(int[,] matrix)
+        {
+            for (int i = 0; i < matrix.GetLength(0); i++)
+            {
+                for (int j = 0; j < matrix.GetLength(1); j++)
+                {
+                    if (matrix[i, j] == 1)
+                    {
+                        matrix[i, j] = int.MaxValue;
+                    }
+                }
+            }
+            for (int i = 0; i < matrix.GetLength(0); i++)
+            {
+                for (int j = 0; j < matrix.GetLength(1); j++)
+                {
+                    if (matrix[i, j] == 0)
+                    {
+                        DFS(matrix, i, j, 0);
+                    }
+                }
+            }
+
+            return matrix;
+        }
+        private void DFS(int[,] matrix, int r, int c, int d)
+        {
+            if (r < 0 || c < 0 || r >= matrix.GetLength(0) || c >= matrix.GetLength(1) || matrix[r, c] <= d)
+            {
+                return;
+            }
+            matrix[r, c] = d;
+            DFS(matrix, r + 1, c, d + 1);
+            DFS(matrix, r, c + 1, d + 1);
+            DFS(matrix, r - 1, c, d + 1);
+            DFS(matrix, r, c - 1, d + 1);
+        }
+    }
 }

@@ -36,4 +36,30 @@ namespace Leetcode.DFS
 
         
     }
+
+    class Keys_and_Rooms_BFS
+    {
+        public bool CanVisitAllRooms(IList<IList<int>> rooms)
+        {
+            var n = rooms.Count;
+            var visited = new HashSet<int>();
+            var keys = new Queue<int>();
+            visited.Add(0);
+            foreach (var key in rooms[0])
+            {
+                keys.Enqueue(key);
+            }
+            while (keys.Count > 0)
+            {
+                var key = keys.Dequeue();
+                if (visited.Contains(key)) continue;
+                visited.Add(key);
+                foreach (var newKey in rooms[key])
+                {
+                    keys.Enqueue(newKey);
+                }
+            }
+            return visited.Count == n;
+        }
+    }
 }
