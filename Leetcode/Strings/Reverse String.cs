@@ -9,20 +9,16 @@ namespace Leetcode.Strings
     class Reverse_String
     {
 
-        public string ReverseString(string s)
+        public void ReverseString(char[] s)
         {
-            char[] word = s.ToCharArray();
-            int i = 0;
-            int j = s.Length - 1;
-            while (i < j)
+            var l = 0;
+            var r = s.Length - 1;
+            while (l < r)
             {
-                char temp = word[i];
-                word[i] = word[j];
-                word[j] = temp;
-                i++;
-                j--;
+                var t = s[l];
+                s[l++] = s[r];
+                s[r--] = t;
             }
-            return new String(word);
         }
         public string ReverseString2(string s)
         {
