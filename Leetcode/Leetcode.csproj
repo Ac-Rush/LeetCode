@@ -614,6 +614,7 @@
     <Compile Include="Tree\House Robber III.cs" />
     <Compile Include="Tree\Increasing Order Search Tree.cs" />
     <Compile Include="Tree\Inorder Successor in BST.cs" />
+    <Compile Include="Tree\Insert into a Binary Search Tree.cs" />
     <Compile Include="Tree\Invert Binary Tree.cs" />
     <Compile Include="Tree\Longest Univalue Path.cs" />
     <Compile Include="Tree\Lowest Common Ancestor of a Binary Search Tree.cs" />

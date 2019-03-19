@@ -75,12 +75,12 @@ If we can't, it is either we successfully divide the array into m parts and the 
             if (m == 1) return (int)sum;
             //binary search
             long l = max; long r = sum;
-            while (l <= r)
+            while (l < r)
             {
                 long mid = (l + r) / 2;
                 if (Valid(mid, nums, m))
                 {
-                    r = mid - 1;    // r的右边都是 valid, while退出后, l就是 r右边的第一个。
+                    r = mid;    // r的右边都是 valid, while退出后, l就是 r右边的第一个。
                 }
                 else
                 {
