@@ -10,7 +10,7 @@ namespace Leetcode.HashTable
     {
         public IList<IList<string>> GroupAnagrams(string[] strs)
         {
-            var dict = new Dictionary<string, List<string>>();
+            var dict = new Dictionary<string, IList<string>>();
             foreach (var str in strs)
             {
                 var charMap = new int[26];
@@ -32,13 +32,8 @@ namespace Leetcode.HashTable
                
                 dict[key].Add(str);
             }
-            var result = new List<IList<string>>();
-            foreach (var value in dict.Values)
-            {
-                result.Add(value);
 
-            }
-            return result;
+            return dict.Values.ToList();
         }
     }
 }
