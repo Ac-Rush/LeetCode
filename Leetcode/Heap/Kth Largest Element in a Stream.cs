@@ -40,4 +40,61 @@ namespace Leetcode.Heap
             return minHeap.Peek();
         }
     }
+
+    public class KthLargest
+    {
+        private int[] heap;
+
+        public KthLargest(int k, int[] nums)
+        {
+            heap = new int[k];
+
+            for (int i = 0; i < k; i++)
+                heap[i] = i < nums.Length ? nums[i] : int.MinValue;
+
+            for (int i = k / 2; i >= 0; i--)
+                HeapifyDown(i);
+
+            for (int i = k; i < nums.Length; i++)
+                Add(nums[i]);
+        }
+
+        public int Add(int val)
+        {
+            if (val > heap[0])
+            {
+                heap[0] = val;
+                HeapifyDown(0);
+            }
+
+            return heap[0];
+        }
+
+        private void HeapifyDown(int index)
+        {
+            int left = index * 2 + 1;
+            int right = left + 1;
+
+            int small = index;
+
+            if (left < heap.Length && heap[left] < heap[small])
+                small = left;
+
+            if (right < heap.Length && heap[right] < heap[small])
+                small = right;
+
+            if (small != index)
+            {
+                Swap(heap, index, small);
+                HeapifyDown(small);
+            }
+        }
+
+        private void Swap(int[] arr, int left, int right)
+        {
+            int temp = arr[left];
+            arr[left] = arr[right];
+            arr[right] = temp;
+        }
+    }
 }
