@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Leetcode.HashTable
 {
+    /// <summary>
+    /// design key  的问题
+    /// </summary>
     class Valid_Sudoku
     {
         public bool IsValidSudoku(char[,] board)

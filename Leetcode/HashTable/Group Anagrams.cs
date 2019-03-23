@@ -8,6 +8,11 @@ namespace Leetcode.HashTable
 {
     class Group_Anagrams
     {
+        /// <summary>
+        /// design key  的问题
+        /// </summary>
+        /// <param name="strs"></param>
+        /// <returns></returns>
         public IList<IList<string>> GroupAnagrams(string[] strs)
         {
             var dict = new Dictionary<string, IList<string>>();

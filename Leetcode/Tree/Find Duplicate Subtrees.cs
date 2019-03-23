@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Leetcode.Tree
 {
+    /// <summary>
+    /// design key  的问题
+    /// </summary>
     class Find_Duplicate_Subtrees
     {
         Dictionary<string, int> count = new Dictionary<string, int>();
