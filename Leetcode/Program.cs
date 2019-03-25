@@ -118,9 +118,11 @@ namespace Leetcode
 
         static void TestTree()
         {
-            var tree = new TreeNode(5);
-            tree.right = new TreeNode(6);
-            tree.left = new TreeNode(3);
+            var tree = new TreeNode(5)
+            {
+                right = new TreeNode(6),
+                left = new TreeNode(3)
+            };
             tree.left.left = new TreeNode(2);
             tree.left.right = new TreeNode(4);
             tree.left.left.left = new TreeNode(1);

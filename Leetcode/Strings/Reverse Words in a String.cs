@@ -11,7 +11,7 @@ namespace Leetcode.Strings
         public string ReverseWords(string s)
         {
             var sb = new StringBuilder();
-            string[] wordArr = s.Split(' ', StringSplitOptions.RemoveEmptyEntries);
+            string[] wordArr = s.Split(new []{' '}, StringSplitOptions.RemoveEmptyEntries);
             for (int i = wordArr.Length - 1; i >= 0; i--)
             {
                 var word = wordArr[i].Trim();

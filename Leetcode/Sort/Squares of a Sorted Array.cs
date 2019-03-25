@@ -48,7 +48,6 @@ namespace Leetcode.Sort
     {
         public int[] SortedSquares(int[] A)
         {
-            int i = 0;
             var result = new int[A.Length];
             for (int p = A.Length -1 , j = p , i = 0; p >= 0; p--)  result[p] = A[i] * A[i] > A[j] * A[j] ? A[i] * A[i++] : A[j] * A[j--];
             return result;

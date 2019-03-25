@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Leetcode.HashTable
 {
-    public class _4Sum
+    public class _4Sum_5
     {
         /// <summary>
         /// 错误答案

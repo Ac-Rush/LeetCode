@@ -19,7 +19,7 @@ namespace Leetcode.Strings
         {
             if (index == S.Length)
             {
-                result.Add(new String(current));
+                result.Add((string)current.Clone());
                 return;
             }
             if (char.IsDigit(S[index]))

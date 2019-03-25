@@ -10,14 +10,17 @@ namespace Leetcode.LinkList
     {
         public static ListNode RemoveElements(ListNode head, int val)
         {
-            var demy = new ListNode(0);
-            demy.next = head;
+            var demy = new ListNode(0)
+            {
+                next = head
+            };
             var cur = demy;
             while (cur.next != null)
             {
                 if (cur.next.val == val)
                 {
                     cur.next = cur.next.next;
+                    break;
                 }
                 else
                 {
