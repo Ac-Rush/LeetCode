@@ -47,18 +47,14 @@ namespace Leetcode
 
         static void Main(string[] args)
         {
-            var c = new Minimum_Cost_to_Hire_K_Workers();
-            c.MincostToHireWorkers(new []{ 10, 20, 5 },
-           new int[]  {
-            70,50,30},2
-        );
-            TestArry();
+            TestLinkedList();
+           // TestArry();
 
           //  TestLinkedList();
           //  TestTree();
           // TestGraph();
 
-            TestMatrix();
+          //  TestMatrix();
             //Delete_and_Earn.DeleteAndEarn(new[] {3, 4, 2});
             //  TestArry();
             //TestList();
@@ -67,19 +63,12 @@ namespace Leetcode
         }
         static void TestLinkedList()
         {
-            var lists = new ListNode[3];
-            lists[0] = new ListNode(1);
-            lists[0].next = new ListNode(4);
-            lists[0].next.next = new ListNode(5);
+            var list = new ListNode(1);
+            list.next = new ListNode(2);
+            list.next.next = new ListNode(6);
 
-            lists[1] = new ListNode(1);
-            lists[1].next = new ListNode(3);
-            lists[1].next.next = new ListNode(4);
-
-            lists[2] = new ListNode(2);
-            lists[2].next = new ListNode(6);
-
-            Merge_k_Sorted_Lists.MergeKLists(lists);
+            Remove_Linked_List_Elements.RemoveElements(list, 6);
+            var a = list;
         }
 
         static void TestGraph()

@@ -59,7 +59,7 @@ namespace Leetcode.HashTable
     }
 
 
-    public class _4Sum_2
+    public class _4Sum_3
     {
         public  IList<IList<int>> FourSum(int[] nums, int target)
         {

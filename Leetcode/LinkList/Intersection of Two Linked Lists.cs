@@ -17,6 +17,7 @@ namespace Leetcode.LinkList
             ListNode b = headB;
 
             //if a & b have different len, then we will stop the loop after second iteration
+            //两遍走到头肯定退出
             while (a != b)
             {
                 //这太厉害了，两个指针 两个链表都走一遍 那么就相遇到一个点

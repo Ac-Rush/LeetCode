@@ -8,7 +8,7 @@ namespace Leetcode.Heap
 {
     class Kth_Largest_Element_in_a_Stream
     {
-        MinIntHeap minHeap;
+      /*  MinIntHeap minHeap;
         int capacity;
 
         //Time complexity : O(n * log k)
@@ -96,5 +96,6 @@ namespace Leetcode.Heap
             arr[left] = arr[right];
             arr[right] = temp;
         }
+        */
     }
 }

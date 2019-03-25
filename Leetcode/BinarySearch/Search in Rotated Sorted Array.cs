@@ -54,7 +54,7 @@ namespace Leetcode.BinarySearch
         /// <param name="nums"></param>
         /// <param name="target"></param>
         /// <returns></returns>
-        public int Search(int[] nums, int target)
+        public int Search2(int[] nums, int target)
         {
 
 

@@ -11,30 +11,37 @@ namespace Leetcode.Tree
         public int val;
         public IList<Node> children;
 
-        public Node() { }
+        public Node()
+        {
+        }
+
         public Node(int _val, IList<Node> _children)
         {
             val = _val;
             children = _children;
         }
-        class N_ary_Tree_Postorder_Traversal
-    {
-        List<int> result = new List<int>();
-        public IList<int> Postorder(Node root)
-        {
-            Post(root);
-            return result;
-        }
 
-        private void Post(Node root)
+        class N_ary_Tree_Postorder_Traversal
         {
-            if (root != null)
+            List<int> result = new List<int>();
+
+            public IList<int> Postorder(Node root)
             {
-                foreach (var n in root.children)
+                Post(root);
+                return result;
+            }
+
+            private void Post(Node root)
+            {
+                if (root != null)
                 {
-                    Post(n);
+                    foreach (var n in root.children)
+                    {
+                        Post(n);
+                    }
+
+                    result.Add(root.val);
                 }
-                result.Add(root.val);
             }
         }
     }

@@ -30,10 +30,11 @@ namespace Leetcode.Tree
           //  Solution1(root.right, list);
         }
 
-        public List<Integer> inorderTraversal(TreeNode root)
+        public List<int> inorderTraversal(TreeNode root)
         {
-            List<Integer> list = new ArrayList<Integer>();
+            List<int> list = new List<int>();
 
+                /*
             Stack<TreeNode> stack = new Stack<TreeNode>();
             TreeNode cur = root;
 
@@ -47,7 +48,7 @@ namespace Leetcode.Tree
                 cur = stack.pop();
                 list.add(cur.val);
                 cur = cur.right;
-            }
+            }*/
 
             return list;
         }

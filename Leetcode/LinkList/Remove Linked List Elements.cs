@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Leetcode.LinkList
 {
-    class Remove_Linked_List_Elements
+    public class Remove_Linked_List_Elements
     {
-        public ListNode RemoveElements(ListNode head, int val)
+        public static ListNode RemoveElements(ListNode head, int val)
         {
             var demy = new ListNode(0);
             demy.next = head;
