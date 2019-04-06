@@ -24,4 +24,13 @@ namespace Leetcode.Strings
             return string.Join(" ", segments);
         }
     }
+
+    class Reverse_Words_in_a_String_III_2
+    {
+        public string ReverseWords(string s)
+        {
+            return string.Join(" ",
+                s.Split(new[] {' '}, StringSplitOptions.RemoveEmptyEntries).Select(item => new string(item.Reverse().ToArray())));
+        }
+    }
 }

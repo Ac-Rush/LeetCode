@@ -40,6 +40,8 @@ namespace Leetcode.LinkList
             return oddHead.next;
         }
 
+
+
         public ListNode oddEvenList(ListNode head)
         {
             if (head == null) return null;
