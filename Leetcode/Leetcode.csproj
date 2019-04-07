@@ -102,6 +102,7 @@
     <Compile Include="Dynamic Programming\Ugly Number II.cs" />
     <Compile Include="Dynamic Programming\Unique Binary Search Trees II.cs" />
     <Compile Include="Graph\Alien Dictionary.cs" />
+    <Compile Include="Graph\Course Schedule III.cs" />
     <Compile Include="Graph\Find the Town Judge.cs" />
     <Compile Include="Greedy\Jump Game II.cs" />
     <Compile Include="Greedy\Jump Game.cs" />
@@ -193,7 +194,8 @@
     <Compile Include="Dynamic Programming\Wildcard Matching.cs" />
     <Compile Include="Dynamic Programming\Word Break II.cs" />
     <Compile Include="Graph\Clone Graph.cs" />
-    <Compile Include="Graph\Course Schedule.cs" />
+    <Compile Include="Topology_Sort\Course Schedule II.cs" />
+    <Compile Include="Topology_Sort\Course Schedule.cs" />
     <Compile Include="Graph\Evaluate Division.cs" />
     <Compile Include="Graph\Redundant Connection II.cs" />
     <Compile Include="Graph\Redundant Connection.cs" />
