@@ -81,7 +81,9 @@
     <Compile Include="BFS\Shortest Path Visiting All Nodes.cs" />
     <Compile Include="BFS\Walls and Gates.cs" />
     <Compile Include="BinarySearch\Binary Search.cs" />
+    <Compile Include="BinarySearch\Capacity To Ship Packages Within D Days.cs" />
     <Compile Include="BinarySearch\Find First and Last Position of Element in Sorted Array.cs" />
+    <Compile Include="BinarySearch\Online Election.cs" />
     <Compile Include="BinarySearch\Sliding Window Median.cs" />
     <Compile Include="Bit\Binary Watch.cs" />
     <Compile Include="Bit\Find the Difference.cs" />
@@ -194,6 +196,7 @@
     <Compile Include="Dynamic Programming\Wildcard Matching.cs" />
     <Compile Include="Dynamic Programming\Word Break II.cs" />
     <Compile Include="Graph\Clone Graph.cs" />
+    <Compile Include="HashTable\Time Based Key-Value Store.cs" />
     <Compile Include="Topology_Sort\Course Schedule II.cs" />
     <Compile Include="Topology_Sort\Course Schedule.cs" />
     <Compile Include="Graph\Evaluate Division.cs" />
