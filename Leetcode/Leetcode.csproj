@@ -102,6 +102,7 @@
     <Compile Include="Dynamic Programming\Ugly Number II.cs" />
     <Compile Include="Dynamic Programming\Unique Binary Search Trees II.cs" />
     <Compile Include="Graph\Alien Dictionary.cs" />
+    <Compile Include="Graph\Find the Town Judge.cs" />
     <Compile Include="Greedy\Jump Game II.cs" />
     <Compile Include="Greedy\Jump Game.cs" />
     <Compile Include="ArrayS\K Empty Slots.cs" />
@@ -586,9 +587,12 @@
     <Compile Include="Strings\Implement strStr.cs" />
     <Compile Include="SubarrayWithGivenSum.cs" />
     <Compile Include="DFS\Subsets.cs" />
+    <Compile Include="Topology_Sort\Find Eventual Safe States.cs" />
+    <Compile Include="Topology_Sort\Loud and Rich.cs" />
     <Compile Include="Tree\Add One Row to Tree.cs" />
     <Compile Include="Tree\Average of Levels in Binary Tree.cs" />
     <Compile Include="Tree\Binary Search Tree Iterator.cs" />
+    <Compile Include="Tree\Binary Tree Cameras.cs" />
     <Compile Include="Tree\Binary Tree Level Order Traversal II.cs" />
     <Compile Include="Tree\Binary Tree Level Order Traversal.cs" />
     <Compile Include="Tree\Binary Tree Longest Consecutive Sequence II.cs" />
