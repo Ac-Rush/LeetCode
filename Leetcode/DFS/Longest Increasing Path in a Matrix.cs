@@ -13,7 +13,7 @@ namespace Leetcode.DFS_BFS
     public class Longest_Increasing_Path_in_a_Matrix2
     {
         /// <summary>
-        /// memorization
+        /// memorization  记忆化搜索，还是用DFS去暴力搜索， 
         /// </summary>
         public static int[,] dirs = { { 0, 1 }, { 1, 0 }, { 0, -1 }, { -1, 0 } };
 
