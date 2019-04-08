@@ -72,7 +72,7 @@ namespace Leetcode.Stack
                 {
                    //如果左边的点 大于左边最大的，更新左边的点， 
                    //否则就可以积水，  因为 这个点小于 左边最大的和右边的点
-                    var i = height[left] >= left_max ? (left_max = height[left]) : ans += (left_max - height[left]);
+                    var i = height[left] >= left_max ? (left_max = height[left]) : ans += (left_max - height[left]); //max_rigth 不可能小于max_left， 因为如果小于了，那么 curt left 就是max_left， 不会是之前的left
                     //移动左边的点
                     ++left;
                 }

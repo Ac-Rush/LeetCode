@@ -31,7 +31,6 @@ namespace Leetcode.Permutation
                 //            nums =   nums.Reverse().ToArray();   // 这个做法不对 翻转不了
                 return;
             }
-                 ;
 
             int j = n - 1;
             while (j >= 0 && nums[j] <= nums[i])
