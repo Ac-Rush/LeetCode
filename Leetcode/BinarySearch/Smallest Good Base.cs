@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -10,7 +11,7 @@ namespace Leetcode.BinarySearch
     {
         public string SmallestGoodBase(string nn)
         {
-            /*
+           /*
             long n = long.Parse(nn);
             long res = 0;
             for (int k = 60; k >= 2; k--)
@@ -20,9 +21,9 @@ namespace Leetcode.BinarySearch
                 {
                     long m = s + (e - s) / 2;
 
-                    BigInteger left = BigInteger.valueOf(m);
-                    left = left.pow(k).subtract(BigInteger.ONE);
-                    BigInteger right = BigInteger.valueOf(n).multiply(BigInteger.valueOf(m).subtract(BigInteger.ONE));
+                    BigInteger left = new BigInteger(m);
+                    left = BigInteger.Subtract(BigInteger.Pow(left,k),BigInteger.One);
+                    BigInteger right = BigInteger.Multiply(new BigInteger(m),BigInteger.valueOf(m).subtract(BigInteger.ONE)), (BigInteger.valueOf(m).subtract(BigInteger.ONE)));
                     int cmr = left.compareTo(right);
                     if (cmr == 0)
                     {
@@ -44,7 +45,7 @@ namespace Leetcode.BinarySearch
 
             return "" + res;
             */
-            return null;
+           return null;
         }
     }
 }

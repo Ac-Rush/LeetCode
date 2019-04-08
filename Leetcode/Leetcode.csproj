@@ -83,6 +83,7 @@
     <Compile Include="BinarySearch\Binary Search.cs" />
     <Compile Include="BinarySearch\Capacity To Ship Packages Within D Days.cs" />
     <Compile Include="BinarySearch\Find First and Last Position of Element in Sorted Array.cs" />
+    <Compile Include="BinarySearch\Koko Eating Bananas.cs" />
     <Compile Include="BinarySearch\Online Election.cs" />
     <Compile Include="BinarySearch\Sliding Window Median.cs" />
     <Compile Include="Bit\Binary Watch.cs" />
@@ -98,6 +99,7 @@
     <Compile Include="DFS\Making A Large Island.cs" />
     <Compile Include="Dynamic Programming\Arithmetic Slices II - Subsequence.cs" />
     <Compile Include="Dynamic Programming\Cherry Pickup.cs" />
+    <Compile Include="Dynamic Programming\Maximum Length of Repeated Subarray.cs" />
     <Compile Include="Dynamic Programming\Race Car.cs" />
     <Compile Include="Dynamic Programming\Scramble String.cs" />
     <Compile Include="Dynamic Programming\Stone Game.cs" />
