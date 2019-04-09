@@ -43,7 +43,7 @@ namespace Leetcode.HashTable
 
 
         /// <summary>
-        /// 这个没有我的好 最坏情况 不是 O（N）
+        /// 是 O（N）
         /// </summary>
         /// <param name="nums"></param>
         /// <returns></returns>
@@ -59,7 +59,7 @@ namespace Leetcode.HashTable
 
             foreach (int num in num_set)
             {
-                if (!num_set.Contains(num - 1))
+                if (!num_set.Contains(num - 1))  //只从连续数中最小的 遍历
                 {
                     int currentNum = num;
                     int currentStreak = 1;
@@ -75,6 +75,41 @@ namespace Leetcode.HashTable
             }
 
             return longestStreak;
+        }
+
+        /// <summary>
+        /// O(n)
+        /// </summary>
+        /// <param name="nums"></param>
+        /// <returns></returns>
+        public int longestConsecutive3(int[] nums)
+        {
+            var dict = new Dictionary<int, bool>();  /// visited 数组
+            foreach (var n in nums)
+            {
+                dict[n] = false;
+            }
+            var max = 0;
+            foreach (var n in nums)
+            {
+                var length = 1;
+                if (dict[n] == true) continue;
+                dict[n] = true;
+                var left = n - 1;
+                while (dict.ContainsKey(left) && dict[left] == false)
+                {
+                    length++;
+                    dict[left--] = true;
+                }
+                var right = n + 1;
+                while (dict.ContainsKey(right) && dict[right] == false)
+                {
+                    length++;
+                    dict[right++] = true;
+                }
+                max = Math.Max(max, length);
+            }
+            return max;
         }
     }
 }

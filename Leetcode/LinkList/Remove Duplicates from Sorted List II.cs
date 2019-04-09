@@ -15,7 +15,7 @@ namespace Leetcode.LinkList
         /// <returns></returns>
         public ListNode DeleteDuplicates(ListNode head)
         {
-            if (head == null) return head;
+           // if (head == null) return head;
             var dummyHead = new ListNode(0);
             dummyHead.next = head;
             var prev = dummyHead;
