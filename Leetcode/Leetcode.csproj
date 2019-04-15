@@ -108,6 +108,8 @@
     <Compile Include="Graph\Alien Dictionary.cs" />
     <Compile Include="Graph\Course Schedule III.cs" />
     <Compile Include="Graph\Find the Town Judge.cs" />
+    <Compile Include="ArrayS\Candy.cs" />
+    <Compile Include="Greedy\Gas Station.cs" />
     <Compile Include="Greedy\Jump Game II.cs" />
     <Compile Include="Greedy\Jump Game.cs" />
     <Compile Include="ArrayS\K Empty Slots.cs" />

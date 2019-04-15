@@ -30,5 +30,41 @@ namespace Leetcode.HashTable
             }
             return minLen == int.MaxValue ? "" : s.Substring(head, minLen);
         }
+
+        /// <summary>
+        ///  my solution 比上面的 方法快
+        /// </summary>
+        /// <param name="s"></param>
+        /// <param name="t"></param>
+        /// <returns></returns>
+        public string MinWindow2(string s, string t)
+        {
+            var ans = "";
+            var set = new int[256];
+            foreach (var c in t)
+            {
+                set[c]++;
+            }
+            int i = 0, j = 0, count = t.Length, min = s.Length + 1;
+            while (j < s.Length)
+            {
+                if (--set[s[j++]] >= 0) count--;
+                if (count == 0)
+                {
+                    while (i < s.Length && set[s[i]] < 0)
+                    {
+                        set[s[i++]]++;
+                    }
+                    if (j - i < min)
+                    {
+                        min = j - i;
+                        ans = s.Substring(i, j - i);
+                    }
+                    set[s[i++]]++;
+                    count++;
+                }
+            }
+            return ans;
+        }
     }
 }

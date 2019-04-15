@@ -27,7 +27,7 @@ namespace Leetcode.Sort
             int runner = 0, second = nums.Length - 1, zero = 0;
             while (runner <= second)
             {
-                if (nums[runner] == 2) Swap(nums, runner, second--); 
+                if (nums[runner] == 2) Swap(nums, runner, second--);   //这里的 run不++， 因为 second-- 这个数没有check过，需要再次loop
                 else if (nums[runner] == 0) Swap(nums, zero++, runner++);
                 else runner++;
             }
