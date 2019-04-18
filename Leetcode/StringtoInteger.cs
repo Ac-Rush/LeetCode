@@ -12,8 +12,8 @@ namespace Leetcode
         {
             if (string.IsNullOrWhiteSpace(str))
             { return 0; }
-            var array = str.Trim().ToArray();
-            var isNeg = false;
+            var array = str.Trim().ToArray(); //去除空格
+            var isNeg = false;  //是不是负数
             var result = 0;
             for (int i = 0; i < array.Length; i++)
             {

@@ -38,5 +38,18 @@ namespace Leetcode.Array
             string rev = new string(actual.Reverse().ToArray());
             return actual.Equals(rev);
         }
+
+
+        public static bool IsPalindrome4(string s)
+        {
+            int l = 0, r = s.Length - 1;
+            while (l < r)
+            {
+                while (l < r && !char.IsLetterOrDigit(s[l])) l++;
+                while (l < r && !char.IsLetterOrDigit(s[r])) r--;
+                if (l < r && char.ToLower(s[l++]) != char.ToLower(s[r--])) return false;
+            }
+            return true;
+        }
     }
 }
