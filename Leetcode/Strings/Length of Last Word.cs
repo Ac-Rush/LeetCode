@@ -17,5 +17,15 @@ namespace Leetcode.Strings
             }
             return setments.Last().Length;
         }
+
+        public int LengthOfLastWord2(string s)
+        {
+            var end = s.Length - 1;
+            var length = 0;
+            ///  while (end >= 0 && s[end--] == ' ') ;  my bug
+            while (end >= 0 && s[end] == ' ') end--;
+            while (end >= 0 && s[end--] != ' ') length++;
+            return length;
+        }
     }
 }

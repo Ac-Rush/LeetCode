@@ -30,7 +30,7 @@ namespace Leetcode.Dynamic_Programming
 
         /// <summary>
         /// https://www.geeksforgeeks.org/largest-rectangle-under-histogram/
-        /// 
+        /// 单调栈的问题
         /// </summary>
         /// <param name="height"></param>
         /// <returns></returns>
@@ -44,9 +44,9 @@ i - 1 - s.peek() uses the starting index where height[s.peek() + 1] >= height[tp
             int len = height.Length;
             var s = new Stack<int>();
             int maxArea = 0;
-            for (int i = 0; i <= len; i++)
+            for (int i = 0; i <= len; i++)  //在最后面补了一个 0 高度的方块
             {
-                int h = (i == len ? 0 : height[i]);
+                int h = (i == len ? 0 : height[i]);//在最后面补了一个 0 高度的方块
                 if (s.Count == 0 || h >= height[s.Peek()])
                 {
                     s.Push(i);
@@ -58,7 +58,7 @@ i - 1 - s.peek() uses the starting index where height[s.peek() + 1] >= height[tp
                     // 长度的计算  不是 i-tp, 因为 tp-1 不一定小于 tp,小于tp的是 stack的上一个
                     //这个里的 stack保存了一份 到i 递增的序列
                     maxArea = Math.Max(maxArea, height[tp] * (s.Count==0 ? i : i - 1 - s.Peek()));
-                    i--;
+                    i--;  //这个 i--可以 把嵌套 while 换成一层
                 }
             }
             return maxArea;
