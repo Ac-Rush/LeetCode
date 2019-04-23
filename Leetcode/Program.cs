@@ -63,11 +63,11 @@ namespace Leetcode
         }
         static void TestLinkedList()
         {
-            var list = new ListNode(1);
+            var list = new ListNode(4);
             list.next = new ListNode(2);
-            list.next.next = new ListNode(6);
-
-            Remove_Linked_List_Elements.RemoveElements(list, 6);
+            list.next.next = new ListNode(1);
+            list.next.next.next = new ListNode(3);
+            Sort_List.SortList(list);
             var a = list;
         }
 

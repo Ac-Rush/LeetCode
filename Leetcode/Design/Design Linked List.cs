@@ -6,18 +6,19 @@ using System.Threading.Tasks;
 
 namespace Leetcode.Design
 {
+    public class Node
+    {
+        public int Value { get; set; }
+        public Node Next { get; set; }
+
+        public Node(int val)
+        {
+            Value = val;
+        }
+    }
     public class MyLinkedList
     {
-        internal class Node
-        {
-            public int Value { get; set; }
-            public Node Next { get; set; }
-
-            public Node(int val)
-            {
-                Value = val;
-            }
-        }
+      
 
         private Node dummyRoot;
         private int size;
