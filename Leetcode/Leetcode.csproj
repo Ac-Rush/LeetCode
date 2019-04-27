@@ -101,6 +101,7 @@
     <Compile Include="Dynamic Programming\Arithmetic Slices II - Subsequence.cs" />
     <Compile Include="Dynamic Programming\Cherry Pickup.cs" />
     <Compile Include="Dynamic Programming\Maximum Length of Repeated Subarray.cs" />
+    <Compile Include="Dynamic Programming\Palindrome Partitioning II.cs" />
     <Compile Include="Dynamic Programming\Race Car.cs" />
     <Compile Include="Dynamic Programming\Scramble String.cs" />
     <Compile Include="Dynamic Programming\Stone Game.cs" />
@@ -685,7 +686,7 @@
     <Compile Include="UnionFind\Graph Valid Tree.cs" />
     <Compile Include="UnionFind\Number of Connected Components in an Undirected Graph.cs" />
     <Compile Include="UnionFind\Number of Islands II.cs" />
-    <Compile Include="UnionFind\Surrounded Regions.cs" />
+    <Compile Include="DFS\Surrounded Regions.cs" />
     <Compile Include="UniqueBinarySearchTrees.cs" />
     <Compile Include="模板\BFS.cs" />
     <Compile Include="模板\DFS.cs" />
