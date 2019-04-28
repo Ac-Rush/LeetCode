@@ -32,11 +32,11 @@ namespace Leetcode.BackTrack
                 return;
             }
 
-            for (int i = 0; i < result.Length; i++)
+            for (int i = 0; i < result.Length; i++) //对于每一列
             {
                 bool bAvail = true;
-                for (int j = 0; j < row; j++)
-                    if (result[j] == i || Math.Abs(result[j] - i) == row - j) bAvail = false;
+                for (int j = 0; j < row; j++)  //对于之前的结果的 行
+                    if (result[j] == i || Math.Abs(result[j] - i) == row - j) bAvail = false; // 同一列 或是同意斜线
                 if (bAvail)
                 {
                     result[row] = i;  //用 array 就不用 remove 这样不错
@@ -49,10 +49,15 @@ namespace Leetcode.BackTrack
 
     public class N_Queens_2
     {
+        /// <summary>
+        /// 错误答案
+        /// </summary>
+        /// <param name="n"></param>
+        /// <returns></returns>
         public IList<IList<string>> SolveNQueens(int n)
         {
             List<IList<string>> queens = new List<IList<string>>();
-            dfs(queens, new List<int>(), 0);
+            dfs(queens, new List<int>(n), 0);
             return queens;
         }
 
