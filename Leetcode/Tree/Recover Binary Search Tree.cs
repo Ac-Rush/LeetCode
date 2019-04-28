@@ -44,7 +44,7 @@ namespace Leetcode.Tree
             // If first element is found, assign the second element to the root (refer to 2 in the example above)
             if (firstElement != null && prevElement.val >= root.val)
             {
-                secondElement = root;
+                secondElement = root;  //满足上面条件的可以能2个， 但是要取最后一次的 
             }
             prevElement = root;
 
