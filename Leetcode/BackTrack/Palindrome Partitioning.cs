@@ -29,9 +29,9 @@ namespace Leetcode.BackTrack
             {
                 if (isPalindrome(s, l, i))
                 {
-                    if (l == i)
+                    /*if (l == i)
                         currLst.Add(Char.ToString(s[i]));
-                    else
+                    else*/
                         currLst.Add(s.Substring(l, i + 1 -l));
                     backTrack(s, i + 1);
                     currLst.RemoveAt(currLst.Count -1);
@@ -40,11 +40,11 @@ namespace Leetcode.BackTrack
         }
         private bool isPalindrome(string str, int l, int r)
         {
-            if (l == r) return true;
+          //  if (l == r) return true;
             while (l < r)
             {
-                if (str[l] != str[r]) return false;
-                l++; r--;
+                if (str[l++] != str[r--]) return false;
+                //l++; r--;
             }
             return true;
         }

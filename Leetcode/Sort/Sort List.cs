@@ -7,22 +7,22 @@ using Leetcode.LinkList;
 
 namespace Leetcode.Sort
 {
-    class Sort_List
+    public class Sort_List
     {
-        public ListNode SortList(ListNode head)
+        public static ListNode SortList(ListNode head)
         {
             if (head == null || head.next == null)
             {
                 return head;
             }
-            var middle = FindMiddlePrev(head);
+            var middle = FindMiddle(head);
             var rigth = SortList(middle.next);
             middle.next = null;
             var left = SortList(head);
             return Merge(left, rigth);
         }
 
-        private ListNode FindMiddle(ListNode head)
+        private static ListNode FindMiddle(ListNode head)
         {
             //var fast = head.next;  //多走一步，后来证明没有必要
             var fast = head;
@@ -35,7 +35,7 @@ namespace Leetcode.Sort
             return slow;
         }
 
-        private ListNode FindMiddlePrev(ListNode head)
+        private static ListNode FindMiddlePrev(ListNode head)
         {
             ListNode prev = head;
             var fast = head;  
@@ -49,7 +49,7 @@ namespace Leetcode.Sort
             return prev;
         }
 
-        private ListNode Merge(ListNode l1, ListNode l2)
+        private static ListNode Merge(ListNode l1, ListNode l2)
         {
 
             ListNode l = new ListNode(0), p = l;

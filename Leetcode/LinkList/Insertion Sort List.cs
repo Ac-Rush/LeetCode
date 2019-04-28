@@ -10,62 +10,20 @@ namespace Leetcode.LinkList
     {
         public static ListNode InsertionSortList(ListNode head)
         {
-            
-            if (head == null) { return null;}
-            var dummyNode = new ListNode(0);
-            dummyNode.next = head;
-            var prev = head;
-            head = head.next;
+            var dummy = new ListNode(-1);
             while (head != null)
             {
-                if (head.val < prev.val)
+                var cur = dummy;
+                while (cur.next != null && cur.next.val < head.val)
                 {
-                    var curtHead = dummyNode;
-                    while (curtHead.next != null && curtHead.next.val < head.val)
-                    {
-                        curtHead = curtHead.next;
-                    }
-                    var newHead = head.next;
-                    head.next = curtHead.next;
-                    curtHead.next = head;
-                    head = newHead;
+                    cur = cur.next;
                 }
-                else
-                {
-                    prev = head;
-                    head = head.next;
-                }
+                var next = cur.next;  //这些跳转要弄清
+                cur.next = head;
+                head = head.next;
+                cur.next.next = next;
             }
-            return dummyNode.next;
-            
-            /*
-            if (head == null)
-            {
-                return head;
-            }
-
-            ListNode helper = new ListNode(0); //new starter of the sorted list
-            ListNode cur = head; //the node will be inserted
-            ListNode pre = helper; //insert node between pre and pre.next
-            ListNode next = null; //the next node will be inserted
-                                  //not the end of input list
-            while (cur != null)
-            {
-                next = cur.next;
-                //find the right place to insert
-                while (pre.next != null && pre.next.val < cur.val)
-                {
-                    pre = pre.next;
-                }
-                //insert between pre and pre.next
-                cur.next = pre.next;
-                pre.next = cur;
-                pre = helper;
-                cur = next;
-            }
-
-            return helper.next;
-            */
+            return dummy.next;
         }
     }
 }
