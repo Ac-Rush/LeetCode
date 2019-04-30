@@ -101,6 +101,7 @@
     <Compile Include="DFS\Restore IP Addresses.cs" />
     <Compile Include="Dynamic Programming\Arithmetic Slices II - Subsequence.cs" />
     <Compile Include="Dynamic Programming\Cherry Pickup.cs" />
+    <Compile Include="Dynamic Programming\Interleaving String.cs" />
     <Compile Include="Dynamic Programming\Maximum Length of Repeated Subarray.cs" />
     <Compile Include="Dynamic Programming\Palindrome Partitioning II.cs" />
     <Compile Include="Dynamic Programming\Race Car.cs" />
