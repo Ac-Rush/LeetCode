@@ -23,5 +23,17 @@ namespace Leetcode.Dynamic_Programming
             }
             return globalMax;
         }
+
+
+        public int MaxSubArray2(int[] nums)
+        {
+            int max = int.MinValue, cur = 0;
+            foreach (var n in nums)
+            {
+                cur = Math.Max(n, cur + n);
+                max = Math.Max(max, cur);
+            }
+            return max;
+        }
     }
 }

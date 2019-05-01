@@ -21,6 +21,7 @@ namespace Leetcode.Dynamic_Programming
             var dp = new int[r, c ];
             for (int i = 0; i < r; i++)
             {
+                
                 for (int j = 0; j < c; j++)
                 {
                     if (i == 0 && j == 0)
@@ -77,6 +78,33 @@ namespace Leetcode.Dynamic_Programming
                     {
                         dp[j] = Math.Min(dp[j], dp[j - 1]) + grid[i, j];
                     }
+                }
+            }
+            return dp[m - 1];
+        }
+
+
+        /// <summary>
+        /// 二维规划+ 滚动数组
+        /// </summary>
+        /// <param name="grid"></param>
+        /// <returns></returns>
+        public int MinPathSum3(int[][] grid)
+        {
+            if (grid.Length == 0) return 0;
+            int n = grid.Length, m = grid[0].Length;
+            var dp = new int[m];
+            for (int i = 1; i < dp.Length; i++)
+            {
+                dp[i] = int.MaxValue;//初始化成 int.max
+            }
+            for (int i = 0; i < n; i++)
+            {
+                dp[0] += grid[i][0];
+                for (int j = 1; j < m; j++)
+                {
+
+                    dp[j] = Math.Min(dp[j], dp[j - 1]) + grid[i][j];
                 }
             }
             return dp[m - 1];

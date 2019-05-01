@@ -137,4 +137,49 @@ height(i,j) = 0, if matrix[i][j]=='0'
             return maxArea;
         }
     }
+
+
+
+    public class Maximal_Rectangle_Stack2
+    {
+        //O （N^2） 的时间复杂度
+        public int MaximalRectangle(char[][] matrix)
+        {
+            if (matrix.Length == 0) return 0;
+            int n = matrix.Length, m = matrix[0].Length, max= 0;
+            int[] heights = new int[m];
+            foreach (var item in matrix)
+            {
+                for(int i = 0; i < item.Length; i++)
+                {
+                    heights[i] = item[i] == '0' ? 0 : 1 + heights[i];
+                }
+                max = Math.Max(max, LargestRectangleArea(heights));
+            }
+            return max;
+        }
+
+        //O （N） 的时间复杂度
+        public int LargestRectangleArea(int[] height)
+        {
+            int len = height.Length;
+            var s = new Stack<int>();
+            int maxArea = 0;
+            for (int i = 0; i <= len; i++)
+            {
+                int h = (i == len ? 0 : height[i]);
+                if (s.Count == 0 || h >= height[s.Peek()])
+                {
+                    s.Push(i);
+                }
+                else
+                {
+                    int tp = s.Pop();
+                    maxArea = Math.Max(maxArea, height[tp] * (s.Count == 0 ? i : i - 1 - s.Peek()));
+                    i--;
+                }
+            }
+            return maxArea;
+        }
+    }
 }

@@ -30,4 +30,12 @@ namespace Leetcode.Dynamic_Programming
             return false;
         }
     }
+
+    /*
+     * //动态规划
+     *  设状态为 f[n][i][j] ，表示长度为n， 起点为 s1[i] 和起点为 s2[j] 两个字符串是否为 scramble,  状态转移方程
+     *  f[n][i][j]  = (f[k][i][j]  && f[n-k][i+k][j+k] ) 
+     *               || (f[k][j][j+n-k]  && f[n-k][i+k][j])
+     * 
+     */
 }
