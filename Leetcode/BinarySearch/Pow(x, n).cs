@@ -48,7 +48,7 @@ namespace Leetcode.BinarySearch
             else
             {
                 if (n > 0)
-                    return x * temp * temp;
+                    return x * temp * temp;  // 区别正负幂
                 else
                     return (temp * temp) / x;
             }
