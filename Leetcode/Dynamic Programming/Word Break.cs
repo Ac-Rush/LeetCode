@@ -91,4 +91,32 @@ namespace Leetcode.Dynamic_Programming
             return result;
         }
     }
+
+
+    class Word_Break_DP
+    {
+        /*
+         * 
+         *   my solution 
+         */ 
+        public bool WordBreak(string s, IList<string> wordDict)
+        {
+            var set = new HashSet<string>(wordDict);
+            var dp = new bool[s.Length + 1];
+            dp[0] = true;
+            for (int i = 0; i < s.Length; i++)
+            {
+                for (int j = i; j >= 0; j--)
+                {
+                    var word = s.Substring(j, i - j + 1);
+                    if (set.Contains(word) && dp[j])
+                    {
+                        dp[i + 1] = true; //这里是 i+1
+                        break;
+                    }
+                }
+            }
+            return dp[s.Length];
+        }
+    }
 }

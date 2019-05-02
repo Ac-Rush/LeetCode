@@ -20,6 +20,7 @@ namespace Leetcode.Dynamic_Programming
             for (int i = 0; i < S.Length; ++i)
             {
                 for (int j = T.Length - 1; j >= 0; --j)
+                /// //for (int j = 0; j <T.Length ; ++j) 翻过来做是不对的， dp[j+1] 下次要用到， 不能被覆盖， 否则得用二维数组
                 {
                     dp[j + 1] += S[i] == T[j] ? dp[j] : 0;
                 }

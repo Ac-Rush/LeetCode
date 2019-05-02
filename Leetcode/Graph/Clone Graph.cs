@@ -44,7 +44,7 @@ namespace Leetcode.Graph
                 dict[u] = newU;
                 foreach (var neighbor in u.neighbors)
                 {
-                    if (!dict.ContainsKey(neighbor))
+                    if (!dict.ContainsKey(neighbor)) //mybug 没有去重
                     {
                         queue.Enqueue(neighbor);
                     }
