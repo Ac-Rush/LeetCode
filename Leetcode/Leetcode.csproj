@@ -99,6 +99,7 @@
     <Compile Include="DFS\Arithmetic Slices.cs" />
     <Compile Include="DFS\Making A Large Island.cs" />
     <Compile Include="DFS\Restore IP Addresses.cs" />
+    <Compile Include="DFS\Sudoku Solver.cs" />
     <Compile Include="Dynamic Programming\Arithmetic Slices II - Subsequence.cs" />
     <Compile Include="Dynamic Programming\Cherry Pickup.cs" />
     <Compile Include="Dynamic Programming\Decode Ways II.cs" />
