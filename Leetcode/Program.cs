@@ -47,8 +47,7 @@ namespace Leetcode
 
         static void Main(string[] args)
         {
-            var a = new Restore_IP_Addresses();
-            a.RestoreIpAddresses("25525511135");
+            Substring_with_Concatenation_of_All_Words_Sliding_Window.FindSubstring("barfoothefoobarman", new [] { "bar", "foo" });
             TestLinkedList();
            // TestArry();
 

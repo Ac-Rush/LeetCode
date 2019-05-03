@@ -211,6 +211,8 @@
     <Compile Include="LinkList\Add Two Numbers II.cs" />
     <Compile Include="LinkList\Reverse Nodes in k-Group.cs" />
     <Compile Include="Number\Integer to Roman.cs" />
+    <Compile Include="Strings\Multiply Strings.cs" />
+    <Compile Include="Strings\ZigZag Conversion.cs" />
     <Compile Include="Topology_Sort\Course Schedule II.cs" />
     <Compile Include="Topology_Sort\Course Schedule.cs" />
     <Compile Include="Graph\Evaluate Division.cs" />

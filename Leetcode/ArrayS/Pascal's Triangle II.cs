@@ -8,6 +8,11 @@ namespace Leetcode.Array
 {
     class Pascal_s_Triangle_II
     {
+        /// <summary>
+        /// 滚动数组原理
+        /// </summary>
+        /// <param name="rowIndex"></param>
+        /// <returns></returns>
         public IList<int> GetRow(int rowIndex)
         {
             var ans = new int[rowIndex + 1];

@@ -51,7 +51,7 @@ namespace Leetcode.HashTable
                 if (--set[s[j++]] >= 0) count--;
                 if (count == 0)
                 {
-                    while (i < s.Length && set[s[i]] < 0)
+                    while ( set[s[i]] < 0) // my bug 不能使 set[s[i]]++<0 然后i++ 
                     {
                         set[s[i++]]++;
                     }
