@@ -108,6 +108,7 @@
     <Compile Include="Dynamic Programming\Distinct Subsequences.cs" />
     <Compile Include="Dynamic Programming\Interleaving String.cs" />
     <Compile Include="Dynamic Programming\Maximum Length of Repeated Subarray.cs" />
+    <Compile Include="Dynamic Programming\Minimum Score Triangulation of Polygon.cs" />
     <Compile Include="Dynamic Programming\Palindrome Partitioning II.cs" />
     <Compile Include="Dynamic Programming\Race Car.cs" />
     <Compile Include="Dynamic Programming\Scramble String.cs" />
