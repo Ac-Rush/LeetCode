@@ -59,6 +59,7 @@
     <Compile Include="ArrayS\Heaters.cs" />
     <Compile Include="ArrayS\Image Overlap.cs" />
     <Compile Include="ArrayS\Image Smoother.cs" />
+    <Compile Include="ArrayS\Increasing Triplet Subsequence.cs" />
     <Compile Include="ArrayS\Insert Interval.cs" />
     <Compile Include="ArrayS\Island Perimeter.cs" />
     <Compile Include="ArrayS\K Closest Points to Origin.cs" />
@@ -90,6 +91,7 @@
     <Compile Include="Bit\Binary Watch.cs" />
     <Compile Include="Bit\Find the Difference.cs" />
     <Compile Include="Bit\Single Number.cs" />
+    <Compile Include="DAC\Expression Add Operators.cs" />
     <Compile Include="Design\Design HashMap.cs" />
     <Compile Include="Design\Design HashSet.cs" />
     <Compile Include="Design\Design Linked List.cs" />
@@ -212,6 +214,7 @@
     <Compile Include="LinkList\Reverse Nodes in k-Group.cs" />
     <Compile Include="Number\Integer to Roman.cs" />
     <Compile Include="Strings\Multiply Strings.cs" />
+    <Compile Include="Strings\Text Justification.cs" />
     <Compile Include="Strings\ZigZag Conversion.cs" />
     <Compile Include="Topology_Sort\Course Schedule II.cs" />
     <Compile Include="Topology_Sort\Course Schedule.cs" />
