@@ -31,7 +31,7 @@ namespace Leetcode.BinarySearch
             // i 要对 1的长度进行check                         //如何计算 j的index,  i = k/2+start1,  j =  k- (i-start1) + start2
             int i = Math.Min(k / 2 + start1, nums1.Count()), j = k - i + start2 + start1;
             //因为要保证第k个不被移除， 所以要减一？
-            if (nums1[i - 1] < nums2[j - 1])
+            if (nums1[i - 1] < nums2[j - 1]) //因为 i是第几个 所以 要 减一
                 return FindK(nums1, nums2, i, start2, k - i + start1);
             else
                 return FindK(nums1, nums2, start1, j, k - j + start2);
