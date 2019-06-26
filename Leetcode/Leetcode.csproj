@@ -72,6 +72,7 @@
     <Compile Include="ArrayS\Sort Array By Parity II.cs" />
     <Compile Include="ArrayS\Sort Array By Parity.cs" />
     <Compile Include="ArrayS\[1018] Binary Prefix Divisible By 5.cs" />
+    <Compile Include="ArrayS\[860] Lemonade Change.cs" />
     <Compile Include="BackTrack\Flip Game II.cs" />
     <Compile Include="BackTrack\Generalized Abbreviation.cs" />
     <Compile Include="BackTrack\Minimum Unique Word Abbreviation.cs" />
@@ -89,6 +90,7 @@
     <Compile Include="BinarySearch\Koko Eating Bananas.cs" />
     <Compile Include="BinarySearch\Online Election.cs" />
     <Compile Include="BinarySearch\Sliding Window Median.cs" />
+    <Compile Include="BinarySearch\[868] Binary Gap.cs" />
     <Compile Include="Bit\Binary Watch.cs" />
     <Compile Include="Bit\Find the Difference.cs" />
     <Compile Include="Bit\Single Number.cs" />
