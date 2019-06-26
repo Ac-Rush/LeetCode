@@ -654,6 +654,7 @@
     <Compile Include="Tree\Inorder Successor in BST.cs" />
     <Compile Include="Tree\Insert into a Binary Search Tree.cs" />
     <Compile Include="Tree\Invert Binary Tree.cs" />
+    <Compile Include="Tree\Leaf-Similar Trees.cs" />
     <Compile Include="Tree\Longest Univalue Path.cs" />
     <Compile Include="Tree\Lowest Common Ancestor of a Binary Search Tree.cs" />
     <Compile Include="Tree\Lowest Common Ancestor of a Binary Tree.cs" />
@@ -687,6 +688,7 @@
     <Compile Include="Tree\Two Sum IV - Input is a BST.cs" />
     <Compile Include="Tree\UniqueBinarySearchTrees.cs" />
     <Compile Include="Tree\Validate Binary Search Tree.cs" />
+    <Compile Include="Tree\[559] Maximum Depth of N-ary Tree.cs" />
     <Compile Include="Trie\Add and Search Word - Data structure design.cs" />
     <Compile Include="Trie\Map Sum Pairs.cs" />
     <Compile Include="Trie\Word Squares.cs" />
