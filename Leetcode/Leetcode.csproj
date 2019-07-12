@@ -96,6 +96,7 @@
     <Compile Include="Bit\Binary Watch.cs" />
     <Compile Include="Bit\Find the Difference.cs" />
     <Compile Include="Bit\Single Number.cs" />
+    <Compile Include="Bit\[477] Total Hamming Distance.cs" />
     <Compile Include="DAC\Expression Add Operators.cs" />
     <Compile Include="Design\Design HashMap.cs" />
     <Compile Include="Design\Design HashSet.cs" />
