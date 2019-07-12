@@ -9,7 +9,7 @@ namespace Leetcode.ArrayS
     class _792__Number_of_Matching_Subsequences
     {
         /// <summary>
-        https://leetcode.com/problems/number-of-matching-subsequences/discuss/117634/Efficient-and-simple-go-through-words-in-parallel-with-explanation
+      //  https://leetcode.com/problems/number-of-matching-subsequences/discuss/117634/Efficient-and-simple-go-through-words-in-parallel-with-explanation
 /**
  * 
  * 
