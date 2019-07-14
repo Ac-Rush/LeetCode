@@ -60,6 +60,31 @@ namespace Leetcode.DAC
             }
             return dummy.next;
         }
+
+
+
+
+        public static ListNode MergeKLists(ListNode[] lists)
+        {
+            var queue = new BinaryHeap<ListNode>(ListNodeComparere.Instance);
+            var n = lists.Length;
+            for (int i = 0; i < n; i++)
+                if (lists[i] != null)
+                    queue.Insert(lists[i]);
+
+            var head = new ListNode(-1);
+            var prev = head;
+            while (!queue.IsEmpty)
+            {
+                var node = queue.RemoveRoot();
+                if (node.next != null)
+                    queue.Insert(node.next);
+
+                prev = prev.next = node;
+            }
+
+            return head.next;
+        }
     }
 
 

@@ -65,6 +65,7 @@ namespace Leetcode.Stack
             int left = 0, right = height.Length - 1;
             int ans = 0;
             int left_max = 0, right_max = 0;
+            // 注意 while 条件， left == right的 时候是最高的柱子，不会积水
             while (left < right)
             {
                 //高的柱子用来挡水， 所以先动低的柱子
@@ -89,7 +90,7 @@ namespace Leetcode.Stack
     public  class Trapping_Rain_Water_Stack
     {
         /// <summary>
-        /// 用单调栈去跑一边
+        /// 用单调栈去跑一遍， 单调递减的栈
         /// </summary>
         /// <param name="height"></param>
         /// <returns></returns>
@@ -99,11 +100,11 @@ namespace Leetcode.Stack
             Stack<int> st = new Stack<int>();
             while (current < height.Length)
             {
+              //当栈不空， 并且当前大于栈顶， 就可以计算 top上面的水
                 while (st.Any() && height[current] > height[st.Peek()])
                 {
-                    int top = st.Peek();
-                    st.Pop();
-                    if (st.Count ==0)
+                    int top = st.Pop(); //之前最高的柱子
+                    if (st.Count ==0) //如果没有左面的墙， break
                         break;
                     int distance = current - st.Peek() - 1;
                     int bounded_height = Math.Min(height[current], height[st.Peek()]) - height[top];
