@@ -71,6 +71,10 @@
     <Compile Include="ArrayS\Smallest Range I.cs" />
     <Compile Include="ArrayS\Sort Array By Parity II.cs" />
     <Compile Include="ArrayS\Sort Array By Parity.cs" />
+    <Compile Include="ArrayS\[1018] Binary Prefix Divisible By 5.cs" />
+    <Compile Include="ArrayS\[398] Random Pick Index.cs" />
+    <Compile Include="ArrayS\[792] Number of Matching Subsequences.cs" />
+    <Compile Include="ArrayS\[860] Lemonade Change.cs" />
     <Compile Include="BackTrack\Flip Game II.cs" />
     <Compile Include="BackTrack\Generalized Abbreviation.cs" />
     <Compile Include="BackTrack\Minimum Unique Word Abbreviation.cs" />
@@ -88,9 +92,11 @@
     <Compile Include="BinarySearch\Koko Eating Bananas.cs" />
     <Compile Include="BinarySearch\Online Election.cs" />
     <Compile Include="BinarySearch\Sliding Window Median.cs" />
+    <Compile Include="BinarySearch\[868] Binary Gap.cs" />
     <Compile Include="Bit\Binary Watch.cs" />
     <Compile Include="Bit\Find the Difference.cs" />
     <Compile Include="Bit\Single Number.cs" />
+    <Compile Include="Bit\[477] Total Hamming Distance.cs" />
     <Compile Include="DAC\Expression Add Operators.cs" />
     <Compile Include="Design\Design HashMap.cs" />
     <Compile Include="Design\Design HashSet.cs" />
@@ -651,6 +657,7 @@
     <Compile Include="Tree\Inorder Successor in BST.cs" />
     <Compile Include="Tree\Insert into a Binary Search Tree.cs" />
     <Compile Include="Tree\Invert Binary Tree.cs" />
+    <Compile Include="Tree\Leaf-Similar Trees.cs" />
     <Compile Include="Tree\Longest Univalue Path.cs" />
     <Compile Include="Tree\Lowest Common Ancestor of a Binary Search Tree.cs" />
     <Compile Include="Tree\Lowest Common Ancestor of a Binary Tree.cs" />
@@ -684,6 +691,7 @@
     <Compile Include="Tree\Two Sum IV - Input is a BST.cs" />
     <Compile Include="Tree\UniqueBinarySearchTrees.cs" />
     <Compile Include="Tree\Validate Binary Search Tree.cs" />
+    <Compile Include="Tree\[559] Maximum Depth of N-ary Tree.cs" />
     <Compile Include="Trie\Add and Search Word - Data structure design.cs" />
     <Compile Include="Trie\Map Sum Pairs.cs" />
     <Compile Include="Trie\Word Squares.cs" />
