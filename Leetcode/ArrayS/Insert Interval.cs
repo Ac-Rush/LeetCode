@@ -35,9 +35,10 @@ namespace Leetcode.ArrayS
                 ans.Add(intervals[i++]);
 
             // merge all overlapping intervals to one considering newInterval
-            //第二部 添加 交叉的
+            //第二部 添加 交叉的， 
             while (i < intervals.Count && intervals[i].start <= newInterval.end)
             {
+                //一个一个吞噬，生成新的 newInterval
                 newInterval = new Interval( // we could mutate newInterval here also
                         Math.Min(newInterval.start, intervals[i].start),
                         Math.Max(newInterval.end, intervals[i].end));
