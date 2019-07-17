@@ -119,5 +119,28 @@ namespace Leetcode.BinarySearch
             }
             return false; 
         }
+
+
+        public static bool SearchMatrix4(int[][] matrix, int target)
+        {
+            if (matrix.Length == 0)
+            {
+                return false;
+            }
+            var n = matrix.Length;
+            var m = matrix[0].Length;
+
+            int l = 0, r = m * n - 1;
+            while (l <= r)
+            {
+                int mid = (l + r) >> 1;
+                if (matrix[mid / m][mid % m] == target) return true;
+                if (matrix[mid / m][mid % m] < target)
+                    l = mid + 1;
+                else
+                    r = mid - 1;
+            }
+            return false;
+        }
     }
 }

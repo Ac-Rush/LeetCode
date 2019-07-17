@@ -34,6 +34,7 @@ namespace Leetcode.BinarySearch
         }
 
         /// <summary>
+        /// 
         /// 其实可以从 第一个解 推导出来
         /// </summary>
         /// <param name="nums"></param>
@@ -44,9 +45,10 @@ namespace Leetcode.BinarySearch
             while (l < r)
             {
                 int mid = (l + r) / 2;
+                //这个if是突破点，如果符合 [l,m] 就是下次搜索范围
                 if (nums[mid] > nums[mid + 1])  // r是 比右边大的  mid和右边的比较（这样不会越界）
                     r = mid;
-                else
+                else  //否则， mid 不符合， 下次搜索范围是 [mid+1, r]
                     l = mid + 1;    //l 不比右边打
             }
             return l;
