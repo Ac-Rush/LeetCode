@@ -18,7 +18,7 @@ namespace Leetcode.Tree
         public TreeNode LowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q)
         {
             //  空或者有一个是 就返回root
-            if (root == null || root == p || root == q) return root;
+            if (root == null || root == p || root == q) return root; // my bug 忘了 root == null， 必须check null 
             //看左边
             TreeNode left = LowestCommonAncestor(root.left, p, q);
             //看右边

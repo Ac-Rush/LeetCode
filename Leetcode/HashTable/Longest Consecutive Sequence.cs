@@ -111,5 +111,27 @@ namespace Leetcode.HashTable
             }
             return max;
         }
+
+        public int longestConsecutive4(int[] nums)
+        {
+            var set = new HashSet<int>(nums);
+            var ans = 0;
+            foreach (var n in nums)
+            {
+                var cur = 1;
+                if (set.Contains(n - 1))
+                {
+                    continue;
+                }
+                int next = n + 1;
+                while (set.Contains(next))
+                {
+                    cur++;
+                    next++;
+                }
+                ans = Math.Max(ans, cur);
+            }
+            return ans;
+        }
     }
 }
