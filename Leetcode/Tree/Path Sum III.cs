@@ -23,7 +23,7 @@ namespace Leetcode.Tree
         private int pathSumFrom(TreeNode node, int sum)
         {
             if (node == null) return 0;
-            return (node.val == sum ? 1 : 0)
+            return (node.val == sum ? 1 : 0) // 注意这个的优先级， 需要带括号
                 + pathSumFrom(node.left, sum - node.val) + pathSumFrom(node.right, sum - node.val);
         }
     }

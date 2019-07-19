@@ -31,5 +31,13 @@ namespace Leetcode.Tree
             Helper(root.left, sum - root.val);
             Helper(root.right, sum - root.val);
         }
+
+
+        public bool HasPathSum2(TreeNode root, int sum)
+        {
+            if (root == null) return false;
+            if (root.left == null && root.right == null && root.val == sum) return true;
+            return (HasPathSum2(root.left, sum - root.val) || HasPathSum2(root.right, sum - root.val));
+        }
     }
 }
