@@ -46,4 +46,35 @@ namespace Leetcode.Tree
             return result;
         }
     }
+
+
+    class Binary_Tree_Zigzag_Level_Order_Traversal_2
+    {
+        public static IList<IList<int>> ZigzagLevelOrder(TreeNode root)
+        {
+            var ans = new List<IList<int>>();
+            var queue = new Queue<TreeNode>();
+            if (root == null) return ans;
+            queue.Enqueue(root);
+            int level = 1;
+            while (queue.Any())
+            {
+                var count = queue.Count;
+                var cur = new List<int>();
+                while (count-- > 0)
+                {
+                    var node = queue.Dequeue();
+                    cur.Add(node.val);
+                    if (node.left != null) queue.Enqueue(node.left);
+                    if (node.right != null) queue.Enqueue(node.right);
+                }
+                if (level++ % 2 == 0)
+                {
+                    cur.Reverse();
+                }
+                ans.Add(cur);
+            }
+            return ans;
+        }
+    }
 }
