@@ -129,7 +129,7 @@ namespace Leetcode.Graph
         }
 
         /// <summary>
-        /// 居然不要 visited set
+        /// map 就是  visited set 
         /// </summary>
         private Dictionary<int, Node> map = new Dictionary<int, Node>();
         //不是 很好理解，但是可以从 Clone_Graph2 推到过来
