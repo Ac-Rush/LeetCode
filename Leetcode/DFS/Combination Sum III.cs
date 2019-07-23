@@ -8,43 +8,23 @@ namespace Leetcode.DFS_BFS
 {
     class Combination_Sum_III
     {
-        IList<IList<int>> lists = new List<IList<int>>();
+        private IList<IList<int>> ans = new List<IList<int>>();
         public IList<IList<int>> CombinationSum3(int k, int n)
         {
-            var candidates = new[] {1, 2, 3, 4, 5, 6, 7, 8, 9};
-            var list = new List<int>();
-                //    System.Array.Sort(candidates);  //排序，后面才能去重
-            Helper(candidates, 0, n, list, k);
-            return lists;
+            Dfs(new List<int>(), 1, k, n);
+            return ans;
         }
-
-        
-
-        public void Helper(int[] candidates, int index, int target, List<int> result, int k)
+        private void Dfs(List<int> cur, int index, int k, int n)
         {
-            if (target == 0  && result.Count ==k)
+            if (k == 0 && n == 0)
             {
-                lists.Add(new List<int>(result));
+                ans.Add(new List<int>(cur));
             }
-            if (result.Count >= k)  //剪枝  个数多了
+            for (int i = index; i <= 9 && i <= n; i++)
             {
-                return;
-            }
-            if (target > 0)
-            {
-                for (int i = index; i < candidates.Length; i++)
-                {
-                    /*if (i > index && candidates[i] == candidates[i - 1])   //去重
-                    {
-                        continue;
-                    }*/
-                    if (candidates[i] <= target)
-                    {
-                        result.Add(candidates[i]);
-                        Helper(candidates, i + 1, target - candidates[i], result,k);
-                        result.RemoveAt(result.Count - 1);
-                    }
-                }
+                cur.Add(i);
+                Dfs(cur, i + 1, k - 1, n - i);
+                cur.RemoveAt(cur.Count - 1);
             }
         }
     }
