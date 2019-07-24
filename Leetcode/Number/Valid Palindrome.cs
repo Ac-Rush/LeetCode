@@ -51,5 +51,18 @@ namespace Leetcode.Array
             }
             return true;
         }
+
+
+        public static bool IsPalindrome5(string s)
+        {
+            int l = 0, r = s.Length - 1;
+            while (l < r)
+            {
+                while (l < r && !char.IsLetterOrDigit(s[l])) l++;
+                while (l < r && !char.IsLetterOrDigit(s[r])) r--;
+                if (l < r && ((s[l++] | 32) != (s[r--] | 32))) return false;
+            }
+            return true;
+        }
     }
 }
