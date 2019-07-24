@@ -26,7 +26,7 @@ namespace Leetcode.Permutation
             }
             for (int i = 0; i < nums.Length; i++)
             {
-                if (used[i] || (i > 0 && nums[i] == nums[i - 1] && !used[i - 1])) continue;  // 注意这个去重条件
+                if (used[i] || (i > 0 && nums[i] == nums[i - 1] && !used[i - 1])) continue;  // 注意这个去重条件, 上次写错了!used[i - 1]
                 used[i] = true;
                 cur.Add(nums[i]);
                 Helper(ret, cur, nums, used);
