@@ -16,6 +16,7 @@ namespace Leetcode.Scanline
             SortedDictionary<int, int> stops = new SortedDictionary<int, int>();
             foreach (var trip in trips)
             {
+                // .Net core feature
                 stops[trip[1]] = stops.GetValueOrDefault(trip[1]) + trip[0];
                 stops[trip[2]] = stops.GetValueOrDefault(trip[2]) - trip[0];
             }
