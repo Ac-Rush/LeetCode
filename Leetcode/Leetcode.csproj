@@ -220,6 +220,7 @@
     <Compile Include="LinkList\Add Two Numbers II.cs" />
     <Compile Include="LinkList\Reverse Nodes in k-Group.cs" />
     <Compile Include="Number\Integer to Roman.cs" />
+    <Compile Include="Scanline\Car Pooling.cs" />
     <Compile Include="Strings\Multiply Strings.cs" />
     <Compile Include="Strings\Text Justification.cs" />
     <Compile Include="Strings\ZigZag Conversion.cs" />
