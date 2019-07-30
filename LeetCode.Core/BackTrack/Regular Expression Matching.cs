@@ -9,69 +9,65 @@ namespace Leetcode.BackTrack
    public   class Regular_Expression_Matching
     {
 
-        public bool IsMatch2(string text, string pattern)
+        public bool IsMatch(string s, string p)
         {
-            if (string.IsNullOrEmpty(pattern)) return string.IsNullOrEmpty(text);
-            bool first_match = (!string.IsNullOrEmpty(text) &&
-                                   (pattern[0] == text[0] || pattern[0] == '.'));
+            return IsMatch(s, p, 0, 0);
+        }
 
-            if (pattern.Length >= 2 && pattern[1] == '*')
+        public bool IsMatch(string s, string p, int indexS, int indexP)
+        {
+            if (p.Length == indexP)
             {
-                return (IsMatch2(text, pattern.Substring(2)) ||
-                        (first_match && IsMatch2(text.Substring(1), pattern)));
+                return s.Length == indexS;
+            }
+            bool first_match = (s.Length != indexS &&
+                                       (p[indexP] == s[indexS] || p[indexP] == '.'));
+
+            if (p.Length - 1 > indexP && p[indexP + 1] == '*')
+            {
+                return (IsMatch(s, p, indexS, indexP + 2) ||
+                        (first_match && IsMatch(s, p, indexS + 1, indexP)));
             }
             else
             {
-                return first_match && IsMatch2(text.Substring(1), pattern.Substring(1));
+                return first_match && IsMatch(s, p, indexS + 1, indexP + 1);
             }
-        }
-
-
-
-
-        public bool IsMatch(string text, string pattern)
-        {
-            var memo = new bool?[text.Length + 1, pattern.Length + 1];
-            return IsMatch(text.ToCharArray(), pattern.ToCharArray(), 0, 0, memo);
-        }
-
-       /// <summary>
-       /// memo 的方式
-       /// </summary>
-       /// <param name="text"></param>
-       /// <param name="pattern"></param>
-       /// <param name="tIndex"></param>
-       /// <param name="pIndex"></param>
-       /// <param name="memo"></param>
-       /// <returns></returns>
-        public bool IsMatch(char[] text, char[] pattern, int tIndex, int pIndex , bool?[,] memo)
-        {
-            if (pIndex == pattern.Length) return tIndex == text.Length;
-            if (memo[tIndex, pIndex] != null)
-            {
-                return memo[tIndex, pIndex].Value;
-            }
-           
-            bool first_match = (tIndex != text.Length &&
-                                   (pattern[pIndex] == text[tIndex] || pattern[pIndex] == '.'));
-
-            bool ret;
-            if (pattern.Length > pIndex + 1 && pattern[pIndex + 1] == '*')
-            {
-                 ret= (IsMatch(text, pattern, tIndex, pIndex +2, memo) ||
-                        (first_match && IsMatch(text, pattern, tIndex + 1, pIndex , memo)));
-              
-            }
-            else
-            {
-                return first_match && IsMatch(text, pattern, tIndex + 1, pIndex + 1, memo);
-            }
-            memo[tIndex, pIndex] = ret;
-            return ret;
         }
 
         /// <summary>
-        /// dp 的方法
+        /// memo 的方式
+        /// </summary>
+        /// <param name="text"></param>
+        /// <param name="pattern"></param>
+        /// <param name="tIndex"></param>
+        /// <param name="pIndex"></param>
+        /// <param name="memo"></param>
+        /// <returns></returns>
+        public bool IsMatch(string s, string p, int indexS, int indexP, bool?[,] memo)
+        {
+            if (memo[indexS, indexP].HasValue) return memo[indexS, indexP].Value;
+            if (p.Length == indexP)
+            {
+                return s.Length == indexS;
+            }
+            bool first_match = (s.Length != indexS &&
+                                       (p[indexP] == s[indexS] || p[indexP] == '.'));
+            var ans = false;
+            if (p.Length - 1 > indexP && p[indexP + 1] == '*')
+            {
+                ans = (IsMatch(s, p, indexS, indexP + 2, memo) ||
+                        (first_match && IsMatch(s, p, indexS + 1, indexP, memo)));
+            }
+            else
+            {
+                ans = first_match && IsMatch(s, p, indexS + 1, indexP + 1, memo);
+            }
+            memo[indexS, indexP] = ans;
+            return ans;
+        }
+
+        /// <summary>
+        /// dp 的方法 从后向前推
         /// </summary>
         /// <param name="text"></param>
         /// <param name="pattern"></param>
