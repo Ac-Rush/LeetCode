@@ -20,7 +20,7 @@ namespace Leetcode.Stack
                 else if (stack.Count ==0 || stack.Pop() != c)
                     return false;
             }
-            return stack.Count == 0;
+            return stack.Count == 0;  // 注意这个判断
         }
     }
 }

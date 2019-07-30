@@ -36,7 +36,7 @@ namespace Leetcode.Strings
 
         private static void DfsHelperMY(IList<string> result, string path, int left, int right)
         {
-            if (left > right || left < 0 || right < 0) // my bug
+            if (left > right || left < 0 || right < 0) // my bug  第二次触发
             {
                 return;
             }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Leetcode.BackTrack
 {
-   public   class Regular_Expression_Matching
+   public class Regular_Expression_Matching
     {
 
         public bool IsMatch(string s, string p)
