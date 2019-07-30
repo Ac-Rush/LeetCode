@@ -6,11 +6,16 @@ using System.Threading.Tasks;
 
 namespace Leetcode.BinarySearch
 {
+    /// <summary>
+    /// Tag: 重要0 模板0 必背0
+    ///中间第一个数             int first = (nums1.Length + nums2.Length + 1) >> 1;   //如何去 中间的第一个数  
+    /// 中间第二个数             int second = (nums1.Length + nums2.Length + 2) >> 1;//如何去 中间的第二个数
+    /// </summary>
     class Median_of_Two_Sorted_Arrays
     {
         public double FindMedianSortedArrays(int[] nums1, int[] nums2)
         {
-            int first = (nums1.Length + nums2.Length + 1) >> 1;   //如何去 中间的第一个数
+            int first = (nums1.Length + nums2.Length + 1) >> 1;   //如何去 中间的第一个数  
             int second = (nums1.Length + nums2.Length + 2) >> 1;//如何去 中间的第二个数
             return (FindK(nums1, nums2, 0, 0, first) + FindK(nums1, nums2, 0, 0, second)) / 2.0;
         }
