@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Leetcode.Dynamic_Programming
 {
     /// <summary>
-    /// 错误答案， 待验证
+    /// 
     /// </summary>
     class Wildcard_Matching_chaoshi
     {
@@ -25,12 +25,12 @@ namespace Leetcode.Dynamic_Programming
 
             if (p[indexP] == '?')
             {
-                return IsMatch(s, p, indexS + 1, indexP + 1);
+                return indexS < s.Length &&  IsMatch(s, p, indexS + 1, indexP + 1);
             }
             if (p[indexP] == '*')
             {
                 //注意后面的分支要加 indexS <= s.Length 
-                return IsMatch(s, p, indexS, indexP + 1) || (indexS <= s.Length && IsMatch(s, p, indexS + 1, indexP));
+                return IsMatch(s, p, indexS, indexP + 1) || (indexS < s.Length && IsMatch(s, p, indexS + 1, indexP));
             }
             if (indexS >= s.Length) return false; // 注意这个条件 即位置不能在 p[indexP] == '*' 之前
             return p[indexP] == s[indexS] && IsMatch(s, p, indexS + 1, indexP + 1);
@@ -38,7 +38,7 @@ namespace Leetcode.Dynamic_Programming
     }
 
     /// <summary>
-    /// 错误答案， 待验证
+    /// 
     /// </summary>
    public  class Wildcard_Matching_memo
     {
