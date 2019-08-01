@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Leetcode.Dynamic_Programming;
+using System;
 
 namespace LeetCode.Core
 {
@@ -6,7 +7,7 @@ namespace LeetCode.Core
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Wildcard_Matching_memo.IsMatch("mississippi", "m??*ss*?i*pi");
         }
     }
 }

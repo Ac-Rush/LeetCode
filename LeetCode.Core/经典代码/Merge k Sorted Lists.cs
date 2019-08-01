@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Leetcode.LinkList;
 
-namespace Leetcode.DAC
+namespace Leetcode.Classic
 {
 
     public class Merge_k_Sorted_Lists_02
@@ -45,11 +45,46 @@ namespace Leetcode.DAC
             }
             return head.next;
         }
+
+
+        public class NodeIndex2
+        {
+            // index of the array from  
+            // which the element is taken 
+            public int IndexCol;
+
+            // index of the next element  
+            // to be picked from array 
+            public int IndexRow;
+            public NodeIndex2(int indexCol, int indexRow) { IndexCol = indexCol; IndexRow = indexRow; }
+        }
+        public List<int> MergeKArray(int[][] lists)
+        {
+            var ans = new List<int>();
+            SortedSet<NodeIndex2> ss = new SortedSet<NodeIndex2>(
+                Comparer<NodeIndex2>.Create((a, b) =>
+                lists[a.IndexRow][a.IndexCol] == lists[b.IndexRow][b.IndexCol] 
+                ? a.IndexRow - b.IndexRow 
+                : lists[a.IndexRow][a.IndexCol] - lists[b.IndexRow][b.IndexCol]));
+            ListNode head = new ListNode(int.MinValue), p = head;
+            for (int i = 0; i < lists.Length; i++)
+                if (lists[i] != null && lists[i].Length > 0) ss.Add(new NodeIndex2(0, i));
+            while (ss.Count != 0)
+            {
+                var node = ss.Min;
+                ans.Add(lists[node.IndexRow][node.IndexCol]);
+                node.IndexCol++;
+                ss.Remove(node);
+                if (node.IndexCol < lists[node.IndexRow].Length) ss.Add(node);
+            }
+            return ans;
+        }
+        
     }
 
     public class Merge_k_Sorted_Lists
     {
-        
+
         /// <summary>
         /// my solution
         /// </summary>
@@ -58,7 +93,7 @@ namespace Leetcode.DAC
         public static ListNode MergeKLists(ListNode[] lists)
         {
             var dummy = new ListNode(0); //dummy head;
-            var tail = dummy; 
+            var tail = dummy;
             var heap = new SortedSet<int>();    //  SortedSet +Dictionary 来模拟 PQ
             var dict = new Dictionary<int, List<ListNode>>();
             foreach (var node in lists)   // 将节点装入 PQ

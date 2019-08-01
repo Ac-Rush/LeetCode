@@ -87,6 +87,34 @@ namespace Leetcode.Stack
         }
     }
 
+
+    class Trapping_Rain_Water_TWO_Pointer2
+    {
+        /// <summary>
+        /// 左边一个指针右边一个指针，
+        /// 
+        /// 这个空间是O(1)
+        /// </summary>
+        /// <param name="height"></param>
+        /// <returns></returns>
+        public int Trap(int[] height)
+        {
+            int ans = 0, l = 0, r = height.Length - 1, maxL = 0, maxR = 0;
+            while (l < r)
+            {
+                if (height[l] < height[r])
+                {
+                    var dummy = height[l] >= maxL ? maxL = height[l++] : ans += maxL - height[l++];
+                }
+                else
+                {
+                    var dummy = height[r] >= maxR ? maxR = height[r--] : ans += maxR - height[r--];
+                }
+            }
+            return ans;
+        }
+    }
+
     public  class Trapping_Rain_Water_Stack
     {
         /// <summary>

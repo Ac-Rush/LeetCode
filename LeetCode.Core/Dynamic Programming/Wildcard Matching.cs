@@ -6,6 +6,66 @@ using System.Threading.Tasks;
 
 namespace Leetcode.Dynamic_Programming
 {
+
+    class Wildcard_Matching_chaoshi
+    {
+        public bool IsMatch(string s, string p)
+        {
+            return IsMatch(s, p, 0, 0);
+        }
+
+        public bool IsMatch(string s, string p, int indexS, int indexP)
+        {
+            if (indexP == p.Length)
+            {
+                return indexS == s.Length;
+            }
+
+            if (p[indexP] == '?')
+            {
+                return IsMatch(s, p, indexS + 1, indexP + 1);
+            }
+            if (p[indexP] == '*')
+            {
+                //注意后面的分支要加 indexS <= s.Length 
+                return IsMatch(s, p, indexS, indexP + 1) || (indexS <= s.Length && IsMatch(s, p, indexS + 1, indexP));
+            }
+            if (indexS >= s.Length) return false; // 注意这个条件 即位置不能在 p[indexP] == '*' 之前
+            return p[indexP] == s[indexS] && IsMatch(s, p, indexS + 1, indexP + 1);
+        }
+    }
+
+   public  class Wildcard_Matching_memo
+    {
+        public static bool IsMatch(string s, string p)
+        {
+            return IsMatch(s, p, 0, 0, new bool?[s.Length+1, p.Length +1]);
+        }
+
+        public static bool IsMatch(string s, string p, int indexS, int indexP, bool?[,] memo)
+        {
+            if (memo[indexS, indexP].HasValue) return memo[indexS, indexP].Value;
+            var ans = false;
+            if (indexP == p.Length)
+            {
+                ans = indexS == s.Length;
+            }else if (p[indexP] == '?')
+            {
+                ans = IsMatch(s, p, indexS + 1, indexP + 1, memo);
+            }
+            else if (p[indexP] == '*')
+            {
+                //注意后面的分支要加 indexS <= s.Length 
+                ans = IsMatch(s, p, indexS, indexP + 1, memo) || (indexS <= s.Length && IsMatch(s, p, indexS + 1, indexP, memo));
+            }
+            else if (indexS >= s.Length) ans = false; // 注意这个条件 即位置不能在 p[indexP] == '*' 之前
+            else ans = p[indexP] == s[indexS] && IsMatch(s, p, indexS + 1, indexP + 1, memo);
+            memo[indexS, indexP] = ans;
+            return ans;
+        }
+    }
+
+
     class Wildcard_Matching_Memo
     {
         public bool IsMatch(string s, string p)
