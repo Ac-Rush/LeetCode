@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace Leetcode.Dynamic_Programming
 {
-
+    /// <summary>
+    /// 错误答案， 待验证
+    /// </summary>
     class Wildcard_Matching_chaoshi
     {
         public bool IsMatch(string s, string p)
@@ -35,6 +37,9 @@ namespace Leetcode.Dynamic_Programming
         }
     }
 
+    /// <summary>
+    /// 错误答案， 待验证
+    /// </summary>
    public  class Wildcard_Matching_memo
     {
         public static bool IsMatch(string s, string p)
