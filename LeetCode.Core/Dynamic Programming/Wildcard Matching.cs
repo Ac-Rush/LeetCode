@@ -56,12 +56,12 @@ namespace Leetcode.Dynamic_Programming
                 ans = indexS == s.Length;
             }else if (p[indexP] == '?')
             {
-                ans = IsMatch(s, p, indexS + 1, indexP + 1, memo);
+                ans = indexS < s.Length && IsMatch(s, p, indexS + 1, indexP + 1, memo);// my bug  缺少了这个判断indexS < s.Length
             }
             else if (p[indexP] == '*')
             {
                 //注意后面的分支要加 indexS <= s.Length 
-                ans = IsMatch(s, p, indexS, indexP + 1, memo) || (indexS <= s.Length && IsMatch(s, p, indexS + 1, indexP, memo));
+                ans = IsMatch(s, p, indexS, indexP + 1, memo) || (indexS < s.Length && IsMatch(s, p, indexS + 1, indexP, memo));
             }
             else if (indexS >= s.Length) ans = false; // 注意这个条件 即位置不能在 p[indexP] == '*' 之前
             else ans = p[indexP] == s[indexS] && IsMatch(s, p, indexS + 1, indexP + 1, memo);
