@@ -64,11 +64,12 @@ namespace Leetcode.ArrayS
         /// <returns></returns>
         public int[][] Insert(int[][] intervals, int[] newInterval)
         {
-            int start = newInterval[0], end = newInterval[1];
+            int start = newInterval[0], end = newInterval[1], i =0;
             var ans = new List<int[]>();
-            int i = 0;
             while (i < intervals.Length && intervals[i][1] < newInterval[0])
                 ans.Add(intervals[i++]);
+
+            // 这一段就是 融合形成新的 newInterval， 很make sence
             while (i < intervals.Length && intervals[i][0] <= newInterval[1])
             {
                 newInterval[0] = Math.Min(newInterval[0], intervals[i][0]);
@@ -78,6 +79,33 @@ namespace Leetcode.ArrayS
             ans.Add(newInterval);
             while (i < intervals.Length) ans.Add(intervals[i++]);
 
+            return ans.ToArray();
+        }
+
+        /// <summary>
+        /// 不过看着还是上面的好
+        /// </summary>
+        /// <param name="intervals"></param>
+        /// <param name="newInterval"></param>
+        /// <returns></returns>
+        public int[][] Insert2(int[][] intervals, int[] newInterval)
+        {
+            var ans = new List<int[]>();
+            int start = newInterval[0], end = newInterval[1], i = 0;
+            while (i < intervals.Length && intervals[i][1] < start)
+            {
+                ans.Add(intervals[i++]);
+            }
+            start = i < intervals.Length && start > intervals[i][0] ? intervals[i][0] : start;// 这就是  上面的   newInterval[0] = Math.Min(newInterval[0], intervals[i][0]);
+            while (i < intervals.Length && end >= intervals[i][0])
+            {
+                end = Math.Max(end, intervals[i++][1]);
+            }
+            ans.Add(new int[] { start, end });
+            while (i < intervals.Length)
+            {
+                ans.Add(intervals[i++]);
+            }
             return ans.ToArray();
         }
     }

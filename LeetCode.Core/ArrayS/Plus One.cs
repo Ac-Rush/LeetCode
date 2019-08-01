@@ -28,5 +28,28 @@ namespace Leetcode.Array
             newOne[0] = 1;
             return newOne;
         }
+
+        /// <summary>
+        /// 我的解法真烂
+        /// </summary>
+        /// <param name="digits"></param>
+        /// <returns></returns>
+        public int[] PlusOne(int[] digits)
+        {
+            int rest = 1;
+            for (int i = digits.Length - 1; i >= 0; i--)
+            {
+                var sum = rest + digits[i];
+                digits[i] = sum % 10;
+                rest = sum / 10;
+            }
+            if (rest == 1)
+            {
+                digits = new int[digits.Length + 1];
+                digits[0] = 1;
+            }
+            return digits;
+        }
+
     }
 }

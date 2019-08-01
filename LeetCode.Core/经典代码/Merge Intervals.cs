@@ -7,11 +7,12 @@ using System.Threading.Tasks;
 namespace Leetcode.Sort
 {
     using System;
-   
+    using System.ComponentModel;
+
     /// <summary>
     ///  这个和 meeting room II 相似
     /// </summary>
-   public class Merge_Intervals
+    public class Merge_Intervals
     {
         /// <summary>
         /// my solution
@@ -34,6 +35,29 @@ namespace Leetcode.Sort
                 i = j;
             }
             return result;
+        }
+
+        public int[][] Merge(int[][] intervals)
+        {
+            var ans = new List<int[]>();
+            if (intervals == null || intervals.Length == 0) return intervals;
+            Array.Sort<int[]>(intervals, (x, y) => x[0] -y[0]); // 这样排序二维数组 真好用
+            int start = intervals[0][0], end = intervals[0][1]; 
+            for (int i = 1; i < intervals.Length; i++)
+            {
+                if (end >= intervals[i][0])
+                {
+                    end = Math.Max(end,intervals[i][1]); // my bug 需要 math.Max
+                }
+                else
+                {
+                    ans.Add(new int[] { start, end });
+                    start = intervals[i][0];
+                    end = intervals[i][1];
+                }
+            }
+            ans.Add(new int[] { start, end });
+            return ans.ToArray();
         }
     }
 
