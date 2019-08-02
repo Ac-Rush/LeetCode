@@ -34,7 +34,7 @@ namespace Leetcode.Array
         /// </summary>
         /// <param name="digits"></param>
         /// <returns></returns>
-        public int[] PlusOne(int[] digits)
+        public int[] PlusOne2(int[] digits)
         {
             int rest = 1;
             for (int i = digits.Length - 1; i >= 0; i--)
