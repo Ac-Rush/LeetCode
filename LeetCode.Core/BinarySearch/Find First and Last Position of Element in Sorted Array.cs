@@ -35,16 +35,22 @@ namespace Leetcode.BinarySearch
             return ret;
         }
 
-        
+
+        public int[] SearchRange2(int[] nums, int target)
+        {
+            var first = firstGreaterEqual(nums, target);
+            if (first == nums.Length || nums[first] != target) return new int[] { -1, -1 };
+            return new int[] { first, firstGreaterEqual(nums, target + 1) - 1 };
+        }
 
         private static int firstGreaterEqual(int[] A, int target)
         {
             int low = 0, high = A.Length;  //这个超赞high = A.Length 而不是 high = A.Length -1, 这是因为 low 不能等high， 所以不会越界， 这样可以找到第一个大的，如果不存在就返回 length.
             while (low < high)
             {
-                int mid = low + ((high - low) >> 1);
-                if (A[mid] < target)
-                {
+                int mid = low + (high - low)/2;
+                if (A[mid] < target)  //第一个大于等于的， 条件取反， low = m +1;
+                {  
                     low = mid + 1;
                 }
                 else
@@ -58,11 +64,11 @@ namespace Leetcode.BinarySearch
         }
 
 
-        public int[] SearchRange2(int[] A, int target)
+        public int[] SearchRange4(int[] nums, int target)
         {
-            
-            return new int[] { A.GetLowerBound(target), A.GetUpperBound(target) };
-            
+            //upper bound: Array.IndexOf(nums, target)
+            //lower bound: Array.LastIndexOf(nums, target)
+            return new int[] { System.Array.IndexOf(nums, target), System.Array.LastIndexOf(nums, target) };
         }
     }
 }
