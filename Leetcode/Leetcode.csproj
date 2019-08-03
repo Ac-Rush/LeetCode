@@ -9,9 +9,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Leetcode</RootNamespace>
     <AssemblyName>Leetcode</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -57,6 +58,7 @@
     <Compile Include="ArrayS\Find the Duplicate Number.cs" />
     <Compile Include="ArrayS\Game of Life.cs" />
     <Compile Include="ArrayS\Heaters.cs" />
+    <Compile Include="ArrayS\Height Checker.cs" />
     <Compile Include="ArrayS\Image Overlap.cs" />
     <Compile Include="ArrayS\Image Smoother.cs" />
     <Compile Include="ArrayS\Increasing Triplet Subsequence.cs" />
@@ -220,6 +222,7 @@
     <Compile Include="LinkList\Add Two Numbers II.cs" />
     <Compile Include="LinkList\Reverse Nodes in k-Group.cs" />
     <Compile Include="Number\Integer to Roman.cs" />
+    <Compile Include="Scanline\Car Pooling.cs" />
     <Compile Include="Strings\Multiply Strings.cs" />
     <Compile Include="Strings\Text Justification.cs" />
     <Compile Include="Strings\ZigZag Conversion.cs" />
@@ -731,6 +734,7 @@
   <ItemGroup>
     <None Include="App.config" />
     <Compile Include="ArrayS\Flipping an Image.cs" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
