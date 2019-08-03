@@ -56,5 +56,13 @@ namespace Leetcode.BinarySearch
             }
             return low;
         }
+
+
+        public int[] SearchRange2(int[] A, int target)
+        {
+            
+            return new int[] { A.GetLowerBound(target), A.GetUpperBound(target) };
+            
+        }
     }
 }

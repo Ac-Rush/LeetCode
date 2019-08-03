@@ -10,14 +10,13 @@ namespace Leetcode.BinarySearch
     {
         public int Search(int[] nums, int target)
         {
-            var l = 0;
-            var h = nums.Length - 1;
-            while (l <= h)
+            int l = 0, r = nums.Length - 1;
+            while (l <= r)
             {
-                var m = l + (h - l) / 2;
+                var m = l + (r - l) / 2;
                 if (nums[m] == target) return m;
-                if (nums[m] < target) l = m + 1;
-                else h = m - 1;
+                if (nums[m] > target) r = m - 1;
+                else l = m + 1;
             }
             return -1;
         }
