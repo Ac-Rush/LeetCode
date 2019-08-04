@@ -7,7 +7,7 @@ namespace LeetCode.Core.Sort
 {
     class Sort_an_Array
     {
-        //123
+        //456
         public int[] SortArray(int[] nums)
         {
             return nums.OrderBy(i=>i).ToArray();
