@@ -17,7 +17,7 @@ namespace LeetCode.Core.BinarySearch_Tree
     {
 
         /*
-         *
+         * 
          Here is his brilliant solution
 https://discuss.leetcode.com/topic/98454/c-9-lines-o-n-log-n-map
 
@@ -33,6 +33,7 @@ For each number, we keep pop the stack until empty or a bigger number; The bigge
             for (int i = 0; i < nums.Length; i++)
             {
                 TreeNode curr = new TreeNode(nums[i]);
+                //存储了一个递减的 单调栈
                 while (stack.Any()&& stack.Peek().val < nums[i]) //如果碰到一个大的， 说明可以把当前当根， 左子树为 栈底
                 {
                     curr.left = stack.Pop();
