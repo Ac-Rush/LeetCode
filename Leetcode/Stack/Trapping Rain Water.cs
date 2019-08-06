@@ -104,7 +104,7 @@ namespace Leetcode.Stack
                 while (st.Any() && height[current] > height[st.Peek()])
                 {
                     int top = st.Pop(); //之前最高的柱子
-                    if (st.Count ==0) //如果没有左面的墙， break
+                    if (st.Count ==0) //如果没有左面的墙， break&&
                         break;
                     int distance = current - st.Peek() - 1;
                     int bounded_height = Math.Min(height[current], height[st.Peek()]) - height[top];
