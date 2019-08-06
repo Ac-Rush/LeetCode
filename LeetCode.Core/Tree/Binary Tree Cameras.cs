@@ -59,7 +59,7 @@ Return 2 if it's coverd, without a camera on this node.
          */
         public int Dfs(TreeNode root)
         {
-            if (root == null) return 2;
+            if (root == null) return 2;  // 这个值
             int left = Dfs(root.left), right = Dfs(root.right);
             if (left == 0 || right == 0)
             {
