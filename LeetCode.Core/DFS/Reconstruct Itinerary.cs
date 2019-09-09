@@ -5,6 +5,9 @@ using System.Text;
 
 namespace LeetCode.Core.DFS
 {
+    /// <summary>
+    /// 还未实现
+    /// </summary>
     class Reconstruct_Itinerary
     {
         Dictionary<string, SortedSet<string>> dict = new Dictionary<string, SortedSet<string>>();
