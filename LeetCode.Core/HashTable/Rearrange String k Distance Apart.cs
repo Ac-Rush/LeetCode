@@ -8,6 +8,8 @@ namespace Leetcode.HashTable
 {
     /// <summary>
     ///  时间复杂度 是 O(N)  那个26个的for 根本就不算
+    ///  
+    /// 贪心算法
     /// </summary>
     class Rearrange_String_k_Distance_Apart
     {
