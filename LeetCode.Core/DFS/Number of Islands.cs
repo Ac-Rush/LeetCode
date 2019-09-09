@@ -8,38 +8,38 @@ namespace Leetcode.DFS
 {
     class Number_of_Islands
     {
-       /// <summary>
-       /// my solution
-       /// </summary>
-       /// <param name="grid"></param>
-       /// <returns></returns>
-        public int NumIslands(char[,] grid)
+        /// <summary>
+        /// my solution
+        /// </summary>
+        /// <param name="grid"></param>
+        /// <returns></returns>
+        public int NumIslands(char[][] grid)
         {
-            var count = 0;
-            for (int i = 0; i < grid.GetLength(0); i++)
+            int count = 0;
+            for (int i = 0; i < grid.Length; i++)
             {
-                for (int j = 0; j < grid.GetLength(1); j++)
+                for (int j = 0; j < grid[0].Length; j++)
                 {
-                    if (grid[i, j] == '1')
+                    if (grid[i][j] == '1')
                     {
                         count++;
-                        DfsDistory(grid,i,j);
+                        Dfs(grid, i, j);
                     }
                 }
             }
             return count;
         }
-
-        public void DfsDistory(char[,] grid, int r, int c)
+        private void Dfs(char[][] image, int sr, int sc)
         {
-            if (grid[r, c] == '1')
+            if (sr < 0 || sr >= image.Length || sc < 0 || sc >= image[0].Length || image[sr][sc] == '0')
             {
-                grid[r, c] = '0';
-                if (r > 0) DfsDistory(grid, r - 1, c);
-                if (r < grid.GetLength(0) - 1) DfsDistory(grid, r + 1, c);
-                if (c > 0) DfsDistory(grid, r, c - 1);
-                if (c < grid.GetLength(1) - 1) DfsDistory(grid, r, c + 1);
+                return;
             }
+            image[sr][sc] = '0';
+            Dfs(image, sr + 1, sc);
+            Dfs(image, sr, sc + 1);
+            Dfs(image, sr - 1, sc);
+            Dfs(image, sr, sc - 1);
         }
     }
 }
