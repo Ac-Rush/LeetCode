@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Configuration;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Leetcode.BFS
 {
@@ -12,23 +9,16 @@ namespace Leetcode.BFS
         public int OpenLock(string[] deadends, string target)
         {
             var step = 0;
-            var set = new HashSet<string>(deadends);
+            HashSet<string> set = new HashSet<string>(deadends), visit = new HashSet<string>() { "0000" };
             var queue = new Queue<string>();
-            var visit = new HashSet<string>();
-            var root = "0000";
-            queue.Enqueue(root);
-            visit.Add(root);
-            while (queue.Count > 0)
+            queue.Enqueue("0000");
+            while (queue.Any())
             {
                 var count = queue.Count;
                 while (count-- > 0)
                 {
                     var s = queue.Dequeue();
-                    if (set.Contains(s))
-                    {
-                        continue;
-                    }
-
+                    if (set.Contains(s)) continue;
                     if (s.Equals(target)) return step;
                     for (int i = 0; i < 4; i++)
                     {
