@@ -68,7 +68,7 @@ namespace LeetCode.Core.BFS
             {
                 return;
             }
-            visited[i,j] = true;
+            visited[i,j] = true; //不用管是岛的最外面还是里面， 全都标记，全都入队
             q.Enqueue(new int[] { i, j });
             foreach (int[] dir in dirs)
             {
