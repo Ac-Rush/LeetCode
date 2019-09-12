@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -6,7 +6,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Lucene.Net" Version="3.0.3" />
     <PackageReference Include="Microsoft.NETCore.Platforms" Version="2.2.2" />
+    <PackageReference Include="PriorityQueue" Version="0.1.0" />
   </ItemGroup>
 
 </Project>

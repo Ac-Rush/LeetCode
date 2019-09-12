@@ -18,19 +18,19 @@ namespace Leetcode.BFS
         public int NumBusesToDestination(int[][] routes, int S, int T)
         {
             var ans = 0;
-            HashSet<int> visited = new HashSet<int>();
+            HashSet<int> visited = new HashSet<int>();// 这个是对bus去重
             Queue<int> q = new Queue<int>();
             var map = new Dictionary<int, HashSet<int>>();  // <stop, buses>
             if (S == T) return 0;
             for (int i = 0; i < routes.Length; i++)
             {
-                for (int j = 0; j < routes[i].Length; j++)
+                foreach(var stat in routes[i])
                 {
-                    if (!map.ContainsKey(routes[i][j]))
+                    if (!map.ContainsKey(stat))
                     {
-                        map[routes[i][j]] = new HashSet<int>();
+                        map[stat] = new HashSet<int>();
                     }
-                    map[routes[i][j]].Add(i);
+                    map[stat].Add(i);
                 }
             }
             q.Enqueue(S);
@@ -46,13 +46,13 @@ namespace Leetcode.BFS
                     {
                         if (visited.Contains(bus)) continue;
                         visited.Add(bus);
-                        for (int j = 0; j < routes[bus].Length; j++)  //遍历 bus的每一个车站
+                        foreach(var stat in routes[bus])//遍历 bus的每一个车站
                         {
-                            q.Enqueue(routes[bus][j]);
+                            q.Enqueue(stat);
                         }
                     }
                 }
-                ans++;
+                ans++; // BFS 下一步
             }
             return -1;
         }
