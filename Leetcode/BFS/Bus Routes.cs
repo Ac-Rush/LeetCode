@@ -26,13 +26,13 @@ namespace Leetcode.BFS
 
             for (int i = 0; i < routes.Length; i++)
             {
-                for (int j = 0; j < routes[i].Length; j++)
+                foreach (int station in routes[i])
                 {
-                    if (!map.ContainsKey(routes[i][j]))
+                    if (!map.ContainsKey(station))
                     {
-                        map[routes[i][j]] = new HashSet<int>();
+                        map[station] = new HashSet<int>();
                     }
-                    map[routes[i][j]].Add(i); 
+                    map[station].Add(i); 
                 }
             }
 
@@ -40,20 +40,20 @@ namespace Leetcode.BFS
             q.Enqueue(S);
             while (q.Any())
             {
-                int len = q.Count;
+                var len = q.Count;
                 ret++;
-                for (int i = 0; i < len; i++)
+                while (len-- >0)
                 {
                     int cur = q.Dequeue();
                     var buses = map[cur];
-                    foreach (int bus in  buses)
+                    foreach (var bus in  buses)
                     {
                         if (visited.Contains(bus)) continue;
                         visited.Add(bus);
-                        for (int j = 0; j < routes[bus].Length; j++)  //遍历 bus的每一个车站
+                        foreach (var station in routes[bus])  //遍历 bus的每一个车站
                         {
-                            if (routes[bus][j] == T) return ret;
-                            q.Enqueue(routes[bus][j]);
+                            if (station == T) return ret;
+                            q.Enqueue(station);
                         }
                     }
                 }
