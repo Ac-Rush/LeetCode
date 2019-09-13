@@ -9,6 +9,88 @@ namespace Leetcode.模板
 {
     class BFSTemplete
     {
+        private int V;   // No. of vertices 
+        private List<int>[] adj; //Adjacency Lists 
+
+        /// <summary>
+        /// 用 BFS 求最短或最长距离
+        /// </summary>
+        /// <param name="s"></param>
+        int BFS_Len(int s)
+        {
+            var Len = 0;
+            // Mark all the vertices as not visited(By default 
+            // set as false) 
+            bool[] visited = new bool[V];
+
+            // Create a queue for BFS 
+            var queue = new Queue<int>();
+
+            // Mark the current node as visited and enqueue it 
+            visited[s] = true;
+            queue.Enqueue(s);
+
+
+            while (queue.Count > 0)
+            {
+                var count = queue.Count;
+                while (count-- > 0)
+                {
+                    // Dequeue a vertex from queue and print it 
+                    s = queue.Dequeue();
+                    // Get all adjacent vertices of the dequeued vertex s 
+                    // If a adjacent has not been visited, then mark it 
+                    // visited and enqueue it 
+                    foreach (var n in adj[s])
+                    {
+                        if (!visited[n])
+                        {
+                            visited[n] = true;
+                            queue.Enqueue(n);
+                        }
+                    }
+                }
+
+                Len++;
+            }
+
+            return Len;
+        }
+
+
+        void BFS(int s)
+        {
+            // Mark all the vertices as not visited(By default 
+            // set as false) 
+            bool[] visited = new bool[V];
+
+            // Create a queue for BFS 
+            var queue = new Queue<int>();
+
+            // Mark the current node as visited and enqueue it 
+            visited[s] = true;
+            queue.Enqueue(s);
+
+            while (queue.Count > 0)
+            {
+                // Dequeue a vertex from queue and print it 
+                s = queue.Dequeue();
+                Console.WriteLine(s);
+
+                // Get all adjacent vertices of the dequeued vertex s 
+                // If a adjacent has not been visited, then mark it 
+                // visited and enqueue it 
+                foreach (var n in adj[s])
+                {
+                    if (!visited[n])
+                    {
+                        visited[n] = true;
+                        queue.Enqueue(n);
+                    }
+                }
+            }
+        }
+
         int BFS(Node root, Node target)
         {
             Queue<Node> queue = new Queue<Node>();  // store all nodes which are waiting to be processed
