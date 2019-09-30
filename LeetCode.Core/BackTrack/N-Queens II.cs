@@ -82,7 +82,7 @@ namespace Leetcode.BackTrack
         private int _count = 0;
         public int TotalNQueens(int n)
         {
-            Dfs((int)Math.Pow(2, n) - 1, 0, 0, 0);
+            Dfs((1 << n) - 1, 0, 0, 0);
             return _count;
         }
         private void Dfs(int done, int leftDia, int col, int rightDia)
