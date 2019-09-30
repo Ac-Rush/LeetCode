@@ -82,6 +82,7 @@
     <Compile Include="BackTrack\Minimum Unique Word Abbreviation.cs" />
     <Compile Include="BackTrack\Palindrome Partitioning.cs" />
     <Compile Include="BFS\01 Matrix.cs" />
+    <Compile Include="BFS\All Paths from Source Lead to Destination.cs" />
     <Compile Include="BFS\Bus Routes.cs" />
     <Compile Include="BFS\K-Similar Strings.cs" />
     <Compile Include="BFS\Open the Lock.cs" />
