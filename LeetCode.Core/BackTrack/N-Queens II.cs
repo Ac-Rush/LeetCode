@@ -75,4 +75,35 @@ namespace Leetcode.BackTrack
             }
         }
     }
+
+
+    public class N_Queens_II_Bitwise
+    {
+        private int _count = 0;
+        public int TotalNQueens(int n)
+        {
+            Dfs((int)Math.Pow(2, n) - 1, 0, 0, 0);
+            return _count;
+        }
+        private void Dfs(int done, int leftDia, int col, int rightDia)
+        {
+            if (done == col)
+            {
+                _count++;
+                return;
+            }
+            //Gets a bit sequence with "1"s
+            //wherever there is an open "slot"
+            var poss = ~(leftDia | rightDia | col);
+
+            //Loops as long as there is a valid
+            //place to put another queen.
+            while ((poss & done) != 0 )
+            {
+                var bit = poss & -poss; // 获得最低为的1
+                poss -= bit;  // 削掉这个1
+                Dfs(done, (leftDia | bit) >> 1, col | bit, (rightDia | bit) << 1);
+            }
+        }
+    }
 }

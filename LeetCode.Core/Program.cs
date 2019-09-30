@@ -1,6 +1,7 @@
 ﻿using Leetcode.Dynamic_Programming;
 using LeetCode.Core.BFS;
 using System;
+using Leetcode.BackTrack;
 
 namespace LeetCode.Core
 {
@@ -8,6 +9,10 @@ namespace LeetCode.Core
     {
         static void Main(string[] args)
         {
+            var t = new N_Queens_II_Bitwise();
+            t.TotalNQueens(4);
+
+
             TestMetrix();
             Console.Read();
             // Wildcard_Matching_memo.IsMatch("mississippi", "m??*ss*?i*pi");
