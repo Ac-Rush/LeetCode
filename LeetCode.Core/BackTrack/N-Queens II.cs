@@ -76,7 +76,9 @@ namespace Leetcode.BackTrack
         }
     }
 
-
+    /// <summary>
+    /// 这个位运算的做法 不错
+    /// </summary>
     public class N_Queens_II_Bitwise
     {
         private int _count = 0;
