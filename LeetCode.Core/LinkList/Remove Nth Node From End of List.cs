@@ -10,13 +10,13 @@ namespace Leetcode.LinkList
     {
         public ListNode RemoveNthFromEnd(ListNode head, int n)
         {
-            ListNode start = new ListNode(0);  // 还是  demy node 好用 
-            ListNode slow = start, fast = start;
-            slow.next = head;
+            ListNode dummy = new ListNode(0);  // 还是  demy node 好用 \
+            dummy.next = head;
+            ListNode slow = dummy, fast = dummy;  // slow 和 fast 必须从dummy 开始，因为可能删除的是head
 
             //Move fast in front so that the gap between slow and fast becomes n
-            //分步来 很清晰， fast 先走n步
-            for (int i = 1; i <= n + 1; i++)
+            //分步来 很清晰， fast 先走n +1步
+            while (n-- >= 0)
             {
                 fast = fast.next;
             }
@@ -29,7 +29,7 @@ namespace Leetcode.LinkList
             }
             //Skip the desired node
             slow.next = slow.next.next;
-            return start.next;
+            return dummy.next;
         }
     }
 }

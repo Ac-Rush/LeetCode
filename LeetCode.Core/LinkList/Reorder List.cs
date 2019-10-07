@@ -8,23 +8,74 @@ namespace Leetcode.LinkList
 {
     class Reorder_List
     {
+        
+
+        public void ReorderList2(ListNode head)
+        {
+            if (head == null)
+            {
+                return;
+            }
+
+            //Find the middle of the list // 找中间
+            ListNode slow = head, fast = head.next;
+            while (fast != null && fast.next != null)
+            {
+                slow = slow.next;
+                fast = fast.next.next;
+            }
+
+            //Reverse the half after middle  1->2->3->4->5->6 to 1->2->3->6->5->4
+            // Reverse the second half
+            ListNode head2 = reverse(slow.next);
+            slow.next = null;
+
+            // Link the two halves together
+            while (head != null && head2 != null)
+            {
+                ListNode tmp1 = head.next;
+                ListNode tmp2 = head2.next;
+                head2.next = head.next;
+                head.next = head2;
+                head = tmp1;
+                head2 = tmp2;
+            }
+        }
+
+        private ListNode reverse(ListNode n)
+        {
+            ListNode prev = null;
+            ListNode cur = n;
+            while (cur != null)
+            {
+                ListNode tmp = cur.next;
+                cur.next = prev;
+                prev = cur;
+                cur = tmp;
+            }
+            return prev;
+        }
+
+
+
+
         public void ReorderList(ListNode head)
         {
             if (head == null || head.next == null) return;
 
-            //Find the middle of the list
-            ListNode p1 = head;
-            ListNode p2 = head;
-            while (p2.next != null && p2.next.next != null)
+            //Find the middle of the list // 找中间
+            ListNode slow = head;
+            ListNode fast = head;
+            while (fast.next != null && fast.next.next != null)
             {
-                p1 = p1.next;
-                p2 = p2.next.next;
+                slow = slow.next;
+                fast = fast.next.next;
             }
 
             //Reverse the half after middle  1->2->3->4->5->6 to 1->2->3->6->5->4
-            ListNode preMiddle = p1;
-            ListNode preCurrent = p1.next;
-            while (preCurrent.next != null)
+            ListNode preMiddle = slow;
+            ListNode preCurrent = slow.next;
+            while (preCurrent.next != null) //翻转后半段
             {
                 ListNode current = preCurrent.next;
                 preCurrent.next = current.next;
@@ -33,15 +84,15 @@ namespace Leetcode.LinkList
             }
 
             //Start reorder one by one  1->2->3->6->5->4 to 1->6->2->5->3->4
-            p1 = head;
-            p2 = preMiddle.next;
-            while (p1 != preMiddle)
+            slow = head;
+            fast = preMiddle.next;
+            while (slow != preMiddle) // 合并
             {
-                preMiddle.next = p2.next;
-                p2.next = p1.next;
-                p1.next = p2;
-                p1 = p2.next;
-                p2 = preMiddle.next;
+                preMiddle.next = fast.next;
+                fast.next = slow.next;
+                slow.next = fast;
+                slow = fast.next;
+                fast = preMiddle.next;
             }
         }
     }
