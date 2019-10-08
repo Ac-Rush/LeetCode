@@ -7,6 +7,14 @@ namespace LeetCode.Core.Lib.Tree
 {
     public class Traversals
     {
+        /// <summary>
+        /// 模板
+        /// </summary>
+        /// <remarks>
+        /// 模板
+        /// </remarks>
+        /// <param name="root"></param>
+        /// <returns></returns>
         public List<int> InorderTraversal(TreeNode root)
         {
             List<int> list = new List<int>();

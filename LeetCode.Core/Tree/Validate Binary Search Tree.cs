@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using LeetCode.Core.Lib.Tree;
 
 namespace Leetcode.Tree
 {
@@ -51,6 +52,34 @@ namespace Leetcode.Tree
                 prev = root;
                 Inorder(root.right);
             }
+        }
+    }
+
+
+    /// <summary>
+    /// <see cref="Traversals"/>  InorderTraversal
+    /// </summary>
+    class Validate_Binary_Search_Tree_Inorder_2
+    {
+        public bool IsValidBST(TreeNode root)
+        {
+
+            Stack<TreeNode> stack = new Stack<TreeNode>();
+            TreeNode cur = root, prev = null ;
+
+            while (cur != null || stack.Count > 0)// 只要cur 不是null 或是栈不空
+            {
+                while (cur != null) //其实比较好理解， 一直访问左支， 直到叶子
+                {
+                    stack.Push(cur);
+                    cur = cur.left;
+                }
+                cur = stack.Pop(); // 弹出 栈顶 
+                if (prev != null && prev.val >= cur.val) return false;
+                prev = cur;
+                cur = cur.right;  //cur 指向右节点
+            }
+            return true;
         }
     }
 }
