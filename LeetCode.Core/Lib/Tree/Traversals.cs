@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using Leetcode;
 
@@ -34,6 +35,33 @@ namespace LeetCode.Core.Lib.Tree
                 cur = cur.right;  //cur 指向右节点
             }
             return list;
+        }
+
+        /// <summary>
+        ///  先序遍历
+        /// </summary>
+        ////// <remarks>
+        /// 模板
+        /// </remarks>
+        /// <param name="root"></param>
+        /// <returns></returns>
+        public IList<int> PreorderTraversal(TreeNode root)
+        {
+
+            var result = new List<int>();
+            var stack = new Stack<TreeNode>();
+
+            stack.Push(root);
+            while (stack.Any())
+            {
+                var node = stack.Pop(); // 这个非递归是最好想的
+                if(node == null) continue;
+                result.Add(node.val);
+
+                stack.Push(node.right);
+                stack.Push(node.left);
+            }
+            return result;
         }
     }
 }

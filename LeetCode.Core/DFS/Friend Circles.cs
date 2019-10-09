@@ -8,6 +8,11 @@ namespace Leetcode.DFS
 {
     class Friend_Circles
     {
+        /// <summary>
+        /// <remarks>模板， 求连通图 数量</remarks>
+        /// </summary>
+        /// <param name="M"></param>
+        /// <returns></returns>
         public int FindCircleNum(int[,] M)
         {
             var r = M.GetLength(0);
