@@ -82,7 +82,10 @@ sliding_max = 4, 6, 6, 8, 9, 10, 12, 56
         }
     }
 
-    class Sliding_Window_Maximum_ON2
+    /// <summary>
+    /// 这个是最棒的解法， 用了Deque， C#可以用 LinkedList， 使用了单调栈的原理， 此处是单调递减栈
+    /// </summary>
+    class Sliding_Window_Maximum_ON_2
     {
         public int[] MaxSlidingWindow(int[] nums, int k)
         {
@@ -92,13 +95,13 @@ sliding_max = 4, 6, 6, 8, 9, 10, 12, 56
             LinkedList<int> win = new LinkedList<int>();
             for (int i = 0; i < nums.Length; i++)
             {
-                if (win.Count != 0 && win.First.Value < i - (k - 1)) win.RemoveFirst();
+                if (win.Count != 0 && win.First.Value < i - (k - 1)) win.RemoveFirst(); // 去掉范围外的数
 
-                while (win.Count != 0 && nums[win.Last.Value] <= nums[i]) win.RemoveLast();
+                while (win.Count != 0 && nums[win.Last.Value] <= nums[i]) win.RemoveLast(); // 保证单调 去掉栈里比当前小的
 
-                win.AddLast(i);
+                win.AddLast(i);  //加入栈 /注意栈里的元素是坐标，
 
-                if (i >= k - 1) result[i - (k - 1)] = nums[win.First.Value];
+                if (i >= k - 1) result[i - (k - 1)] = nums[win.First.Value]; // 存储结果， 栈头元素是最大的
             }
 
             return result;
