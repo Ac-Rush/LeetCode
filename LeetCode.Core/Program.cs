@@ -2,6 +2,7 @@
 using LeetCode.Core.BFS;
 using System;
 using Leetcode.BackTrack;
+using LeetCode.Core.HashTable;
 
 namespace LeetCode.Core
 {
@@ -9,8 +10,8 @@ namespace LeetCode.Core
     {
         static void Main(string[] args)
         {
-            var t = new N_Queens_II_Bitwise();
-            t.TotalNQueens(4);
+            var t = new Remove_Duplicate_Letters();
+            t.RemoveDuplicateLetters2("bcabc");
 
 
             TestMetrix();
