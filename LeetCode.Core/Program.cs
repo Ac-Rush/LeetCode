@@ -10,11 +10,13 @@ namespace LeetCode.Core
     {
         static void Main(string[] args)
         {
-            var t = new Remove_Duplicate_Letters();
-            t.RemoveDuplicateLetters2("bcabc");
+            var s = System.Net.NetworkInformation.IPGlobalProperties.GetIPGlobalProperties();
+            Console.WriteLine($"DomainName:{s.DomainName} , HostName:{s.HostName}");
+          //  var t = new Remove_Duplicate_Letters();
+           // t.RemoveDuplicateLetters2("bcabc");
 
 
-            TestMetrix();
+           // TestMetrix();
             Console.Read();
             // Wildcard_Matching_memo.IsMatch("mississippi", "m??*ss*?i*pi");
         }
