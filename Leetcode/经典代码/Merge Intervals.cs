@@ -79,7 +79,35 @@ namespace Leetcode.Sort
                     start = interval.start;
                 }
             }
+            result.Add(new Interval(start, end));  ///bug 没有加最后一段
             return result;
+        }
+
+        public int[][] Merge(int[][] intervals)
+        {
+            if (intervals == null || intervals.Length <= 1)
+            {
+                return intervals;
+            }
+            intervals = intervals.OrderBy(item => item[0]).ToArray();
+            var start = intervals[0][0];
+            var end = intervals[0][1];
+            var result = new List<int[]>();
+            foreach (var interval in intervals)
+            {
+                if (interval[0] <= end)  //如果当前的start <= end 说明还是连续，
+                {
+                    end = Math.Max(end, interval[1]);  //更新end
+                }
+                else   //否则说明不连续， 
+                {
+                    result.Add(new int []{ start, end});  //加入结果
+                    end = interval[1];      //更新 end, start 
+                    start = interval[0];
+                }
+            }
+            result.Add(new int[] { start, end });  ///bug 没有加最后一段
+            return result.ToArray();
         }
     }
 }
