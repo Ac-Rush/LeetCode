@@ -25,12 +25,12 @@ namespace LeetCode.Core.Lib.Bits
         /// <returns></returns>
         int Remove_last_bit(int n)
         {
-            return n & (n - 1);
+            return n & (n - 1);  //清掉最低位的1
         }
 
         int Extract_last_bit(int n)
         {
-            return n & -n;
+            return n & -n; // 获取最低为的1
         }
 
 
