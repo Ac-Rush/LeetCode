@@ -6,6 +6,81 @@ using System.Threading.Tasks;
 
 namespace Leetcode.Dynamic_Programming
 {
+
+    class Super_Egg_Drop
+    {
+        /*
+         *
+         * Drop eggs is a very classical problem.
+Some people may come up with idea O(KN^2)
+where dp[K][N] = 1 + max(dp[K - 1][i - 1],dp[K][N - i]) for i in 1...N.
+However this idea is very brute force, for the reason that you check all possiblity.
+
+So I consider this problem in a different way:
+dp[M][K]means that, given K eggs and M moves,
+what is the maximum number of floor that we can check.
+
+The dp equation is:
+dp[m][k] = dp[m - 1][k - 1] + dp[m - 1][k] + 1,
+which means we take 1 move to a floor,
+if egg breaks, then we can check dp[m - 1][k - 1] floors.
+if egg doesn't breaks, then we can check dp[m - 1][k - 1] floors.
+
+dp[m][k] is similar to the number of combinations and it increase exponentially to N
+         */
+        public int SuperEggDrop(int K, int N)
+        {
+            int[,] dp = new int[N + 1,K + 1];
+            int m = 0;
+            while (dp[m,K] < N)
+            {
+                ++m;
+                for (int k = 1; k <= K; ++k)
+                    dp[m,k] = dp[m - 1,k - 1] + dp[m - 1,k] + 1;
+            }
+            return m;
+        }
+
+        /*
+         *
+         *firstly, if we have k eggs and s steps to detect a building with Q(k, s) floors,
+
+secondly, we use 1 egg and 1 step to detect one floor,
+if egg break, we can use (k-1) eggs and (s-1) to detect with Q(k-1, s-1),
+if egg isn't broken, we can use k eggs and (s-1) step to detech with Q(k, s-1),
+So, Q(k, s) = 1 + Q(k, s-1) + Q(k-1, s-1);
+         *
+         * dp[i] is max floors we can use i eggs and s step to detect.
+         */
+        public int SuperEggDrop3(int K, int N)
+        {
+            int[] dp = new int[K+1];
+            int step = 0;
+            for (; dp[K] < N; step++)
+            {
+                for (int i = K; i > 0; i--)
+                    dp[i] = (1 + dp[i] + dp[i - 1]);
+            }
+            return step;
+        }
+
+        /// <summary>
+        /// 优化到一维
+        /// </summary>
+        /// <param name="K"></param>
+        /// <param name="N"></param>
+        /// <returns></returns>
+        public int SuperEggDrop2(int K, int N)
+        {
+            int[] dp = new int[K + 1];
+            int m = 0;
+            for (m = 0; dp[K] < N; ++m)
+            for (int k = K; k > 0; --k)
+                dp[k] += dp[k - 1] + 1;
+            return m;
+        }
+    }
+
     class Egg_Dropping_Puzzle
     {
         /*
