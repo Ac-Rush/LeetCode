@@ -84,6 +84,7 @@ sliding_max = 4, 6, 6, 8, 9, 10, 12, 56
 
     /// <summary>
     /// 这个是最棒的解法， 用了Deque， C#可以用 LinkedList， 使用了单调栈的原理， 此处是单调递减栈
+    /// 单调队列原理
     /// </summary>
     class Sliding_Window_Maximum_ON_2
     {
