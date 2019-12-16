@@ -17,14 +17,14 @@ namespace Leetcode.HashTable
             int start = 0, end = 0,  max = 0;
             while (end < s.Length)
             {
-                if (hash[s[end]] == 0)
+                if (hash[s[end]] == 0) // 不要太复杂， 如果末尾是个新元素
                 {
-                    hash[s[end++]]++;
-                    max = Math.Max(max, end - start);
+                    hash[s[end++]]++;  // 更新 hash, end++, 
+                    max = Math.Max(max, end - start);  // 更新长度
                 }
                 else
                 {
-                    hash[s[start++]] = 0;
+                    hash[s[start++]] = 0;  // 否则就 处理start, 不用while 套 while 很是麻烦
                 }
             }
             return max;
