@@ -26,8 +26,6 @@ namespace LeetCode.Core.SlidingWindow
 
                 if (map.Count > 2)  // 这里换成k 就是 k的情况
                 {
-                    max = Math.Max(max, i - start);
-
                     while (map.Count > 2)
                     {
                         char t = s[start];
@@ -43,9 +41,9 @@ namespace LeetCode.Core.SlidingWindow
                         start++;
                     }
                 }
+                max = Math.Max(max, i - start + 1);
             }
 
-            max = Math.Max(max, s.Length - start);
 
             return max;
         }
