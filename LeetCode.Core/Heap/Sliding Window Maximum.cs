@@ -108,4 +108,63 @@ sliding_max = 4, 6, 6, 8, 9, 10, 12, 56
             return result;
         }
     }
+
+
+
+    public class Sliding_Window_Maximum_ON_MonotonicQueue
+    {
+        /// <summary>
+        /// 单调队列 模板
+        /// </summary>
+        public class MonotonicQueue
+        {
+            LinkedList<int> qu;
+
+            public MonotonicQueue()
+            {
+                qu = new LinkedList<int>();
+            }
+            public int Max()
+            {
+                if (!qu.Any()) return -1;
+                return qu.First.Value;
+            }
+            public void Pop()
+            {
+                if (qu.Any()) qu.RemoveFirst();
+            }
+            public void Push(int val)
+            {
+                while (qu.Any() && qu.Last.Value < val)
+                {
+                    qu.RemoveLast();
+                }
+
+                qu.AddLast(val);
+            }
+        }
+        public int[] MaxSlidingWindow(int[] nums, int k)
+        {
+            if (nums == null || nums.Length == 0 || k <= 1) return nums;
+
+            int[] res = new int[nums.Length - (k - 1)];
+            int idx = 0;
+            MonotonicQueue qu = new MonotonicQueue();
+            for (int i = 0; i < nums.Length; i++)
+            {
+                qu.Push(nums[i]);
+                if (i - k + 1 >= 0)
+                {
+                    res[idx++] = qu.Max();
+                    if (nums[i - k + 1] == qu.Max())
+                    {
+                        qu.Pop();
+                    }
+
+                }
+            }
+
+            return res;
+        }
+    }
 }
