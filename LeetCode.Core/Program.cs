@@ -3,6 +3,7 @@ using LeetCode.Core.BFS;
 using System;
 using Leetcode.BackTrack;
 using LeetCode.Core.HashTable;
+using Leetcode.SlidingWindow;
 
 namespace LeetCode.Core
 {
@@ -10,6 +11,8 @@ namespace LeetCode.Core
     {
         static void Main(string[] args)
         {
+            var p = new Permutation_in_String().CheckInclusion2("adc", "dcda");
+
             var s = System.Net.NetworkInformation.IPGlobalProperties.GetIPGlobalProperties();
             Console.WriteLine($"DomainName:{s.DomainName} , HostName:{s.HostName}");
           //  var t = new Remove_Duplicate_Letters();

@@ -24,7 +24,8 @@ namespace Leetcode.SlidingWindow
             for (int l = 0, r = 0; r < s2.Length; r++)
             {
                 if (++count[s2[r]] > 0)  //如果有一个不在 s1中的字字母
-                    while (--count[s2[l++]] != 0) { /* do nothing */} // 移动i 恢复count[] // 恢复后 l = r+1
+                    //remove the invalid char
+                    while (--count[s2[l++]] != 0) { /* do nothing */} // 移动i(remove the invalid char) 使得i的位置填满  e.g. {"adc" "dcda"}   d重复了，i就得移动到c
                 else if ((r - l + 1) == s1.Length) return true;
             }
             return s1.Length == 0;
