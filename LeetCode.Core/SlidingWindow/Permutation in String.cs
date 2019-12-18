@@ -10,6 +10,9 @@ namespace Leetcode.SlidingWindow
     {
         /// <summary>
         /// https://leetcode.com/problems/permutation-in-string/discuss/102590/8-lines-slide-window-solution-in-Java
+        /// Now, we have an invalid substring with either invalid char or invalid number of chars.
+        /// How to remove the invalid char and continue our scan? We use a left index ("l" in above code) to remove chars in the holes in the same order
+        /// we filled them into the holes. We stop removing chars until the only sticking out block is fixed - it has a value of 0 after fixing. 
         /// </summary>
         /// <param name="s1"></param>
         /// <param name="s2"></param>
