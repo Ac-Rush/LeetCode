@@ -25,13 +25,13 @@ However a cleverer idea is: reverse the string and reuse the code!
         {
             for (int stack = 0, i = last_i; i < s.Length; ++i)
             {
-                if (s[i] == par[0]) stack++;
+                if (s[i] == par[0]) stack++;  //计数模拟stack
                 if (s[i] == par[1]) stack--;
-                if (stack >= 0) continue;
-                for (int j = last_j; j <= i; ++j)
+                if (stack >= 0) continue; //合法的， continue
+                for (int j = last_j; j <= i; ++j) // 得从 last_j 到i 去掉一个 par[1]
                     if (s[j] == par[1] && (j == last_j || s[j-1] != par[1])) // 这里还有去重 duplicate remove第一个
                         remove(s.Substring(0, j) + s.Substring(j + 1, s.Length - j -1), ans, i, j, par);
-                return;
+                return;  // return 也很关键，可以去重或是怎样
             }
 
             //其实是两种 情况 一种是 ( 多，，另一种是)多， 两种都要跑一变， 用reverse 来复用code
