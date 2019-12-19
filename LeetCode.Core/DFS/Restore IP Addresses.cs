@@ -24,7 +24,7 @@ namespace Leetcode.DFS
             }
             if (index == s.Length || cur.Count == 4) return;
            // var seg = 0;
-         //   for (int i = index; i < s.Length; i++)  my bug 不需要外面的 循环
+         //   for (int i = index; i < s.Length; i++)  my bug 不需要外面的 循环, 确实不需要 不然不对，因为如果又就可以不选
            
                 for (int j = 1; j <= 3 && index+j<= s.Length; j++)
                 {
