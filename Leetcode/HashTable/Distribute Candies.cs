@@ -11,13 +11,8 @@ namespace Leetcode.HashTable
         public int DistributeCandies(int[] candies)
         {
             //用hashset  嘎嘎
-            var dict = new Dictionary<int, int>();
-            foreach (var candy in candies)
-            {
-                if (!dict.ContainsKey(candy)) dict[candy] = 0;
-                dict[candy]++;
-            }
-            return Math.Min(dict.Count, candies.Length/2);
+            var set = new HashSet< int>(candies);
+            return Math.Min(set.Count, candies.Length/2);
         }
     }
 }
