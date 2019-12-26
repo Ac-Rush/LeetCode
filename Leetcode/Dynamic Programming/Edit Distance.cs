@@ -49,6 +49,7 @@ namespace Leetcode.Dynamic_Programming
                     }
                     else
                     {
+                                                      //删 word1[i] //删word2[j]    //替换 my bug 缺了这一项
                         dp[i, j] = Math.Min(Math.Min(dp[i - 1, j], dp[i, j - 1]) , dp[i - 1, j - 1]) + 1;
                     }
                 } 
