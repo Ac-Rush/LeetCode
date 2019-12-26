@@ -21,7 +21,7 @@ namespace Leetcode.Strings
                 ans[i] = i - prev;
             }
 
-            prev = int.MinValue / 2;
+            prev = int.MaxValue / 2;
             for (int i = N - 1; i >= 0; --i)
             {
                 if (S[i] == C) prev = i;
