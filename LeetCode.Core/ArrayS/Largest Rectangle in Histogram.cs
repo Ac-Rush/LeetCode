@@ -30,7 +30,7 @@ namespace Leetcode.Dynamic_Programming
 
         /// <summary>
         /// https://www.geeksforgeeks.org/largest-rectangle-under-histogram/
-        /// 单调栈的问题
+        /// 单调栈的问题 单调递增栈
         /// </summary>
         /// <param name="height"></param>
         /// <returns></returns>
@@ -47,7 +47,7 @@ i - 1 - s.peek() uses the starting index where height[s.peek() + 1] >= height[tp
             for (int i = 0; i <= len; i++)  //在最后面补了一个 0 高度的方块
             {
                 int h = (i == len ? 0 : height[i]);//在最后面补了一个 0 高度的方块
-                if (s.Count == 0 || h >= height[s.Peek()])
+                if (s.Count == 0 || h >= height[s.Peek()])  //  用单调递增栈 来求下一个小
                 {
                     s.Push(i);
                 }
@@ -60,6 +60,37 @@ i - 1 - s.peek() uses the starting index where height[s.peek() + 1] >= height[tp
                     maxArea = Math.Max(maxArea, height[tp] * (s.Count==0 ? i : i - 1 - s.Peek()));
                     i--;  //这个 i--可以 把嵌套 while 换成一层
                 }
+            }
+            return maxArea;
+        }
+
+        /// <summary>
+        /// 用了单调递增栈 ，同时求了 下一个小和上一个小
+        /// </summary>
+        /// <param name="height"></param>
+        /// <returns></returns>
+        public int LargestRectangleArea3(int[] height)
+        {
+            /**
+             * Do push all heights including 0 height.
+i - 1 - s.peek() uses the starting index where height[s.peek() + 1] >= height[tp], 
+            because the index on top of the stack right now is the first index left of tp with height smaller than tp's height.
+             */
+            int len = height.Length;
+            var s = new Stack<int>();
+            int maxArea = 0;
+            for (int i = 0; i <= len; i++)  //在最后面补了一个 0 高度的方块
+            {
+                int h = (i == len ? 0 : height[i]);//在最后面补了一个 0 高度的方块
+                while (s.Any() && height[s.Peek()] > h) //单调递增，求下一个小
+                {
+                    int tp = s.Pop();
+                    // 这个一定要注意 是(s.Count==0 ? i : i - 1 - s.Peek())；
+                    // 长度的计算  不是 i-tp, 因为 tp-1 不一定小于 tp,小于tp的是 stack的上一个
+                    //这个里的 stack保存了一份 到i 递增的序列
+                    maxArea = Math.Max(maxArea, height[tp] * (s.Count == 0 ? i : i - 1 - s.Peek())); //s.Peek()是上一个小
+                }
+                s.Push(i);
             }
             return maxArea;
         }
