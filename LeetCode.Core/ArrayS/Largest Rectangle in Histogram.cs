@@ -66,6 +66,7 @@ i - 1 - s.peek() uses the starting index where height[s.peek() + 1] >= height[tp
 
         /// <summary>
         /// 用了单调递增栈 ，同时求了 下一个小和上一个小
+        /// 这才是模板， 不喜欢 还要操作 i的解法
         /// </summary>
         /// <param name="height"></param>
         /// <returns></returns>
@@ -91,6 +92,30 @@ i - 1 - s.peek() uses the starting index where height[s.peek() + 1] >= height[tp
                     maxArea = Math.Max(maxArea, height[tp] * (s.Count == 0 ? i : i - 1 - s.Peek())); //s.Peek()是上一个小
                 }
                 s.Push(i);
+            }
+            return maxArea;
+        }
+
+        public int NextBig(int[] height)
+        {
+            /**
+             * Do push all heights including 0 height.
+i - 1 - s.peek() uses the starting index where height[s.peek() + 1] >= height[tp], 
+            because the index on top of the stack right now is the first index left of tp with height smaller than tp's height.
+             */
+            int len = height.Length;
+            var s = new Stack<int>();
+            int maxArea = 0;
+            for (int i = 0; i <= len; i++)  //在最后面补了一个 0 高度的方块
+            {
+                int h = (i == len ? 0 : height[i]);//在最后面补了一个 0 高度的方块
+                while (s.Any() && height[s.Peek()] > h) //单调递增，求下一个小
+                {
+                    int tp = s.Pop();
+                     //do something
+                   // maxArea = Math.Max(maxArea, height[tp] * (s.Count == 0 ? i : i - 1 - s.Peek())); //s.Peek()是上一个小
+                }
+                s.Push(i); //入栈
             }
             return maxArea;
         }
