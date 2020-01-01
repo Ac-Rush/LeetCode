@@ -109,5 +109,31 @@ namespace Leetcode.Sort
             result.Add(new int[] { start, end });  ///bug 没有加最后一段
             return result.ToArray();
         }
+
+        public int[][] Merge3(int[][] intervals)
+        {
+            if (intervals == null || intervals.Length <= 1)
+            {
+                return intervals;
+            }
+            intervals = intervals.OrderBy(item => item[0]).ToArray();
+            var ans = new List<int[]>();
+            int start = intervals[0][0], end = intervals[0][1];
+            foreach (var interval in intervals)
+            {
+                if (interval[0] <= end)
+                {
+                    end = Math.Max(end, interval[1]);
+                }
+                else
+                {
+                    ans.Add(new int[] { start, end });
+                    start = interval[0];
+                    end = interval[1];
+                }
+            }
+            ans.Add(new int[] { start, end });
+            return ans.ToArray();
+        }
     }
 }
