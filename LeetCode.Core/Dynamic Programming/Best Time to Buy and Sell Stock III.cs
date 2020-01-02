@@ -25,6 +25,43 @@ namespace Leetcode.Dynamic_Programming
 
         //k次的template， 上面的其实是一步一步推出来的
         //https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/discuss/135704/Detail-explanation-of-DP-solution
+        public int MaxProfitDp1_0(int[] prices)
+        {
+            if (prices.Length == 0) return 0;
+            var dp = new int[3, prices.Length];
+            for (int k = 1; k <= 2; k++)
+            {
+                for (int i = 1; i < prices.Length; i++)
+                {
+                    int min = prices[0];
+                    for (int j = 1; j <= i; j++)
+                        min = Math.Min(min, prices[j] - dp[k - 1, j - 1]);
+                    dp[k, i] = Math.Max(dp[k, i - 1], prices[i] - min);
+                }
+            }
+
+            return dp[2, prices.Length - 1];
+        }
+        //Time complexity is O(kn^2), space complexity is O(kn).
+        //In the above code, min is repeated calculated. It can be easily improved as: 根据 dp的定义得出是重复计算了？（不确定） dp[k, i] = max(dp[k, i-1], prices[i] - prices[j] + dp[k-1, j-1]), j=[0..i-1]
+        public int MaxProfitDpCompact1_1(int[] prices)
+        {
+            if (prices.Length == 0) return 0;
+            var dp = new int[3, prices.Length];
+            for (int k = 1; k <= 2; k++)
+            {
+                int min = prices[0];
+                for (int i = 1; i < prices.Length; i++)
+                {
+                    min = Math.Min(min, prices[i] - dp[k - 1, i - 1]);
+                    dp[k, i] = Math.Max(dp[k, i - 1], prices[i] - min);
+                }
+            }
+
+            return dp[2, prices.Length - 1];
+        }//Time complexity is O(kn), space complexity is O(kn).
+
+        //If we slight swap the two 'for' loops:
         public int MaxProfitDpCompact2(int[] prices)
         {
             if (prices.Length == 0) return 0;
