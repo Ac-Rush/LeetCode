@@ -26,5 +26,29 @@ namespace Leetcode.BinarySearch
             }
             return null;
         }
+
+
+        public int[] TwoSum2(int[] nums, int target)
+        {
+            int l = 0, r = nums.Length - 1;
+            // Array.Sort(nums);
+            while (l < r)
+            {
+                var sum = nums[l] + nums[r];
+                if (sum == target)
+                {
+                    return new int[] { l + 1, r + 1 };
+                }
+                else if (sum > target)
+                {
+                    r--;
+                }
+                else
+                {
+                    l++;
+                }
+            }
+            return new int[] { -1, -1 }; 
+        }
     }
 }
