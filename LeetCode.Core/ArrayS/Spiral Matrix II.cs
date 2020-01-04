@@ -44,39 +44,25 @@ namespace Leetcode.Array
 
         public int[][] GenerateMatrix2(int n)
         {
-            var len = n;
-            var ret = new int[len][];
-            for(int i = 0;i < n; i++)
+            var ans = new int[n][];
+            for (int i = 0; i < n; i++)
             {
-                ret[i] = new int[len];
+                ans[i] = new int[n];
             }
-            int left = 0, top = 0;
-            int right = n - 1, down = n - 1;
-            int count = 1;
-            while (left <= right)
+
+            int l = 0, r = n - 1, top = 0, bottom = n - 1, num = 1;
+            while (l <= r && top <= bottom)
             {
-                for (int j = left; j <= right; j++)
-                {
-                    ret[top][j] = count++;
-                }
+                for (int i = l; i <= r; i++) ans[top][i] = num++;
                 top++;
-                for (int i = top; i <= down; i++)
-                {
-                    ret[i][ right] = count++;
-                }
-                right--;
-                for (int j = right; j >= left; j--)
-                {
-                    ret[down][ j] = count++;
-                }
-                down--;
-                for (int i = down; i >= top; i--)
-                {
-                    ret[i][left] = count++;
-                }
-                left++;
+                for (int i = top; i <= bottom && l <= r && top <= bottom; i++) ans[i][r] = num++;
+                r--;
+                for (int i = r; i >= l && l <= r && top <= bottom; i--) ans[bottom][i] = num++;
+                bottom--;
+                for (int i = bottom; i >= top && l <= r && top <= bottom; i--) ans[i][l] = num++;
+                l++;
             }
-            return ret;
+            return ans;
         }
     }
 }
