@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Leetcode.LinkList;
 
 namespace Leetcode.BackTrack
 {
@@ -95,6 +96,50 @@ namespace Leetcode.BackTrack
                 }
             }
             return dp[0,0];
+        }
+
+        public bool IsMatchDp2(string text, string pattern)
+        {
+            var dp = new bool[text.Length + 1, pattern.Length + 1];
+            dp[0,0] = true;
+            for (int i = 0; i < pattern.Length; i++)
+            {
+                if (pattern[i] == '*' && dp[0,i - 1])
+                {
+                    dp[0,i + 1] = true;
+                }
+            }
+            for (int i = 0; i < text.Length; i++)
+            {
+                for (int j = 0; j < pattern.Length; j++)
+                { 
+                    if (pattern[j] == text[i] ||
+                        pattern[j] == '.')
+                    {
+                        dp[i + 1,j + 1] = dp[i,j];
+                    }
+                    if (pattern[j] == '*'  /* && j >0 */)
+                    {
+                        if (pattern[j-1] != text[i] && pattern[j - 1] != '.')
+                        {
+                            dp[i + 1,j + 1] = dp[i + 1,j - 1];
+                        }
+                        else
+                        {
+                            /*
+                             *
+                             *  dp[i][j] = dp[i-1][j]    //in this case, a* counts as multiple a 
+                                or dp[i][j] = dp[i][j-1]   // in this case, a* counts as single a
+                                 or dp[i][j] = dp[i][j-2]   // in this case, a* counts as empty
+
+                             */
+                            dp[i + 1,j + 1] = dp[i + 1,j] || dp[i,j + 1] || dp[i + 1,j - 1];
+                        }
+                    }
+                }
+            }
+            
+            return dp[text.Length, pattern.Length];
         }
     }
 }
