@@ -30,5 +30,19 @@ namespace Leetcode.Array
 
             return candidate.Value;
         }
+
+        public int MajorityElement2(int[] nums)
+        {
+            int maj = 0, count = 0;
+            foreach (var n in nums)
+            {
+                if (count == 0)
+                {
+                    maj = n;
+                }
+                count += (n == maj) ? 1 : -1;
+            }
+            return maj;
+        }
     }
 }
