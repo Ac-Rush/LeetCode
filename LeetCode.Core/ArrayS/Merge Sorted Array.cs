@@ -17,5 +17,19 @@ namespace Leetcode.Array
             while (i > -1 && j > -1) nums1[k--] = (nums1[i] > nums2[j]) ? nums1[i--] : nums2[j--];
             while (j > -1) nums1[k--] = nums2[j--];
         }
+
+        public void Merge2(int[] nums1, int m, int[] nums2, int n)
+        {
+            var index = m + n - 1;
+            m--; n--;
+            while (n >= 0)
+            {
+                if (m < 0) { nums1[index--] = nums2[n--]; }
+                else
+                {
+                    nums1[index--] = nums1[m] > nums2[n] ? nums1[m--] : nums2[n--];
+                }
+            }
+        }
     }
 }

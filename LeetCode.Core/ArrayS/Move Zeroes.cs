@@ -34,5 +34,21 @@ namespace Leetcode.Array
             }
         }
 
+        public void MoveZeroes2(int[] nums)
+        {
+            int index = 0;
+            foreach (var n in nums)
+            {
+                if (n != 0)
+                {
+                    nums[index++] = n;
+                }
+            }
+            while (index < nums.Length)
+            {
+                nums[index++] = 0;
+            }
+        }
+
     }
 }
