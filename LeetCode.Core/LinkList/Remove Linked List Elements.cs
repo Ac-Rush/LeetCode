@@ -20,7 +20,7 @@ namespace Leetcode.LinkList
                 if (cur.next.val == val)
                 {
                     cur.next = cur.next.next;
-                    break;
+                   // bug 不能有break break;
                 }
                 else
                 {
