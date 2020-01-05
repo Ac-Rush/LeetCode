@@ -63,6 +63,7 @@
     <Compile Include="ArrayS\Image Smoother.cs" />
     <Compile Include="ArrayS\Increasing Triplet Subsequence.cs" />
     <Compile Include="ArrayS\Insert Interval.cs" />
+    <Compile Include="ArrayS\Interval List Intersections.cs" />
     <Compile Include="ArrayS\Island Perimeter.cs" />
     <Compile Include="ArrayS\K Closest Points to Origin.cs" />
     <Compile Include="ArrayS\Lonely Pixel I.cs" />
@@ -97,6 +98,7 @@
     <Compile Include="BinarySearch\Sliding Window Median.cs" />
     <Compile Include="BinarySearch\[868] Binary Gap.cs" />
     <Compile Include="Bit\Binary Watch.cs" />
+    <Compile Include="Bit\Complement of Base 10 Integer.cs" />
     <Compile Include="Bit\Find the Difference.cs" />
     <Compile Include="Bit\Single Number.cs" />
     <Compile Include="Bit\[477] Total Hamming Distance.cs" />
@@ -221,6 +223,7 @@
     <Compile Include="Graph\Clone Graph.cs" />
     <Compile Include="HashTable\Time Based Key-Value Store.cs" />
     <Compile Include="LinkList\Add Two Numbers II.cs" />
+    <Compile Include="LinkList\Next Greater Node In Linked List.cs" />
     <Compile Include="LinkList\Reverse Nodes in k-Group.cs" />
     <Compile Include="Number\Integer to Roman.cs" />
     <Compile Include="Scanline\Car Pooling.cs" />
