@@ -24,7 +24,7 @@ namespace Leetcode.BinarySearch
 
                 if (nums[mid] > nums[h])  // 如果中间的 大于high,
                 {
-                    if (target >= nums[l] && target < nums[mid]) //
+                    if (target >= nums[l] && target < nums[mid]) // 那么  [l...mid] 这段有序
                     {
                         h = mid - 1;
                     }
@@ -35,7 +35,7 @@ namespace Leetcode.BinarySearch
                 }
                 else
                 {
-                    if (target > nums[mid] && target <= nums[h]) // <=
+                    if (target > nums[mid] && target <= nums[h]) // <= 那么 [mid....h] 这段有序
                     {
                         l = mid + 1;
                     }

@@ -50,7 +50,7 @@ namespace Leetcode.BackTrack
     public class N_Queens_2
     {
         /// <summary>
-        /// 错误答案
+        /// 错误答案   XXXXXXXXXXXXXXXXXXXXXXXXXX
         /// </summary>
         /// <param name="n"></param>
         /// <returns></returns>
