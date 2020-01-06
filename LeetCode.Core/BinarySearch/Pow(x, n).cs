@@ -8,6 +8,30 @@ namespace Leetcode.BinarySearch
 {
     class Pow_x__n_
     {
+        public double MyPow2(double x, int n)
+        {
+            double temp = x;
+            if (n == 0)
+                return 1;
+            temp = MyPow2(x, n / 2);
+            if (n % 2 == 0)
+                return temp * temp;
+            else
+            {
+                if (n > 0)
+                    return x * temp * temp;  // 区别正负幂
+                else
+                    return (temp * temp) / x;
+            }
+        }
+
+
+        /// <summary>
+        /// 错误答案
+        /// </summary>
+        /// <param name="x"></param>
+        /// <param name="n"></param>
+        /// <returns></returns>
         public double MyPow(double x, int n)
         {
             if (n == 0)
@@ -37,22 +61,7 @@ namespace Leetcode.BinarySearch
             return n % 2 == 0 ? MyPow3(x * x, n / 2) : x * MyPow3(x, n - 1);
         }
 
-        public double MyPow2(double x, int n)
-        {
-            double temp = x;
-            if (n == 0)
-                return 1;
-            temp = MyPow2(x, n / 2);
-            if (n  % 2 == 0)
-                return temp * temp;
-            else
-            {
-                if (n > 0)
-                    return x * temp * temp;  // 区别正负幂
-                else
-                    return (temp * temp) / x;
-            }
-        }
+       
 
     }
 }

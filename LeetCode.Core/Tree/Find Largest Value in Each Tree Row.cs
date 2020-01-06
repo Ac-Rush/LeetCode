@@ -13,26 +13,24 @@ namespace Leetcode.Tree
     {
         public IList<int> LargestValues(TreeNode root)
         {
-            Queue<TreeNode> queue = new Queue<TreeNode>();
-            List<int> res = new List<int>();
+            var ans = new List<int>();
+            if (root == null) return ans;
+            var queue = new Queue<TreeNode>();
             queue.Enqueue(root);
-            int queueSize = root == null ? 0 : 1;
-            while (queueSize > 0)
+            while (queue.Any())
             {
-                int largestElement = int.MinValue;
-                for (int i = 0; i < queueSize; i++)
+                var count = queue.Count;
+                var max = int.MinValue;
+                while (count-- > 0)
                 {
-                    TreeNode cur = queue.Dequeue();
-                    largestElement = Math.Max(cur.val, largestElement);
-                    if (cur.left != null) queue.Enqueue(cur.left);
-                    if (cur.right != null) queue.Enqueue(cur.right);
+                    var node = queue.Dequeue();
+                    max = Math.Max(max, node.val);
+                    if (node.left != null) queue.Enqueue(node.left);
+                    if (node.right != null) queue.Enqueue(node.right);
                 }
-                res.Add(largestElement);
-                queueSize = queue.Count;
+                ans.Add(max);
             }
-            int[] resArray = new int[res.Count];
-            for (int i = 0; i < res.Count; i++) resArray[i] = res[i];
-            return resArray;
+            return ans;
         }
     }
 }
