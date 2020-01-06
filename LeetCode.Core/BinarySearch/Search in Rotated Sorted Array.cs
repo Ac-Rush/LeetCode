@@ -24,11 +24,11 @@ namespace Leetcode.BinarySearch
 
                 if (nums[mid] > nums[h])  // 如果中间的 大于high,
                 {
-                    if (target >= nums[l] && target < nums[mid]) // 那么  [l...mid] 这段有序
+                    if (target >= nums[l] && target < nums[mid]) // 那么  [l...mid] 这段有序 ， 思想就是 挑出我们可以解决的小问题（二分查找）
                     {
                         h = mid - 1;
-                    }
-                    else
+                    } 
+                    else  // 如果上面不符合 那么下面就是递归的解法
                     {
                         l = mid + 1;
                     }
