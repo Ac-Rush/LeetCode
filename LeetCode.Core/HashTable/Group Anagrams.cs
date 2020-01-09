@@ -40,5 +40,23 @@ namespace Leetcode.HashTable
 
             return dict.Values.ToList();
         }
+
+        public IList<IList<string>> GroupAnagrams2(string[] strs)
+        {
+            var dict = new Dictionary<string, IList<string>>();
+            foreach (var str in strs)
+            {
+                var key = string.Concat(str.OrderBy(c => c));
+                
+                if (!dict.ContainsKey(key))
+                {
+                    dict[key] = new List<string>();
+                }
+
+                dict[key].Add(str);
+            }
+
+            return dict.Values.ToList();
+        }
     }
 }

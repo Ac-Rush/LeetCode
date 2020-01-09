@@ -17,5 +17,22 @@ namespace Leetcode.LinkList
             n.next = head;
             return n;
         }
+
+
+        public ListNode SwapPairs2(ListNode head)
+        {
+            var dummy = new ListNode(0) { next = head };
+            var cur = dummy;
+            while (cur.next != null && cur.next.next != null)
+            {
+                ListNode first = cur.next, second = cur.next.next;
+                var next = second.next;
+                cur.next = second;
+                second.next = first;
+                first.next = next;
+                cur = first;
+            }
+            return dummy.next;
+        }
     }
 }
